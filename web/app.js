@@ -245,7 +245,10 @@
         </div>
       </section>
 
-      <button class="btn primary big" data-action="start" ${chosen ? "" : "disabled"}>Start ${chosen ? esc(chosen.title) : ""}</button>`;
+      <div class="row">
+        <button class="btn primary big" data-action="start" ${chosen ? "" : "disabled"}>Start ${chosen ? esc(chosen.title) : ""}</button>
+        ${chosen ? `<a class="btn big" href="/print.html?set=${encodeURIComponent(chosen.id)}" target="_blank" rel="noopener">🖨 Skriv ut</a>` : ""}
+      </div>`;
     window.scrollTo({ top: 0 });
   }
 

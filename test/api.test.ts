@@ -207,6 +207,24 @@ describe("tekstoppgaver med video", () => {
   });
 });
 
+describe("utskrift", () => {
+  it("gir hele settet, med fasit bare når det bes om", async () => {
+    expect((await app.request("/api/sets/demo-sett-1/print")).status).toBe(401);
+    const c = client();
+    await c.post("/api/groups", { groupName: "G", playerName: "P" });
+
+    const plain = await c.get("/api/sets/demo-sett-1/print");
+    expect(plain.json).toMatchObject({ title: "Ecolier 2025", maxPoints: 12 });
+    expect(plain.json.tasks).toHaveLength(3);
+    expect(plain.json.tasks[0]).not.toHaveProperty("correctAnswer");
+    expect(plain.json.tasks[0]).not.toHaveProperty("answer");
+
+    const withKey = await c.get("/api/sets/tekst-emne-1/print?fasit=1");
+    expect(withKey.json.tasks[0]).toMatchObject({ correctAnswer: "B", solutionText: "Andre desimal er 6, så vi runder opp til 3,5." });
+    expect((await c.get("/api/sets/finnes-ikke/print")).status).toBe(404);
+  });
+});
+
 describe("toppliste", () => {
   it("viser beste resultat per person, bare i egen gruppe", async () => {
     const ola = client();
