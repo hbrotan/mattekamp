@@ -7,3 +7,6 @@ dist/
 # Kenguru-oppgavene er opphavsrettslig beskyttet og skal ikke ligge i et offentlig repo.
 # Lag dem med tools/kenguru_extract.py; de bygges inn i Docker-imaget lokalt.
 content/kenguru/
+
+# GetSmart-katalogen (beskrivelser fra getsmart.no) brukes bare som grunnlag for egne oppgaver
+content/getsmart/catalog.json

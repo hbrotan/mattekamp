@@ -191,3 +191,9 @@ tr.me td { background: var(--accent-soft); }
   .brand-mark { font-size: 1.2rem; }
   .zoom-hint { display: block; }
 }
+
+/* Melding mens databasen våkner */
+.waiting { position: fixed; left: 50%; top: 72px; transform: translateX(-50%); z-index: 30; display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--accent); box-shadow: var(--shadow); border-radius: 12px; padding: 10px 16px; max-width: calc(100% - 32px); font-size: .95rem; }
+.spinner { width: 18px; height: 18px; flex: none; border: 3px solid var(--accent-soft); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2.4s; } }
