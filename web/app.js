@@ -28,13 +28,40 @@
   class ApiError extends Error {
     constructor(status, message) { super(message); this.status = status; }
   }
+  // Databasen pauser etter en time uten bruk og bruker opptil ett minutt på å våkne.
+  // Tar et kall mer enn et øyeblikk, sier vi fra i stedet for at ingenting skjer.
+  let slowCalls = 0;
+  function setWaiting(on) {
+    slowCalls += on ? 1 : -1;
+    let el = document.getElementById("waiting");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "waiting";
+      el.className = "waiting";
+      el.setAttribute("role", "status");
+      el.innerHTML = `<span class="spinner" aria-hidden="true"></span><span>Et øyeblikk … Databasen våkner etter en pause, det kan ta opptil ett minutt.</span>`;
+      document.body.append(el);
+    }
+    el.hidden = slowCalls <= 0;
+  }
+
   async function api(method, url, body) {
-    const res = await fetch(url, {
-      method,
-      headers: body !== undefined ? { "content-type": "application/json" } : {},
-      body: body !== undefined ? JSON.stringify(body) : undefined,
-      credentials: "same-origin",
-    });
+    let shown = false;
+    const slow = setTimeout(() => { shown = true; setWaiting(true); }, 1500);
+    let res;
+    try {
+      res = await fetch(url, {
+        method,
+        headers: body !== undefined ? { "content-type": "application/json" } : {},
+        body: body !== undefined ? JSON.stringify(body) : undefined,
+        credentials: "same-origin",
+      });
+    } catch {
+      throw new ApiError(0, "Fikk ikke kontakt med serveren. Sjekk nettet og prøv igjen.");
+    } finally {
+      clearTimeout(slow);
+      if (shown) setWaiting(false);
+    }
     const data = res.headers.get("content-type")?.includes("json") ? await res.json() : null;
     if (!res.ok) {
       if (res.status === 401 && session) { session = null; renderJoin(); }
@@ -116,26 +143,27 @@
         </form>
       </div>`;
 
-    document.getElementById("join-form").addEventListener("submit", async (e) => {
+    // Knappen låses under innsending, så et nytt trykk mens man venter ikke lager to grupper
+    const onSubmit = (id, send) => document.getElementById(id).addEventListener("submit", async (e) => {
       e.preventDefault();
-      const f = new FormData(e.target);
+      const button = e.target.querySelector("button[type=submit]");
+      if (button.disabled) return;
+      const label = button.textContent;
+      button.disabled = true;
+      button.textContent = "Vent litt …";
       try {
-        session = await api("POST", "/api/session", { code: f.get("code"), name: f.get("name") });
+        session = await send(new FormData(e.target));
         local.set("lastCode", session.group.code);
         local.set("lastName", session.player.name);
-        await enter();
-      } catch (err) { showError(err); }
+        await enter(id === "create-form");
+      } catch (err) {
+        showError(err);
+        button.disabled = false;
+        button.textContent = label;
+      }
     });
-    document.getElementById("create-form").addEventListener("submit", async (e) => {
-      e.preventDefault();
-      const f = new FormData(e.target);
-      try {
-        session = await api("POST", "/api/groups", { groupName: f.get("groupName"), playerName: f.get("playerName") });
-        local.set("lastCode", session.group.code);
-        local.set("lastName", session.player.name);
-        await enter(true);
-      } catch (err) { showError(err); }
-    });
+    onSubmit("join-form", (f) => api("POST", "/api/session", { code: f.get("code"), name: f.get("name") }));
+    onSubmit("create-form", (f) => api("POST", "/api/groups", { groupName: f.get("groupName"), playerName: f.get("playerName") }));
   }
 
   async function enter(newGroup = false) {
@@ -636,6 +664,8 @@
   (async () => {
     // Lenke med kode (?kode=XXXXXX) fyller inn gruppekoden
     const codeFromUrl = new URLSearchParams(location.search).get("kode") || "";
+    // Vekk databasen med en gang, mens brukeren skriver navn og kode
+    fetch("/api/health?deep").catch(() => {});
     try {
       session = await api("GET", "/api/session");
       await enter();
