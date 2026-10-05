@@ -74,26 +74,30 @@ pip install pymupdf pillow
 python tools/kenguru_extract.py <mappe-med-pdf-er>
 ```
 
-## Deploy (Azure Container Apps + Azure SQL, Norway East)
+## Deploy (Azure)
 
-Appen kjører på Azure Container Apps, og databasen er en gratis Azure SQL-database
-(serverless «free offer»). Infrastrukturen er i `infra/` (Bicep).
+Appen kjører på Azure Container Apps i Norway East. Databasen er en gratis Azure SQL-database
+(serverless «free offer») på den eksisterende SQL-serveren `c14p6tdr1x` i North Europe – sandkasse-
+abonnementet får ikke opprette nye SQL-servere i Norway East. Infrastrukturen er i `infra/` (Bicep).
 
 - Container Apps skalerer til null når ingen bruker siden. Første besøk etter en pause tar noen sekunder.
 - Databasen pauser etter én time uten bruk og bruker opptil ca. ett minutt på å våkne; appen venter og prøver igjen.
 - Gratiskvoten er 100 000 vCore-sekunder og 32 GB per måned. Brukes den opp, pauses databasen ut
   måneden i stedet for å koste penger (`freeLimitExhaustionBehavior: AutoPause` i `infra/sql.bicep`).
+- Appen logger inn som databasebrukeren `mattekamp_app`, som bare har tilgang til `mattekamp`-databasen.
 - Containerregisteret (Basic) koster ca. 50 kr/mnd; resten er gratis ved lav bruk.
 
-Sørg for at `content/kenguru/` finnes lokalt (se over), logg inn med `az login`, og kjør:
+Sørg for at `content/kenguru/` finnes lokalt (se over), logg inn med `az login` (som medlem av
+serverens Entra-admin-gruppe), og kjør:
 
 ```bash
 bash infra/deploy.sh
 ```
 
 Skriptet bruker abonnementet «Hallsteins sandbox» (overstyr med `SUBSCRIPTION=...`), lager
-ressursgruppen `rg-mattekamp`, genererer et SQL-passord i `.env.deploy` første gang (ignoreres av
-git – ta vare på filen), bygger imaget i Azure Container Registry og deployer en ny versjon.
+ressursgruppen `rg-mattekamp` og databasen, genererer passordet til `mattekamp_app` i `.env.deploy`
+første gang (ignoreres av git – ta vare på filen), åpner brannmuren for din IP mens databasebrukeren
+opprettes, bygger imaget i Azure Container Registry og deployer en ny versjon.
 Kjør det på nytt for å deploye endringer.
 
 ## Miljøvariabler

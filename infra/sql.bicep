@@ -1,25 +1,15 @@
-// Azure SQL med gratistilbudet (serverless, 100 000 vCore-sekunder og 32 GB per måned).
-// Brukes kvoten opp, pauses databasen ut måneden i stedet for å fakturere.
+// Gratis Azure SQL-database (serverless «free offer») på en eksisterende SQL-server.
+// Deployes i serverens ressursgruppe. Gratiskvoten er 100 000 vCore-sekunder og 32 GB per måned;
+// brukes den opp, pauses databasen ut måneden i stedet for å fakturere.
 
-param name string
+param serverName string
+
+@description('Må være samme region som serveren')
 param location string
+param databaseName string = 'mattekamp'
 
-@secure()
-param adminPassword string
-
-var adminLogin = 'mattekampadmin'
-var databaseName = 'mattekamp'
-
-resource server 'Microsoft.Sql/servers@2023-08-01-preview' = {
-  name: '${name}-sql-${uniqueString(resourceGroup().id)}'
-  location: location
-  properties: {
-    administratorLogin: adminLogin
-    administratorLoginPassword: adminPassword
-    minimalTlsVersion: '1.2'
-    publicNetworkAccess: 'Enabled'
-    version: '12.0'
-  }
+resource server 'Microsoft.Sql/servers@2023-08-01-preview' existing = {
+  name: serverName
 }
 
 resource database 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
@@ -43,16 +33,5 @@ resource database 'Microsoft.Sql/servers/databases@2023-08-01-preview' = {
   }
 }
 
-// 0.0.0.0–0.0.0.0 betyr «tillat tjenester i Azure» (Container Apps har ikke faste utgående IP-er)
-resource allowAzure 'Microsoft.Sql/servers/firewallRules@2023-08-01-preview' = {
-  parent: server
-  name: 'AllowAllWindowsAzureIps'
-  properties: {
-    startIpAddress: '0.0.0.0'
-    endIpAddress: '0.0.0.0'
-  }
-}
-
 output host string = server.properties.fullyQualifiedDomainName
-output adminLogin string = adminLogin
-output databaseName string = databaseName
+output databaseName string = database.name
