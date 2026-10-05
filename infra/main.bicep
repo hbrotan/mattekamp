@@ -1,4 +1,4 @@
-// Mattekamp på Azure Container Apps. Databasen er ekstern (Neon) og kommer inn som secret.
+// Mattekamp på Azure Container Apps med gratis Azure SQL (serverless free offer).
 // Kjøres via infra/deploy.sh: først uten app (for å få registeret), så med app og image-tag.
 
 @description('Navneprefiks for ressursene')
@@ -13,8 +13,8 @@ param deployApp bool = false
 param imageTag string = ''
 
 @secure()
-@description('Postgres-tilkobling (direkte, ikke via transaction-pooler)')
-param databaseUrl string = ''
+@description('Admin-passord for SQL-serveren (genereres av deploy.sh og lagres i .env.deploy)')
+param sqlAdminPassword string
 
 var suffix = uniqueString(resourceGroup().id)
 var acrPullRoleId = '7f951dda-4ed3-4680-a7ca-43fe172d538d'
@@ -65,6 +65,17 @@ resource env 'Microsoft.App/managedEnvironments@2024-03-01' = {
     }
   }
 }
+
+module sql 'sql.bicep' = {
+  name: 'sql'
+  params: {
+    name: name
+    location: location
+    adminPassword: sqlAdminPassword
+  }
+}
+
+var databaseUrl = 'Server=tcp:${sql.outputs.host},1433;Database=${sql.outputs.databaseName};User Id=${sql.outputs.adminLogin};Password=${sqlAdminPassword};Encrypt=true;TrustServerCertificate=false'
 
 resource app 'Microsoft.App/containerApps@2024-03-01' = if (deployApp) {
   name: name

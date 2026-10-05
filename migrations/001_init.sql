@@ -1,62 +1,64 @@
 -- Grupper (klasse, familie ...) med en kode man deler for å bli med
 create table groups (
-  id          uuid primary key default gen_random_uuid(),
-  name        text not null,
-  code        text not null unique,
-  created_at  timestamptz not null default now()
+  id          uniqueidentifier not null primary key default newid(),
+  name        nvarchar(40) not null,
+  code        varchar(8) not null unique,
+  created_at  datetime2 not null default sysutcdatetime()
 );
 
+-- Navn er unike per gruppe uten hensyn til store/små bokstaver (CI-kollasjon)
 create table players (
-  id          uuid primary key default gen_random_uuid(),
-  group_id    uuid not null references groups(id) on delete cascade,
-  name        text not null,
-  created_at  timestamptz not null default now()
+  id          uniqueidentifier not null primary key default newid(),
+  group_id    uniqueidentifier not null references groups(id) on delete cascade,
+  name        nvarchar(30) collate Latin1_General_100_CI_AS not null,
+  created_at  datetime2 not null default sysutcdatetime(),
+  constraint players_group_name unique (group_id, name)
 );
-create unique index players_group_name on players (group_id, lower(name));
 
 -- Innloggingsøkter; vi lagrer bare SHA-256 av token-en
 create table sessions (
-  token_hash    text primary key,
-  player_id     uuid not null references players(id) on delete cascade,
-  created_at    timestamptz not null default now(),
-  last_seen_at  timestamptz not null default now()
+  token_hash    char(64) not null primary key,
+  player_id     uniqueidentifier not null references players(id) on delete cascade,
+  created_at    datetime2 not null default sysutcdatetime(),
+  last_seen_at  datetime2 not null default sysutcdatetime()
 );
 create index sessions_player on sessions (player_id);
 
 -- Oppgavesett fra en kilde (kenguru, senere andre)
 create table task_sets (
-  id          text primary key,
-  source      text not null,
-  title       text not null,
-  level       text not null,
-  level_name  text not null,
-  grades      text not null default '',
-  year        int,
+  id          varchar(100) not null primary key,
+  source      varchar(50) not null,
+  title       nvarchar(100) not null,
+  level       varchar(50) not null,
+  level_name  nvarchar(100) not null,
+  grades      nvarchar(100) not null default '',
+  year        int null,
   sort_key    int not null default 0,
-  active      boolean not null default true
+  active      bit not null default 1
 );
 
--- kind: 'choice' (A–E) nå; 'number', 'text' o.l. kan komme senere
+-- kind: 'choice' (A–E) nå; 'number', 'text' o.l. kan komme senere.
+-- prompt/options/solution er JSON.
 create table tasks (
-  id        text primary key,
-  set_id    text not null references task_sets(id) on delete cascade,
+  id        varchar(120) not null primary key,
+  set_id    varchar(100) not null references task_sets(id) on delete cascade,
   n         int not null,
-  kind      text not null default 'choice',
+  kind      varchar(20) not null default 'choice',
   points    int not null,
-  prompt    jsonb not null,
-  options   jsonb,
-  answer    text not null,
-  solution  jsonb,
-  unique (set_id, n)
+  prompt    nvarchar(max) not null,
+  options   nvarchar(max) null,
+  answer    nvarchar(50) not null,
+  solution  nvarchar(max) null,
+  constraint tasks_set_n unique (set_id, n)
 );
 
 create table attempts (
-  id               uuid primary key default gen_random_uuid(),
-  player_id        uuid not null references players(id) on delete cascade,
-  set_id           text not null references task_sets(id),
-  mode             text not null check (mode in ('practice', 'contest')),
-  started_at       timestamptz not null default now(),
-  finished_at      timestamptz,
+  id               uniqueidentifier not null primary key default newid(),
+  player_id        uniqueidentifier not null references players(id) on delete cascade,
+  set_id           varchar(100) not null references task_sets(id),
+  mode             varchar(10) not null check (mode in ('practice', 'contest')),
+  started_at       datetime2 not null default sysutcdatetime(),
+  finished_at      datetime2 null,
   elapsed_seconds  int not null default 0,
   points           int not null default 0,
   max_points       int not null,
@@ -67,11 +69,18 @@ create index attempts_player on attempts (player_id, finished_at);
 create index attempts_set_finished on attempts (set_id) where finished_at is not null;
 
 create table attempt_answers (
-  attempt_id   uuid not null references attempts(id) on delete cascade,
-  task_id      text not null references tasks(id),
-  answer       text not null,
-  is_correct   boolean not null,
+  attempt_id   uniqueidentifier not null references attempts(id) on delete cascade,
+  task_id      varchar(120) not null references tasks(id),
+  answer       nvarchar(50) not null,
+  is_correct   bit not null,
   points       int not null,
-  answered_at  timestamptz not null default now(),
+  answered_at  datetime2 not null default sysutcdatetime(),
   primary key (attempt_id, task_id)
+);
+
+-- Hash av sist innlastede content/<kilde>/sets.json, så oppstart kan hoppe over uendret innhold
+create table content_versions (
+  source     varchar(50) not null primary key,
+  hash       char(64) not null,
+  loaded_at  datetime2 not null default sysutcdatetime()
 );

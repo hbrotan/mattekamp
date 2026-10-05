@@ -9,20 +9,19 @@ jobs:
   test:
     runs-on: ubuntu-latest
     services:
-      postgres:
-        image: postgres:17-alpine
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
         env:
-          POSTGRES_USER: mattekamp
-          POSTGRES_PASSWORD: mattekamp
-          POSTGRES_DB: mattekamp
-        ports: ["5432:5432"]
+          ACCEPT_EULA: "Y"
+          MSSQL_SA_PASSWORD: "Mattekamp!Ci12345"
+        ports: ["1433:1433"]
         options: >-
-          --health-cmd "pg_isready -U mattekamp"
-          --health-interval 2s
-          --health-timeout 3s
-          --health-retries 20
+          --health-cmd "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'Mattekamp!Ci12345' -Q 'select 1' -b -o /dev/null"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 30
     env:
-      TEST_ADMIN_DATABASE_URL: postgres://mattekamp:mattekamp@localhost:5432/mattekamp
+      TEST_DATABASE_SERVER: "Server=localhost,1433;User Id=sa;Password=Mattekamp!Ci12345;Encrypt=true;TrustServerCertificate=true"
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4

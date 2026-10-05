@@ -2,7 +2,7 @@ import { createHash } from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
-import type { Sql } from "./db.js";
+import type { Db } from "./db.js";
 
 /**
  * Innholdsfiler: content/<kilde>/sets.json. Hver kilde (kenguru, senere andre)
@@ -35,7 +35,7 @@ const SourceFile = z.object({
 const DEFAULT_OPTIONS = ["A", "B", "C", "D", "E"];
 
 /** Leser alle content/<kilde>/sets.json og oppdaterer task_sets/tasks. */
-export async function seedContent(sql: Sql, contentDir: string): Promise<{ sets: number; tasks: number; skipped: number }> {
+export async function seedContent(db: Db, contentDir: string): Promise<{ sets: number; tasks: number; skipped: number }> {
   let sets = 0, tasks = 0, skipped = 0;
   const entries = await fs.readdir(contentDir, { withFileTypes: true });
   for (const dir of entries.filter((e) => e.isDirectory())) {
@@ -46,7 +46,7 @@ export async function seedContent(sql: Sql, contentDir: string): Promise<{ sets:
     const hash = createHash("sha256").update(raw).digest("hex");
 
     // Uendret innhold lastes ikke på nytt – gjør kald oppstart rask
-    const [current] = await sql<{ hash: string }[]>`select hash from content_versions where source = ${data.source}`;
+    const [current] = await db.query<{ hash: string }>`select hash from content_versions where source = ${data.source}`;
     if (current?.hash === hash) { skipped++; continue; }
 
     const setRows = data.sets.map((s, index) => ({
@@ -65,29 +65,41 @@ export async function seedContent(sql: Sql, contentDir: string): Promise<{ sets:
       n: t.n,
       kind: t.kind,
       points: t.points,
-      // sql.json: ellers blir JS-lister sendt som Postgres-arrayer, ikke jsonb
-      prompt: sql.json({ images: t.img }),
-      options: sql.json(t.options ?? DEFAULT_OPTIONS),
+      prompt: JSON.stringify({ images: t.img }),
+      options: JSON.stringify(t.options ?? DEFAULT_OPTIONS),
       answer: t.answer,
-      solution: sql.json({ images: t.sol }),
+      solution: JSON.stringify({ images: t.sol }),
     })));
 
-    await sql.begin(async (tx) => {
-      await tx`
-        insert into task_sets ${tx(setRows)}
-        on conflict (id) do update set
-          title = excluded.title, level = excluded.level, level_name = excluded.level_name,
-          grades = excluded.grades, year = excluded.year, sort_key = excluded.sort_key, active = true`;
-      for (let i = 0; i < taskRows.length; i += 500) {
-        await tx`
-          insert into tasks ${tx(taskRows.slice(i, i + 500))}
-          on conflict (id) do update set
-            kind = excluded.kind, points = excluded.points, prompt = excluded.prompt,
-            options = excluded.options, answer = excluded.answer, solution = excluded.solution`;
-      }
-      await tx`
-        insert into content_versions (source, hash) values (${data.source}, ${hash})
-        on conflict (source) do update set hash = excluded.hash, loaded_at = now()`;
+    // Hele kilden sendes som ett JSON-parameter og flettes inn med MERGE (én rundtur)
+    await db.tx(async (q) => {
+      await q`
+        merge task_sets as t
+        using (select * from openjson(${JSON.stringify(setRows)}) with (
+          id varchar(100), source varchar(50), title nvarchar(100), level varchar(50),
+          level_name nvarchar(100), grades nvarchar(100), year int, sort_key int)) as s
+        on t.id = s.id
+        when matched then update set
+          title = s.title, level = s.level, level_name = s.level_name, grades = s.grades,
+          year = s.year, sort_key = s.sort_key, active = 1
+        when not matched then insert (id, source, title, level, level_name, grades, year, sort_key)
+          values (s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key);`;
+      await q`
+        merge tasks as t
+        using (select * from openjson(${JSON.stringify(taskRows)}) with (
+          id varchar(120), set_id varchar(100), n int, kind varchar(20), points int,
+          prompt nvarchar(max), options nvarchar(max), answer nvarchar(50), solution nvarchar(max))) as s
+        on t.id = s.id
+        when matched then update set
+          kind = s.kind, points = s.points, prompt = s.prompt, options = s.options,
+          answer = s.answer, solution = s.solution
+        when not matched then insert (id, set_id, n, kind, points, prompt, options, answer, solution)
+          values (s.id, s.set_id, s.n, s.kind, s.points, s.prompt, s.options, s.answer, s.solution);`;
+      await q`
+        merge content_versions as t
+        using (select ${data.source} as source, ${hash} as hash) as s on t.source = s.source
+        when matched then update set hash = s.hash, loaded_at = sysutcdatetime()
+        when not matched then insert (source, hash) values (s.source, s.hash);`;
     });
     sets += setRows.length;
     tasks += taskRows.length;

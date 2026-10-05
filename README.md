@@ -10,11 +10,12 @@ ikke til nettleseren før oppgaven er besvart (øving) eller levert (konkurranse
 | Del | Hva |
 | --- | --- |
 | `src/` | API i TypeScript (Hono på Node 22) |
-| `migrations/` | Postgres-skjema (SQL-filer, kjøres automatisk ved oppstart) |
+| `migrations/` | Databaseskjema i T-SQL (kjøres automatisk ved oppstart; batcher skilles med `GO`) |
 | `content/<kilde>/` | Oppgaveinnhold: `sets.json` + bilder. Lastes inn i databasen ved oppstart |
 | `web/` | Frontend (ren HTML/CSS/JS, ingen byggesteg) |
 | `tools/` | Skript som lager innhold, f.eks. `kenguru_extract.py` |
-| `test/` | Integrasjonstester mot ekte Postgres |
+| `infra/` | Bicep og deployskript for Azure |
+| `test/` | Integrasjonstester mot ekte SQL Server |
 
 Databasen har `groups`, `players`, `sessions`, `task_sets`, `tasks`, `attempts` og
 `attempt_answers`. Oppgaver har en `kind` (nå bare `choice`), og rettingen ligger i
@@ -22,7 +23,7 @@ Databasen har `groups`, `players`, `sessions`, `task_sets`, `tasks`, `attempts` 
 
 ## Kjøre lokalt
 
-Krever Node 22+ og Docker.
+Krever Node 22+ og Docker. Databasen er SQL Server 2022 i Docker (samme motor som Azure SQL).
 
 ```bash
 npm install
@@ -46,7 +47,7 @@ npm run db:up
 npm test
 ```
 
-Testene lager og bruker en egen database, `mattekamp_test`.
+Testene bruker en egen database, `mattekamp_test`, og tømmer den før hver kjøring.
 
 ## Legge til nye oppgaver
 
@@ -73,26 +74,33 @@ pip install pymupdf pillow
 python tools/kenguru_extract.py <mappe-med-pdf-er>
 ```
 
-## Deploy (Azure Container Apps + Neon)
+## Deploy (Azure Container Apps + Azure SQL, Norway East)
 
-Appen kjører på Azure Container Apps (skalerer til null når ingen bruker den), og databasen er
-Postgres hos [Neon](https://neon.tech) (Frankfurt). Infrastrukturen er i `infra/main.bicep`.
+Appen kjører på Azure Container Apps, og databasen er en gratis Azure SQL-database
+(serverless «free offer»). Infrastrukturen er i `infra/` (Bicep).
 
-1. Lag et Neon-prosjekt og kopier tilkoblingsadressen **uten** connection pooling.
-2. Legg den i `.env.deploy` (ignoreres av git): `DATABASE_URL=postgresql://...`
-3. Sørg for at `content/kenguru/` finnes lokalt (se over), logg inn med `az login`, og kjør:
+- Container Apps skalerer til null når ingen bruker siden. Første besøk etter en pause tar noen sekunder.
+- Databasen pauser etter én time uten bruk og bruker opptil ca. ett minutt på å våkne; appen venter og prøver igjen.
+- Gratiskvoten er 100 000 vCore-sekunder og 32 GB per måned. Brukes den opp, pauses databasen ut
+  måneden i stedet for å koste penger (`freeLimitExhaustionBehavior: AutoPause` i `infra/sql.bicep`).
+- Containerregisteret (Basic) koster ca. 50 kr/mnd; resten er gratis ved lav bruk.
+
+Sørg for at `content/kenguru/` finnes lokalt (se over), logg inn med `az login`, og kjør:
 
 ```bash
 bash infra/deploy.sh
 ```
 
-Skriptet lager ressursgruppen `rg-mattekamp`, bygger imaget i Azure Container Registry (med
-innholdet fra din maskin) og deployer en ny versjon. Kjør det på nytt for å deploye endringer.
+Skriptet bruker abonnementet «Hallsteins sandbox» (overstyr med `SUBSCRIPTION=...`), lager
+ressursgruppen `rg-mattekamp`, genererer et SQL-passord i `.env.deploy` første gang (ignoreres av
+git – ta vare på filen), bygger imaget i Azure Container Registry og deployer en ny versjon.
+Kjør det på nytt for å deploye endringer.
 
 ## Miljøvariabler
 
 | Variabel | Standard | |
 | --- | --- | --- |
-| `DATABASE_URL` | – | Postgres-tilkobling (påkrevd) |
+| `DATABASE_URL` | – | SQL Server-tilkoblingsstreng (påkrevd), f.eks. `Server=...;Database=...;User Id=...;Password=...;Encrypt=true` |
+| `DB_AUTO_CREATE` | `false` | Lag databasen hvis den mangler (lokalt) |
 | `PORT` | `3000` | |
 | `SECURE_COOKIES` | `true` i produksjon | Sett `false` lokalt uten HTTPS |

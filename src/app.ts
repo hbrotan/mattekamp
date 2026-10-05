@@ -1,12 +1,12 @@
 import { serveStatic } from "@hono/node-server/serve-static";
 import { getConnInfo } from "@hono/node-server/conninfo";
-import { Hono, type Context } from "hono";
+import { Hono, type Context, type MiddlewareHandler } from "hono";
 import { HTTPException } from "hono/http-exception";
 import { secureHeaders } from "hono/secure-headers";
 import { z } from "zod";
 import { endSession, newGroupCode, rateLimit, requireAuth, startSession, type AppEnv, type Player } from "./auth.js";
 import type { Config } from "./config.js";
-import type { Sql } from "./db.js";
+import { raw, type Db } from "./db.js";
 import { isCorrect, normalizeAnswer } from "./grading.js";
 
 z.config(z.locales.no());
@@ -28,16 +28,20 @@ async function body<T extends z.ZodType>(c: Context, schema: T): Promise<z.infer
 }
 
 const notFound = (what = "Fant ikke det du lette etter") => new HTTPException(404, { message: what });
+const conflict = (what: string) => new HTTPException(409, { message: what });
+
+// SQL Server gir uniqueidentifier med store bokstaver; vi bruker små utad
+const id = (v: string) => v.toLowerCase();
 
 interface TaskRow {
   id: string;
   n: number;
   kind: string;
   points: number;
-  prompt: { images: string[] };
-  options: string[] | null;
+  prompt: string;
+  options: string | null;
   answer: string;
-  solution: { images: string[] } | null;
+  solution: string | null;
 }
 
 interface AttemptRow {
@@ -57,9 +61,21 @@ interface AttemptRow {
 
 const assetUrl = (p: string) => `/assets/${p}`;
 
-export function createApp(sql: Sql, config: Config) {
+// Beste forsøk per spiller: flest poeng, så kortest tid, så først levert
+const BEST_ORDER = "a.points desc, a.elapsed_seconds asc, a.finished_at asc";
+
+/**
+ * @param ready løses når databasen er tilkoblet, migrert og har innhold. Serveren kan
+ *   dermed starte og svare på helsesjekk før en pauset gratisdatabase har våknet.
+ */
+export function createApp(ready: Promise<Db>, config: Config) {
   const app = new Hono<AppEnv>();
-  const auth = requireAuth(sql);
+  let db!: Db;
+  const whenReady = ready.then((d) => { db = d; });
+  whenReady.catch(() => {});
+  const waitForDb: MiddlewareHandler = async (_c, next) => { await whenReady; await next(); };
+  const auth = requireAuth(() => db);
+
   const clientIp = (c: Context) => {
     const forwarded = c.req.header("x-forwarded-for")?.split(",")[0]?.trim();
     if (forwarded) return forwarded;
@@ -75,30 +91,39 @@ export function createApp(sql: Sql, config: Config) {
     return c.json({ error: "Noe gikk galt på serveren" }, 500);
   });
 
-  // ---------- Helse ----------
+  // ---------- Helse (uten database, så containeren regnes som oppe mens databasen våkner) ----------
   app.get("/api/health", async (c) => {
-    await sql`select 1`;
+    if (c.req.query("deep") !== undefined) {
+      await whenReady;
+      await db.query`select 1 as ok`;
+    }
     return c.json({ ok: true });
   });
 
+  app.use("/api/*", waitForDb);
+  app.use("/assets/*", waitForDb);
+
   // ---------- Grupper og innlogging ----------
-  const sessionView = (p: Player) => ({ player: { id: p.id, name: p.name }, group: { name: p.groupName, code: p.groupCode } });
+  const sessionView = (p: Player) => ({ player: { id: id(p.id), name: p.name }, group: { name: p.groupName, code: p.groupCode } });
 
   app.post("/api/groups", loginLimit, async (c) => {
     const input = await body(c, z.object({ groupName: GroupName, playerName: Name }));
-    const created = await sql.begin(async (tx) => {
+    const created = await db.tx(async (q) => {
       let group: { id: string; code: string } | undefined;
       for (let i = 0; i < 5 && !group; i++) {
-        [group] = await tx<{ id: string; code: string }[]>`
-          insert into groups (name, code) values (${input.groupName}, ${newGroupCode()})
-          on conflict (code) do nothing returning id, code`;
+        const code = newGroupCode();
+        [group] = await q<{ id: string; code: string }>`
+          insert into groups (name, code)
+          output inserted.id, inserted.code
+          select ${input.groupName}, ${code}
+          where not exists (select 1 from groups with (updlock, holdlock) where code = ${code})`;
       }
       if (!group) throw new Error("Klarte ikke å lage unik gruppekode");
-      const [player] = await tx<{ id: string; name: string }[]>`
-        insert into players (group_id, name) values (${group.id}, ${input.playerName}) returning id, name`;
+      const [player] = await q<{ id: string; name: string }>`
+        insert into players (group_id, name) output inserted.id, inserted.name values (${group.id}, ${input.playerName})`;
       return { group, player: player! };
     });
-    await startSession(c, sql, created.player.id, config.secureCookies);
+    await startSession(c, db, created.player.id, config.secureCookies);
     return c.json(sessionView({
       id: created.player.id, name: created.player.name,
       groupId: created.group.id, groupName: input.groupName, groupCode: created.group.code,
@@ -107,61 +132,62 @@ export function createApp(sql: Sql, config: Config) {
 
   app.post("/api/session", loginLimit, async (c) => {
     const input = await body(c, z.object({ code: z.string().trim().toUpperCase(), name: Name }));
-    const [group] = await sql<{ id: string; name: string; code: string }[]>`
+    const [group] = await db.query<{ id: string; name: string; code: string }>`
       select id, name, code from groups where code = ${input.code}`;
     if (!group) throw notFound("Fant ingen gruppe med den koden");
     // Samme navn i samme gruppe = samme spiller (slik at man kan fortsette på en ny enhet)
-    const [player] = await sql<{ id: string; name: string }[]>`
-      insert into players (group_id, name) values (${group.id}, ${input.name})
-      on conflict (group_id, lower(name)) do update set name = players.name
-      returning id, name`;
-    await startSession(c, sql, player!.id, config.secureCookies);
+    const [player] = await db.tx((q) => q<{ id: string; name: string }>`
+      insert into players (group_id, name)
+      select ${group.id}, ${input.name}
+      where not exists (select 1 from players with (updlock, holdlock) where group_id = ${group.id} and name = ${input.name});
+      select id, name from players where group_id = ${group.id} and name = ${input.name};`);
+    await startSession(c, db, player!.id, config.secureCookies);
     return c.json(sessionView({ id: player!.id, name: player!.name, groupId: group.id, groupName: group.name, groupCode: group.code }));
   });
 
   app.get("/api/session", auth, (c) => c.json(sessionView(c.get("player"))));
 
   app.delete("/api/session", async (c) => {
-    await endSession(c, sql);
+    await endSession(c, db);
     return c.json({ ok: true });
   });
 
   app.get("/api/group/players", auth, async (c) => {
-    const rows = await sql<{ name: string }[]>`
-      select name from players where group_id = ${c.get("player").groupId} order by lower(name)`;
+    const rows = await db.query<{ name: string }>`
+      select name from players where group_id = ${c.get("player").groupId} order by name`;
     return c.json(rows.map((r) => r.name));
   });
 
   // ---------- Oppgavesett ----------
   app.get("/api/sets", auth, async (c) => {
     const me = c.get("player");
-    const rows = await sql`
+    const rows = await db.query`
       select s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year,
-             count(t.id)::int as task_count, sum(t.points)::int as max_points,
+             count(t.id) as task_count, sum(t.points) as max_points,
              (select max(a.points) from attempts a
-               where a.set_id = s.id and a.player_id = ${me.id} and a.finished_at is not null)::int as my_best
+               where a.set_id = s.id and a.player_id = ${me.id} and a.finished_at is not null) as my_best
       from task_sets s
       join tasks t on t.set_id = s.id
-      where s.active
-      group by s.id
-      order by s.source, s.year desc nulls last, s.sort_key`;
+      where s.active = 1
+      group by s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key
+      order by s.source, s.year desc, s.sort_key`;
     return c.json(rows);
   });
 
   // ---------- Forsøk ----------
-  async function loadAttempt(id: string, playerId: string): Promise<AttemptRow> {
-    if (!z.uuid().safeParse(id).success) throw notFound();
-    const [row] = await sql<AttemptRow[]>`
+  async function loadAttempt(attemptId: string, playerId: string): Promise<AttemptRow> {
+    if (!z.uuid().safeParse(attemptId).success) throw notFound();
+    const [row] = await db.query<AttemptRow>`
       select a.*, s.title from attempts a join task_sets s on s.id = a.set_id
-      where a.id = ${id} and a.player_id = ${playerId}`;
+      where a.id = ${attemptId} and a.player_id = ${playerId}`;
     if (!row) throw notFound();
     return row;
   }
 
   async function attemptView(a: AttemptRow) {
-    const tasks = await sql<TaskRow[]>`select * from tasks where set_id = ${a.setId} order by n`;
+    const tasks = await db.query<TaskRow>`select * from tasks where set_id = ${a.setId} order by n`;
     const answers = new Map(
-      (await sql<{ taskId: string; answer: string; isCorrect: boolean }[]>`
+      (await db.query<{ taskId: string; answer: string; isCorrect: boolean }>`
         select task_id, answer, is_correct from attempt_answers where attempt_id = ${a.id}`).map((r) => [r.taskId, r]),
     );
     const finished = a.finishedAt !== null;
@@ -173,7 +199,7 @@ export function createApp(sql: Sql, config: Config) {
       return taskView(t, mine, finished || (a.mode === "practice" && !!mine));
     });
     return {
-      id: a.id,
+      id: id(a.id),
       setId: a.setId,
       title: a.title,
       mode: a.mode,
@@ -191,17 +217,19 @@ export function createApp(sql: Sql, config: Config) {
   }
 
   function taskView(t: TaskRow, mine: { answer: string; isCorrect: boolean } | undefined, reveal: boolean) {
+    const prompt = JSON.parse(t.prompt) as { images: string[] };
+    const solution = t.solution ? (JSON.parse(t.solution) as { images: string[] }) : null;
     return {
       n: t.n,
       kind: t.kind,
       points: t.points,
-      options: t.options,
-      images: t.prompt.images.map(assetUrl),
+      options: t.options ? (JSON.parse(t.options) as string[]) : null,
+      images: prompt.images.map(assetUrl),
       answer: mine?.answer ?? null,
       ...(reveal ? {
         isCorrect: mine ? mine.isCorrect : false,
         correctAnswer: t.answer,
-        solution: (t.solution?.images ?? []).map(assetUrl),
+        solution: (solution?.images ?? []).map(assetUrl),
       } : {}),
     };
   }
@@ -213,36 +241,36 @@ export function createApp(sql: Sql, config: Config) {
 
   app.post("/api/attempts", auth, async (c) => {
     const me = c.get("player");
-    const input = await body(c, z.object({ setId: z.string(), mode: z.enum(["practice", "contest"]) }));
-    const [stats] = await sql<{ total: number; maxPoints: number }[]>`
-      select count(*)::int as total, coalesce(sum(points), 0)::int as max_points
-      from tasks t join task_sets s on s.id = t.set_id where s.id = ${input.setId} and s.active`;
+    const input = await body(c, z.object({ setId: z.string().max(100), mode: z.enum(["practice", "contest"]) }));
+    const [stats] = await db.query<{ total: number; maxPoints: number }>`
+      select count(*) as total, coalesce(sum(t.points), 0) as max_points
+      from tasks t join task_sets s on s.id = t.set_id where s.id = ${input.setId} and s.active = 1`;
     if (!stats?.total) throw notFound("Fant ikke oppgavesettet");
-    const [created] = await sql<{ id: string }[]>`
+    const [created] = await db.query<{ id: string }>`
       insert into attempts (player_id, set_id, mode, max_points, total)
-      values (${me.id}, ${input.setId}, ${input.mode}, ${stats.maxPoints}, ${stats.total}) returning id`;
+      output inserted.id
+      values (${me.id}, ${input.setId}, ${input.mode}, ${stats.maxPoints}, ${stats.total})`;
     return c.json(await attemptView(await loadAttempt(created!.id, me.id)), 201);
   });
 
   app.get("/api/attempts/active", auth, async (c) => {
-    const rows = await sql`
+    const rows = await db.query<{ id: string }>`
       select a.id, a.set_id, s.title, a.mode, a.started_at, a.total,
-             (select count(*)::int from attempt_answers x where x.attempt_id = a.id) as answered
+             (select count(*) from attempt_answers x where x.attempt_id = a.id) as answered
       from attempts a join task_sets s on s.id = a.set_id
       where a.player_id = ${c.get("player").id} and a.finished_at is null
       order by a.started_at desc`;
-    return c.json(rows);
+    return c.json(rows.map((r) => ({ ...r, id: id(r.id) })));
   });
 
   app.get("/api/attempts/history", auth, async (c) => {
-    const rows = await sql`
-      select a.id, a.set_id, s.title, a.mode, a.points, a.max_points, a.correct, a.total,
+    const rows = await db.query<{ id: string }>`
+      select top 200 a.id, a.set_id, s.title, a.mode, a.points, a.max_points, a.correct, a.total,
              a.elapsed_seconds, a.finished_at
       from attempts a join task_sets s on s.id = a.set_id
       where a.player_id = ${c.get("player").id} and a.finished_at is not null
-      order by a.finished_at desc
-      limit 200`;
-    return c.json(rows);
+      order by a.finished_at desc`;
+    return c.json(rows.map((r) => ({ ...r, id: id(r.id) })));
   });
 
   app.get("/api/attempts/:id", auth, async (c) => {
@@ -251,43 +279,51 @@ export function createApp(sql: Sql, config: Config) {
 
   app.delete("/api/attempts/:id", auth, async (c) => {
     const a = await loadAttempt(c.req.param("id"), c.get("player").id);
-    if (a.finishedAt) throw new HTTPException(409, { message: "Forsøket er allerede levert" });
-    await sql`delete from attempts where id = ${a.id}`;
+    if (a.finishedAt) throw conflict("Forsøket er allerede levert");
+    await db.query`delete from attempts where id = ${a.id}`;
     return c.json({ ok: true });
   });
 
   app.put("/api/attempts/:id/answers/:n", auth, async (c) => {
     const me = c.get("player");
     const a = await loadAttempt(c.req.param("id"), me.id);
-    if (a.finishedAt) throw new HTTPException(409, { message: "Forsøket er allerede levert" });
+    if (a.finishedAt) throw conflict("Forsøket er allerede levert");
     const n = Number(c.req.param("n"));
+    if (!Number.isInteger(n)) throw notFound("Fant ikke oppgaven");
     const input = await body(c, z.object({ answer: z.string().max(50).nullable(), elapsedSeconds: Elapsed }));
-    const [task] = await sql<TaskRow[]>`select * from tasks where set_id = ${a.setId} and n = ${n}`;
+    const [task] = await db.query<TaskRow>`select * from tasks where set_id = ${a.setId} and n = ${n}`;
     if (!task) throw notFound("Fant ikke oppgaven");
     const elapsed = clampElapsed(a, input.elapsedSeconds);
+    const gradable = { ...task, options: task.options ? (JSON.parse(task.options) as string[]) : null };
 
     if (input.answer === null) {
-      if (a.mode === "practice") throw new HTTPException(409, { message: "Svar i øvingsmodus kan ikke angres" });
-      await sql`delete from attempt_answers where attempt_id = ${a.id} and task_id = ${task.id}`;
+      if (a.mode === "practice") throw conflict("Svar i øvingsmodus kan ikke angres");
+      await db.query`delete from attempt_answers where attempt_id = ${a.id} and task_id = ${task.id}`;
     } else {
-      const answer = normalizeAnswer(task, input.answer);
+      const answer = normalizeAnswer(gradable, input.answer);
       if (answer === null) throw new HTTPException(400, { message: "Ugyldig svar" });
-      const ok = isCorrect(task, answer);
+      const ok = isCorrect(gradable, answer);
       if (a.mode === "practice") {
-        const inserted = await sql`
+        // Første svar teller og kan ikke endres
+        const [res] = await db.tx((q) => q<{ inserted: number }>`
           insert into attempt_answers (attempt_id, task_id, answer, is_correct, points)
-          values (${a.id}, ${task.id}, ${answer}, ${ok}, ${ok ? task.points : 0})
-          on conflict do nothing returning task_id`;
-        if (!inserted.length) throw new HTTPException(409, { message: "Oppgaven er allerede besvart" });
+          select ${a.id}, ${task.id}, ${answer}, ${ok}, ${ok ? task.points : 0}
+          where not exists (select 1 from attempt_answers with (updlock, holdlock)
+                            where attempt_id = ${a.id} and task_id = ${task.id});
+          select @@rowcount as inserted;`);
+        if (!res?.inserted) throw conflict("Oppgaven er allerede besvart");
       } else {
-        await sql`
-          insert into attempt_answers (attempt_id, task_id, answer, is_correct, points)
-          values (${a.id}, ${task.id}, ${answer}, ${ok}, ${ok ? task.points : 0})
-          on conflict (attempt_id, task_id) do update set
-            answer = excluded.answer, is_correct = excluded.is_correct, points = excluded.points, answered_at = now()`;
+        await db.query`
+          merge attempt_answers with (holdlock) as t
+          using (select ${a.id} as attempt_id, ${task.id} as task_id) as s
+            on t.attempt_id = s.attempt_id and t.task_id = s.task_id
+          when matched then update set
+            answer = ${answer}, is_correct = ${ok}, points = ${ok ? task.points : 0}, answered_at = sysutcdatetime()
+          when not matched then insert (attempt_id, task_id, answer, is_correct, points)
+            values (s.attempt_id, s.task_id, ${answer}, ${ok}, ${ok ? task.points : 0});`;
       }
     }
-    await sql`update attempts set elapsed_seconds = ${elapsed} where id = ${a.id}`;
+    await db.query`update attempts set elapsed_seconds = ${elapsed} where id = ${a.id}`;
     const view = await attemptView({ ...a, elapsedSeconds: elapsed });
     return c.json({
       task: view.tasks.find((t) => t.n === n),
@@ -300,28 +336,28 @@ export function createApp(sql: Sql, config: Config) {
   app.post("/api/attempts/:id/finish", auth, async (c) => {
     const me = c.get("player");
     const a = await loadAttempt(c.req.param("id"), me.id);
-    if (a.finishedAt) throw new HTTPException(409, { message: "Forsøket er allerede levert" });
+    if (a.finishedAt) throw conflict("Forsøket er allerede levert");
     const input = await body(c, z.object({ elapsedSeconds: Elapsed }));
     const elapsed = clampElapsed(a, input.elapsedSeconds);
-    const [done] = await sql<AttemptRow[]>`
+    const [done] = await db.query<AttemptRow>`
       update attempts set
-        finished_at = now(),
+        finished_at = sysutcdatetime(),
         elapsed_seconds = ${elapsed},
         points = coalesce((select sum(points) from attempt_answers where attempt_id = ${a.id}), 0),
-        correct = (select count(*) from attempt_answers where attempt_id = ${a.id} and is_correct)
-      where id = ${a.id} and finished_at is null
-      returning *`;
-    if (!done) throw new HTTPException(409, { message: "Forsøket er allerede levert" });
-    const [better] = await sql<{ count: number }[]>`
-      with best as (
-        select distinct on (x.player_id) x.player_id, x.points, x.elapsed_seconds
-        from attempts x join players p on p.id = x.player_id
-        where p.group_id = ${me.groupId} and x.set_id = ${a.setId} and x.finished_at is not null
-          and x.player_id <> ${me.id}
-        order by x.player_id, x.points desc, x.elapsed_seconds asc, x.finished_at asc
+        correct = (select count(*) from attempt_answers where attempt_id = ${a.id} and is_correct = 1)
+      output inserted.*
+      where id = ${a.id} and finished_at is null`;
+    if (!done) throw conflict("Forsøket er allerede levert");
+    const [better] = await db.query<{ count: number }>`
+      with ranked as (
+        select a.player_id, a.points, a.elapsed_seconds,
+               row_number() over (partition by a.player_id order by ${raw(BEST_ORDER)}) as rn
+        from attempts a join players p on p.id = a.player_id
+        where p.group_id = ${me.groupId} and a.set_id = ${a.setId} and a.finished_at is not null
+          and a.player_id <> ${me.id}
       )
-      select count(*)::int as count from best
-      where points > ${done.points} or (points = ${done.points} and elapsed_seconds < ${done.elapsedSeconds})`;
+      select count(*) as count from ranked
+      where rn = 1 and (points > ${done.points} or (points = ${done.points} and elapsed_seconds < ${done.elapsedSeconds}))`;
     const view = await attemptView({ ...done, title: a.title });
     return c.json({ ...view, rank: (better?.count ?? 0) + 1 });
   });
@@ -330,38 +366,41 @@ export function createApp(sql: Sql, config: Config) {
   app.get("/api/leaderboard", auth, async (c) => {
     const me = c.get("player");
     const setId = c.req.query("set");
-    const sets = await sql`
+    const sets = await db.query`
       select distinct s.id, s.title, s.level, s.year
       from attempts a join players p on p.id = a.player_id join task_sets s on s.id = a.set_id
       where p.group_id = ${me.groupId} and a.finished_at is not null
       order by s.level, s.year desc`;
 
     if (setId) {
-      const rows = await sql`
-        select * from (
-          select distinct on (a.player_id) a.player_id, p.name, a.mode, a.points, a.max_points, a.correct,
-                 a.total, a.elapsed_seconds, a.finished_at
+      const rows = await db.query<{ playerId: string }>`
+        with ranked as (
+          select a.player_id, p.name, a.mode, a.points, a.max_points, a.correct, a.total,
+                 a.elapsed_seconds, a.finished_at,
+                 row_number() over (partition by a.player_id order by ${raw(BEST_ORDER)}) as rn
           from attempts a join players p on p.id = a.player_id
           where p.group_id = ${me.groupId} and a.set_id = ${setId} and a.finished_at is not null
-          order by a.player_id, a.points desc, a.elapsed_seconds asc, a.finished_at asc
-        ) best
+        )
+        select player_id, name, mode, points, max_points, correct, total, elapsed_seconds, finished_at
+        from ranked where rn = 1
         order by points desc, elapsed_seconds asc, finished_at asc`;
-      return c.json({ sets, setId, rows });
+      return c.json({ sets, setId, rows: rows.map((r) => ({ ...r, playerId: id(r.playerId) })) });
     }
 
-    const rows = await sql`
-      with best as (
-        select distinct on (a.player_id, a.set_id) a.player_id, a.set_id, a.points, a.correct, a.total
+    const rows = await db.query<{ playerId: string }>`
+      with ranked as (
+        select a.player_id, a.set_id, a.points, a.correct, a.total,
+               row_number() over (partition by a.player_id, a.set_id order by ${raw(BEST_ORDER)}) as rn
         from attempts a join players p on p.id = a.player_id
         where p.group_id = ${me.groupId} and a.finished_at is not null
-        order by a.player_id, a.set_id, a.points desc, a.elapsed_seconds asc
       )
-      select b.player_id, p.name, sum(b.points)::int as points, count(*)::int as sets,
-             sum(b.correct)::int as correct, sum(b.total)::int as tasks
-      from best b join players p on p.id = b.player_id
-      group by b.player_id, p.name
+      select r.player_id, p.name, sum(r.points) as points, count(*) as sets,
+             sum(r.correct) as correct, sum(r.total) as tasks
+      from ranked r join players p on p.id = r.player_id
+      where r.rn = 1
+      group by r.player_id, p.name
       order by points desc, sets desc, p.name`;
-    return c.json({ sets, setId: null, rows });
+    return c.json({ sets, setId: null, rows: rows.map((r) => ({ ...r, playerId: id(r.playerId) })) });
   });
 
   app.all("/api/*", () => { throw notFound("Ukjent API-adresse"); });
