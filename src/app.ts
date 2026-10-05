@@ -220,6 +220,7 @@ export function createApp(ready: Promise<Db>, config: Config) {
   function taskView(t: TaskRow, mine: { answer: string; isCorrect: boolean } | undefined, reveal: boolean) {
     const prompt = JSON.parse(t.prompt) as {
       images?: string[]; text?: string; choices?: Record<string, string>; video?: { youtubeId: string; title: string };
+      table?: { headers: string[]; rows: string[][]; chart?: "bar"; showTable?: boolean }; unit?: string;
     };
     const solution = t.solution ? (JSON.parse(t.solution) as { images?: string[]; text?: string }) : null;
     return {
@@ -231,6 +232,8 @@ export function createApp(ready: Promise<Db>, config: Config) {
       text: prompt.text ?? null,
       choices: prompt.choices ?? null,
       video: prompt.video ?? null,
+      table: prompt.table ?? null,
+      unit: prompt.unit ?? null,
       answer: mine?.answer ?? null,
       ...(reveal ? {
         isCorrect: mine ? mine.isCorrect : false,
@@ -326,7 +329,9 @@ export function createApp(ready: Promise<Db>, config: Config) {
       await db.query`delete from attempt_answers where attempt_id = ${a.id} and task_id = ${task.id}`;
     } else {
       const answer = normalizeAnswer(gradable, input.answer);
-      if (answer === null) throw new HTTPException(400, { message: "Ugyldig svar" });
+      if (answer === null) {
+        throw new HTTPException(400, { message: task.kind === "number" ? "Skriv svaret som ett tall, for eksempel 12 eller 3,5" : "Ugyldig svar" });
+      }
       const ok = isCorrect(gradable, answer);
       if (a.mode === "practice") {
         // Første svar teller og kan ikke endres

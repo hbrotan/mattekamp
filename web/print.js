@@ -21,15 +21,25 @@
     if (img.tagName === "IMG" && img.dataset.scale) img.style.width = Math.round(img.naturalWidth * Number(img.dataset.scale)) + "px";
   }, true);
 
+  const withUnit = (v, t) => `${v}${t.unit ? ` ${t.unit}` : ""}`;
+  const tableHtml = (table) => !table ? "" : table.chart === "bar" && !table.showTable ? `<div class="chart">${window.barChartSvg(table)}</div>`
+    : `${table.chart === "bar" ? `<div class="chart">${window.barChartSvg(table)}</div>` : ""}<table class="data-table">
+    <thead><tr>${table.headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+    <tbody>${table.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+
   function taskHtml(t) {
     const head = `<div class="task-head"><strong>Oppgave ${t.n}</strong><span class="points">${t.points} poeng</span></div>`;
     if (t.text) {
       const video = t.video
         ? `<p class="video-ref">Video: ${esc(t.video.title)} · <span class="url">youtu.be/${esc(t.video.youtubeId)}</span></p>`
         : "";
+      const answer = t.options
+        ? `<ol class="choices">${t.options.map((L) => `<li><span class="key">${esc(L)}</span>${esc(t.choices?.[L] ?? "")}</li>`).join("")}</ol>`
+        : `<p class="answer-line">Svar: <span class="blank answer-blank"></span>${t.unit ? ` ${esc(t.unit)}` : ""}</p>`;
       return `<section class="task">${head}
         <p class="question">${esc(t.text)}</p>
-        <ol class="choices">${t.options.map((L) => `<li><span class="key">${esc(L)}</span>${esc(t.choices?.[L] ?? "")}</li>`).join("")}</ol>
+        ${tableHtml(t.table)}
+        ${answer}
         ${video}
       </section>`;
     }
@@ -40,11 +50,11 @@
   }
 
   function fasitHtml(set, withSolutions) {
-    const rows = set.tasks.map((t) => `<tr><td>${t.n}</td><td><strong>${esc(t.correctAnswer)}</strong>${t.choices ? ` – ${esc(t.choices[t.correctAnswer] ?? "")}` : ""}</td><td>${t.points}</td></tr>`).join("");
+    const rows = set.tasks.map((t) => `<tr><td>${t.n}</td><td><strong>${esc(withUnit(t.correctAnswer, t))}</strong>${t.choices ? ` – ${esc(t.choices[t.correctAnswer] ?? "")}` : ""}</td><td>${t.points}</td></tr>`).join("");
     const solutions = withSolutions
       ? set.tasks.filter((t) => t.solutionText || t.solution?.length).map((t) => `
           <section class="task solution">
-            <div class="task-head"><strong>Oppgave ${t.n}</strong><span class="points">Svar: ${esc(t.correctAnswer)}</span></div>
+            <div class="task-head"><strong>Oppgave ${t.n}</strong><span class="points">Svar: ${esc(withUnit(t.correctAnswer, t))}</span></div>
             ${t.solutionText ? `<p>${esc(t.solutionText)}</p>` : ""}
             ${(t.solution ?? []).map((src) => `<img src="${esc(src)}" data-scale="0.5" alt="Løsningsforslag ${t.n}">`).join("")}
           </section>`).join("")
@@ -83,7 +93,8 @@
       ${withFasit ? fasitHtml(set, optLosning.checked) : ""}
       <footer class="sheet-foot">${set.source === "kenguru"
         ? "Oppgavene er fra Kengurukonkurransen (Matematikksenteret)."
-        : set.source === "getsmart" ? "Videoene er fra getsmart.no. Oppgavene er laget for Mattekamp." : ""}</footer>`;
+        : set.source === "getsmart" ? "Videoene er fra getsmart.no. Oppgavene er laget for Mattekamp."
+        : set.source === "nasjonale-prover" ? "Øvingsoppgaver laget for Mattekamp i stil med nasjonale prøver i regning (ikke Udirs prøver)." : ""}</footer>`;
     printBtn.disabled = false;
   }
 

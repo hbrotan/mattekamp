@@ -1,0 +1,598 @@
+{
+  "id": "5-trinn-3",
+  "title": "Øvingsprøve 3",
+  "level": "5-trinn",
+  "tasks": [
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Ida kjøper et brød til 34 kr og en liter melk til 23 kr. Hvor mye må hun betale til sammen?",
+      "choices": {
+        "A": "47 kr",
+        "B": "57 kr",
+        "C": "58 kr",
+        "D": "67 kr",
+        "E": "75 kr"
+      },
+      "answer": "B",
+      "explanation": "34 kr + 23 kr = 57 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Mamma satte en kake i ovnen klokka 15.10. Hun tok kaken ut klokka 15.45. Hvor mange minutter var kaken i ovnen?",
+      "answer": "35",
+      "unit": "minutter",
+      "explanation": "Fra 15.10 til 15.45 er det 45 − 10 = 35 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Nora har høner i hagen. Tabellen viser hvor mange egg hønene la hver dag i en uke. Hvilken dag la hønene flest egg?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Antall egg"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "5"
+          ],
+          [
+            "Tirsdag",
+            "6"
+          ],
+          [
+            "Onsdag",
+            "4"
+          ],
+          [
+            "Torsdag",
+            "7"
+          ],
+          [
+            "Fredag",
+            "8"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Tirsdag",
+        "C": "Onsdag",
+        "D": "Torsdag",
+        "E": "Fredag"
+      },
+      "answer": "E",
+      "explanation": "Det største tallet i tabellen er 8, og det står ved fredag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Emil har bursdag og har invitert 8 venner. Hver av vennene skal få 3 ballonger. Hvor mange ballonger trenger Emil til vennene sine?",
+      "answer": "24",
+      "unit": "ballonger",
+      "explanation": "8 venner · 3 ballonger = 24 ballonger."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Jonas kjøper en pakke kjeks til 37 kr. Han betaler med en 100-lapp. Hvor mye får han igjen?",
+      "choices": {
+        "A": "63 kr",
+        "B": "67 kr",
+        "C": "73 kr",
+        "D": "53 kr",
+        "E": "137 kr"
+      },
+      "answer": "A",
+      "explanation": "100 kr − 37 kr = 63 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Sara sparer 20 kr hver uke. Hvor mye har hun spart etter 6 uker?",
+      "choices": {
+        "A": "26 kr",
+        "B": "100 kr",
+        "C": "120 kr",
+        "D": "140 kr",
+        "E": "1 200 kr"
+      },
+      "answer": "C",
+      "explanation": "20 kr · 6 = 120 kr."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvilke kjæledyr elevene i 5B har. Hver elev har bare ett kjæledyr. Hvor mange flere elever har katt enn kanin?",
+      "table": {
+        "headers": [
+          "Kjæledyr",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "Hund",
+            "7"
+          ],
+          [
+            "Katt",
+            "9"
+          ],
+          [
+            "Kanin",
+            "4"
+          ],
+          [
+            "Fisk",
+            "3"
+          ],
+          [
+            "Hamster",
+            "2"
+          ]
+        ]
+      },
+      "answer": "5",
+      "unit": "elever",
+      "explanation": "9 elever har katt og 4 har kanin. 9 − 4 = 5."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "En oppskrift trenger 1 liter melk. Mamma har bare et målebeger som rommer 1 dL. Hvor mange ganger må hun fylle målebegeret for å få 1 liter?",
+      "choices": {
+        "A": "1",
+        "B": "5",
+        "C": "10",
+        "D": "100",
+        "E": "1 000"
+      },
+      "answer": "C",
+      "explanation": "1 liter = 10 dL, så hun må fylle begeret 10 ganger."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Pappa planter tomatplanter i hagen. Han lager 4 rader med 7 planter i hver rad. Hvor mange tomatplanter planter han?",
+      "answer": "28",
+      "unit": "planter",
+      "explanation": "4 · 7 = 28 planter."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Hvilken vekt passer best for en vanlig pose sukker fra butikken?",
+      "choices": {
+        "A": "1 g",
+        "B": "10 g",
+        "C": "50 g",
+        "D": "100 g",
+        "E": "1 kg"
+      },
+      "answer": "E",
+      "explanation": "En vanlig pose sukker veier 1 kg. Til sammenligning veier en teskje sukker bare noen få gram."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Emil har bakt 36 muffins til bursdagen sin. Han fordeler dem likt på 4 fat. Hvor mange muffins blir det på hvert fat?",
+      "choices": {
+        "A": "8",
+        "B": "9",
+        "C": "32",
+        "D": "40",
+        "E": "144"
+      },
+      "answer": "B",
+      "explanation": "36 : 4 = 9 muffins på hvert fat."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Klassen stemte over hva de skulle spise på klassefesten. Hver elev hadde én stemme. Tabellen viser resultatet. Hvor mange elever stemte?",
+      "table": {
+        "headers": [
+          "Mat",
+          "Antall stemmer"
+        ],
+        "rows": [
+          [
+            "Pizza",
+            "9"
+          ],
+          [
+            "Taco",
+            "6"
+          ],
+          [
+            "Pølser",
+            "4"
+          ],
+          [
+            "Pannekaker",
+            "5"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "24",
+        "B": "23",
+        "C": "20",
+        "D": "19",
+        "E": "4"
+      },
+      "answer": "A",
+      "explanation": "9 + 6 + 4 + 5 = 24 elever."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Butikken solgte 4 080 liter melk på en måned. Hvordan skriver vi tallet 4 080 med ord?",
+      "choices": {
+        "A": "fire tusen og åtti",
+        "B": "fire tusen og åtte",
+        "C": "fire hundre og åtti",
+        "D": "førti tusen og åtti",
+        "E": "fire tusen åtte hundre"
+      },
+      "answer": "A",
+      "explanation": "4 080 har 4 tusener, 0 hundrere, 8 tiere og 0 enere: fire tusen og åtti."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Hunden Bamse spiser 300 g fôr hver dag. Hvor mange gram fôr spiser Bamse på en uke?",
+      "answer": "2100",
+      "unit": "g",
+      "explanation": "En uke har 7 dager. 300 g · 7 = 2 100 g."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Pappa bakte en pizza som var delt i 8 like store biter. Familien spiste ¾ av pizzaen. Hvor mange biter spiste de?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5",
+        "E": "6"
+      },
+      "answer": "E",
+      "explanation": "¼ av 8 biter er 2 biter. ¾ er 3 · 2 = 6 biter."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Ola har et grønnsaksbed som er 4 m langt og 2 m bredt. Han vil sette et lavt gjerde rundt hele bedet. Hvor mange meter gjerde trenger han?",
+      "choices": {
+        "A": "6 m",
+        "B": "8 m",
+        "C": "10 m",
+        "D": "12 m",
+        "E": "24 m"
+      },
+      "answer": "D",
+      "explanation": "Gjerdet går rundt alle fire sidene: 4 m + 2 m + 4 m + 2 m = 12 m."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Lea sådde en solsikke. Da hun begynte å måle, var den 10 cm høy. Tabellen viser hvor mange centimeter den vokste hver uke etter det. Hvor høy var solsikken etter uke 4?",
+      "table": {
+        "headers": [
+          "Uke",
+          "Vokste (cm)"
+        ],
+        "rows": [
+          [
+            "Uke 1",
+            "4"
+          ],
+          [
+            "Uke 2",
+            "7"
+          ],
+          [
+            "Uke 3",
+            "9"
+          ],
+          [
+            "Uke 4",
+            "12"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "42 cm",
+        "B": "32 cm",
+        "C": "12 cm",
+        "D": "22 cm",
+        "E": "52 cm"
+      },
+      "answer": "A",
+      "explanation": "Den vokste 4 + 7 + 9 + 12 = 32 cm. 10 cm + 32 cm = 42 cm."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Mia vil kjøpe en sykkel som koster 1 800 kr. Hun har spart 650 kr. Hvor mange kroner mangler hun?",
+      "answer": "1150",
+      "unit": "kr",
+      "explanation": "1 800 kr − 650 kr = 1 150 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Tabellen viser hva som trengs til pannekaker for 4 personer. Familien skal lage pannekaker til 12 personer. Hvor mange desiliter melk trenger de?",
+      "table": {
+        "headers": [
+          "Ingrediens",
+          "Mengde (4 personer)"
+        ],
+        "rows": [
+          [
+            "Hvetemel",
+            "3 dL"
+          ],
+          [
+            "Melk",
+            "5 dL"
+          ],
+          [
+            "Egg",
+            "3"
+          ],
+          [
+            "Salt",
+            "½ ts"
+          ]
+        ]
+      },
+      "answer": "15",
+      "unit": "dL",
+      "explanation": "12 personer er 3 ganger så mange som 4. 5 dL · 3 = 15 dL."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Tobias handler til tacokveld. Tabellen viser prisene. Omtrent hvor mye koster varene til sammen?",
+      "table": {
+        "headers": [
+          "Vare",
+          "Pris"
+        ],
+        "rows": [
+          [
+            "Kjøttdeig",
+            "48 kr"
+          ],
+          [
+            "Tacolefser",
+            "31 kr"
+          ],
+          [
+            "Revet ost",
+            "99 kr"
+          ],
+          [
+            "Salat",
+            "19 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "ca. 100 kr",
+        "B": "ca. 150 kr",
+        "C": "ca. 200 kr",
+        "D": "ca. 250 kr",
+        "E": "ca. 300 kr"
+      },
+      "answer": "C",
+      "explanation": "Rund av: 50 + 30 + 100 + 20 = 200. Varene koster ca. 200 kr (nøyaktig 197 kr)."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Bursdagsfesten til Nora starter klokka 16.30 og varer i 2 timer og 45 minutter. Når slutter festen?",
+      "choices": {
+        "A": "kl. 18.15",
+        "B": "kl. 18.45",
+        "C": "kl. 18.75",
+        "D": "kl. 19.15",
+        "E": "kl. 19.45"
+      },
+      "answer": "D",
+      "explanation": "16.30 + 2 timer = 18.30. 18.30 + 45 minutter = 19.15."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvor mange kroner Emma sparte hver måned. I hvilken måned økte sparingen mest sammenlignet med måneden før?",
+      "table": {
+        "headers": [
+          "Måned",
+          "Kroner spart"
+        ],
+        "rows": [
+          [
+            "Januar",
+            "150"
+          ],
+          [
+            "Februar",
+            "250"
+          ],
+          [
+            "Mars",
+            "200"
+          ],
+          [
+            "April",
+            "250"
+          ],
+          [
+            "Mai",
+            "200"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Januar",
+        "B": "Februar",
+        "C": "Mars",
+        "D": "April",
+        "E": "Mai"
+      },
+      "answer": "B",
+      "explanation": "Fra januar til februar økte sparingen med 100 kr. Fra mars til april økte den bare med 50 kr."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "26 barn skal kjøres til bowling på bursdagen til Sofie. I hver bil er det plass til 4 barn. Hvor mange biler trengs det minst?",
+      "answer": "7",
+      "unit": "biler",
+      "explanation": "26 : 4 = 6 med 2 i rest. De 2 siste barna trenger også en bil, så det trengs 7 biler."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Mormor har en vannkanne som rommer 5 L. Hver tomatplante skal ha 5 dL vann. Hvor mange planter kan hun vanne med én full kanne?",
+      "choices": {
+        "A": "1",
+        "B": "5",
+        "C": "10",
+        "D": "25",
+        "E": "50"
+      },
+      "answer": "C",
+      "explanation": "5 L = 50 dL. 50 dL : 5 dL = 10 planter."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Line skal kjøpe melk, brød, ost og epler. Hun vil kjøpe alt i samme butikk. Tabellen viser prisene. Hvor mange kroner sparer hun på å handle i den billigste butikken i stedet for den dyreste?",
+      "table": {
+        "headers": [
+          "Vare",
+          "Nærbutikken",
+          "Storkjøpet"
+        ],
+        "rows": [
+          [
+            "Melk",
+            "23 kr",
+            "21 kr"
+          ],
+          [
+            "Brød",
+            "36 kr",
+            "39 kr"
+          ],
+          [
+            "Ost",
+            "92 kr",
+            "85 kr"
+          ],
+          [
+            "Epler",
+            "29 kr",
+            "32 kr"
+          ]
+        ]
+      },
+      "answer": "3",
+      "unit": "kr",
+      "explanation": "Nærbutikken: 23 + 36 + 92 + 29 = 180 kr. Storkjøpet: 21 + 39 + 85 + 32 = 177 kr. 180 − 177 = 3 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Ali kjøper 3 bokser hakkede tomater. Én boks koster 12,50 kr. Han betaler med en 50-kroning. Hvor mange kroner får han igjen?",
+      "answer": "12,5",
+      "unit": "kr",
+      "explanation": "3 · 12,50 kr = 37,50 kr. 50 kr − 37,50 kr = 12,50 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Jonas får 50 kr i ukepenger. Han sparer halvparten hver uke. Hvor mange uker tar det før han har spart 300 kr?",
+      "choices": {
+        "A": "6",
+        "B": "10",
+        "C": "11",
+        "D": "12",
+        "E": "24"
+      },
+      "answer": "D",
+      "explanation": "Halvparten av 50 kr er 25 kr. 300 kr : 25 kr = 12 uker."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser hvilke kjæledyr elevene i 5A og 5B har. Hver elev svarte bare én ting. Hvilket svar var det flest som ga når vi slår sammen begge klassene?",
+      "table": {
+        "headers": [
+          "Kjæledyr",
+          "5A",
+          "5B"
+        ],
+        "rows": [
+          [
+            "Hund",
+            "7",
+            "4"
+          ],
+          [
+            "Katt",
+            "5",
+            "8"
+          ],
+          [
+            "Kanin",
+            "3",
+            "2"
+          ],
+          [
+            "Fisk",
+            "4",
+            "3"
+          ],
+          [
+            "Ingen kjæledyr",
+            "6",
+            "5"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Hund",
+        "B": "Katt",
+        "C": "Kanin",
+        "D": "Fisk",
+        "E": "Ingen kjæledyr"
+      },
+      "answer": "B",
+      "explanation": "Katt: 5 + 8 = 13. Hund: 7 + 4 = 11 og ingen kjæledyr: 6 + 5 = 11. Katt har flest."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "En pose kattemat veier 2 kg. Katten Pus spiser 50 g kattemat hver dag. Hvor mange dager varer posen?",
+      "answer": "40",
+      "unit": "dager",
+      "explanation": "2 kg = 2 000 g. 2 000 g : 50 g = 40 dager."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Kari skal lage pannekaker til bursdagsfesten og trenger 30 egg. Hun har 7 egg i kjøleskapet. Eggene selges i kartonger med 12 egg. Hvor mange kartonger må hun minst kjøpe?",
+      "answer": "2",
+      "unit": "kartonger",
+      "explanation": "Hun mangler 30 − 7 = 23 egg. 1 kartong gir bare 12 egg, 2 kartonger gir 24 egg. Hun må kjøpe 2 kartonger."
+    }
+  ]
+}

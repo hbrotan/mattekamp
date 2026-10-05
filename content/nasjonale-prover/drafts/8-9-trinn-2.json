@@ -1,0 +1,554 @@
+{
+  "id": "8-9-trinn-2",
+  "title": "Øvingsprøve 2",
+  "level": "8-9-trinn",
+  "tasks": [
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ida har en deltidsjobb i en klesbutikk. Hun tjener 140 kr per time. En lørdag jobber hun 6 timer. Hvor mange kroner tjener hun denne lørdagen?",
+      "answer": "840",
+      "unit": "kr",
+      "explanation": "140 kr · 6 = 840 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Ungdomsbedriften «Bærekraft UB» syr handlenett av gamle gardiner. De selger nettene for 35 kr stykket. På julemarkedet selger de 40 nett. Hvor mye får de inn?",
+      "choices": {
+        "A": "1 200 kr",
+        "B": "1 400 kr",
+        "C": "1 500 kr",
+        "D": "1 600 kr",
+        "E": "14 000 kr"
+      },
+      "answer": "B",
+      "explanation": "35 kr · 40 = 1 400 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Etter salgsdagen teller ungdomsbedriften kassa. Der ligger 3 tohundrelapper, 5 hundrelapper, 7 tjuekroninger og 4 femkroninger. Hvor mye penger er det i kassa?",
+      "choices": {
+        "A": "1 160 kr",
+        "B": "1 200 kr",
+        "C": "1 240 kr",
+        "D": "1 260 kr",
+        "E": "1 360 kr"
+      },
+      "answer": "D",
+      "explanation": "600 kr + 500 kr + 140 kr + 20 kr = 1 260 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "En hettegenser koster 600 kr. I januarsalget er prisen satt ned med 25 %. Hva koster genseren i salget?",
+      "choices": {
+        "A": "450 kr",
+        "B": "475 kr",
+        "C": "500 kr",
+        "D": "575 kr",
+        "E": "750 kr"
+      },
+      "answer": "A",
+      "explanation": "25 % av 600 kr er 150 kr. 600 kr − 150 kr = 450 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Jonas jobber i en kiosk. I dag begynner han kl. 16.30 og slutter kl. 20.15. Hvor mange minutter jobber han i dag?",
+      "answer": "225",
+      "unit": "minutter",
+      "explanation": "Fra 16.30 til 20.30 er 4 timer = 240 minutter. Han slutter 15 minutter før, altså 240 − 15 = 225 minutter."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Ungdomsbedriften selger kanelboller i storefriminuttet. Tabellen viser hvor mange boller de solgte hver dag én uke. Hvor mange flere boller solgte de den dagen de solgte mest, enn den dagen de solgte minst?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Solgte boller"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "12"
+          ],
+          [
+            "Tirsdag",
+            "18"
+          ],
+          [
+            "Onsdag",
+            "9"
+          ],
+          [
+            "Torsdag",
+            "21"
+          ],
+          [
+            "Fredag",
+            "15"
+          ]
+        ]
+      },
+      "answer": "12",
+      "unit": "boller",
+      "explanation": "Mest: torsdag med 21. Minst: onsdag med 9. 21 − 9 = 12 boller."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Mia kjøper tre varer i en nettbutikk. De koster 48,90 kr, 31,50 kr og 19,90 kr. Omtrent hvor mye koster varene til sammen?",
+      "choices": {
+        "A": "80 kr",
+        "B": "90 kr",
+        "C": "100 kr",
+        "D": "110 kr",
+        "E": "120 kr"
+      },
+      "answer": "C",
+      "explanation": "Runder av: 50 kr + 30 kr + 20 kr = 100 kr. (Nøyaktig sum er 100,30 kr.)"
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Ungdomsbedriften har 25 medlemmer. 40 % av medlemmene går i 9. trinn. Hvor mange av medlemmene går i 9. trinn?",
+      "answer": "10",
+      "unit": "medlemmer",
+      "explanation": "10 % av 25 er 2,5. 40 % er 4 · 2,5 = 10 medlemmer."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ungdomsbedriften kjøper inn 120 nøkkelringer med skolens logo. Til sammen koster de 1 800 kr. Hva er innkjøpsprisen for én nøkkelring?",
+      "answer": "15",
+      "unit": "kr",
+      "explanation": "1 800 kr : 120 = 15 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Ungdomsbedriften lager 6 L saft til en skoleavslutning. Saften skal serveres i glass med 2 dL i hvert. Hvor mange glass kan de fylle?",
+      "choices": {
+        "A": "3 glass",
+        "B": "12 glass",
+        "C": "20 glass",
+        "D": "25 glass",
+        "E": "30 glass"
+      },
+      "answer": "E",
+      "explanation": "6 L = 60 dL. 60 dL : 2 dL = 30 glass."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "I oppskriften på ungdomsbedriftens kakemiks er det 3 dL sukker for hver 5 dL hvetemel. De skal lage en stor porsjon med 15 dL hvetemel. Hvor mye sukker trenger de?",
+      "choices": {
+        "A": "6 dL",
+        "B": "9 dL",
+        "C": "13 dL",
+        "D": "15 dL",
+        "E": "25 dL"
+      },
+      "answer": "B",
+      "explanation": "15 dL mel er 3 ganger så mye som 5 dL. Da trengs 3 · 3 dL = 9 dL sukker."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Emma har et mobilabonnement som koster 299 kr per måned. Fra 1. januar øker prisen med 10 %. Hva blir den nye prisen, rundet av til nærmeste hele krone?",
+      "choices": {
+        "A": "329 kr",
+        "B": "309 kr",
+        "C": "269 kr",
+        "D": "399 kr",
+        "E": "339 kr"
+      },
+      "answer": "A",
+      "explanation": "10 % av 299 kr er 29,90 kr. 299 kr + 29,90 kr = 328,90 kr ≈ 329 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Ungdomsbedriften lager armbånd. Til hvert armbånd bruker de perler for 12 kr, tråd for 3 kr og en lås for 5 kr. De selger armbåndet for 45 kr. Hvor stor er fortjenesten på ett armbånd?",
+      "choices": {
+        "A": "5 kr",
+        "B": "15 kr",
+        "C": "20 kr",
+        "D": "25 kr",
+        "E": "65 kr"
+      },
+      "answer": "D",
+      "explanation": "Selvkost: 12 kr + 3 kr + 5 kr = 20 kr. Fortjeneste: 45 kr − 20 kr = 25 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Emil har helgejobb på en gård. Tabellen viser hvor mye han tjente de fire siste ukene. Hvor mye tjente han i gjennomsnitt per uke?",
+      "table": {
+        "headers": [
+          "Uke",
+          "Lønn"
+        ],
+        "rows": [
+          [
+            "Uke 1",
+            "420 kr"
+          ],
+          [
+            "Uke 2",
+            "600 kr"
+          ],
+          [
+            "Uke 3",
+            "350 kr"
+          ],
+          [
+            "Uke 4",
+            "630 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "485 kr",
+        "B": "490 kr",
+        "C": "500 kr",
+        "D": "510 kr",
+        "E": "2 000 kr"
+      },
+      "answer": "C",
+      "explanation": "Summen er 420 + 600 + 350 + 630 = 2 000 kr. 2 000 kr : 4 = 500 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "En ost på 750 g koster 90 kr. Hva er kiloprisen for osten?",
+      "choices": {
+        "A": "67,50 kr",
+        "B": "90 kr",
+        "C": "105 kr",
+        "D": "112,50 kr",
+        "E": "120 kr"
+      },
+      "answer": "E",
+      "explanation": "750 g er ¾ kg. 90 kr : 3 = 30 kr per 250 g, og 30 kr · 4 = 120 kr per kg."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Sara setter 4 000 kr av sommerjobb-lønna inn på en sparekonto. Renten er 3 % per år. Hvor mange kroner får hun i rente etter ett år?",
+      "answer": "120",
+      "unit": "kr",
+      "explanation": "1 % av 4 000 kr er 40 kr. 3 % er 3 · 40 kr = 120 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Ungdomsbedriften fører regnskap. I januar hadde de et underskudd på 450 kr. I februar hadde de et overskudd på 1 200 kr. I mars hadde de et underskudd på 300 kr. Hva ble resultatet for de tre månedene til sammen?",
+      "choices": {
+        "A": "450 kr i overskudd",
+        "B": "450 kr i underskudd",
+        "C": "750 kr i overskudd",
+        "D": "1 050 kr i overskudd",
+        "E": "1 950 kr i overskudd"
+      },
+      "answer": "A",
+      "explanation": "−450 kr + 1 200 kr − 300 kr = 450 kr. Resultatet er positivt, altså et overskudd på 450 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Ungdomsbedriften skal leie en stand på en messe. Standen er 2,5 m lang og 1,8 m bred. Leien er 120 kr per kvadratmeter. Hvor mange kroner koster det å leie standen?",
+      "answer": "540",
+      "unit": "kr",
+      "explanation": "Arealet er 2,5 m · 1,8 m = 4,5 m². 4,5 · 120 kr = 540 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Et par sokker koster vanligvis 60 kr. Butikken har tilbudet «Kjøp 3 par, betal for 2». Hvor mange prosent billigere blir hvert par med tilbudet?",
+      "choices": {
+        "A": "20 %",
+        "B": "25 %",
+        "C": "30 %",
+        "D": "omtrent 33 %",
+        "E": "50 %"
+      },
+      "answer": "D",
+      "explanation": "Du betaler 120 kr for 3 par, altså 40 kr per par. Du sparer 20 kr av 60 kr, som er ⅓ ≈ 33 %."
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "Amir får fast timelønn. For 7 timer arbeid fikk han 1 470 kr. Hvor mange kroner får han for 12 timer arbeid?",
+      "answer": "2520",
+      "unit": "kr",
+      "explanation": "Timelønna er 1 470 kr : 7 = 210 kr. 210 kr · 12 = 2 520 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Lea skal velge mobilabonnement. Hun bruker 4 GB data hver måned. Ekstra data koster 30 kr per GB utover det som er inkludert. Hvilket abonnement blir billigst for Lea, og hva koster det per måned?",
+      "table": {
+        "headers": [
+          "Abonnement",
+          "Pris per måned",
+          "Inkludert data"
+        ],
+        "rows": [
+          [
+            "Basis",
+            "99 kr",
+            "1 GB"
+          ],
+          [
+            "Medium",
+            "179 kr",
+            "5 GB"
+          ],
+          [
+            "Fri",
+            "299 kr",
+            "Ubegrenset"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Basis, 189 kr",
+        "B": "Medium, 179 kr",
+        "C": "Basis, 99 kr",
+        "D": "Basis, 219 kr",
+        "E": "Fri, 299 kr"
+      },
+      "answer": "B",
+      "explanation": "Basis: 99 kr + 3 · 30 kr = 189 kr. Medium: 179 kr (4 GB er inkludert). Fri: 299 kr. Medium er billigst."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Tabellen viser hvor mange timer fem elever jobbet i ungdomsbedriften i oktober. Hva er medianen for antall timer?",
+      "table": {
+        "headers": [
+          "Elev",
+          "Timer"
+        ],
+        "rows": [
+          [
+            "Aksel",
+            "12"
+          ],
+          [
+            "Berit",
+            "8"
+          ],
+          [
+            "Chen",
+            "15"
+          ],
+          [
+            "Dina",
+            "8"
+          ],
+          [
+            "Erik",
+            "22"
+          ]
+        ]
+      },
+      "answer": "12",
+      "unit": "timer",
+      "explanation": "Sorter tallene: 8, 8, 12, 15, 22. Tallet i midten er 12."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Mathias sykler til helgejobben sin. Han sykler 6 km og bruker 20 minutter. Hva er gjennomsnittsfarten hans?",
+      "choices": {
+        "A": "0,3 km/t",
+        "B": "3 km/t",
+        "C": "12 km/t",
+        "D": "15 km/t",
+        "E": "18 km/t"
+      },
+      "answer": "E",
+      "explanation": "20 minutter er ⅓ time. På en hel time sykler han 3 · 6 km = 18 km, altså 18 km/t."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Ungdomsbedriften kjøper inn kopper for 80 kr stykket og selger dem for 100 kr stykket. Hvor mange prosent av innkjøpsprisen utgjør fortjenesten?",
+      "answer": "25",
+      "unit": "%",
+      "explanation": "Fortjenesten er 100 kr − 80 kr = 20 kr. 20 av 80 er ¼ = 25 %."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Ungdomsbedriften fikk 6 000 kr i overskudd. ¼ av overskuddet gir de til en hjelpeorganisasjon. Resten deler de likt mellom de 6 medlemmene. Hvor mye får hvert medlem?",
+      "choices": {
+        "A": "250 kr",
+        "B": "500 kr",
+        "C": "750 kr",
+        "D": "1 000 kr",
+        "E": "1 125 kr"
+      },
+      "answer": "C",
+      "explanation": "¼ av 6 000 kr er 1 500 kr. Resten er 4 500 kr. 4 500 kr : 6 = 750 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "Ungdomsbedriften har loddsalg. De selger 200 lodd, og 8 av loddene gir gevinst. Tor kjøper ett lodd. Hva er sannsynligheten for at loddet hans gir gevinst?",
+      "choices": {
+        "A": "1/200",
+        "B": "1/40",
+        "C": "1/25",
+        "D": "1/8",
+        "E": "1/2"
+      },
+      "answer": "C",
+      "explanation": "Sannsynligheten er 8/200. Deler vi teller og nevner med 8, får vi 1/25."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "Tre elever startet en ungdomsbedrift. Andrea skjøt inn 2 000 kr, Bilal 3 000 kr og Cecilie 5 000 kr. Overskuddet på 4 000 kr skal deles i samme forhold som de skjøt inn penger. Hvor mye får Bilal?",
+      "choices": {
+        "A": "1 200 kr",
+        "B": "1 333 kr",
+        "C": "1 500 kr",
+        "D": "2 000 kr",
+        "E": "3 000 kr"
+      },
+      "answer": "A",
+      "explanation": "Til sammen skjøt de inn 10 000 kr. Bilal skjøt inn 3 000 av 10 000, altså 30 %. 30 % av 4 000 kr = 1 200 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "En pose med 2 kg ris koster 49 kr. En pose med 800 g ris koster 22,40 kr. Hvor mange kroner billigere per kilogram er risen i den store posen?",
+      "answer": "3,5",
+      "unit": "kr",
+      "explanation": "Stor pose: 49 kr : 2 = 24,50 kr per kg. Liten pose: 22,40 kr : 0,8 = 28 kr per kg. 28 kr − 24,50 kr = 3,50 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Etter 20 % rabatt koster en sykkelhjelm 640 kr. Hva kostet hjelmen før rabatten?",
+      "choices": {
+        "A": "660 kr",
+        "B": "768 kr",
+        "C": "780 kr",
+        "D": "790 kr",
+        "E": "800 kr"
+      },
+      "answer": "E",
+      "explanation": "640 kr er 80 % av den gamle prisen. 10 % er 640 kr : 8 = 80 kr, så 100 % er 800 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser inntektene og utgiftene til ungdomsbedriften fire måneder. Verdiene står i tabellen. I hvilken måned var overskuddet størst?",
+      "table": {
+        "headers": [
+          "Måned",
+          "Inntekter",
+          "Utgifter"
+        ],
+        "rows": [
+          [
+            "September",
+            "2 400 kr",
+            "1 900 kr"
+          ],
+          [
+            "Oktober",
+            "3 600 kr",
+            "2 900 kr"
+          ],
+          [
+            "November",
+            "4 200 kr",
+            "3 800 kr"
+          ],
+          [
+            "Desember",
+            "5 600 kr",
+            "5 050 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "September",
+        "B": "Oktober",
+        "C": "November",
+        "D": "Desember",
+        "E": "Like stort alle månedene"
+      },
+      "answer": "B",
+      "explanation": "Overskudd = inntekter − utgifter: september 500 kr, oktober 700 kr, november 400 kr, desember 550 kr. Oktober er størst."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ingrid jobber på en kafé. Hun har 145 kr i timen på hverdager og 175 kr i timen på lørdager. En uke jobber hun 4 timer på hver av tre hverdager og 6 timer på lørdag. Hvor mange kroner tjener hun denne uka?",
+      "answer": "2790",
+      "unit": "kr",
+      "explanation": "Hverdager: 3 · 4 = 12 timer, 12 · 145 kr = 1 740 kr. Lørdag: 6 · 175 kr = 1 050 kr. Til sammen 2 790 kr."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Noah setter inn 5 000 kr på en konto med 2,5 % rente per år. Renten blir hvert år overført til en annen konto, så Noah får rente av 5 000 kr hvert år. Hvor mange kroner får han i rente til sammen etter 3 år?",
+      "answer": "375",
+      "unit": "kr",
+      "explanation": "2,5 % av 5 000 kr er 125 kr per år. 3 · 125 kr = 375 kr."
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "Ungdomsbedriften skal gå fra skolen til julemarkedet. På et kart med målestokk 1 : 50 000 er avstanden 7 cm. Hvor mange kilometer er avstanden i virkeligheten?",
+      "answer": "3,5",
+      "unit": "km",
+      "explanation": "7 cm · 50 000 = 350 000 cm = 3 500 m = 3,5 km."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Ungdomsbedriften har en full saftdunk formet som et rett prisme. Den er 40 cm lang, 25 cm bred og 30 cm høy på innsiden. De skal fylle saften på flasker som tar 0,75 L. Hvor mange flasker kan de fylle?",
+      "choices": {
+        "A": "22 flasker",
+        "B": "30 flasker",
+        "C": "36 flasker",
+        "D": "40 flasker",
+        "E": "400 flasker"
+      },
+      "answer": "D",
+      "explanation": "Volumet er 40 · 25 · 30 = 30 000 cm³ = 30 L. 30 L : 0,75 L = 40 flasker."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Ungdomsbedriften økte prisen på koppene sine med 20 % i november. I januarsalget satte de ned den nye prisen med 20 %. Hvordan er prisen i januarsalget sammenlignet med prisen før november?",
+      "choices": {
+        "A": "Den er den samme",
+        "B": "Den er 2 % lavere",
+        "C": "Den er 4 % høyere",
+        "D": "Den er 20 % lavere",
+        "E": "Den er 4 % lavere"
+      },
+      "answer": "E",
+      "explanation": "Hvis prisen var 100 kr, ble den 120 kr. 20 % av 120 kr er 24 kr, så salgsprisen ble 96 kr. Det er 4 % lavere enn før."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ungdomsbedriften har faste kostnader på 1 200 kr til trykking og standleie. Hver kopp koster 18 kr å lage, og de selger koppene for 42 kr stykket. Hvor mange kopper må de selge for at inntektene akkurat skal dekke alle kostnadene?",
+      "answer": "50",
+      "unit": "kopper",
+      "explanation": "Hver kopp gir 42 kr − 18 kr = 24 kr til å dekke de faste kostnadene. 1 200 kr : 24 kr = 50 kopper."
+    }
+  ]
+}

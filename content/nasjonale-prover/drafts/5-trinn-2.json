@@ -1,0 +1,571 @@
+{
+  "id": "5-trinn-2",
+  "title": "Øvingsprøve 2",
+  "level": "5-trinn",
+  "tasks": [
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "På idrettsdagen er elevene på 5. trinn delt i 4 lag. Hvert lag har 6 elever. Hvor mange elever er det til sammen?",
+      "choices": {
+        "A": "2",
+        "B": "10",
+        "C": "24",
+        "D": "28",
+        "E": "46"
+      },
+      "answer": "C",
+      "explanation": "4 lag med 6 elever i hvert: 4 · 6 = 24 elever."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser hvor mange bøker som ble lånt ut på skolebiblioteket i én uke. Hvilken dag ble det lånt ut flest bøker?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Utlånte bøker"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "47"
+          ],
+          [
+            "Tirsdag",
+            "29"
+          ],
+          [
+            "Onsdag",
+            "38"
+          ],
+          [
+            "Torsdag",
+            "44"
+          ],
+          [
+            "Fredag",
+            "26"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Tirsdag",
+        "C": "Onsdag",
+        "D": "Torsdag",
+        "E": "Fredag"
+      },
+      "answer": "A",
+      "explanation": "Det største tallet i tabellen er 47, og det står ved mandag."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Sondre har en vanlig sykkel. Hvilket svar passer best for hvor mye sykkelen veier?",
+      "choices": {
+        "A": "15 g",
+        "B": "150 g",
+        "C": "1,5 kg",
+        "D": "15 kg",
+        "E": "150 kg"
+      },
+      "answer": "D",
+      "explanation": "En sykkel er tung å løfte, men en voksen klarer det lett. 15 kg passer best. 15 g er like lett som et brev, og 150 kg er tyngre enn to voksne."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Svømmebassenget er 25 m langt. Emma svømmer 8 lengder. Hvor mange meter svømmer hun?",
+      "answer": "200",
+      "unit": "m",
+      "explanation": "8 lengder på 25 m: 8 · 25 m = 200 m."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Fotballaget hadde fem hjemmekamper. Svaralternativene viser hvor mange tilskuere som kom på kampene. Hvilket tilskuertall er størst?",
+      "choices": {
+        "A": "4 089",
+        "B": "4 908",
+        "C": "4 890",
+        "D": "4 809",
+        "E": "4 098"
+      },
+      "answer": "B",
+      "explanation": "Alle tallene har 4 tusenere. Se på hundrerne: 4 908 har 9 hundrere, som er flest."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Fritidsklubben har 156 medlemmer. 89 av medlemmene er jenter. Resten er gutter. Hvor mange gutter er medlemmer?",
+      "answer": "67",
+      "unit": "gutter",
+      "explanation": "156 − 89 = 67 gutter."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "En kinobillett koster 85 kr. Hva koster 3 billetter?",
+      "choices": {
+        "A": "88 kr",
+        "B": "170 kr",
+        "C": "235 kr",
+        "D": "245 kr",
+        "E": "255 kr"
+      },
+      "answer": "E",
+      "explanation": "3 · 85 kr = 255 kr."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvor mange lengder fem elever svømte på svømmedagen. Verdiene står i tabellen. Hvor mange lengder svømte de til sammen?",
+      "table": {
+        "headers": [
+          "Elev",
+          "Lengder"
+        ],
+        "rows": [
+          [
+            "Ali",
+            "12"
+          ],
+          [
+            "Ida",
+            "8"
+          ],
+          [
+            "Jon",
+            "10"
+          ],
+          [
+            "Mari",
+            "14"
+          ],
+          [
+            "Tor",
+            "6"
+          ]
+        ]
+      },
+      "answer": "50",
+      "unit": "lengder",
+      "explanation": "12 + 8 + 10 + 14 + 6 = 50 lengder."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Sara hoppet 2 m og 85 cm i lengdehopp. Hvor mange centimeter hoppet hun?",
+      "answer": "285",
+      "unit": "cm",
+      "explanation": "1 m = 100 cm, så 2 m = 200 cm. 200 cm + 85 cm = 285 cm."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Det var 12 486 tilskuere på en fotballkamp. Hva er tallet avrundet til nærmeste tusen?",
+      "choices": {
+        "A": "10 000",
+        "B": "11 000",
+        "C": "12 000",
+        "D": "12 500",
+        "E": "13 000"
+      },
+      "answer": "C",
+      "explanation": "12 486 ligger mellom 12 000 og 13 000. Hundresifferet er 4, så vi runder ned til 12 000."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Filmen på kinoen starter kl. 17.45 og varer i 1 time og 30 minutter. Når slutter filmen?",
+      "choices": {
+        "A": "kl. 19.15",
+        "B": "kl. 19.30",
+        "C": "kl. 18.15",
+        "D": "kl. 19.05",
+        "E": "kl. 18.75"
+      },
+      "answer": "A",
+      "explanation": "17.45 + 1 time = 18.45. 18.45 + 30 minutter = 19.15."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Klassen har 28 elever. ¼ av elevene spiller håndball. Hvor mange elever spiller håndball?",
+      "choices": {
+        "A": "4",
+        "B": "14",
+        "C": "24",
+        "D": "7",
+        "E": "21"
+      },
+      "answer": "D",
+      "explanation": "¼ av 28 betyr 28 : 4 = 7 elever."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvor mange som så film på kinoen fire dager. Verdiene står i tabellen. Hvor mange flere så film på lørdag enn på fredag?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Antall besøkende"
+        ],
+        "rows": [
+          [
+            "Torsdag",
+            "96"
+          ],
+          [
+            "Fredag",
+            "138"
+          ],
+          [
+            "Lørdag",
+            "215"
+          ],
+          [
+            "Søndag",
+            "174"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "67",
+        "B": "77",
+        "C": "87",
+        "D": "177",
+        "E": "353"
+      },
+      "answer": "B",
+      "explanation": "215 − 138 = 77 flere på lørdag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Det er 96 spillere med i en fotballturnering. Hvert lag har 8 spillere. Hvor mange lag er med?",
+      "answer": "12",
+      "unit": "lag",
+      "explanation": "96 : 8 = 12 lag."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Fem like håndballer veier 2 kg til sammen. Hvor mye veier én håndball?",
+      "choices": {
+        "A": "10 kg",
+        "B": "40 g",
+        "C": "200 g",
+        "D": "250 g",
+        "E": "400 g"
+      },
+      "answer": "E",
+      "explanation": "2 kg = 2 000 g. 2 000 g : 5 = 400 g."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Fotballklubben skal kjøpe 150 baller. Ballene selges i nett med 6 baller i hvert nett. Hvor mange nett må klubben kjøpe?",
+      "choices": {
+        "A": "25",
+        "B": "15",
+        "C": "30",
+        "D": "144",
+        "E": "900"
+      },
+      "answer": "A",
+      "explanation": "150 : 6 = 25 nett."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Alle de 24 elevene i 5B valgte sin favorittidrett. Tabellen viser resultatet. Hvor stor del av klassen valgte fotball?",
+      "table": {
+        "headers": [
+          "Idrett",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "Fotball",
+            "12"
+          ],
+          [
+            "Svømming",
+            "6"
+          ],
+          [
+            "Turn",
+            "4"
+          ],
+          [
+            "Ski",
+            "2"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "¼",
+        "B": "⅓",
+        "C": "½",
+        "D": "¾",
+        "E": "⅙"
+      },
+      "answer": "C",
+      "explanation": "12 av 24 elever valgte fotball. 12 er halvparten av 24, altså ½."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Treneren har 3 L saft. Han heller saften i glass som rommer 2 dL hver. Hvor mange glass kan han fylle?",
+      "answer": "15",
+      "unit": "glass",
+      "explanation": "1 L = 10 dL, så 3 L = 30 dL. 30 dL : 2 dL = 15 glass."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "På fredag kom 498 tilskuere på basketkampen. På lørdag kom 307 tilskuere. Omtrent hvor mange tilskuere kom det til sammen?",
+      "choices": {
+        "A": "700",
+        "B": "800",
+        "C": "900",
+        "D": "1 000",
+        "E": "8 000"
+      },
+      "answer": "B",
+      "explanation": "498 er nesten 500, og 307 er nesten 300. 500 + 300 = 800."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Speidergruppa startet sykkelturen kl. 09.40 og kom fram kl. 13.15. Hvor lang tid brukte de?",
+      "choices": {
+        "A": "3 timer og 25 minutter",
+        "B": "4 timer og 25 minutter",
+        "C": "3 timer og 75 minutter",
+        "D": "3 timer og 35 minutter",
+        "E": "4 timer og 35 minutter"
+      },
+      "answer": "D",
+      "explanation": "Fra 09.40 til 12.40 er 3 timer. Fra 12.40 til 13.15 er 35 minutter. Til sammen 3 timer og 35 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser resultatene i ballkast på idrettsdagen. Hvilken påstand er riktig?",
+      "table": {
+        "headers": [
+          "Elev",
+          "Ballkast"
+        ],
+        "rows": [
+          [
+            "Nora",
+            "18 m"
+          ],
+          [
+            "Elias",
+            "26 m"
+          ],
+          [
+            "Sofie",
+            "21 m"
+          ],
+          [
+            "Henrik",
+            "15 m"
+          ],
+          [
+            "Leah",
+            "23 m"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Sofie kastet 6 m lenger enn Henrik",
+        "B": "Leah kastet lengst",
+        "C": "Nora kastet kortest",
+        "D": "To elever kastet over 25 m",
+        "E": "Elias kastet dobbelt så langt som Nora"
+      },
+      "answer": "A",
+      "explanation": "21 m − 15 m = 6 m, så Sofie kastet 6 m lenger enn Henrik. Elias kastet lengst, Henrik kortest, og bare Elias kastet over 25 m."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Skolen skal leie 4 busser til skirennet. Hver buss har 52 seter. 187 elever og lærere skal være med. Hvor mange seter blir ledige?",
+      "answer": "21",
+      "unit": "seter",
+      "explanation": "4 · 52 = 208 seter. 208 − 187 = 21 ledige seter."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Lise kjøper en bok om fotball til 149 kr og en drikkeflaske til 39,50 kr. Hun betaler med en 200-lapp. Hvor mange kroner får hun igjen?",
+      "answer": "11,5",
+      "unit": "kr",
+      "explanation": "149 kr + 39,50 kr = 188,50 kr. 200 kr − 188,50 kr = 11,50 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Laget hadde med 48 flasker vann på turneringen. ¾ av flaskene ble drukket. Hvor mange flasker var igjen?",
+      "choices": {
+        "A": "36",
+        "B": "16",
+        "C": "44",
+        "D": "24",
+        "E": "12"
+      },
+      "answer": "E",
+      "explanation": "¼ av 48 er 12. ¾ ble drukket, så ¼ er igjen: 12 flasker."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Tabellen viser resultatene i en fotballturnering. Seier gir 3 poeng, uavgjort gir 1 poeng og tap gir 0 poeng. Hvor mange poeng fikk Ørnen?",
+      "table": {
+        "headers": [
+          "Lag",
+          "Seier",
+          "Uavgjort",
+          "Tap"
+        ],
+        "rows": [
+          [
+            "Ørnen",
+            "3",
+            "1",
+            "0"
+          ],
+          [
+            "Lyn",
+            "2",
+            "1",
+            "1"
+          ],
+          [
+            "Storm",
+            "2",
+            "0",
+            "2"
+          ],
+          [
+            "Falken",
+            "1",
+            "1",
+            "2"
+          ],
+          [
+            "Bjørn",
+            "0",
+            "1",
+            "3"
+          ]
+        ]
+      },
+      "answer": "10",
+      "unit": "poeng",
+      "explanation": "Ørnen har 3 seire og 1 uavgjort: 3 · 3 + 1 · 1 = 10 poeng."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Prislisten viser hva det koster å bade i svømmehallen. Mia skal bade 12 ganger i oktober. Hva er billigst for henne?",
+      "table": {
+        "headers": [
+          "Billett",
+          "Pris"
+        ],
+        "rows": [
+          [
+            "Enkeltbillett",
+            "45 kr"
+          ],
+          [
+            "Klippekort (10 bad)",
+            "380 kr"
+          ],
+          [
+            "Månedskort",
+            "500 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Bare enkeltbilletter",
+        "B": "Ett klippekort og 2 enkeltbilletter",
+        "C": "To klippekort",
+        "D": "Månedskort for oktober",
+        "E": "Alt koster like mye"
+      },
+      "answer": "B",
+      "explanation": "12 enkeltbilletter: 540 kr. Ett klippekort og 2 enkeltbilletter: 380 + 90 = 470 kr. To klippekort: 760 kr. Månedskort: 500 kr. Billigst er 470 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "130 speidere skal sove i telt på leiren. Hvert telt har plass til 6 speidere. Hvor mange telt trenger de minst?",
+      "choices": {
+        "A": "20",
+        "B": "21",
+        "C": "22",
+        "D": "124",
+        "E": "136"
+      },
+      "answer": "C",
+      "explanation": "130 : 6 = 21 med 4 i rest. De 4 speiderne som er igjen, trenger også et telt, så det blir 22 telt."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "På treningen løp Jonas 1 500 m tre ganger og 800 m to ganger. Hvor mange kilometer løp han til sammen?",
+      "answer": "6,1",
+      "unit": "km",
+      "explanation": "3 · 1 500 m = 4 500 m og 2 · 800 m = 1 600 m. Til sammen 6 100 m = 6,1 km."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ola trener til et sykkelritt. Den første dagen sykler han 2 km. Hver dag etter det sykler han 3 km mer enn dagen før. Hvor mange kilometer sykler han på dag 6?",
+      "answer": "17",
+      "unit": "km",
+      "explanation": "Dag 1–6: 2, 5, 8, 11, 14 og 17 km. På dag 6 sykler han 17 km."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Tabellen viser hvor mange bøker 5A og 5B lånte på biblioteket i tre måneder. Hvor mange flere bøker lånte 5A enn 5B til sammen i disse tre månedene?",
+      "table": {
+        "headers": [
+          "Måned",
+          "5A",
+          "5B"
+        ],
+        "rows": [
+          [
+            "September",
+            "46",
+            "38"
+          ],
+          [
+            "Oktober",
+            "52",
+            "49"
+          ],
+          [
+            "November",
+            "61",
+            "47"
+          ]
+        ]
+      },
+      "answer": "25",
+      "unit": "bøker",
+      "explanation": "5A: 46 + 52 + 61 = 159. 5B: 38 + 49 + 47 = 134. 159 − 134 = 25 flere bøker."
+    }
+  ]
+}
