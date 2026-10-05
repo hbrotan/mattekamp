@@ -1,18 +1,18 @@
 import fs from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import postgres from "postgres";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { createApp } from "../src/app.js";
 import type { Config } from "../src/config.js";
 import { seedContent } from "../src/content.js";
-import { connect, migrate, type Sql } from "../src/db.js";
+import { connect, ensureDatabase, migrate, type Db } from "../src/db.js";
 
-// Kjører mot Postgres fra docker compose (npm run db:up). Lager en egen testdatabase.
-const ADMIN_URL = process.env.TEST_ADMIN_DATABASE_URL ?? "postgres://mattekamp:mattekamp@localhost:5433/mattekamp";
-const TEST_DB = "mattekamp_test";
+// Kjører mot SQL Server fra docker compose (npm run db:up). Bruker en egen testdatabase.
+const SERVER = process.env.TEST_DATABASE_SERVER ??
+  "Server=localhost,1434;User Id=sa;Password=Mattekamp!Lokal1;Encrypt=true;TrustServerCertificate=true";
+const TEST_URL = `${SERVER};Database=mattekamp_test`;
 
-let sql: Sql;
+let db: Db;
 let app: ReturnType<typeof createApp>;
 let contentDir: string;
 
@@ -22,10 +22,7 @@ const PNG = Buffer.from(
 );
 
 beforeAll(async () => {
-  const admin = postgres(ADMIN_URL, { max: 1, onnotice: () => {} });
-  await admin.unsafe(`drop database if exists ${TEST_DB} with (force)`);
-  await admin.unsafe(`create database ${TEST_DB}`);
-  await admin.end();
+  await ensureDatabase(TEST_URL);
 
   contentDir = await fs.mkdtemp(path.join(os.tmpdir(), "mattekamp-test-"));
   await fs.mkdir(path.join(contentDir, "demo", "sett-1"), { recursive: true });
@@ -42,20 +39,25 @@ beforeAll(async () => {
     }],
   }));
 
-  const url = new URL(ADMIN_URL);
-  url.pathname = `/${TEST_DB}`;
-  sql = connect(url.toString());
-  await migrate(sql, path.resolve("migrations"));
-  await seedContent(sql, contentDir);
+  db = await connect(TEST_URL);
+  await migrate(db, path.resolve("migrations"));
+  // Tøm data fra forrige kjøring (barn før foreldre)
+  for (const table of ["attempt_answers", "attempts", "sessions", "players", "groups", "tasks", "task_sets", "content_versions"]) {
+    await db.query([`delete from ${table}`] as unknown as TemplateStringsArray);
+  }
+  await seedContent(db, contentDir);
+  // Andre gang skal migrering og innhold være uendret
+  expect(await migrate(db, path.resolve("migrations"))).toEqual([]);
+  expect((await seedContent(db, contentDir)).skipped).toBe(1);
   const config: Config = {
-    port: 0, databaseUrl: url.toString(), secureCookies: false,
+    port: 0, databaseUrl: TEST_URL, autoCreateDatabase: false, secureCookies: false,
     webDir: path.resolve("web"), contentDir, migrationsDir: path.resolve("migrations"),
   };
-  app = createApp(sql, config);
-});
+  app = createApp(Promise.resolve(db), config);
+}, 120_000);
 
 afterAll(async () => {
-  await sql?.end();
+  await db?.close();
   if (contentDir) await fs.rm(contentDir, { recursive: true, force: true });
 });
 

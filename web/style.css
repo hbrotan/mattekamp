@@ -176,3 +176,18 @@ tr.me td { background: var(--accent-soft); }
   .who { display: none; }
   .group-code { font-size: 2rem; }
 }
+
+/* Trykk på et oppgavebilde for å se det i full størrelse (nyttig på mobil) */
+.task img { cursor: zoom-in; }
+.task.zoomed { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.task.zoomed img { max-width: none; cursor: zoom-out; margin: 0; }
+.zoom-hint { display: none; color: var(--muted); font-size: .8rem; margin: -10px 0 12px; text-align: center; }
+
+@media (max-width: 560px) {
+  .topbar { padding: 8px 12px; gap: 8px; }
+  .topbar nav { flex-wrap: nowrap; gap: 0; }
+  .topbar .link { padding: 6px 7px; font-size: .9rem; white-space: nowrap; }
+  .brand { font-size: 1rem; gap: 6px; }
+  .brand-mark { font-size: 1.2rem; }
+  .zoom-hint { display: block; }
+}

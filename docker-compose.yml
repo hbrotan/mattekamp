@@ -2,20 +2,19 @@ name: mattekamp
 
 services:
   db:
-    image: postgres:17-alpine
+    image: mcr.microsoft.com/mssql/server:2022-latest
     environment:
-      POSTGRES_USER: mattekamp
-      POSTGRES_PASSWORD: mattekamp
-      POSTGRES_DB: mattekamp
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: "Mattekamp!Lokal1"
     ports:
-      - "5433:5432"
+      - "1434:1433"
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - sqldata:/var/opt/mssql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U mattekamp"]
-      interval: 2s
-      timeout: 3s
-      retries: 20
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P 'Mattekamp!Lokal1' -Q 'select 1' -b -o /dev/null"]
+      interval: 3s
+      timeout: 5s
+      retries: 40
 
   app:
     build: .
@@ -23,11 +22,12 @@ services:
       db:
         condition: service_healthy
     environment:
-      DATABASE_URL: postgres://mattekamp:mattekamp@db:5432/mattekamp
+      DATABASE_URL: "Server=db,1433;Database=mattekamp;User Id=sa;Password=Mattekamp!Lokal1;Encrypt=true;TrustServerCertificate=true"
+      DB_AUTO_CREATE: "true"
       SECURE_COOKIES: "false"
     ports:
       - "${APP_PORT:-3000}:3000"
     profiles: ["app"]
 
 volumes:
-  pgdata:
+  sqldata:

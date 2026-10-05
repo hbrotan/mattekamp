@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "mattehjelp",
+      "name": "mattekamp",
       "runtimeExecutable": "npx",
       "runtimeArgs": ["tsx", "--env-file=.env", "src/index.ts"],
       "port": 3000

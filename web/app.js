@@ -257,6 +257,7 @@
       </div>
 
       <div class="task">${task.images.map((src) => `<img src="${esc(src)}" alt="Oppgave ${task.n}">`).join("")}</div>
+      <p class="zoom-hint">Trykk på bildet for å forstørre</p>
 
       <div class="answers" role="group" aria-label="Svaralternativer">
         ${task.options.map((L) => `<button class="${answerClass(L)}" data-action="answer" data-l="${esc(L)}" ${locked ? "disabled" : ""}>${esc(L)}</button>`).join("")}
@@ -477,6 +478,17 @@
   }, true);
 
   // ---------- Hendelser ----------
+  // Trykk på et oppgavebilde veksler mellom tilpasset bredde og full størrelse
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest(".task img");
+    if (!img) return;
+    const box = img.closest(".task");
+    box.classList.toggle("zoomed");
+    for (const i of box.querySelectorAll("img")) {
+      i.style.width = box.classList.contains("zoomed") ? Math.round(i.naturalWidth * 0.85) + "px" : Math.round(i.naturalWidth * 0.65) + "px";
+    }
+  });
+
   document.addEventListener("click", async (e) => {
     const el = e.target.closest("[data-action]");
     if (!el || !session && !["home"].includes(el.dataset.action)) return;
