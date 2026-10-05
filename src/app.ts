@@ -417,7 +417,11 @@ export function createApp(ready: Promise<Db>, config: Config) {
     rewriteRequestPath: (p) => p.replace(/^\/assets/, ""),
     onFound: (_p, c) => { c.header("Cache-Control", "private, max-age=86400"); },
   }));
-  app.use("/*", serveStatic({ root: config.webDir }));
+  // no-cache: nettleseren sjekker alltid etter ny versjon, så endringer når ut med en gang etter deploy
+  app.use("/*", serveStatic({
+    root: config.webDir,
+    onFound: (_p, c) => { c.header("Cache-Control", "no-cache"); },
+  }));
 
   return app;
 }
