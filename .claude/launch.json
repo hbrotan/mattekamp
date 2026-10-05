@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mattehjelp",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["tsx", "--env-file=.env", "src/index.ts"],
+      "port": 3000
+    }
+  ]
+}

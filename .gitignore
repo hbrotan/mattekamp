@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+.env.deploy
+*.log
+
+# Kenguru-oppgavene er opphavsrettslig beskyttet og skal ikke ligge i et offentlig repo.
+# Lag dem med tools/kenguru_extract.py; de bygges inn i Docker-imaget lokalt.
+content/kenguru/

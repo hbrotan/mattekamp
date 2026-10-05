@@ -1,0 +1,33 @@
+name: mattekamp
+
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: mattekamp
+      POSTGRES_PASSWORD: mattekamp
+      POSTGRES_DB: mattekamp
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U mattekamp"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgres://mattekamp:mattekamp@db:5432/mattekamp
+      SECURE_COOKIES: "false"
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    profiles: ["app"]
+
+volumes:
+  pgdata:

@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: mattekamp
+          POSTGRES_PASSWORD: mattekamp
+          POSTGRES_DB: mattekamp
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U mattekamp"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      TEST_ADMIN_DATABASE_URL: postgres://mattekamp:mattekamp@localhost:5432/mattekamp
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Bicep bygger
+        run: az bicep build --file infra/main.bicep --stdout > /dev/null
