@@ -1,0 +1,284 @@
+{
+ "slug": "polygoner",
+ "videos": [
+  {
+   "code": "00222",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er en regelmessig mangekant?",
+     "choices": {
+      "A": "Bare alle sidene er like lange",
+      "B": "Den har nøyaktig fire hjørner",
+      "C": "Den har minst én rett vinkel",
+      "D": "Alle diagonalene er parallelle",
+      "E": "Alle sider og alle vinkler er like store"
+     },
+     "answer": "E",
+     "explanation": "En mangekant er regelmessig når alle sidene er like lange og alle vinklene er like store."
+    },
+    {
+     "points": 4,
+     "text": "Vinkelsummen i en mangekant med n hjørner er (n − 2) · 180°. Hvor stor er hver vinkel i en regelmessig sekskant?",
+     "choices": {
+      "A": "60°",
+      "B": "108°",
+      "C": "120°",
+      "D": "135°",
+      "E": "720°"
+     },
+     "answer": "C",
+     "explanation": "Vinkelsummen er (6 − 2) · 180° = 720°. I en regelmessig sekskant er alle de 6 vinklene like store: 720° : 6 = 120°."
+    }
+   ]
+  },
+  {
+   "code": "00223",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et trapes har parallelle sider a og b, og høyden mellom dem er h. Hvilken formel gir arealet av trapeset?",
+     "choices": {
+      "A": "(a + b) · h : 2",
+      "B": "a · b · h : 2",
+      "C": "(a + b) · h",
+      "D": "a · h : 2",
+      "E": "(a · h + b) : 2"
+     },
+     "answer": "A",
+     "explanation": "Arealet av et trapes er gjennomsnittet av de parallelle sidene ganget med høyden: (a + b) · h : 2."
+    },
+    {
+     "points": 4,
+     "text": "Et trapes har areal 36 cm². Høyden er 6 cm, og den ene av de parallelle sidene er 5 cm. Hvor lang er den andre parallelle siden?",
+     "choices": {
+      "A": "1 cm",
+      "B": "12 cm",
+      "C": "31 cm",
+      "D": "3,5 cm",
+      "E": "7 cm"
+     },
+     "answer": "E",
+     "explanation": "Fra (5 + b) · 6 : 2 = 36 får vi (5 + b) · 6 = 72, så 5 + b = 12 og b = 7 cm."
+    }
+   ]
+  },
+  {
+   "code": "00224",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et rektangel er 12 cm langt og 5 cm bredt. Hva er arealet av rektangelet?",
+     "choices": {
+      "A": "34 cm²",
+      "B": "17 cm²",
+      "C": "30 cm²",
+      "D": "60 cm²",
+      "E": "120 cm²"
+     },
+     "answer": "D",
+     "explanation": "Arealet av et rektangel er lengde · bredde = 12 cm · 5 cm = 60 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangel har areal 72 cm², og lengden er 9 cm. Hva er omkretsen av rektangelet?",
+     "choices": {
+      "A": "17 cm",
+      "B": "34 cm",
+      "C": "36 cm",
+      "D": "26 cm",
+      "E": "144 cm"
+     },
+     "answer": "B",
+     "explanation": "Bredden er 72 : 9 = 8 cm. Omkretsen er 2 · (9 + 8) = 34 cm."
+    }
+   ]
+  },
+  {
+   "code": "00225",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I et parallellogram er én av vinklene 70°. Hvor stor er vinkelen i nabohjørnet (hjørnet ved siden av)?",
+     "choices": {
+      "A": "110°",
+      "B": "70°",
+      "C": "20°",
+      "D": "290°",
+      "E": "140°"
+     },
+     "answer": "A",
+     "explanation": "I et parallellogram er to nabovinkler til sammen 180°. Nabovinkelen er derfor 180° − 70° = 110°."
+    },
+    {
+     "points": 5,
+     "text": "Et parallellogram har sider på 12 cm og 7 cm. Høyden mot den lange siden er 5 cm. Hvor stor er høyden mot den korte siden? Avrund til én desimal.",
+     "choices": {
+      "A": "2,9 cm",
+      "B": "5,0 cm",
+      "C": "17,1 cm",
+      "D": "8,6 cm",
+      "E": "4,2 cm"
+     },
+     "answer": "D",
+     "explanation": "Arealet er 12 · 5 = 60 cm². Med 7 cm som grunnlinje blir høyden 60 : 7 ≈ 8,6 cm."
+    }
+   ]
+  },
+  {
+   "code": "00226",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket utsagn om diagonalene i en rombe er alltid riktig?",
+     "choices": {
+      "A": "De er alltid like lange",
+      "B": "De er parallelle",
+      "C": "De er like lange som sidene",
+      "D": "De deler romben i to rektangler",
+      "E": "De står vinkelrett på hverandre"
+     },
+     "answer": "E",
+     "explanation": "I en rombe krysser diagonalene hverandre i 90° og deler hverandre på midten. De er bare like lange når romben er et kvadrat."
+    },
+    {
+     "points": 4,
+     "text": "En rombe har sider på 5 cm. Diagonalene er 6 cm og 8 cm. Hva er omkretsen og arealet av romben?",
+     "choices": {
+      "A": "20 cm og 48 cm²",
+      "B": "14 cm og 24 cm²",
+      "C": "20 cm og 24 cm²",
+      "D": "20 cm og 25 cm²",
+      "E": "28 cm og 24 cm²"
+     },
+     "answer": "C",
+     "explanation": "Omkretsen er 4 · 5 = 20 cm. Arealet er diagonal · diagonal : 2 = 6 · 8 : 2 = 24 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00227",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et kvadrat har sider på 7 cm. Hva er arealet av kvadratet?",
+     "choices": {
+      "A": "28 cm²",
+      "B": "49 cm²",
+      "C": "14 cm²",
+      "D": "21 cm²",
+      "E": "196 cm²"
+     },
+     "answer": "B",
+     "explanation": "Arealet av et kvadrat er side · side = 7 cm · 7 cm = 49 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Et kvadrat og et rektangel har like stor omkrets. Rektangelet er 10 cm langt og 6 cm bredt. Hva er arealet av kvadratet?",
+     "choices": {
+      "A": "60 cm²",
+      "B": "16 cm²",
+      "C": "256 cm²",
+      "D": "64 cm²",
+      "E": "32 cm²"
+     },
+     "answer": "D",
+     "explanation": "Omkretsen av rektangelet er 2 · (10 + 6) = 32 cm. Kvadratets side er 32 : 4 = 8 cm, og arealet er 8 · 8 = 64 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00228",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er summen av de tre vinklene i en trekant?",
+     "choices": {
+      "A": "180°",
+      "B": "90°",
+      "C": "270°",
+      "D": "360°",
+      "E": "540°"
+     },
+     "answer": "A",
+     "explanation": "Vinkelsummen i en hvilken som helst trekant er 180°."
+    },
+    {
+     "points": 4,
+     "text": "En trekant har areal 42 cm² og grunnlinje 12 cm. Hvor stor er høyden i trekanten?",
+     "choices": {
+      "A": "3,5 cm",
+      "B": "30 cm",
+      "C": "7 cm",
+      "D": "14 cm",
+      "E": "6 cm"
+     },
+     "answer": "C",
+     "explanation": "Fra 12 · h : 2 = 42 får vi 12 · h = 84, så h = 84 : 12 = 7 cm."
+    }
+   ]
+  },
+  {
+   "code": "00229",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor stor er hver av vinklene i en likesidet trekant?",
+     "choices": {
+      "A": "90°",
+      "B": "45°",
+      "C": "120°",
+      "D": "180°",
+      "E": "60°"
+     },
+     "answer": "E",
+     "explanation": "I en likesidet trekant er alle vinklene like store. 180° : 3 = 60°."
+    },
+    {
+     "points": 4,
+     "text": "En likebeint trekant har en toppvinkel på 40°. De to grunnvinklene er like store. Hvor stor er hver grunnvinkel?",
+     "choices": {
+      "A": "140°",
+      "B": "70°",
+      "C": "40°",
+      "D": "50°",
+      "E": "80°"
+     },
+     "answer": "B",
+     "explanation": "De to grunnvinklene er til sammen 180° − 40° = 140°. Hver av dem er 140° : 2 = 70°."
+    }
+   ]
+  },
+  {
+   "code": "00230",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket utsagn er riktig?",
+     "choices": {
+      "A": "En rombe er alltid et kvadrat",
+      "B": "Et rektangel er alltid en rombe",
+      "C": "Et parallellogram er alltid et rektangel",
+      "D": "Et trapes er alltid et parallellogram",
+      "E": "Et kvadrat er en spesiell type rombe"
+     },
+     "answer": "E",
+     "explanation": "Et kvadrat har fire like lange sider, og det er nettopp kravet til en rombe. En rombe trenger ikke ha rette vinkler, så den er ikke alltid et kvadrat."
+    },
+    {
+     "points": 4,
+     "text": "En firkant har fire like lange sider og to par parallelle sider. To av vinklene er 60°, og de to andre er 120°. Hvilke av navnene parallellogram, rektangel, rombe og kvadrat passer på figuren?",
+     "choices": {
+      "A": "Bare rombe",
+      "B": "Rombe og kvadrat",
+      "C": "Rektangel og rombe",
+      "D": "Parallellogram og rombe",
+      "E": "Bare parallellogram"
+     },
+     "answer": "D",
+     "explanation": "To par parallelle sider gir parallellogram, og fire like sider gir rombe. Vinklene er ikke 90°, så figuren er verken rektangel eller kvadrat."
+    }
+   ]
+  }
+ ]
+}

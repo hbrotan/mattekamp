@@ -1,0 +1,284 @@
+{
+ "slug": "lineaere_funksjoner",
+ "videos": [
+  {
+   "code": "00078",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En funksjon kan beskrives på fire ulike måter. Hvilket alternativ viser de fire representasjonene av en funksjon?",
+     "choices": {
+      "A": "Tekst, tabell, graf og formel",
+      "B": "Tabell, graf, brøk og prosent",
+      "C": "Tekst, figur, likning og ulikhet",
+      "D": "Graf, diagram, søyle og sektor",
+      "E": "Formel, regel, svar og kontroll"
+     },
+     "answer": "A",
+     "explanation": "En funksjon kan beskrives med ord (tekst), som en verditabell, som en graf i et koordinatsystem og som en formel."
+    },
+    {
+     "points": 4,
+     "text": "En taxitur koster 50 kr i startpris pluss 15 kr per kilometer. Hva koster en tur på 12 km?",
+     "choices": {
+      "A": "180 kr",
+      "B": "650 kr",
+      "C": "230 kr",
+      "D": "780 kr",
+      "E": "245 kr"
+     },
+     "answer": "C",
+     "explanation": "Prisen er y = 15x + 50. For x = 12 får vi 15 · 12 + 50 = 180 + 50 = 230 kr."
+    }
+   ]
+  },
+  {
+   "code": "00079",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En graf viser hvor langt en syklist er hjemmefra (strekning) som funksjon av tiden. Fra 10 min til 25 min er grafen en vannrett linje. Hva betyr det?",
+     "choices": {
+      "A": "Syklisten står stille",
+      "B": "Syklisten sykler med konstant fart",
+      "C": "Syklisten sykler stadig fortere",
+      "D": "Syklisten sykler hjemover",
+      "E": "Syklisten sykler oppover en bakke"
+     },
+     "answer": "A",
+     "explanation": "Når strekningen ikke endrer seg mens tiden går, er syklisten like langt hjemmefra hele tiden, altså står hun stille."
+    },
+    {
+     "points": 4,
+     "text": "En strekning–tid-graf for en syklist er en rett linje fra (0 min, 0 km) til (40 min, 12 km). Hva er farten i km/t?",
+     "choices": {
+      "A": "0,3 km/t",
+      "B": "18 km/t",
+      "C": "12 km/t",
+      "D": "30 km/t",
+      "E": "480 km/t"
+     },
+     "answer": "B",
+     "explanation": "40 min er ⅔ time. Farten er 12 km : ⅔ t = 18 km/t."
+    }
+   ]
+  },
+  {
+   "code": "00080",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Tabellen viser pris for parkering: 1 time koster 30 kr, 2 timer koster 60 kr, 3 timer koster 90 kr og 4 timer koster 120 kr. Antall timer er på x-aksen og pris på y-aksen. Hvilket punkt tegner vi for 3 timer?",
+     "choices": {
+      "A": "(90, 3)",
+      "B": "(3, 30)",
+      "C": "(30, 3)",
+      "D": "(3, 120)",
+      "E": "(3, 90)"
+     },
+     "answer": "E",
+     "explanation": "Et punkt skrives (x, y). Med x = 3 timer og y = 90 kr blir punktet (3, 90)."
+    },
+    {
+     "points": 4,
+     "text": "En funksjon har denne verditabellen: x = 0 gir y = 4, x = 1 gir y = 7, x = 2 gir y = 10 og x = 3 gir y = 13. Mønsteret fortsetter likt. Hva er y når x = 10?",
+     "choices": {
+      "A": "30",
+      "B": "31",
+      "C": "34",
+      "D": "40",
+      "E": "43"
+     },
+     "answer": "C",
+     "explanation": "y øker med 3 for hver gang x øker med 1, og starter på 4. Da er y = 3 · 10 + 4 = 34."
+    }
+   ]
+  },
+  {
+   "code": "00081",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Vi lager verditabell for y = 2x − 3 med x = −1, 0, 1 og 2. Hvilke y-verdier får vi, i samme rekkefølge?",
+     "choices": {
+      "A": "−1, −3, −1, 1",
+      "B": "5, 3, 1, −1",
+      "C": "−5, −3, −1, 1",
+      "D": "−4, −3, −2, −1",
+      "E": "−1, 0, 1, 2"
+     },
+     "answer": "C",
+     "explanation": "Sett inn hver x: 2·(−1) − 3 = −5, 2·0 − 3 = −3, 2·1 − 3 = −1 og 2·2 − 3 = 1."
+    },
+    {
+     "points": 4,
+     "text": "Hvilket av punktene ligger IKKE på grafen til y = 3x − 2?",
+     "choices": {
+      "A": "(3, 6)",
+      "B": "(0, −2)",
+      "C": "(1, 1)",
+      "D": "(2, 4)",
+      "E": "(−1, −5)"
+     },
+     "answer": "A",
+     "explanation": "Sett inn x = 3: y = 3 · 3 − 2 = 7, ikke 6. De andre punktene passer i formelen."
+    }
+   ]
+  },
+  {
+   "code": "00084",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Funksjonen er gitt ved f(x) = 5x − 2. Hva er f(3)?",
+     "choices": {
+      "A": "15",
+      "B": "17",
+      "C": "6",
+      "D": "13",
+      "E": "51"
+     },
+     "answer": "D",
+     "explanation": "f(3) = 5 · 3 − 2 = 15 − 2 = 13."
+    },
+    {
+     "points": 4,
+     "text": "Et treningssenter tar 300 kr i innmeldingsavgift og 250 kr per måned. Totalkostnaden etter x måneder er K(x) = 250x + 300. Etter hvor mange måneder har du betalt 3 300 kr totalt?",
+     "choices": {
+      "A": "13,2 måneder",
+      "B": "11 måneder",
+      "C": "12 måneder",
+      "D": "14,4 måneder",
+      "E": "10 måneder"
+     },
+     "answer": "C",
+     "explanation": "Løs 250x + 300 = 3 300. Da er 250x = 3 000, og x = 12."
+    }
+   ]
+  },
+  {
+   "code": "00082",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Funksjonen er y = −3x + 7. Hva er stigningstallet a og konstantleddet b?",
+     "choices": {
+      "A": "a = 7 og b = −3",
+      "B": "a = 3 og b = 7",
+      "C": "a = −3 og b = 7",
+      "D": "a = −3 og b = −7",
+      "E": "a = 7 og b = 3"
+     },
+     "answer": "C",
+     "explanation": "I y = ax + b er a tallet foran x og b tallet som står alene. Her er a = −3 og b = 7."
+    },
+    {
+     "points": 4,
+     "text": "En rett linje går gjennom punktene (0, 2) og (3, 8). Hvilken funksjon har denne grafen?",
+     "choices": {
+      "A": "y = 3x + 2",
+      "B": "y = 2x + 2",
+      "C": "y = 6x + 2",
+      "D": "y = ½x + 2",
+      "E": "y = 2x + 8"
+     },
+     "answer": "B",
+     "explanation": "Linjen krysser y-aksen i 2, så b = 2. Når x øker med 3, øker y med 6, så a = 6 : 3 = 2."
+    }
+   ]
+  },
+  {
+   "code": "00083",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken av disse rette linjene synker, det vil si går nedover når vi går mot høyre?",
+     "choices": {
+      "A": "y = 2x − 5",
+      "B": "y = 0,5x − 3",
+      "C": "y = x",
+      "D": "y = −2x + 5",
+      "E": "y = 3x + 1"
+     },
+     "answer": "D",
+     "explanation": "En linje synker når stigningstallet a er negativt. Bare y = −2x + 5 har negativt stigningstall."
+    },
+    {
+     "points": 4,
+     "text": "En rett linje går gjennom punktene (1, 5) og (4, −1). Hvilken funksjon har denne grafen?",
+     "choices": {
+      "A": "y = 2x + 3",
+      "B": "y = −2x + 5",
+      "C": "y = −6x + 11",
+      "D": "y = −½x + 5,5",
+      "E": "y = −2x + 7"
+     },
+     "answer": "E",
+     "explanation": "Stigningstallet er (−1 − 5) : (4 − 1) = −6 : 3 = −2. Setter vi inn (1, 5): 5 = −2 · 1 + b, så b = 7."
+    }
+   ]
+  },
+  {
+   "code": "00085",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken av funksjonene er proporsjonal?",
+     "choices": {
+      "A": "y = 4x + 1",
+      "B": "y = 4 : x",
+      "C": "y = x²",
+      "D": "y = 4",
+      "E": "y = 4x"
+     },
+     "answer": "E",
+     "explanation": "En proporsjonal funksjon har formen y = ax. Grafen er en rett linje gjennom origo."
+    },
+    {
+     "points": 4,
+     "text": "Prisen for epler er proporsjonal med vekten. 3 kg epler koster 87 kr. Hva koster 5 kg epler?",
+     "choices": {
+      "A": "89 kr",
+      "B": "115 kr",
+      "C": "155 kr",
+      "D": "145 kr",
+      "E": "174 kr"
+     },
+     "answer": "D",
+     "explanation": "1 kg koster 87 kr : 3 = 29 kr. Da koster 5 kg 29 kr · 5 = 145 kr."
+    }
+   ]
+  },
+  {
+   "code": "00094",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Vi løser et likningssett med to ukjente grafisk ved å tegne en linje for hver likning. Hvor finner vi løsningen?",
+     "choices": {
+      "A": "Der linjene krysser y-aksen",
+      "B": "I skjæringspunktet mellom linjene",
+      "C": "Der linjene krysser x-aksen",
+      "D": "I origo",
+      "E": "Der linjene er brattest"
+     },
+     "answer": "B",
+     "explanation": "Løsningen må passe i begge likningene, og det gjør bare punktet som ligger på begge linjene, altså skjæringspunktet."
+    },
+    {
+     "points": 4,
+     "text": "Løs likningssettet grafisk: y = 2x − 1 og y = −x + 5. Hvilket punkt er skjæringspunktet mellom linjene?",
+     "choices": {
+      "A": "(3, 2)",
+      "B": "(1, 1)",
+      "C": "(4, 7)",
+      "D": "(2, 3)",
+      "E": "(−2, 7)"
+     },
+     "answer": "D",
+     "explanation": "Der linjene møtes er 2x − 1 = −x + 5, altså 3x = 6 og x = 2. Da er y = 2 · 2 − 1 = 3."
+    }
+   ]
+  }
+ ]
+}

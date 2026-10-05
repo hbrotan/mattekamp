@@ -1,0 +1,222 @@
+{
+ "slug": "formelregning",
+ "videos": [
+  {
+   "code": "00031",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Arealet av et rektangel er A = l · b. Hva blir b uttrykt ved A og l?",
+     "choices": {
+      "A": "b = A · l",
+      "B": "b = l/A",
+      "C": "b = A/l",
+      "D": "b = A − l",
+      "E": "b = A + l"
+     },
+     "answer": "C",
+     "explanation": "Del begge sider av A = l · b med l. Da får vi b = A/l."
+    },
+    {
+     "points": 4,
+     "text": "Strekning, fart og tid henger sammen etter formelen s = v · t. Gjør om formelen og finn hvor lang tid det tar å kjøre 210 km med farten 84 km/t.",
+     "choices": {
+      "A": "2 timer og 50 min",
+      "B": "0,4 timer",
+      "C": "2,5 timer",
+      "D": "126 timer",
+      "E": "3 timer"
+     },
+     "answer": "C",
+     "explanation": "t = s/v = 210/84 = 2,5 timer, altså 2 timer og 30 minutter."
+    }
+   ]
+  },
+  {
+   "code": "00032",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Omkretsen av et rektangel er O = 2l + 2b. Hva blir l uttrykt ved O og b?",
+     "choices": {
+      "A": "l = O − 2b",
+      "B": "l = (O + 2b)/2",
+      "C": "l = (O − 2b)/2",
+      "D": "l = O/2 − 2b",
+      "E": "l = 2O − b"
+     },
+     "answer": "C",
+     "explanation": "Trekk fra 2b på begge sider: O − 2b = 2l. Del så på 2: l = (O − 2b)/2."
+    },
+    {
+     "points": 4,
+     "text": "Formelen F = 1,8C + 32 gjør om grader celsius (C) til grader fahrenheit (F). Gjør om formelen og finn C når F = 95.",
+     "choices": {
+      "A": "113,4 °C",
+      "B": "ca. 20,8 °C",
+      "C": "35 °C",
+      "D": "ca. 70,6 °C",
+      "E": "63 °C"
+     },
+     "answer": "C",
+     "explanation": "C = (F − 32)/1,8. Med F = 95 får vi C = 63/1,8 = 35."
+    }
+   ]
+  },
+  {
+   "code": "00033",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Overflatearealet av en sylinder er A = 2πr² + 2πrh. Hva får du når du faktoriserer høyresiden?",
+     "choices": {
+      "A": "2πr(r + 2h)",
+      "B": "2π(r² + h)",
+      "C": "πr(2r + h)",
+      "D": "2πr²(1 + h)",
+      "E": "2πr(r + h)"
+     },
+     "answer": "E",
+     "explanation": "Begge leddene inneholder faktoren 2πr. Da blir 2πr² + 2πrh = 2πr(r + h)."
+    },
+    {
+     "points": 4,
+     "text": "Overflatearealet av en sylinder er A = 2πr² + 2πrh. Hva blir h uttrykt ved A og r?",
+     "choices": {
+      "A": "h = A/(2πr) − r²",
+      "B": "h = (A − 2πr)/(2πr²)",
+      "C": "h = (A − 2πr²)/(2π)",
+      "D": "h = (A − 2πr²)/(2πr)",
+      "E": "h = (A − r)/(2πr)"
+     },
+     "answer": "D",
+     "explanation": "Trekk fra 2πr² på begge sider: A − 2πr² = 2πrh. Del så på 2πr: h = (A − 2πr²)/(2πr)."
+    }
+   ]
+  },
+  {
+   "code": "00034",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Når en ukjent står i flere ledd, kan vi sette den utenfor en parentes. Hva blir 4s + ks faktorisert?",
+     "choices": {
+      "A": "s(4 + k)",
+      "B": "4ks",
+      "C": "4s(1 + k)",
+      "D": "2s(4 + k)",
+      "E": "s + 4k"
+     },
+     "answer": "A",
+     "explanation": "s er felles faktor i begge leddene: 4s + ks = s(4 + k)."
+    },
+    {
+     "points": 5,
+     "text": "Gitt formelen p = 2s + ds − 5. Finn s uttrykt ved p og d.",
+     "choices": {
+      "A": "s = (p − 5)/(2 + d)",
+      "B": "s = (p + 5)/(2d)",
+      "C": "s = (p + 5 − d)/2",
+      "D": "s = (p + 5)/d − 2",
+      "E": "s = (p + 5)/(2 + d)"
+     },
+     "answer": "E",
+     "explanation": "Legg til 5: p + 5 = 2s + ds = s(2 + d). Del på (2 + d): s = (p + 5)/(2 + d)."
+    }
+   ]
+  },
+  {
+   "code": "00035",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Volumet av en sylinder er V = πr²h. Hva blir h uttrykt ved V og r?",
+     "choices": {
+      "A": "h = V/(πr)",
+      "B": "h = V/(πr²)",
+      "C": "h = V · πr²",
+      "D": "h = πr²/V",
+      "E": "h = V/(2πr)"
+     },
+     "answer": "B",
+     "explanation": "Del begge sider av V = πr²h med πr². Da får vi h = V/(πr²)."
+    },
+    {
+     "points": 5,
+     "text": "En sylinder har volum V = πr²h og overflateareal A = 2πr² + 2πrh. Uttrykk A ved r og V (uten h).",
+     "choices": {
+      "A": "A = 2πr² + 2V",
+      "B": "A = 2πr² + 2V/r",
+      "C": "A = 2πr² + 2Vr",
+      "D": "A = 2πr² + V/r",
+      "E": "A = 2πr² + 2V/r²"
+     },
+     "answer": "B",
+     "explanation": "Fra volumformelen er h = V/(πr²). Innsatt: 2πr · V/(πr²) = 2V/r, så A = 2πr² + 2V/r."
+    }
+   ]
+  },
+  {
+   "code": "00036",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Volumet av en kule er V = (4/3)πr³. Hvor mange ganger så stort blir volumet hvis radien dobles?",
+     "choices": {
+      "A": "2 ganger",
+      "B": "4 ganger",
+      "C": "6 ganger",
+      "D": "8 ganger",
+      "E": "16 ganger"
+     },
+     "answer": "D",
+     "explanation": "Bytter vi r med 2r, får vi (4/3)π(2r)³ = 8 · (4/3)πr³. Volumet blir 2³ = 8 ganger så stort."
+    },
+    {
+     "points": 4,
+     "text": "Radien i en kule blir 1,5 ganger så stor. Hvor mange ganger så stort blir volumet? Bruk V = (4/3)πr³.",
+     "choices": {
+      "A": "4,5 ganger",
+      "B": "2,25 ganger",
+      "C": "1,5 ganger",
+      "D": "3,5 ganger",
+      "E": "3,375 ganger"
+     },
+     "answer": "E",
+     "explanation": "Volumet avhenger av r³, så det blir 1,5³ = 1,5 · 1,5 · 1,5 = 3,375 ganger så stort."
+    }
+   ]
+  },
+  {
+   "code": "00010",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Høyden i en likesidet trekant med side s er (√3/2) · s. Hva er arealet av trekanten uttrykt ved s?",
+     "choices": {
+      "A": "(√3/4) · s²",
+      "B": "(√3/2) · s²",
+      "C": "½ · s²",
+      "D": "(√3/4) · s",
+      "E": "(√3/8) · s²"
+     },
+     "answer": "A",
+     "explanation": "Areal = grunnlinje · høyde / 2 = s · (√3/2)s / 2 = (√3/4) · s²."
+    },
+    {
+     "points": 5,
+     "text": "En figur består av et kvadrat med side s og en likesidet trekant med side s som står oppå kvadratet. Hele figuren har areal A. Hva er s uttrykt ved A? (Trekantens areal er (√3/4)s².)",
+     "choices": {
+      "A": "s = 4A/(4 + √3)",
+      "B": "s = √(2A/(2 + √3))",
+      "C": "s = √(4A/(4 + √3))",
+      "D": "s = √(4A/(1 + √3))",
+      "E": "s = √(A/(4 + √3))"
+     },
+     "answer": "C",
+     "explanation": "A = s² + (√3/4)s² = s²(4 + √3)/4. Da er s² = 4A/(4 + √3), og s = √(4A/(4 + √3))."
+    }
+   ]
+  }
+ ]
+}

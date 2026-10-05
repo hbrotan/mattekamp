@@ -5,8 +5,11 @@ import { z } from "zod";
 import type { Db } from "./db.js";
 
 /**
- * Innholdsfiler: content/<kilde>/sets.json. Hver kilde (kenguru, senere andre)
- * leverer oppgavesett i dette formatet; bildestier er relative til content/.
+ * Innholdsfiler: content/<kilde>/sets.json. Hver kilde (kenguru, getsmart ...) leverer
+ * oppgavesett i dette formatet; bildestier er relative til content/.
+ *
+ * En oppgave er enten et bilde (Kenguru: spørsmål og alternativer står i bildet) eller tekst
+ * med svaralternativer i `choices`. Den kan ha en YouTube-video som forklarer emnet.
  */
 const TaskFile = z.object({
   n: z.number().int().positive(),
@@ -14,9 +17,14 @@ const TaskFile = z.object({
   kind: z.enum(["choice"]).default("choice"),
   answer: z.string().min(1),
   options: z.array(z.string()).optional(),
-  img: z.array(z.string()).min(1),
+  img: z.array(z.string()).default([]),
+  text: z.string().optional(),
+  choices: z.record(z.string(), z.string()).optional(),
+  video: z.object({ youtubeId: z.string().regex(/^[A-Za-z0-9_-]{6,20}$/), title: z.string() }).optional(),
   sol: z.array(z.string()).default([]),
-});
+  explanation: z.string().optional(),
+}).refine((t) => t.img.length > 0 || t.text, "Oppgaven må ha bilde eller tekst")
+  .refine((t) => !t.choices || t.answer in t.choices, "Fasiten må være et av svaralternativene");
 
 const SetFile = z.object({
   id: z.string().min(1),
@@ -24,11 +32,13 @@ const SetFile = z.object({
   levelName: z.string(),
   grades: z.string().default(""),
   year: z.number().int().optional(),
+  title: z.string().optional(),
   tasks: z.array(TaskFile).min(1),
 });
 
 const SourceFile = z.object({
   source: z.string().regex(/^[a-z0-9-]+$/),
+  sourceName: z.string().optional(),
   sets: z.array(SetFile),
 });
 
@@ -52,7 +62,8 @@ export async function seedContent(db: Db, contentDir: string): Promise<{ sets: n
     const setRows = data.sets.map((s, index) => ({
       id: `${data.source}-${s.id}`,
       source: data.source,
-      title: s.year ? `${s.levelName} ${s.year}` : s.levelName,
+      source_name: data.sourceName ?? data.source,
+      title: s.title ?? (s.year ? `${s.levelName} ${s.year}` : s.levelName),
       level: s.level,
       level_name: s.levelName,
       grades: s.grades,
@@ -65,10 +76,10 @@ export async function seedContent(db: Db, contentDir: string): Promise<{ sets: n
       n: t.n,
       kind: t.kind,
       points: t.points,
-      prompt: JSON.stringify({ images: t.img }),
-      options: JSON.stringify(t.options ?? DEFAULT_OPTIONS),
+      prompt: JSON.stringify({ images: t.img, text: t.text, choices: t.choices, video: t.video }),
+      options: JSON.stringify(t.options ?? (t.choices ? Object.keys(t.choices) : DEFAULT_OPTIONS)),
       answer: t.answer,
-      solution: JSON.stringify({ images: t.sol }),
+      solution: JSON.stringify({ images: t.sol, text: t.explanation }),
     })));
 
     // Hele kilden sendes som ett JSON-parameter og flettes inn med MERGE (én rundtur)
@@ -76,14 +87,14 @@ export async function seedContent(db: Db, contentDir: string): Promise<{ sets: n
       await q`
         merge task_sets as t
         using (select * from openjson(${JSON.stringify(setRows)}) with (
-          id varchar(100), source varchar(50), title nvarchar(100), level varchar(50),
+          id varchar(100), source varchar(50), source_name nvarchar(50), title nvarchar(100), level varchar(50),
           level_name nvarchar(100), grades nvarchar(100), year int, sort_key int)) as s
         on t.id = s.id
         when matched then update set
-          title = s.title, level = s.level, level_name = s.level_name, grades = s.grades,
+          source_name = s.source_name, title = s.title, level = s.level, level_name = s.level_name, grades = s.grades,
           year = s.year, sort_key = s.sort_key, active = 1
-        when not matched then insert (id, source, title, level, level_name, grades, year, sort_key)
-          values (s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key);`;
+        when not matched then insert (id, source, source_name, title, level, level_name, grades, year, sort_key)
+          values (s.id, s.source, s.source_name, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key);`;
       await q`
         merge tasks as t
         using (select * from openjson(${JSON.stringify(taskRows)}) with (

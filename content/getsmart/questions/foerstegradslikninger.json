@@ -1,0 +1,284 @@
+{
+ "slug": "foerstegradslikninger",
+ "videos": [
+  {
+   "code": "00001",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En skålvekt er i balanse. På venstre skål ligger 3 like poser og et lodd på 2 kg. På høyre skål ligger lodd på til sammen 14 kg. Hvor mye veier én pose?",
+     "choices": {
+      "A": "3 kg",
+      "B": "4 kg",
+      "C": "6 kg",
+      "D": "12 kg",
+      "E": "5⅓ kg"
+     },
+     "answer": "B",
+     "explanation": "Likningen er 3x + 2 = 14. Tar vi bort 2 kg på begge sider, får vi 3x = 12, altså x = 4 kg."
+    },
+    {
+     "points": 4,
+     "text": "En skålvekt er i balanse. På venstre skål ligger 5 like klosser og et lodd på 1 kg. På høyre skål ligger 2 slike klosser og lodd på 10 kg. Hvor mye veier én kloss?",
+     "choices": {
+      "A": "3 kg",
+      "B": "1,8 kg",
+      "C": "4,5 kg",
+      "D": "9 kg",
+      "E": "2 kg"
+     },
+     "answer": "A",
+     "explanation": "5x + 1 = 2x + 10. Tar vi bort 2 klosser og 1 kg på begge sider, får vi 3x = 9, så x = 3 kg."
+    }
+   ]
+  },
+  {
+   "code": "00043",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Løs likningen x − 7 = 12.",
+     "choices": {
+      "A": "x = 19",
+      "B": "x = 5",
+      "C": "x = −5",
+      "D": "x = −19",
+      "E": "x = 84"
+     },
+     "answer": "A",
+     "explanation": "Legg til 7 på begge sider (eller flytt −7 over og bytt fortegn): x = 12 + 7 = 19."
+    },
+    {
+     "points": 4,
+     "text": "Løs likningen 4x + 3 = 2x − 9 ved hjelp av flytte-bytte-regelen.",
+     "choices": {
+      "A": "x = −6",
+      "B": "x = 6",
+      "C": "x = −3",
+      "D": "x = −1",
+      "E": "x = −12"
+     },
+     "answer": "A",
+     "explanation": "Flytt 2x til venstre og 3 til høyre med motsatt fortegn: 4x − 2x = −9 − 3, altså 2x = −12 og x = −6."
+    }
+   ]
+  },
+  {
+   "code": "00044",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Løs likningen 5x = 35.",
+     "choices": {
+      "A": "x = 7",
+      "B": "x = 30",
+      "C": "x = 40",
+      "D": "x = 175",
+      "E": "x = 5"
+     },
+     "answer": "A",
+     "explanation": "Del begge sider med 5: x = 35 : 5 = 7."
+    },
+    {
+     "points": 4,
+     "text": "Løs likningen x/4 − 2 = 3.",
+     "choices": {
+      "A": "x = 20",
+      "B": "x = 4",
+      "C": "x = 1,25",
+      "D": "x = 12",
+      "E": "x = 5"
+     },
+     "answer": "A",
+     "explanation": "Legg til 2 på begge sider: x/4 = 5. Gang så begge sider med 4: x = 20."
+    }
+   ]
+  },
+  {
+   "code": "00045",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Sett prøve. Hvilken av disse verdiene er løsningen av likningen 3x − 4 = 2x + 1?",
+     "choices": {
+      "A": "x = 3",
+      "B": "x = −3",
+      "C": "x = 1",
+      "D": "x = 5",
+      "E": "x = −5"
+     },
+     "answer": "D",
+     "explanation": "Med x = 5 blir venstre side 3·5 − 4 = 11 og høyre side 2·5 + 1 = 11. Sidene er like, så x = 5 er løsningen."
+    },
+    {
+     "points": 4,
+     "text": "Jonas har løst likningen 3(x − 2) = x + 8 og fått x = 5. Han setter prøve. Hva viser prøven, og hva er riktig løsning?",
+     "choices": {
+      "A": "x = 5 stemmer",
+      "B": "Feil, riktig er x = 3,5",
+      "C": "Feil, riktig er x = 1",
+      "D": "Feil, riktig er x = 7",
+      "E": "Feil, riktig er x = 4"
+     },
+     "answer": "D",
+     "explanation": "Med x = 5 blir venstre side 3·3 = 9 og høyre side 13, så svaret er feil. Riktig: 3x − 6 = x + 8 gir 2x = 14 og x = 7 (prøve: 15 = 15)."
+    }
+   ]
+  },
+  {
+   "code": "00003",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Se på likningen 3/(x − 2) = 5/(x + 4). Hvilke x-verdier kan ikke være løsninger?",
+     "choices": {
+      "A": "x = −2 og x = 4",
+      "B": "x = 2 og x = 4",
+      "C": "x = 2 og x = −4",
+      "D": "bare x = 0",
+      "E": "x = 3 og x = 5"
+     },
+     "answer": "C",
+     "explanation": "Vi kan ikke dele på 0. Nevneren x − 2 er 0 når x = 2, og x + 4 er 0 når x = −4."
+    },
+    {
+     "points": 4,
+     "text": "Løs likningen 3/(x − 2) = 5/(x + 4).",
+     "choices": {
+      "A": "x = 3",
+      "B": "x = 11",
+      "C": "x = 7",
+      "D": "x = −11",
+      "E": "x = 1"
+     },
+     "answer": "B",
+     "explanation": "Gang med fellesnevneren (x − 2)(x + 4): 3(x + 4) = 5(x − 2). Det gir 3x + 12 = 5x − 10, altså 22 = 2x og x = 11."
+    }
+   ]
+  },
+  {
+   "code": "00002",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er minste felles nevner i likningen x/4 + x/6 = 5?",
+     "choices": {
+      "A": "24",
+      "B": "10",
+      "C": "2",
+      "D": "12",
+      "E": "6"
+     },
+     "answer": "D",
+     "explanation": "12 er det minste tallet som både 4 og 6 går opp i."
+    },
+    {
+     "points": 4,
+     "text": "Løs likningen x/4 + x/6 = 5.",
+     "choices": {
+      "A": "x = 25",
+      "B": "x = 12",
+      "C": "x = 24",
+      "D": "x = 6",
+      "E": "x = 60"
+     },
+     "answer": "B",
+     "explanation": "Gang alle ledd med 12: 3x + 2x = 60. Da er 5x = 60 og x = 12."
+    }
+   ]
+  },
+  {
+   "code": "00103",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Se på likningen (x + 2)/x − (x − 1)/(2x) = 3. Hva er den minste fellesnevneren, og hvilken x-verdi kan ikke være løsning?",
+     "choices": {
+      "A": "2x, og x ≠ 0",
+      "B": "2x², og x ≠ 0",
+      "C": "2x, og x ≠ 2",
+      "D": "3x, og x ≠ 0",
+      "E": "x + 2, og x ≠ −2"
+     },
+     "answer": "A",
+     "explanation": "Både x og 2x går opp i 2x, så 2x er fellesnevner. Begge nevnerne blir 0 når x = 0, så x = 0 kan ikke være løsning."
+    },
+    {
+     "points": 5,
+     "text": "Løs likningen (x + 2)/x − (x − 1)/(2x) = 3.",
+     "choices": {
+      "A": "x = 3/5",
+      "B": "x = ½",
+      "C": "x = −2",
+      "D": "x = 5",
+      "E": "x = 1"
+     },
+     "answer": "E",
+     "explanation": "Gang med 2x: 2(x + 2) − (x − 1) = 6x. Pass på minus foran parentesen: 2x + 4 − x + 1 = 6x, så x + 5 = 6x og x = 1."
+    }
+   ]
+  },
+  {
+   "code": "00048",
+   "questions": [
+    {
+     "points": 3,
+     "text": "For å finne fellesnevner i likninger med brøk må vi ofte faktorisere. Hva blir x² − 9 faktorisert?",
+     "choices": {
+      "A": "(x − 3)²",
+      "B": "(x + 3)²",
+      "C": "(x + 3)(x − 3)",
+      "D": "(x − 9)(x + 9)",
+      "E": "x(x − 9)"
+     },
+     "answer": "C",
+     "explanation": "x² − 9 = x² − 3², som etter konjugatsetningen er (x + 3)(x − 3)."
+    },
+    {
+     "points": 5,
+     "text": "Løs likningen x/(x − 3) − 2/(x + 3) = (x² + 15)/(x² − 9).",
+     "choices": {
+      "A": "x = 21",
+      "B": "x = 3",
+      "C": "x = 9",
+      "D": "x = −9",
+      "E": "Ingen løsning"
+     },
+     "answer": "C",
+     "explanation": "Fellesnevner er (x − 3)(x + 3) = x² − 9. Vi får x(x + 3) − 2(x − 3) = x² + 15, altså x² + x + 6 = x² + 15 og x = 9. Verdien gir ikke null i noen nevner."
+    }
+   ]
+  },
+  {
+   "code": "00094",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et likningssett med to ukjente kan løses grafisk ved å tegne begge likningene som linjer i samme koordinatsystem. Hvor finner du løsningen?",
+     "choices": {
+      "A": "Der linjene skjærer y-aksen",
+      "B": "Der linjene skjærer hverandre",
+      "C": "Der linjene skjærer x-aksen",
+      "D": "I origo",
+      "E": "Der linjene er parallelle"
+     },
+     "answer": "B",
+     "explanation": "Skjæringspunktet ligger på begge linjene. Derfor passer x- og y-verdien der i begge likningene."
+    },
+    {
+     "points": 4,
+     "text": "Likningssettet y = 2x + 1 og x + y = 7 løses grafisk. Hvilket punkt er skjæringspunktet mellom linjene?",
+     "choices": {
+      "A": "(5, 2)",
+      "B": "(2, 5)",
+      "C": "(0, 1)",
+      "D": "(0, 7)",
+      "E": "(3, 4)"
+     },
+     "answer": "B",
+     "explanation": "x + y = 7 er linja y = −x + 7. Linjene møtes når 2x + 1 = −x + 7, altså x = 2 og y = 5."
+    }
+   ]
+  }
+ ]
+}

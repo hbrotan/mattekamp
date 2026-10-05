@@ -1,0 +1,315 @@
+{
+ "slug": "ikke-lineaere_funksjoner",
+ "videos": [
+  {
+   "code": "00086",
+   "questions": [
+    {
+     "points": 3,
+     "text": "x og y er omvendt proporsjonale. Når x = 4, er y = 6. Hva er y når x = 8?",
+     "choices": {
+      "A": "3",
+      "B": "12",
+      "C": "10",
+      "D": "2",
+      "E": "24"
+     },
+     "answer": "A",
+     "explanation": "Ved omvendt proporsjonalitet er x · y konstant: 4 · 6 = 24. Da er y = 24 : 8 = 3."
+    },
+    {
+     "points": 4,
+     "text": "6 malere bruker 10 dager på å male et hus. Hvor mange dager bruker 4 malere hvis alle jobber like fort?",
+     "choices": {
+      "A": "15 dager",
+      "B": "6⅔ dager",
+      "C": "8 dager",
+      "D": "12 dager",
+      "E": "20 dager"
+     },
+     "answer": "A",
+     "explanation": "Jobben tilsvarer 6 · 10 = 60 malerdager. Med 4 malere tar det 60 : 4 = 15 dager."
+    }
+   ]
+  },
+  {
+   "code": "00087",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Funksjonen er f(x) = x² − 4x + 3. Hva er f(−2)?",
+     "choices": {
+      "A": "−9",
+      "B": "15",
+      "C": "−1",
+      "D": "7",
+      "E": "11"
+     },
+     "answer": "B",
+     "explanation": "f(−2) = (−2)² − 4 · (−2) + 3 = 4 + 8 + 3 = 15."
+    },
+    {
+     "points": 4,
+     "text": "Grafen til f(x) = x² − 6x + 5 har et bunnpunkt. Grafen er symmetrisk om linjen x = 3. Hva er bunnpunktet?",
+     "choices": {
+      "A": "(1, 0)",
+      "B": "(3, −4)",
+      "C": "(−3, 32)",
+      "D": "(6, 5)",
+      "E": "(0, 5)"
+     },
+     "answer": "B",
+     "explanation": "Bunnpunktet ligger på symmetrilinjen x = 3. f(3) = 9 − 18 + 5 = −4, så bunnpunktet er (3, −4)."
+    }
+   ]
+  },
+  {
+   "code": "00088",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken av andregradsfunksjonene har et toppunkt (grafen åpner seg nedover)?",
+     "choices": {
+      "A": "f(x) = x² − 5",
+      "B": "f(x) = 2x² − x",
+      "C": "f(x) = 0,5x² + 3x − 1",
+      "D": "f(x) = −2x² + x + 3",
+      "E": "f(x) = x² + 4x + 4"
+     },
+     "answer": "D",
+     "explanation": "Grafen åpner seg nedover når tallet foran x² er negativt. Det gjelder bare −2x² + x + 3."
+    },
+    {
+     "points": 4,
+     "text": "Finn nullpunktene til f(x) = −x² + 2x + 8, altså x-verdiene der f(x) = 0.",
+     "choices": {
+      "A": "x = −4 og x = 2",
+      "B": "x = 2 og x = 8",
+      "C": "x = 1 og x = 9",
+      "D": "x = −8 og x = 1",
+      "E": "x = −2 og x = 4"
+     },
+     "answer": "E",
+     "explanation": "Sjekk: f(−2) = −4 − 4 + 8 = 0 og f(4) = −16 + 8 + 8 = 0. De andre alternativene gir ikke 0."
+    }
+   ]
+  },
+  {
+   "code": "00089",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et rektangel har omkrets 20 cm. Hvis den ene siden er x cm, er den andre (10 − x) cm, og arealet er A(x) = x · (10 − x). Hva er A(3)?",
+     "choices": {
+      "A": "30 cm²",
+      "B": "21 cm²",
+      "C": "7 cm²",
+      "D": "13 cm²",
+      "E": "27 cm²"
+     },
+     "answer": "B",
+     "explanation": "A(3) = 3 · (10 − 3) = 3 · 7 = 21 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Arealet av rektangelet er A(x) = x · (10 − x), der x er lengden av en side i cm. For hvilken x er arealet størst, og hvor stort er det?",
+     "choices": {
+      "A": "x = 10 og A = 0 cm²",
+      "B": "x = 5 og A = 25 cm²",
+      "C": "x = 5 og A = 50 cm²",
+      "D": "x = 4 og A = 24 cm²",
+      "E": "x = 2,5 og A = 18,75 cm²"
+     },
+     "answer": "B",
+     "explanation": "Grafen er symmetrisk om midten mellom nullpunktene x = 0 og x = 10, altså x = 5. Da er A(5) = 5 · 5 = 25 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00090",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Potensfunksjonen er f(x) = 2x³. Hva er f(3)?",
+     "choices": {
+      "A": "18",
+      "B": "54",
+      "C": "36",
+      "D": "216",
+      "E": "729"
+     },
+     "answer": "B",
+     "explanation": "f(3) = 2 · 3³ = 2 · 27 = 54. Husk at bare x skal opphøyes, ikke 2."
+    },
+    {
+     "points": 4,
+     "text": "Volumet av en kube med sidekant x er V(x) = x³. Hvor mange ganger større blir volumet hvis sidekanten dobles?",
+     "choices": {
+      "A": "2 ganger",
+      "B": "8 ganger",
+      "C": "4 ganger",
+      "D": "6 ganger",
+      "E": "9 ganger"
+     },
+     "answer": "B",
+     "explanation": "V(2x) = (2x)³ = 2³ · x³ = 8x³. Volumet blir 8 ganger så stort."
+    }
+   ]
+  },
+  {
+   "code": "00091",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken av funksjonene er en eksponentialfunksjon?",
+     "choices": {
+      "A": "f(x) = 500x + 1,05",
+      "B": "f(x) = 1,05x²",
+      "C": "f(x) = 500 : x",
+      "D": "f(x) = 500x³",
+      "E": "f(x) = 500 · 1,05ˣ"
+     },
+     "answer": "E",
+     "explanation": "I en eksponentialfunksjon står x i eksponenten, som i a · bˣ. Det gjelder bare 500 · 1,05ˣ."
+    },
+    {
+     "points": 4,
+     "text": "Du setter 20 000 kr i banken med 3 % rente per år. Beløpet etter x år er B(x) = 20 000 · 1,03ˣ. Hvor mye er det på kontoen etter 2 år?",
+     "choices": {
+      "A": "20 600 kr",
+      "B": "21 200 kr",
+      "C": "21 218 kr",
+      "D": "21 855 kr",
+      "E": "26 000 kr"
+     },
+     "answer": "C",
+     "explanation": "B(2) = 20 000 · 1,03² = 20 000 · 1,0609 = 21 218 kr. Renten gir rente, så det blir mer enn 21 200 kr."
+    }
+   ]
+  },
+  {
+   "code": "00092",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En bil taper 15 % av verdien sin hvert år. Hvilken vekstfaktor bruker vi i en eksponentialfunksjon for verdien?",
+     "choices": {
+      "A": "0,15",
+      "B": "1,15",
+      "C": "1,85",
+      "D": "0,85",
+      "E": "85"
+     },
+     "answer": "D",
+     "explanation": "Etter et år er det 100 % − 15 % = 85 % igjen av verdien. Vekstfaktoren er 85 % = 0,85."
+    },
+    {
+     "points": 5,
+     "text": "En bil koster 300 000 kr ny. Verdien etter x år er V(x) = 300 000 · 0,85ˣ. Hva er verdien etter 3 år, avrundet til nærmeste tusen kroner?",
+     "choices": {
+      "A": "165 000 kr",
+      "B": "184 000 kr",
+      "C": "217 000 kr",
+      "D": "255 000 kr",
+      "E": "135 000 kr"
+     },
+     "answer": "B",
+     "explanation": "V(3) = 300 000 · 0,85³ = 300 000 · 0,614125 ≈ 184 237 kr, som blir 184 000 kr avrundet."
+    }
+   ]
+  },
+  {
+   "code": "00137",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva kaller vi et punkt på en graf der funksjonen går fra å stige til å synke?",
+     "choices": {
+      "A": "Bunnpunkt",
+      "B": "Nullpunkt",
+      "C": "Toppunkt",
+      "D": "Skjæringspunkt",
+      "E": "Konstantledd"
+     },
+     "answer": "C",
+     "explanation": "Der grafen slutter å stige og begynner å synke, har den et toppunkt (et lokalt maksimum)."
+    },
+    {
+     "points": 4,
+     "text": "En graf for 0 ≤ x ≤ 10 har bunnpunkt i (2, −3) og toppunkt i (6, 5). Den har ingen andre topp- eller bunnpunkter. I hvilket område stiger grafen?",
+     "choices": {
+      "A": "Fra x = 2 til x = 6",
+      "B": "Fra x = −3 til x = 5",
+      "C": "Fra x = 0 til x = 2",
+      "D": "Fra x = 6 til x = 10",
+      "E": "Fra x = 0 til x = 6"
+     },
+     "answer": "A",
+     "explanation": "Fram til bunnpunktet synker grafen, fra bunnpunktet til toppunktet stiger den, og etter toppunktet synker den igjen."
+    }
+   ]
+  },
+  {
+   "code": "00138",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Temperaturen ble målt gjennom en dag: kl. 06: 4 °C, kl. 09: 8 °C, kl. 12: 13 °C, kl. 15: 15 °C, kl. 18: 11 °C og kl. 21: 8 °C. Hva var gjennomsnittlig temperaturøkning per time fra kl. 06 til kl. 12?",
+     "choices": {
+      "A": "9 °C per time",
+      "B": "2,2 °C per time",
+      "C": "0,67 °C per time",
+      "D": "1,5 °C per time",
+      "E": "3 °C per time"
+     },
+     "answer": "D",
+     "explanation": "Økningen er 13 °C − 4 °C = 9 °C på 6 timer. 9 : 6 = 1,5 °C per time."
+    },
+    {
+     "points": 4,
+     "text": "Bruk de samme målingene: kl. 06: 4 °C, kl. 09: 8 °C, kl. 12: 13 °C, kl. 15: 15 °C, kl. 18: 11 °C og kl. 21: 8 °C. Mellom hvilke to målinger som kommer etter hverandre, sank temperaturen mest?",
+     "choices": {
+      "A": "Mellom kl. 06 og kl. 09",
+      "B": "Mellom kl. 15 og kl. 18",
+      "C": "Mellom kl. 09 og kl. 12",
+      "D": "Mellom kl. 12 og kl. 15",
+      "E": "Mellom kl. 18 og kl. 21"
+     },
+     "answer": "B",
+     "explanation": "Fra kl. 15 til 18 sank temperaturen med 4 °C, og fra kl. 18 til 21 med 3 °C. Før kl. 15 steg temperaturen."
+    }
+   ]
+  },
+  {
+   "code": "00093",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Vi løser likningen 2x + 1 = 7 grafisk ved å tegne linjene y = 2x + 1 og y = 7. Hva er løsningen?",
+     "choices": {
+      "A": "x = 7",
+      "B": "x = 4",
+      "C": "x = 1",
+      "D": "x = −3",
+      "E": "x = 3"
+     },
+     "answer": "E",
+     "explanation": "Løsningen er x-verdien i skjæringspunktet. 2x + 1 = 7 gir 2x = 6, altså x = 3."
+    },
+    {
+     "points": 4,
+     "text": "Likningen x² = x + 2 løses grafisk ved å tegne y = x² og y = x + 2. Hvilke x-verdier har skjæringspunktene?",
+     "choices": {
+      "A": "x = −1 og x = 2",
+      "B": "x = 1 og x = −2",
+      "C": "x = 2 og x = 4",
+      "D": "x = 0 og x = 2",
+      "E": "x = −2 og x = −1"
+     },
+     "answer": "A",
+     "explanation": "Sjekk: (−1)² = 1 og −1 + 2 = 1, og 2² = 4 og 2 + 2 = 4. Begge x-verdiene gir samme y på begge grafene."
+    }
+   ]
+  }
+ ]
+}

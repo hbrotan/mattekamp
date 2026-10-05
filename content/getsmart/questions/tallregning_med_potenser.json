@@ -1,0 +1,532 @@
+{
+  "slug": "tallregning_med_potenser",
+  "videos": [
+    {
+      "code": "00180",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er verdien av potensen 2⁵?",
+          "choices": {
+            "A": "10",
+            "B": "32",
+            "C": "25",
+            "D": "7",
+            "E": "64"
+          },
+          "answer": "B",
+          "explanation": "2⁵ = 2 · 2 · 2 · 2 · 2 = 32."
+        },
+        {
+          "points": 4,
+          "text": "Skriv 3⁴ · 3⁵ : 3³ som én potens.",
+          "choices": {
+            "A": "3⁶",
+            "B": "3¹²",
+            "C": "3¹⁷",
+            "D": "3²",
+            "E": "6⁶"
+          },
+          "answer": "A",
+          "explanation": "Ved multiplikasjon legger vi sammen eksponentene, og ved divisjon trekker vi fra: 4 + 5 − 3 = 6. Svaret er 3⁶."
+        }
+      ]
+    },
+    {
+      "code": "00181",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er 7⁰?",
+          "choices": {
+            "A": "1",
+            "B": "0",
+            "C": "7",
+            "D": "70",
+            "E": "1/7"
+          },
+          "answer": "A",
+          "explanation": "Alle potenser (med grunntall forskjellig fra 0) med eksponent 0 har verdien 1."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 2⁻³ · 4.",
+          "choices": {
+            "A": "−32",
+            "B": "32",
+            "C": "−24",
+            "D": "½",
+            "E": "1/32"
+          },
+          "answer": "D",
+          "explanation": "2⁻³ = 1/2³ = 1/8. Da er 1/8 · 4 = 4/8 = ½."
+        }
+      ]
+    },
+    {
+      "code": "00182",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er √81?",
+          "choices": {
+            "A": "40,5",
+            "B": "18",
+            "C": "3",
+            "D": "6 561",
+            "E": "9"
+          },
+          "answer": "E",
+          "explanation": "√81 er det positive tallet som ganget med seg selv gir 81. Siden 9 · 9 = 81, er √81 = 9."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut (√13)² + √(5²).",
+          "choices": {
+            "A": "194",
+            "B": "36",
+            "C": "√18",
+            "D": "18",
+            "E": "8"
+          },
+          "answer": "D",
+          "explanation": "Å kvadrere og å trekke kvadratroten er motsatte regneoperasjoner. Derfor er (√13)² = 13 og √(5²) = 5, og 13 + 5 = 18."
+        }
+      ]
+    },
+    {
+      "code": "00183",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av disse tallene er et kvadrattall?",
+          "choices": {
+            "A": "24",
+            "B": "50",
+            "C": "90",
+            "D": "160",
+            "E": "144"
+          },
+          "answer": "E",
+          "explanation": "Et kvadrattall er et heltall ganget med seg selv. 144 = 12 · 12."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut √50 − √18 og skriv svaret så enkelt som mulig.",
+          "choices": {
+            "A": "√32",
+            "B": "8√2",
+            "C": "2√2",
+            "D": "2",
+            "E": "4"
+          },
+          "answer": "C",
+          "explanation": "√50 = √(25 · 2) = 5√2 og √18 = √(9 · 2) = 3√2. Da er 5√2 − 3√2 = 2√2."
+        }
+      ]
+    },
+    {
+      "code": "00184",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut √(4 · 25).",
+          "choices": {
+            "A": "100",
+            "B": "29",
+            "C": "50",
+            "D": "√29",
+            "E": "10"
+          },
+          "answer": "E",
+          "explanation": "√(4 · 25) = √4 · √25 = 2 · 5 = 10."
+        },
+        {
+          "points": 5,
+          "text": "Regn ut (√12 + √27) · √3.",
+          "choices": {
+            "A": "5√3",
+            "B": "39",
+            "C": "15√3",
+            "D": "15",
+            "E": "√42"
+          },
+          "answer": "D",
+          "explanation": "Gang ut parentesen: √12 · √3 + √27 · √3 = √36 + √81 = 6 + 9 = 15."
+        }
+      ]
+    },
+    {
+      "code": "00185",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut (2 · 5)³.",
+          "choices": {
+            "A": "30",
+            "B": "250",
+            "C": "1 000",
+            "D": "40",
+            "E": "133"
+          },
+          "answer": "C",
+          "explanation": "(2 · 5)³ = 2³ · 5³ = 8 · 125 = 1 000. Du kan også regne 10³ = 1 000."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut (2/3)³ · 27.",
+          "choices": {
+            "A": "18",
+            "B": "6",
+            "C": "8",
+            "D": "24",
+            "E": "2"
+          },
+          "answer": "C",
+          "explanation": "(2/3)³ = 2³/3³ = 8/27. Da er 8/27 · 27 = 8."
+        }
+      ]
+    },
+    {
+      "code": "00186",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Prefikset kilo (k), som i kilogram, står for en tierpotens. Hvilken?",
+          "choices": {
+            "A": "10²",
+            "B": "10³",
+            "C": "10⁶",
+            "D": "10⁻³",
+            "E": "10¹"
+          },
+          "answer": "B",
+          "explanation": "Kilo betyr tusen, og 1 000 = 10³."
+        },
+        {
+          "points": 4,
+          "text": "En pose poteter veier 2,5 kg. Hvor mange milligram er det?",
+          "choices": {
+            "A": "2,5 · 10³ mg",
+            "B": "2,5 · 10⁶ mg",
+            "C": "2,5 · 10⁹ mg",
+            "D": "2,5 · 10⁻⁶ mg",
+            "E": "2,5 · 10⁵ mg"
+          },
+          "answer": "B",
+          "explanation": "1 kg = 10³ g og 1 g = 10³ mg, så 1 kg = 10⁶ mg. Da er 2,5 kg = 2,5 · 10⁶ mg."
+        }
+      ]
+    },
+    {
+      "code": "00187",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut 0,47 · 1 000.",
+          "choices": {
+            "A": "470",
+            "B": "4 700",
+            "C": "47",
+            "D": "0,000 47",
+            "E": "0,047"
+          },
+          "answer": "A",
+          "explanation": "Når vi ganger med 1 000, flytter vi kommaet tre plasser til høyre: 0,47 · 1 000 = 470."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 36 : 0,01.",
+          "choices": {
+            "A": "0,36",
+            "B": "3 600",
+            "C": "360",
+            "D": "36 000",
+            "E": "0,036"
+          },
+          "answer": "B",
+          "explanation": "Å dele på 0,01 er det samme som å gange med 100. 36 · 100 = 3 600."
+        }
+      ]
+    },
+    {
+      "code": "00188",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Skriv 45 000 på standardform.",
+          "choices": {
+            "A": "4,5 · 10³",
+            "B": "4,5 · 10⁵",
+            "C": "45 · 10⁴",
+            "D": "0,45 · 10⁴",
+            "E": "4,5 · 10⁴"
+          },
+          "answer": "E",
+          "explanation": "På standardform skal tallet foran tierpotensen være minst 1 og mindre enn 10. Kommaet flyttes 4 plasser: 45 000 = 4,5 · 10⁴."
+        },
+        {
+          "points": 4,
+          "text": "Avstanden fra jorda til sola er omtrent 150 millioner kilometer. Skriv avstanden i meter på standardform.",
+          "choices": {
+            "A": "1,5 · 10⁸ m",
+            "B": "1,5 · 10¹⁴ m",
+            "C": "1,5 · 10⁹ m",
+            "D": "1,5 · 10¹¹ m",
+            "E": "1,5 · 10¹⁰ m"
+          },
+          "answer": "D",
+          "explanation": "150 millioner km = 1,5 · 10⁸ km. 1 km = 10³ m, så avstanden er 1,5 · 10⁸ · 10³ m = 1,5 · 10¹¹ m."
+        }
+      ]
+    },
+    {
+      "code": "00189",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut (3 · 10⁴) · (2 · 10⁵).",
+          "choices": {
+            "A": "6 · 10²⁰",
+            "B": "5 · 10⁹",
+            "C": "6 · 10⁹",
+            "D": "6 · 10¹",
+            "E": "5 · 10²⁰"
+          },
+          "answer": "C",
+          "explanation": "Gang tallene for seg og tierpotensene for seg: 3 · 2 = 6 og 10⁴ · 10⁵ = 10⁹."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 4,2 · 10⁵ + 3 · 10⁴. Skriv svaret på standardform.",
+          "choices": {
+            "A": "7,2 · 10⁵",
+            "B": "4,5 · 10⁵",
+            "C": "7,2 · 10⁹",
+            "D": "4,5 · 10⁴",
+            "E": "4,5 · 10⁹"
+          },
+          "answer": "B",
+          "explanation": "Skriv tallene på vanlig form: 420 000 + 30 000 = 450 000 = 4,5 · 10⁵."
+        }
+      ]
+    },
+    {
+      "code": "00190",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut 3 + 2 · 4².",
+          "choices": {
+            "A": "67",
+            "B": "80",
+            "C": "19",
+            "D": "35",
+            "E": "400"
+          },
+          "answer": "D",
+          "explanation": "Potenser regnes først: 4² = 16. Så multiplikasjon: 2 · 16 = 32. Til slutt 3 + 32 = 35."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut −3² + (−2)³ · 2.",
+          "choices": {
+            "A": "−7",
+            "B": "25",
+            "C": "−34",
+            "D": "−25",
+            "E": "7"
+          },
+          "answer": "D",
+          "explanation": "−3² = −9, fordi bare 3 er opphøyd. (−2)³ = −8, og −8 · 2 = −16. Da er −9 + (−16) = −25."
+        }
+      ]
+    },
+    {
+      "code": "00191",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut (2 + 3)² − 2².",
+          "choices": {
+            "A": "9",
+            "B": "21",
+            "C": "7",
+            "D": "1",
+            "E": "29"
+          },
+          "answer": "B",
+          "explanation": "Parentesen først: (5)² = 25. Så 2² = 4. 25 − 4 = 21."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 48 : 2³ − (5 − 2 · 3)⁴.",
+          "choices": {
+            "A": "7",
+            "B": "−75",
+            "C": "6",
+            "D": "4",
+            "E": "5"
+          },
+          "answer": "E",
+          "explanation": "Parentesen: 5 − 6 = −1, og (−1)⁴ = 1. 2³ = 8 og 48 : 8 = 6. Da er 6 − 1 = 5."
+        }
+      ]
+    },
+    {
+      "code": "00198",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Mellom hvilke to hele tall ligger √55?",
+          "choices": {
+            "A": "5 og 6",
+            "B": "7 og 8",
+            "C": "27 og 28",
+            "D": "6 og 7",
+            "E": "8 og 9"
+          },
+          "answer": "B",
+          "explanation": "7² = 49 og 8² = 64. Siden 55 ligger mellom 49 og 64, ligger √55 mellom 7 og 8."
+        },
+        {
+          "points": 4,
+          "text": "Hvilket tall er det beste overslaget for √90?",
+          "choices": {
+            "A": "9,1",
+            "B": "45",
+            "C": "9,5",
+            "D": "8,9",
+            "E": "10,1"
+          },
+          "answer": "C",
+          "explanation": "9² = 81 og 10² = 100, og 90 ligger omtrent midt mellom. Kontroll: 9,5² = 90,25, som er svært nær 90."
+        }
+      ]
+    },
+    {
+      "code": "00199",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av disse tallene ligger lengst til venstre på tallinjen?",
+          "choices": {
+            "A": "−1,5",
+            "B": "−√4",
+            "C": "−7/4",
+            "D": "2⁻¹",
+            "E": "−1,9"
+          },
+          "answer": "B",
+          "explanation": "−√4 = −2, −7/4 = −1,75 og 2⁻¹ = 0,5. Det minste tallet er −2, altså −√4."
+        },
+        {
+          "points": 4,
+          "text": "Hvilken rekkefølge er riktig fra minst til størst?",
+          "choices": {
+            "A": "3,15 < √10 < 10/3",
+            "B": "√10 < 3,15 < 10/3",
+            "C": "10/3 < 3,15 < √10",
+            "D": "3,15 < 10/3 < √10",
+            "E": "√10 < 10/3 < 3,15"
+          },
+          "answer": "A",
+          "explanation": "√10 ≈ 3,16 og 10/3 ≈ 3,33. Altså er 3,15 < 3,16 < 3,33."
+        }
+      ]
+    },
+    {
+      "code": "00196",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Du skal regne ut en brøk der telleren er 12 + 8 og nevneren er 7 − 2. Hvilken inntasting på kalkulatoren gir riktig svar?",
+          "choices": {
+            "A": "12 + 8 : 7 − 2",
+            "B": "(12 + 8) : 7 − 2",
+            "C": "(12 + 8) : (7 − 2)",
+            "D": "12 + 8 : (7 − 2)",
+            "E": "12 + (8 : 7) − 2"
+          },
+          "answer": "C",
+          "explanation": "Hele telleren og hele nevneren må stå i hver sin parentes, ellers regner kalkulatoren divisjonen før addisjonen og subtraksjonen."
+        },
+        {
+          "points": 4,
+          "text": "En brøk har telleren 3,6 + 2,4 og nevneren 0,5 · 4. Hva er verdien av brøken?",
+          "choices": {
+            "A": "22,8",
+            "B": "48",
+            "C": "4,8",
+            "D": "12",
+            "E": "3"
+          },
+          "answer": "E",
+          "explanation": "Telleren er 6 og nevneren er 2, så brøken er 6 : 2 = 3. Taster du 3,6 + 2,4 : 0,5 · 4 uten parenteser, får du feil svar (22,8)."
+        }
+      ]
+    },
+    {
+      "code": "00197",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Regn ut √(9 + 16).",
+          "choices": {
+            "A": "7",
+            "B": "5",
+            "C": "25",
+            "D": "19",
+            "E": "12,5"
+          },
+          "answer": "B",
+          "explanation": "Regn ut det som står under rottegnet først: 9 + 16 = 25, og √25 = 5."
+        },
+        {
+          "points": 4,
+          "text": "En potens har grunntall 2 og eksponent 2 · 3. Hva er verdien av potensen?",
+          "choices": {
+            "A": "12",
+            "B": "32",
+            "C": "64",
+            "D": "36",
+            "E": "128"
+          },
+          "answer": "C",
+          "explanation": "Eksponenten er 2 · 3 = 6, så potensen er 2⁶ = 64. På kalkulatoren må hele eksponenten settes i parentes."
+        }
+      ]
+    },
+    {
+      "code": "00193",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Skriv 5 · 5 · 5 · 2 · 2 som et produkt av potenser.",
+          "choices": {
+            "A": "10⁵",
+            "B": "5² · 2³",
+            "C": "7⁵",
+            "D": "5³ + 2²",
+            "E": "5³ · 2²"
+          },
+          "answer": "E",
+          "explanation": "Faktoren 5 forekommer tre ganger og faktoren 2 to ganger: 5³ · 2²."
+        },
+        {
+          "points": 4,
+          "text": "Skriv 360 som et produkt av potenser med primtall som grunntall.",
+          "choices": {
+            "A": "2³ · 3² · 5",
+            "B": "2² · 3³ · 5",
+            "C": "2³ · 3 · 5",
+            "D": "2⁴ · 3² · 5",
+            "E": "2³ · 3² · 5²"
+          },
+          "answer": "A",
+          "explanation": "360 = 2 · 2 · 2 · 3 · 3 · 5 = 2³ · 3² · 5."
+        }
+      ]
+    }
+  ]
+}

@@ -282,7 +282,7 @@ def main(pdf_dir):
         })
 
     # Leses inn i databasen av serveren ved oppstart (src/content.ts)
-    out = json.dumps({"source": SOURCE, "sets": sets}, ensure_ascii=False, indent=1)
+    out = json.dumps({"source": SOURCE, "sourceName": "Kenguru", "sets": sets}, ensure_ascii=False, indent=1)
     (OUT_DIR / "sets.json").write_text(out, encoding="utf-8")
     print(f"Skrev {len(sets)} sett til {OUT_DIR / 'sets.json'}")
 

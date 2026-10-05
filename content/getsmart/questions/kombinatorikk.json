@@ -1,0 +1,191 @@
+{
+ "slug": "kombinatorikk",
+ "videos": [
+  {
+   "code": "00283",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En kafé har 3 forretter, 4 hovedretter og 2 desserter. Hvor mange ulike menyer kan du sette sammen hvis du velger én forrett, én hovedrett og én dessert?",
+     "choices": {
+      "A": "9",
+      "B": "24",
+      "C": "12",
+      "D": "18",
+      "E": "6"
+     },
+     "answer": "B",
+     "explanation": "Etter produktsetningen ganger vi antall valg på hvert trinn: 3 · 4 · 2 = 24."
+    },
+    {
+     "points": 4,
+     "text": "Jonas har 4 T-skjorter, 3 bukser og noen par sko. Han kan sette sammen 36 ulike antrekk med én T-skjorte, én bukse og ett par sko. Hvor mange par sko har han?",
+     "choices": {
+      "A": "4",
+      "B": "9",
+      "C": "3",
+      "D": "12",
+      "E": "29"
+     },
+     "answer": "C",
+     "explanation": "Etter produktsetningen er 4 · 3 · s = 36, altså 12 · s = 36 og s = 3."
+    }
+   ]
+  },
+  {
+   "code": "00284",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I en eske ligger 5 blyanter med ulike farger. Du trekker 2 blyanter etter hverandre uten tilbakelegging, og rekkefølgen har betydning. Hvor mange mulige utfall er det?",
+     "choices": {
+      "A": "20",
+      "B": "25",
+      "C": "10",
+      "D": "9",
+      "E": "15"
+     },
+     "answer": "A",
+     "explanation": "Første blyant kan velges på 5 måter. Uten tilbakelegging er det 4 igjen til andre trekning: 5 · 4 = 20."
+    },
+    {
+     "points": 4,
+     "text": "En iskiosk har 5 smaker. Du kjøper en is med 2 kuler. Du kan velge samme smak to ganger, og rekkefølgen på kulene spiller ingen rolle (uordnet utvalg med tilbakelegging). Hvor mange ulike iser kan du lage?",
+     "choices": {
+      "A": "25",
+      "B": "20",
+      "C": "10",
+      "D": "15",
+      "E": "12"
+     },
+     "answer": "D",
+     "explanation": "Med to ulike smaker finnes 5 · 4 : 2 = 10 iser, og med samme smak to ganger finnes 5 iser. Til sammen 10 + 5 = 15."
+    }
+   ]
+  },
+  {
+   "code": "00285",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Du kaster to vanlige terninger og lager en tabell med 6 · 6 = 36 ruter som viser utfallsrommet. I hvor mange av rutene er summen av øynene lik 7?",
+     "choices": {
+      "A": "1",
+      "B": "5",
+      "C": "7",
+      "D": "12",
+      "E": "6"
+     },
+     "answer": "E",
+     "explanation": "Summen 7 får du med (1,6), (2,5), (3,4), (4,3), (5,2) og (6,1). Det er 6 ruter."
+    },
+    {
+     "points": 4,
+     "text": "Du kaster en mynt og en vanlig terning samtidig. Lag et valgtre eller en tabell over utfallsrommet. Hva er sannsynligheten for å få kron og et partall? Svar som brøk.",
+     "choices": {
+      "A": "1/2",
+      "B": "1/12",
+      "C": "1/4",
+      "D": "1/6",
+      "E": "3/8"
+     },
+     "answer": "C",
+     "explanation": "Utfallsrommet har 2 · 6 = 12 utfall. Gunstige er K2, K4 og K6, altså 3. P = 3/12 = 1/4."
+    }
+   ]
+  },
+  {
+   "code": "00286",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er 5! (5 fakultet)?",
+     "choices": {
+      "A": "15",
+      "B": "120",
+      "C": "25",
+      "D": "60",
+      "E": "20"
+     },
+     "answer": "B",
+     "explanation": "5! = 5 · 4 · 3 · 2 · 1 = 120."
+    },
+    {
+     "points": 4,
+     "text": "Sju elever skal stille seg på en rekke. Ola skal alltid stå først. Hvor mange ulike rekkefølger kan elevene stå i?",
+     "choices": {
+      "A": "5040",
+      "B": "120",
+      "C": "4320",
+      "D": "720",
+      "E": "42"
+     },
+     "answer": "D",
+     "explanation": "Ola har en fast plass, så bare de 6 andre elevene skal ordnes: 6! = 6 · 5 · 4 · 3 · 2 · 1 = 720."
+    }
+   ]
+  },
+  {
+   "code": "00287",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En kodelås har tre hjul, og hvert hjul har sifrene 0–9. Hvor mange ulike koder finnes?",
+     "choices": {
+      "A": "1000",
+      "B": "30",
+      "C": "27",
+      "D": "720",
+      "E": "999"
+     },
+     "answer": "A",
+     "explanation": "Hvert av de tre hjulene har 10 muligheter, og sifre kan gjentas: 10 · 10 · 10 = 1000."
+    },
+    {
+     "points": 4,
+     "text": "En kodelås har fire siffer (0–9). Eieren husker at første siffer er 3 eller 7, og at sifferet 0 ikke er med i koden. Hvor mange koder må han maksimalt prøve for å være sikker på å åpne låsen?",
+     "choices": {
+      "A": "2000",
+      "B": "6561",
+      "C": "729",
+      "D": "29",
+      "E": "1458"
+     },
+     "answer": "E",
+     "explanation": "Første siffer har 2 muligheter. De tre andre sifrene kan være 1–9, altså 9 muligheter hver: 2 · 9 · 9 · 9 = 1458."
+    }
+   ]
+  },
+  {
+   "code": "00288",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Seks venner møtes, og alle håndhilser på hverandre nøyaktig én gang. Hvor mange håndtrykk blir det til sammen?",
+     "choices": {
+      "A": "30",
+      "B": "36",
+      "C": "15",
+      "D": "21",
+      "E": "12"
+     },
+     "answer": "C",
+     "explanation": "Den første håndhilser på 5, den neste på 4 nye, og så videre: 5 + 4 + 3 + 2 + 1 = 15. (Eller 6 · 5 : 2 = 15.)"
+    },
+    {
+     "points": 5,
+     "text": "Du skal lage tresifrede tall med sifrene 1, 2, 3, 4 og 5. Hvert siffer kan brukes høyst én gang, og tallet skal være et partall. Hvor mange slike tall finnes?",
+     "choices": {
+      "A": "60",
+      "B": "24",
+      "C": "48",
+      "D": "30",
+      "E": "12"
+     },
+     "answer": "B",
+     "explanation": "Siste siffer må være 2 eller 4 (2 valg). Deretter er det 4 valg for første siffer og 3 for midterste: 2 · 4 · 3 = 24."
+    }
+   ]
+  }
+ ]
+}

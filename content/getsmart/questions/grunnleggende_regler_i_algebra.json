@@ -1,0 +1,377 @@
+{
+ "slug": "grunnleggende_regler_i_algebra",
+ "videos": [
+  {
+   "code": "00039",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er verdien av uttrykket 3a + 2 når a = 4?",
+     "choices": {
+      "A": "14",
+      "B": "18",
+      "C": "9",
+      "D": "36",
+      "E": "20"
+     },
+     "answer": "A",
+     "explanation": "3a betyr 3 · a. Vi får 3 · 4 + 2 = 12 + 2 = 14."
+    },
+    {
+     "points": 4,
+     "text": "En kinobillett koster 120 kr og en pose popkorn koster 45 kr. n personer kjøper hver sin billett og hver sin pose popkorn. Hvilket uttrykk viser hvor mye de betaler til sammen?",
+     "choices": {
+      "A": "120n + 45",
+      "B": "120 + 45n",
+      "C": "165 + n",
+      "D": "165n",
+      "E": "5400n"
+     },
+     "answer": "D",
+     "explanation": "Hver person betaler 120 kr + 45 kr = 165 kr. For n personer blir det 165 · n = 165n kroner."
+    }
+   ]
+  },
+  {
+   "code": "00040",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Trekk sammen: 4x + 3y − x + 2y",
+     "choices": {
+      "A": "5x + 5y",
+      "B": "3x + y",
+      "C": "3x + 5y",
+      "D": "8xy",
+      "E": "4x + 5y"
+     },
+     "answer": "C",
+     "explanation": "Vi samler like ledd: 4x − x = 3x og 3y + 2y = 5y. Svaret blir 3x + 5y."
+    },
+    {
+     "points": 4,
+     "text": "Trekk sammen: 2a² + 3a − a² + 5 − 4a",
+     "choices": {
+      "A": "a² + 7a + 5",
+      "B": "3a² − a + 5",
+      "C": "a² − a + 5",
+      "D": "5",
+      "E": "a² − a − 5"
+     },
+     "answer": "C",
+     "explanation": "a²-ledd: 2a² − a² = a². a-ledd: 3a − 4a = −a. Tallet 5 står alene. Svaret blir a² − a + 5. Husk at a² og a ikke er like ledd."
+    }
+   ]
+  },
+  {
+   "code": "00041",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Løs opp parentesen: −(3x − 4)",
+     "choices": {
+      "A": "−3x + 4",
+      "B": "−3x − 4",
+      "C": "3x − 4",
+      "D": "3x + 4",
+      "E": "−7x"
+     },
+     "answer": "A",
+     "explanation": "Minus foran en parentes skifter fortegn på alle leddene inni. Da blir 3x til −3x og −4 til +4."
+    },
+    {
+     "points": 4,
+     "text": "Løs opp parentesen og trekk sammen: 5x − 2(x − 3) + 4",
+     "choices": {
+      "A": "3x + 10",
+      "B": "3x − 2",
+      "C": "3x + 7",
+      "D": "7x + 10",
+      "E": "3x² − 9x + 4"
+     },
+     "answer": "A",
+     "explanation": "−2 ganges med begge leddene: −2 · x = −2x og −2 · (−3) = +6. Da får vi 5x − 2x + 6 + 4 = 3x + 10."
+    }
+   ]
+  },
+  {
+   "code": "00042",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: 3a · 4a",
+     "choices": {
+      "A": "12a",
+      "B": "12a²",
+      "C": "7a²",
+      "D": "7a",
+      "E": "12 + a²"
+     },
+     "answer": "B",
+     "explanation": "Vi ganger tallene og bokstavene hver for seg: 3 · 4 = 12 og a · a = a². Svaret blir 12a²."
+    },
+    {
+     "points": 4,
+     "text": "Multipliser ut og trekk sammen: (x + 3)(x − 5)",
+     "choices": {
+      "A": "x² − 2x − 15",
+      "B": "x² − 15",
+      "C": "x² + 2x − 15",
+      "D": "x² − 2x + 15",
+      "E": "x² − 8x − 15"
+     },
+     "answer": "A",
+     "explanation": "Hvert ledd i første parentes ganges med hvert ledd i andre: x² − 5x + 3x − 15. Trekker vi sammen, får vi x² − 2x − 15."
+    }
+   ]
+  },
+  {
+   "code": "00055",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skriv som én potens: a⁴ · a³",
+     "choices": {
+      "A": "a¹²",
+      "B": "2a⁷",
+      "C": "a¹",
+      "D": "2a¹²",
+      "E": "a⁷"
+     },
+     "answer": "E",
+     "explanation": "Når vi ganger potenser med samme grunntall, legger vi sammen eksponentene: 4 + 3 = 7. Svaret blir a⁷."
+    },
+    {
+     "points": 4,
+     "text": "Forenkle: (2x³)² · x",
+     "choices": {
+      "A": "2x⁷",
+      "B": "4x⁶",
+      "C": "4x¹⁰",
+      "D": "4x⁷",
+      "E": "4x⁵"
+     },
+     "answer": "D",
+     "explanation": "(2x³)² = 2² · x³·² = 4x⁶. Så ganger vi med x = x¹ og får 4x⁶⁺¹ = 4x⁷."
+    }
+   ]
+  },
+  {
+   "code": "00005",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Faktoriser: 6x + 9",
+     "choices": {
+      "A": "3(2x + 9)",
+      "B": "6(x + 3)",
+      "C": "3(x + 3)",
+      "D": "3x(2 + 3)",
+      "E": "3(2x + 3)"
+     },
+     "answer": "E",
+     "explanation": "Både 6x og 9 er delelige med 3. 6x = 3 · 2x og 9 = 3 · 3, så 6x + 9 = 3(2x + 3)."
+    },
+    {
+     "points": 4,
+     "text": "Faktoriser så langt som mulig: 4x²y − 6xy²",
+     "choices": {
+      "A": "2x(2xy − 3y²)",
+      "B": "2xy(2x − 6y)",
+      "C": "2xy(2x − 3y)",
+      "D": "2xy(2x + 3y)",
+      "E": "2xy(x − 3y)"
+     },
+     "answer": "C",
+     "explanation": "Største felles faktor er 2xy. 4x²y : 2xy = 2x og 6xy² : 2xy = 3y, så svaret blir 2xy(2x − 3y). 2x(2xy − 3y²) er ikke faktorisert helt, for y kan settes utenfor også."
+    }
+   ]
+  },
+  {
+   "code": "00056",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Forkort brøken (6a²b)/(9ab)",
+     "choices": {
+      "A": "2ab/3",
+      "B": "a/3",
+      "C": "3a/2",
+      "D": "2a/3",
+      "E": "2a²/3"
+     },
+     "answer": "D",
+     "explanation": "Vi forkorter tallene med 3 (6/9 = 2/3), én a (a²/a = a) og b (b/b = 1). Svaret blir 2a/3."
+    },
+    {
+     "points": 4,
+     "text": "Forkort brøken (x² − 9)/(2x + 6)",
+     "choices": {
+      "A": "x − 3",
+      "B": "(x − 3)/2",
+      "C": "(x + 3)/2",
+      "D": "(x² − 3)/2",
+      "E": "(x − 3)/6"
+     },
+     "answer": "B",
+     "explanation": "Teller: x² − 9 = (x + 3)(x − 3) (konjugatsetningen). Nevner: 2x + 6 = 2(x + 3). Vi forkorter med (x + 3) og får (x − 3)/2."
+    }
+   ]
+  },
+  {
+   "code": "00057",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: 2/x + 5/x",
+     "choices": {
+      "A": "7/(2x)",
+      "B": "10/x",
+      "C": "7/x²",
+      "D": "7/x",
+      "E": "10/x²"
+     },
+     "answer": "D",
+     "explanation": "Brøkene har lik nevner, så vi legger sammen tellerne og beholder nevneren: (2 + 5)/x = 7/x."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: a/3 + a/4",
+     "choices": {
+      "A": "7a/12",
+      "B": "2a/7",
+      "C": "2a/12",
+      "D": "7a/24",
+      "E": "a²/12"
+     },
+     "answer": "A",
+     "explanation": "Fellesnevner er 12: a/3 = 4a/12 og a/4 = 3a/12. Summen blir (4a + 3a)/12 = 7a/12."
+    }
+   ]
+  },
+  {
+   "code": "00058",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (x + 2)/5 + (2x − 1)/5",
+     "choices": {
+      "A": "(3x + 3)/5",
+      "B": "(3x + 1)/10",
+      "C": "(x + 1)/5",
+      "D": "(3x + 1)/5",
+      "E": "(3x − 1)/5"
+     },
+     "answer": "D",
+     "explanation": "Lik nevner, så vi legger sammen tellerne: x + 2 + 2x − 1 = 3x + 1. Svaret blir (3x + 1)/5."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: (x + 1)/2 − (x − 3)/4",
+     "choices": {
+      "A": "(x − 1)/4",
+      "B": "(3x − 1)/4",
+      "C": "(x + 5)/4",
+      "D": "2",
+      "E": "(x + 4)/4"
+     },
+     "answer": "C",
+     "explanation": "Fellesnevner 4: (2x + 2)/4 − (x − 3)/4. Minus foran brøkstreken skifter fortegn i hele telleren: 2x + 2 − x + 3 = x + 5. Svaret blir (x + 5)/4."
+    }
+   ]
+  },
+  {
+   "code": "00059",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut og forkort: (2a/3) · (6/a)",
+     "choices": {
+      "A": "4a",
+      "B": "12",
+      "C": "a²/9",
+      "D": "4a²",
+      "E": "4"
+     },
+     "answer": "E",
+     "explanation": "Teller ganger teller og nevner ganger nevner: (2a · 6)/(3 · a) = 12a/(3a). Vi forkorter med 3a og får 4."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut og forkort: (3x/4) : (9x²/8)",
+     "choices": {
+      "A": "3/(2x)",
+      "B": "2x/3",
+      "C": "2/(3x)",
+      "D": "27x³/32",
+      "E": "2/(3x²)"
+     },
+     "answer": "C",
+     "explanation": "Å dele med en brøk er det samme som å gange med den omvendte brøken: (3x/4) · (8/(9x²)) = 24x/(36x²). Forkortet med 12x blir det 2/(3x)."
+    }
+   ]
+  },
+  {
+   "code": "00060",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut og forkort: (x + 2)/3 · 6/(x + 2)",
+     "choices": {
+      "A": "½",
+      "B": "2x + 4",
+      "C": "2",
+      "D": "18",
+      "E": "(x + 2)/2"
+     },
+     "answer": "C",
+     "explanation": "Vi får 6(x + 2)/(3(x + 2)). Faktoren (x + 2) står både i teller og nevner og kan forkortes bort. Igjen står 6/3 = 2."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut og forkort: (x² − 4)/(3x) : (x + 2)/(6x²)",
+     "choices": {
+      "A": "2x(x + 2)",
+      "B": "2x(x − 2)",
+      "C": "1/(2x(x − 2))",
+      "D": "2(x − 2)",
+      "E": "2x²(x − 2)"
+     },
+     "answer": "B",
+     "explanation": "Vi ganger med den omvendte brøken og faktoriserer: (x + 2)(x − 2)/(3x) · 6x²/(x + 2). Vi forkorter (x + 2) og 3x og får 2x(x − 2)."
+    }
+   ]
+  },
+  {
+   "code": "00063",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Vi skal legge sammen 1/(x + 1) og 1/(x − 1). Hva er den minste fellesnevneren?",
+     "choices": {
+      "A": "(x + 1)(x − 1)",
+      "B": "(x + 1)²",
+      "C": "2x",
+      "D": "x − 1",
+      "E": "(x − 1)²"
+     },
+     "answer": "A",
+     "explanation": "Nevnerne har ingen felles faktorer, så fellesnevneren blir produktet av dem: (x + 1)(x − 1)."
+    },
+    {
+     "points": 5,
+     "text": "Regn ut og forkort: 3/(x − 2) − 12/(x² − 4)",
+     "choices": {
+      "A": "−9/(x² − 4)",
+      "B": "3/(x + 2)",
+      "C": "3/(x − 2)",
+      "D": "(3x + 18)/(x² − 4)",
+      "E": "−3/(x + 2)"
+     },
+     "answer": "B",
+     "explanation": "x² − 4 = (x + 2)(x − 2) er fellesnevner. Vi får (3(x + 2) − 12)/(x² − 4) = (3x − 6)/((x + 2)(x − 2)) = 3(x − 2)/((x + 2)(x − 2)) = 3/(x + 2)."
+    }
+   ]
+  }
+ ]
+}

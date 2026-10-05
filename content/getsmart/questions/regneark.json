@@ -1,0 +1,129 @@
+{
+ "slug": "regneark",
+ "videos": [
+  {
+   "code": "00099",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva heter cellen som ligger i kolonne C og rad 4 i et regneark?",
+     "choices": {
+      "A": "4C",
+      "B": "D3",
+      "C": "C4",
+      "D": "C3",
+      "E": "D4"
+     },
+     "answer": "C",
+     "explanation": "En celle navngis med kolonnebokstaven først og radnummeret etterpå: C4."
+    },
+    {
+     "points": 4,
+     "text": "I et regneark står antall elever, 25, i A2 og prisen per elev, 180 kr, i B2. Hvilken formel i C2 gir totalprisen, og hva viser C2?",
+     "choices": {
+      "A": "=A2+B2, viser 4500",
+      "B": "=A2*B2, viser 205",
+      "C": "=SUMMER(A2:B2), viser 4500",
+      "D": "=B2/A2, viser 7,2",
+      "E": "=A2*B2, viser 4500"
+     },
+     "answer": "E",
+     "explanation": "Totalprisen er antall · pris, altså =A2*B2. Regnearket viser 25 · 180 = 4500."
+    }
+   ]
+  },
+  {
+   "code": "00100",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva gjør formelen =SUMMER(B2:B6)?",
+     "choices": {
+      "A": "Legger sammen tallene i B2 til B6",
+      "B": "Legger sammen bare B2 og B6",
+      "C": "Teller hvor mange celler det er",
+      "D": "Finner gjennomsnittet av B2 til B6",
+      "E": "Ganger sammen B2 til B6"
+     },
+     "answer": "A",
+     "explanation": "Kolon betyr «til og med», så SUMMER(B2:B6) legger sammen B2, B3, B4, B5 og B6."
+    },
+    {
+     "points": 4,
+     "text": "Cellene B2:B5 inneholder 120, 85, 240 og 55. I B6 står =SUMMER(B2:B5), og i B7 står =B6/4. Hvilket tall vises i B7?",
+     "choices": {
+      "A": "500",
+      "B": "125",
+      "C": "4",
+      "D": "120",
+      "E": "2000"
+     },
+     "answer": "B",
+     "explanation": "B6 blir 120 + 85 + 240 + 55 = 500. B7 blir 500 : 4 = 125."
+    }
+   ]
+  },
+  {
+   "code": "00101",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I D2 står formelen =B2*C2. Du kopierer formelen ned til D3. Hvilken formel står da i D3?",
+     "choices": {
+      "A": "=B2*C2",
+      "B": "=C2*D2",
+      "C": "=B3*C2",
+      "D": "=B3*C3",
+      "E": "=B2*C3"
+     },
+     "answer": "D",
+     "explanation": "Vanlige (relative) cellereferanser flytter seg like mye som formelen. Én rad ned gir =B3*C3."
+    },
+    {
+     "points": 4,
+     "text": "En vare koster 800 kr, og prisen står i B2. Rabatten er 15 % og står som 0,15 i C2. Hvilken formel gir prisen etter rabatt, og hva blir svaret?",
+     "choices": {
+      "A": "=B2*(1-C2), 680 kr",
+      "B": "=B2-C2, 680 kr",
+      "C": "=B2*C2, 680 kr",
+      "D": "=B2*1-C2, 680 kr",
+      "E": "=B2*(1+C2), 920 kr"
+     },
+     "answer": "A",
+     "explanation": "Etter 15 % rabatt betaler du 85 % av prisen: 800 · (1 − 0,15) = 680 kr. Uten parentes regnes B2*1 først, og det blir feil."
+    }
+   ]
+  },
+  {
+   "code": "00102",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva betyr dollartegnene i cellereferansen $B$1?",
+     "choices": {
+      "A": "Tallet vises i dollar",
+      "B": "Referansen låses ved kopiering",
+      "C": "Cellen blir skjult",
+      "D": "Tallet rundes av",
+      "E": "Cellen kan ikke endres"
+     },
+     "answer": "B",
+     "explanation": "$B$1 er en absolutt referanse. Den peker alltid på B1, også når formelen kopieres til andre celler."
+    },
+    {
+     "points": 5,
+     "text": "B1 inneholder timelønnen 165. A3, A4 og A5 inneholder antall timer: 12, 8 og 15. I B3 skrives =A3*$B$1, og formelen kopieres ned til B5. I B6 står =SUMMER(B3:B5). Hvilket tall vises i B6?",
+     "choices": {
+      "A": "1 980",
+      "B": "31 680",
+      "C": "35",
+      "D": "495",
+      "E": "5 775"
+     },
+     "answer": "E",
+     "explanation": "Fordi B1 er låst, regner alle radene med 165: (12 + 8 + 15) · 165 = 35 · 165 = 5775."
+    }
+   ]
+  }
+ ]
+}

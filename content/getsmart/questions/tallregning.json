@@ -1,0 +1,408 @@
+{
+ "slug": "tallregning",
+ "videos": [
+  {
+   "code": "00170",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I regnestykket 56 : 8 = 7, hva kalles tallet 8?",
+     "choices": {
+      "A": "Dividend",
+      "B": "Divisor",
+      "C": "Kvotient",
+      "D": "Faktor",
+      "E": "Differens"
+     },
+     "answer": "B",
+     "explanation": "Dividend : divisor = kvotient. Her er 56 dividenden, 8 divisoren og 7 kvotienten."
+    },
+    {
+     "points": 4,
+     "text": "Differensen mellom to tall er 15. Det største tallet er 42. Hva er produktet av de to tallene?",
+     "choices": {
+      "A": "1 134",
+      "B": "630",
+      "C": "2 394",
+      "D": "69",
+      "E": "1 034"
+     },
+     "answer": "A",
+     "explanation": "Det minste tallet er 42 − 15 = 27. Produktet er 42 · 27 = 1 134."
+    }
+   ]
+  },
+  {
+   "code": "00171",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: 6 + 4 · 5",
+     "choices": {
+      "A": "26",
+      "B": "50",
+      "C": "30",
+      "D": "20",
+      "E": "15"
+     },
+     "answer": "A",
+     "explanation": "Multiplikasjon gjøres før addisjon: 4 · 5 = 20, og 6 + 20 = 26."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: 20 − 12 : 4 + 3 · 2",
+     "choices": {
+      "A": "10",
+      "B": "11",
+      "C": "8",
+      "D": "29",
+      "E": "23"
+     },
+     "answer": "E",
+     "explanation": "Først divisjon og multiplikasjon: 12 : 4 = 3 og 3 · 2 = 6. Så fra venstre: 20 − 3 + 6 = 23."
+    }
+   ]
+  },
+  {
+   "code": "00172",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (8 + 4) · 3",
+     "choices": {
+      "A": "36",
+      "B": "20",
+      "C": "15",
+      "D": "32",
+      "E": "27"
+     },
+     "answer": "A",
+     "explanation": "Parentesen regnes først: 8 + 4 = 12. Deretter 12 · 3 = 36."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: 5 · (12 − 2 · (7 − 4))",
+     "choices": {
+      "A": "150",
+      "B": "54",
+      "C": "10",
+      "D": "60",
+      "E": "30"
+     },
+     "answer": "E",
+     "explanation": "Innerste parentes først: 7 − 4 = 3. Så 12 − 2 · 3 = 12 − 6 = 6, og til slutt 5 · 6 = 30."
+    }
+   ]
+  },
+  {
+   "code": "00173",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: −8 + 3",
+     "choices": {
+      "A": "5",
+      "B": "−5",
+      "C": "−11",
+      "D": "11",
+      "E": "−24"
+     },
+     "answer": "B",
+     "explanation": "Start på −8 på tallinja og gå 3 steg mot høyre. Da havner du på −5."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: 4 − (−6) + (−9) − 3",
+     "choices": {
+      "A": "−14",
+      "B": "16",
+      "C": "4",
+      "D": "−2",
+      "E": "2"
+     },
+     "answer": "D",
+     "explanation": "To like fortegn blir pluss og to ulike blir minus: 4 + 6 − 9 − 3 = −2."
+    }
+   ]
+  },
+  {
+   "code": "00174",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (−7) · 6",
+     "choices": {
+      "A": "−42",
+      "B": "42",
+      "C": "−13",
+      "D": "−1",
+      "E": "13"
+     },
+     "answer": "A",
+     "explanation": "Et negativt tall ganget med et positivt tall gir negativt svar: 7 · 6 = 42, så svaret er −42."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: (−2) · (−3) · (−5) · 2",
+     "choices": {
+      "A": "60",
+      "B": "−30",
+      "C": "30",
+      "D": "−60",
+      "E": "−8"
+     },
+     "answer": "D",
+     "explanation": "(−2) · (−3) = 6, 6 · (−5) = −30 og −30 · 2 = −60. Tre negative faktorer gir negativt svar."
+    }
+   ]
+  },
+  {
+   "code": "00175",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (−48) : 6",
+     "choices": {
+      "A": "−8",
+      "B": "8",
+      "C": "−42",
+      "D": "−54",
+      "E": "−288"
+     },
+     "answer": "A",
+     "explanation": "48 : 6 = 8. Ulike fortegn gir negativt svar, så svaret er −8."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: (−72) : (−8) : (−3)",
+     "choices": {
+      "A": "3",
+      "B": "27",
+      "C": "−27",
+      "D": "−3",
+      "E": "−9"
+     },
+     "answer": "D",
+     "explanation": "Fra venstre: (−72) : (−8) = 9 (like fortegn gir pluss). Deretter 9 : (−3) = −3."
+    }
+   ]
+  },
+  {
+   "code": "00176",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: 3 · (−4) + 20 : 5",
+     "choices": {
+      "A": "8",
+      "B": "−8",
+      "C": "−16",
+      "D": "16",
+      "E": "−4"
+     },
+     "answer": "B",
+     "explanation": "Først multiplikasjon og divisjon: 3 · (−4) = −12 og 20 : 5 = 4. Så −12 + 4 = −8."
+    },
+    {
+     "points": 5,
+     "text": "Regn ut: (−6 + 2) · 3 − 24 : (−4 − 2) + 5",
+     "choices": {
+      "A": "−11",
+      "B": "−3",
+      "C": "5",
+      "D": "−21",
+      "E": "3"
+     },
+     "answer": "B",
+     "explanation": "Parentesene gir −4 og −6. Så (−4) · 3 = −12 og 24 : (−6) = −4. Til slutt −12 − (−4) + 5 = −12 + 4 + 5 = −3."
+    }
+   ]
+  },
+  {
+   "code": "00179",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket av tallene er delelig med 9?",
+     "choices": {
+      "A": "1 236",
+      "B": "5 238",
+      "C": "6 315",
+      "D": "8 102",
+      "E": "4 517"
+     },
+     "answer": "B",
+     "explanation": "Et tall er delelig med 9 når tverrsummen er delelig med 9. 5 + 2 + 3 + 8 = 18, som er delelig med 9."
+    },
+    {
+     "points": 4,
+     "text": "Hvilket av tallene er delelig med både 3 og 4?",
+     "choices": {
+      "A": "6 426",
+      "B": "5 524",
+      "C": "3 330",
+      "D": "2 118",
+      "E": "7 512"
+     },
+     "answer": "E",
+     "explanation": "Delelig med 4: de to siste sifrene (12) er delelig med 4. Delelig med 3: tverrsummen 7 + 5 + 1 + 2 = 15 er delelig med 3."
+    }
+   ]
+  },
+  {
+   "code": "00119",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er primtallfaktoriseringen av 60?",
+     "choices": {
+      "A": "2 · 3 · 10",
+      "B": "4 · 15",
+      "C": "2 · 2 · 3 · 5",
+      "D": "2 · 3 · 5",
+      "E": "2 · 2 · 2 · 3 · 5"
+     },
+     "answer": "C",
+     "explanation": "60 = 2 · 30 = 2 · 2 · 15 = 2 · 2 · 3 · 5. Alle faktorene må være primtall, og produktet må bli 60."
+    },
+    {
+     "points": 4,
+     "text": "Et tall har primtallfaktoriseringen 2 · 3 · 3 · 7. Hvilket tall er det?",
+     "choices": {
+      "A": "126",
+      "B": "42",
+      "C": "63",
+      "D": "252",
+      "E": "15"
+     },
+     "answer": "A",
+     "explanation": "Gang sammen faktorene: 2 · 3 = 6, 6 · 3 = 18 og 18 · 7 = 126."
+    }
+   ]
+  },
+  {
+   "code": "00120",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er tverrsummen til tallet 4 815?",
+     "choices": {
+      "A": "15",
+      "B": "17",
+      "C": "21",
+      "D": "18",
+      "E": "24"
+     },
+     "answer": "D",
+     "explanation": "Tverrsummen er summen av sifrene: 4 + 8 + 1 + 5 = 18."
+    },
+    {
+     "points": 5,
+     "text": "Hva er primtallfaktoriseringen av 1 260?",
+     "choices": {
+      "A": "2 · 2 · 3 · 3 · 5 · 7",
+      "B": "2 · 2 · 3 · 5 · 7",
+      "C": "2 · 3 · 3 · 5 · 7",
+      "D": "2 · 2 · 3 · 3 · 5 · 5",
+      "E": "2 · 2 · 3 · 3 · 3 · 5 · 7"
+     },
+     "answer": "A",
+     "explanation": "1 260 = 2 · 630 = 2 · 2 · 315. Tverrsummen av 315 er 9, så 315 = 3 · 3 · 35 = 3 · 3 · 5 · 7. Altså 1 260 = 2 · 2 · 3 · 3 · 5 · 7."
+    }
+   ]
+  },
+  {
+   "code": "00194",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Du kjøper 4 bøker som koster 198 kr per stykk. Hvilket overslag er best?",
+     "choices": {
+      "A": "4 · 100 kr = 400 kr",
+      "B": "4 + 200 kr = 204 kr",
+      "C": "4 · 200 kr = 800 kr",
+      "D": "4 · 300 kr = 1 200 kr",
+      "E": "40 · 200 kr = 8 000 kr"
+     },
+     "answer": "C",
+     "explanation": "198 kr er nesten 200 kr. Da blir 4 bøker omtrent 4 · 200 kr = 800 kr."
+    },
+    {
+     "points": 4,
+     "text": "Seks venner skal dele en regning på 1 187 kr likt. Omtrent hvor mye må hver betale?",
+     "choices": {
+      "A": "Ca. 100 kr",
+      "B": "Ca. 20 kr",
+      "C": "Ca. 300 kr",
+      "D": "Ca. 200 kr",
+      "E": "Ca. 2 000 kr"
+     },
+     "answer": "D",
+     "explanation": "Rund av 1 187 kr til 1 200 kr, som er lett å dele på 6: 1 200 : 6 = 200. Hver betaler omtrent 200 kr."
+    }
+   ]
+  },
+  {
+   "code": "00195",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket overslag over 48,7 · 21,3 er riktig ført?",
+     "choices": {
+      "A": "48,7 · 21,3 ≈ 50 · 20 = 1 000",
+      "B": "48,7 · 21,3 = 50 · 20 = 1 000",
+      "C": "48,7 · 21,3 ≈ 50 · 20 = 10 000",
+      "D": "48,7 · 21,3 ≈ 50 + 20 = 70",
+      "E": "48,7 · 21,3 ≈ 50 · 20 ≈ 100"
+     },
+     "answer": "A",
+     "explanation": "Når vi runder av, bruker vi tegnet ≈. Regnestykket med avrundede tall er nøyaktig, så der bruker vi =: 50 · 20 = 1 000."
+    },
+    {
+     "points": 4,
+     "text": "Bensin koster 21,90 kr per liter. Du fyller 38,5 liter. Hvilket overslag passer best for hva du må betale?",
+     "choices": {
+      "A": "Ca. 400 kr",
+      "B": "Ca. 8 000 kr",
+      "C": "Ca. 60 kr",
+      "D": "Ca. 1 200 kr",
+      "E": "Ca. 800 kr"
+     },
+     "answer": "E",
+     "explanation": "Rund 21,90 ned til 20 og 38,5 opp til 40. Da blir det 20 · 40 = 800, altså ca. 800 kr."
+    }
+   ]
+  },
+  {
+   "code": "00203",
+   "questions": [
+    {
+     "points": 3,
+     "text": "5 kg epler koster 90 kr. Hva koster 3 kg epler?",
+     "choices": {
+      "A": "30 kr",
+      "B": "45 kr",
+      "C": "54 kr",
+      "D": "60 kr",
+      "E": "270 kr"
+     },
+     "answer": "C",
+     "explanation": "Veien om 1: 1 kg koster 90 kr : 5 = 18 kr. Da koster 3 kg 3 · 18 kr = 54 kr."
+    },
+    {
+     "points": 5,
+     "text": "7 like flasker saft koster til sammen 100 kr. Hva koster 3 flasker? Rund av til hele kroner.",
+     "choices": {
+      "A": "43 kr",
+      "B": "42 kr",
+      "C": "45 kr",
+      "D": "33 kr",
+      "E": "21 kr"
+     },
+     "answer": "A",
+     "explanation": "Én flaske koster 100 kr : 7 ≈ 14,29 kr. Tre flasker koster 3 · 100 : 7 ≈ 42,86 kr ≈ 43 kr."
+    }
+   ]
+  }
+ ]
+}

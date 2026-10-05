@@ -1,0 +1,501 @@
+{
+  "slug": "figurtall_og_tallmoenstre",
+  "videos": [
+    {
+      "code": "00025",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er det neste tallet i tallfølgen 3, 7, 11, 15, …?",
+          "choices": {
+            "A": "19",
+            "B": "18",
+            "C": "20",
+            "D": "21",
+            "E": "23"
+          },
+          "answer": "A",
+          "explanation": "Hvert tall er 4 mer enn det forrige. 15 + 4 = 19."
+        },
+        {
+          "points": 4,
+          "text": "I Pascals trekant er hvert tall summen av de to tallene rett over, og hver rad begynner og slutter med 1. En rad ser slik ut: 1, 4, 6, 4, 1. Hva er det midterste tallet to rader lenger ned?",
+          "choices": {
+            "A": "20",
+            "B": "15",
+            "C": "16",
+            "D": "21",
+            "E": "30"
+          },
+          "answer": "A",
+          "explanation": "Neste rad blir 1, 5, 10, 10, 5, 1. Raden etter blir 1, 6, 15, 20, 15, 6, 1. Det midterste tallet er 10 + 10 = 20."
+        }
+      ]
+    },
+    {
+      "code": "00026",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er det neste tallet i tallfølgen 2, 6, 18, 54, …?",
+          "choices": {
+            "A": "90",
+            "B": "108",
+            "C": "72",
+            "D": "162",
+            "E": "216"
+          },
+          "answer": "D",
+          "explanation": "Hvert tall er 3 ganger det forrige. 54 · 3 = 162."
+        },
+        {
+          "points": 4,
+          "text": "Se på tallfølgen 1, 2, 4, 7, 11, 16, … Differansene mellom tallene er 1, 2, 3, 4, 5, … Hva er det 10. tallet i følgen?",
+          "choices": {
+            "A": "46",
+            "B": "37",
+            "C": "45",
+            "D": "55",
+            "E": "47"
+          },
+          "answer": "A",
+          "explanation": "Differansen øker med 1 hver gang: 16 + 6 = 22, + 7 = 29, + 8 = 37, + 9 = 46. Det 10. tallet er 46."
+        }
+      ]
+    },
+    {
+      "code": "00022",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Trekanttallene er 1, 3, 6, 10, 15, … Hva er det 7. trekanttallet?",
+          "choices": {
+            "A": "21",
+            "B": "36",
+            "C": "28",
+            "D": "27",
+            "E": "49"
+          },
+          "answer": "C",
+          "explanation": "Trekanttall nr. n får vi ved å legge n til det forrige: 15 + 6 = 21 og 21 + 7 = 28."
+        },
+        {
+          "points": 4,
+          "text": "Tetraedertallene får vi ved å stable trekanttall oppå hverandre som en pyramide: 1, 1 + 3 = 4, 1 + 3 + 6 = 10, … Hva er det 5. tetraedertallet?",
+          "choices": {
+            "A": "20",
+            "B": "35",
+            "C": "25",
+            "D": "30",
+            "E": "56"
+          },
+          "answer": "B",
+          "explanation": "Vi legger sammen de fem første trekanttallene: 1 + 3 + 6 + 10 + 15 = 35."
+        }
+      ]
+    },
+    {
+      "code": "00212",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur 1 har 4 kuler, figur 2 har 7 kuler og figur 3 har 10 kuler. Hver ny figur får 3 kuler mer enn den forrige. Hvor mange kuler har figur 10?",
+          "choices": {
+            "A": "31",
+            "B": "30",
+            "C": "34",
+            "D": "40",
+            "E": "28"
+          },
+          "answer": "A",
+          "explanation": "Antall kuler er 3 ganger figurnummeret pluss 1, altså 3n + 1. Figur 10 har 3 · 10 + 1 = 31 kuler."
+        },
+        {
+          "points": 4,
+          "text": "Figur 1 har 5 klosser, figur 2 har 9 klosser og figur 3 har 13 klosser. Hvilken eksplisitt formel gir antall klosser i figur n?",
+          "choices": {
+            "A": "n + 4",
+            "B": "4n + 5",
+            "C": "5n",
+            "D": "4n + 1",
+            "E": "4n"
+          },
+          "answer": "D",
+          "explanation": "Det kommer 4 nye klosser hver gang, så formelen er 4n + noe. For n = 1 skal vi få 5, og 4 · 1 + 1 = 5. Formelen er 4n + 1."
+        }
+      ]
+    },
+    {
+      "code": "00213",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n er en L-form: en loddrett søyle med n klosser og en vannrett rad med n klosser, der de to deler hjørneklossen. Hvor mange klosser har figur 8?",
+          "choices": {
+            "A": "16",
+            "B": "17",
+            "C": "14",
+            "D": "15",
+            "E": "64"
+          },
+          "answer": "D",
+          "explanation": "Søylen og raden har 8 klosser hver, men hjørneklossen er telt to ganger. 8 + 8 − 1 = 15. Formelen er 2n − 1."
+        },
+        {
+          "points": 4,
+          "text": "Figur 1 er én kloss. I hver ny figur legges det til én kloss i hver av de fire armene, slik at figuren blir et voksende plusstegn. Figur 2 har 5 klosser og figur 3 har 9. Hvilken figur har 101 klosser?",
+          "choices": {
+            "A": "Figur 26",
+            "B": "Figur 24",
+            "C": "Figur 25",
+            "D": "Figur 27",
+            "E": "Figur 101"
+          },
+          "answer": "A",
+          "explanation": "Antall klosser er 4n − 3. Vi løser 4n − 3 = 101, som gir 4n = 104 og n = 26."
+        }
+      ]
+    },
+    {
+      "code": "00027",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En tallfølge er gitt ved den rekursive formelen a₁ = 5 og aₙ = aₙ₋₁ + 4. Hva er a₄?",
+          "choices": {
+            "A": "21",
+            "B": "16",
+            "C": "20",
+            "D": "13",
+            "E": "17"
+          },
+          "answer": "E",
+          "explanation": "Vi starter på 5 og legger til 4 for hvert nytt ledd: a₂ = 9, a₃ = 13 og a₄ = 17."
+        },
+        {
+          "points": 4,
+          "text": "Tallfølgen 2, 6, 12, 20, 30, … starter med a₁ = 2. Hvilken rekursiv formel gir resten av følgen?",
+          "choices": {
+            "A": "aₙ = aₙ₋₁ + 2n",
+            "B": "aₙ = aₙ₋₁ + 4",
+            "C": "aₙ = aₙ₋₁ + 2(n − 1)",
+            "D": "aₙ = 2aₙ₋₁ + 2",
+            "E": "aₙ = aₙ₋₁ + n"
+          },
+          "answer": "A",
+          "explanation": "Differansene er 4, 6, 8, 10, altså 2n når vi går til ledd nr. n. Sjekk: a₂ = 2 + 2 · 2 = 6 og a₃ = 6 + 2 · 3 = 12."
+        }
+      ]
+    },
+    {
+      "code": "00029",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Rektangeltallene 2, 6, 12, 20, … lages av rektangler med n rader og n + 1 klosser i hver rad. Hva er det 8. rektangeltallet?",
+          "choices": {
+            "A": "64",
+            "B": "72",
+            "C": "56",
+            "D": "81",
+            "E": "90"
+          },
+          "answer": "B",
+          "explanation": "Det 8. rektangeltallet har 8 rader med 9 klosser: 8 · 9 = 72."
+        },
+        {
+          "points": 4,
+          "text": "Et trekanttall er halvparten av rektangeltallet med samme nummer, altså Tₙ = n(n + 1)/2. Hva er det 20. trekanttallet?",
+          "choices": {
+            "A": "210",
+            "B": "200",
+            "C": "420",
+            "D": "190",
+            "E": "220"
+          },
+          "answer": "A",
+          "explanation": "T₂₀ = 20 · 21/2 = 420/2 = 210."
+        }
+      ]
+    },
+    {
+      "code": "00024",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Kvadrattall nr. n er et kvadrat med n · n klosser. Hvor mange klosser må legges til for å gå fra kvadrattall nr. 6 til kvadrattall nr. 7?",
+          "choices": {
+            "A": "7",
+            "B": "12",
+            "C": "14",
+            "D": "13",
+            "E": "49"
+          },
+          "answer": "D",
+          "explanation": "Kvadrattall nr. 7 har 49 klosser og nr. 6 har 36. 49 − 36 = 13 (én ny rad og én ny kolonne som deler et hjørne: 7 + 7 − 1)."
+        },
+        {
+          "points": 4,
+          "text": "Kvadrattallene kan skrives rekursivt som K₁ = 1 og Kₙ = Kₙ₋₁ + …. Hva skal stå på prikkene?",
+          "choices": {
+            "A": "2n + 1",
+            "B": "2n",
+            "C": "n²",
+            "D": "2n − 1",
+            "E": "n + 2"
+          },
+          "answer": "D",
+          "explanation": "For å gå fra kvadrat nr. n − 1 til nr. n legger vi til n + n − 1 = 2n − 1 klosser. Sjekk: K₂ = 1 + 3 = 4 og K₃ = 4 + 5 = 9."
+        }
+      ]
+    },
+    {
+      "code": "00013",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n er et kvadrat med n + 2 klosser langs hver side, men med et åpent kvadratisk hull på n · n klosser i midten. Figuren blir altså en ramme som er én kloss bred. Hvor mange klosser har figur 5?",
+          "choices": {
+            "A": "20",
+            "B": "25",
+            "C": "49",
+            "D": "28",
+            "E": "24"
+          },
+          "answer": "E",
+          "explanation": "Hele kvadratet har 7 · 7 = 49 klosser, og hullet er 5 · 5 = 25. 49 − 25 = 24."
+        },
+        {
+          "points": 4,
+          "text": "Figur n er et kvadrat med n + 4 klosser langs hver side og et kvadratisk hull på n · n klosser i midten, slik at rammen er to klosser bred. Hvilken rekursiv formel gir antall klosser Fₙ?",
+          "choices": {
+            "A": "F₁ = 24 og Fₙ = Fₙ₋₁ + 16",
+            "B": "F₁ = 25 og Fₙ = Fₙ₋₁ + 8",
+            "C": "F₁ = 16 og Fₙ = Fₙ₋₁ + 8",
+            "D": "F₁ = 24 og Fₙ = Fₙ₋₁ + 8",
+            "E": "F₁ = 24 og Fₙ = Fₙ₋₁ + 4"
+          },
+          "answer": "D",
+          "explanation": "F₁ = 5² − 1² = 24 og F₂ = 6² − 2² = 32. Eksplisitt er Fₙ = (n + 4)² − n² = 8n + 16, så det kommer 8 nye klosser hver gang."
+        }
+      ]
+    },
+    {
+      "code": "00023",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n er et rektangel på (n + 2) · (n + 3) klosser med et rektangulært hull på n · (n + 1) klosser i midten. I stedet for å telle rammen, kan vi ta hele rektangelet minus hullet. Hvor mange klosser har figur 4?",
+          "choices": {
+            "A": "20",
+            "B": "42",
+            "C": "24",
+            "D": "26",
+            "E": "22"
+          },
+          "answer": "E",
+          "explanation": "Hele rektangelet: 6 · 7 = 42. Hullet: 4 · 5 = 20. Rammen har 42 − 20 = 22 klosser."
+        },
+        {
+          "points": 4,
+          "text": "Figur n er et rektangel på (n + 2) · (n + 3) klosser med et hull på n · (n + 1) klosser i midten. Hvilken eksplisitt formel gir antall klosser i rammen?",
+          "choices": {
+            "A": "4n + 4",
+            "B": "2n + 6",
+            "C": "n² + 5n + 6",
+            "D": "4n + 6",
+            "E": "8n + 6"
+          },
+          "answer": "D",
+          "explanation": "(n + 2)(n + 3) − n(n + 1) = n² + 5n + 6 − n² − n = 4n + 6."
+        }
+      ]
+    },
+    {
+      "code": "00028",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Tallfølgen 5, 8, 11, 14, … har konstant differanse. Hvilken eksplisitt formel gir det n-te tallet?",
+          "choices": {
+            "A": "3n + 5",
+            "B": "n + 3",
+            "C": "3n + 2",
+            "D": "5n",
+            "E": "2n + 3"
+          },
+          "answer": "C",
+          "explanation": "Differansen er 3, så formelen er 3n + b. For n = 1 skal vi få 5: 3 + b = 5 gir b = 2. Formelen er 3n + 2."
+        },
+        {
+          "points": 5,
+          "text": "Tallfølgen 4, 10, 18, 28, 40, … har differanser 6, 8, 10, 12. Fordi andre-differansen er konstant lik 2, er formelen på formen n² + bn + c. Hvilken formel stemmer?",
+          "choices": {
+            "A": "n² + 3",
+            "B": "n² + 3n",
+            "C": "2n² + 2",
+            "D": "6n − 2",
+            "E": "n² + 4n − 1"
+          },
+          "answer": "B",
+          "explanation": "Trekker vi n² fra tallene, får vi 3, 6, 9, 12, 15, som er 3n. Formelen er n² + 3n. Sjekk: n = 3 gir 9 + 9 = 18."
+        }
+      ]
+    },
+    {
+      "code": "00021",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Mønsteret er 1³ = 1, 2³ = 3 + 5, 3³ = 7 + 9 + 11 og 4³ = 13 + 15 + 17 + 19. Hvilken sum gir 5³?",
+          "choices": {
+            "A": "21 + 23 + 25 + 27 + 29",
+            "B": "19 + 21 + 23 + 25 + 27",
+            "C": "20 + 22 + 24 + 26 + 28",
+            "D": "21 + 23 + 25 + 27",
+            "E": "23 + 25 + 27 + 29 + 31"
+          },
+          "answer": "A",
+          "explanation": "Vi fortsetter med de neste fem oddetallene etter 19: 21 + 23 + 25 + 27 + 29 = 125 = 5³."
+        },
+        {
+          "points": 5,
+          "text": "I mønsteret 1³ = 1, 2³ = 3 + 5, 3³ = 7 + 9 + 11, … er n³ en sum av n påfølgende oddetall, og gjennomsnittet av dem er alltid n². Hva er det første oddetallet i summen for 10³?",
+          "choices": {
+            "A": "81",
+            "B": "89",
+            "C": "91",
+            "D": "101",
+            "E": "99"
+          },
+          "answer": "C",
+          "explanation": "Summen har 10 oddetall med gjennomsnitt 10² = 100. De ligger symmetrisk rundt 100: 91, 93, …, 109. Sjekk: 10 · 100 = 1000 = 10³."
+        }
+      ]
+    },
+    {
+      "code": "00014",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Summen av de n første naturlige tallene er n(n + 1)/2. Hva er 1 + 2 + 3 + … + 50?",
+          "choices": {
+            "A": "1250",
+            "B": "2550",
+            "C": "1225",
+            "D": "1300",
+            "E": "1275"
+          },
+          "answer": "E",
+          "explanation": "Vi setter n = 50: 50 · 51/2 = 2550/2 = 1275."
+        },
+        {
+          "points": 5,
+          "text": "Bruk at 1 + 2 + … + n = n(n + 1)/2. Hva er summen 21 + 22 + 23 + … + 40?",
+          "choices": {
+            "A": "630",
+            "B": "610",
+            "C": "600",
+            "D": "820",
+            "E": "410"
+          },
+          "answer": "B",
+          "explanation": "1 + … + 40 = 40 · 41/2 = 820 og 1 + … + 20 = 20 · 21/2 = 210. Summen fra 21 til 40 blir 820 − 210 = 610."
+        }
+      ]
+    },
+    {
+      "code": "00065",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Tallfølgen 3, 9, 18, 30, 45, … får vi ved å gange hvert trekanttall 1, 3, 6, 10, 15 med samme tall. Trekanttallene har formelen n(n + 1)/2. Hvilken eksplisitt formel har tallfølgen?",
+          "choices": {
+            "A": "n(n + 3)/2",
+            "B": "3n²",
+            "C": "3n(n + 1)",
+            "D": "3n(n + 1)/2",
+            "E": "n(n + 1)/2 + 2"
+          },
+          "answer": "D",
+          "explanation": "Hvert tall er 3 ganger trekanttallet med samme nummer (3 = 3 · 1, 9 = 3 · 3, 18 = 3 · 6). Formelen blir 3 · n(n + 1)/2."
+        },
+        {
+          "points": 5,
+          "text": "Tallfølgen 1, 4, 10, 20, 35, … sammenliknes med trekanttallene 1, 3, 6, 10, 15. Forholdene blir 1, 4/3, 5/3, 2, 7/3, altså (n + 2)/3. Hvilken eksplisitt formel har tallfølgen?",
+          "choices": {
+            "A": "n(n + 1)(n + 2)/3",
+            "B": "n(n + 1)(n + 2)/6",
+            "C": "n(n + 1)/6",
+            "D": "(n + 2)/3",
+            "E": "n²(n + 1)/2"
+          },
+          "answer": "B",
+          "explanation": "Vi ganger trekanttallsformelen med forholdet: n(n + 1)/2 · (n + 2)/3 = n(n + 1)(n + 2)/6. Sjekk: n = 4 gir 4 · 5 · 6/6 = 20."
+        }
+      ]
+    },
+    {
+      "code": "00066",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er summen av de fire første kubikktallene, 1³ + 2³ + 3³ + 4³?",
+          "choices": {
+            "A": "30",
+            "B": "64",
+            "C": "1000",
+            "D": "10",
+            "E": "100"
+          },
+          "answer": "E",
+          "explanation": "1 + 8 + 27 + 64 = 100. Legg merke til at 100 = 10², og 10 = 1 + 2 + 3 + 4."
+        },
+        {
+          "points": 5,
+          "text": "Summen av de n første kubikktallene er lik kvadratet av trekanttall nr. n, altså (n(n + 1)/2)². Hva er 1³ + 2³ + 3³ + … + 10³?",
+          "choices": {
+            "A": "385",
+            "B": "1000",
+            "C": "550",
+            "D": "3025",
+            "E": "12 100"
+          },
+          "answer": "D",
+          "explanation": "Trekanttall nr. 10 er 10 · 11/2 = 55. Summen blir 55² = 3025."
+        }
+      ]
+    },
+    {
+      "code": "00067",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I et kortspill hører fire kort sammen: en figur, en tallfølge, en eksplisitt formel og en rekursiv formel. Et kort viser tallfølgen 2, 5, 8, 11, … Hva er det femte tallet i følgen?",
+          "choices": {
+            "A": "13",
+            "B": "15",
+            "C": "14",
+            "D": "16",
+            "E": "17"
+          },
+          "answer": "C",
+          "explanation": "Tallene øker med 3 hver gang. 11 + 3 = 14."
+        },
+        {
+          "points": 4,
+          "text": "Et kort viser den eksplisitte formelen aₙ = 6n − 1. Hvilket kort med rekursiv formel hører sammen med det?",
+          "choices": {
+            "A": "a₁ = 6 og aₙ = aₙ₋₁ + 6",
+            "B": "a₁ = 5 og aₙ = aₙ₋₁ + 6",
+            "C": "a₁ = 5 og aₙ = aₙ₋₁ + 5",
+            "D": "a₁ = −1 og aₙ = aₙ₋₁ + 6",
+            "E": "a₁ = 5 og aₙ = 6aₙ₋₁ − 1"
+          },
+          "answer": "B",
+          "explanation": "Første ledd er a₁ = 6 · 1 − 1 = 5. Tallet foran n er 6, så hvert nytt ledd er 6 mer enn det forrige."
+        }
+      ]
+    }
+  ]
+}

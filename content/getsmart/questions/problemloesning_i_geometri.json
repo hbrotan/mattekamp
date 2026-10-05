@@ -1,0 +1,687 @@
+{
+  "slug": "problemloesning_i_geometri",
+  "videos": [
+    {
+      "code": "00068",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et bilde som er 10 cm × 15 cm, forstørres slik at det blir formlikt med originalen. Kortsiden blir 30 cm. Hvor lang blir langsiden?",
+          "choices": {
+            "A": "35 cm",
+            "B": "30 cm",
+            "C": "50 cm",
+            "D": "45 cm",
+            "E": "22,5 cm"
+          },
+          "answer": "D",
+          "explanation": "Forstørringsfaktoren er 30 : 10 = 3. Langsiden blir 3 · 15 cm = 45 cm."
+        },
+        {
+          "points": 4,
+          "text": "En 1,6 m høy person står på flat mark 3 m fra en loddrett lyktestolpe. Lyset fra lampen på toppen gir personen en skygge på 2 m, rett bort fra stolpen. Hvor høyt sitter lampen?",
+          "choices": {
+            "A": "2,4 m",
+            "B": "4,8 m",
+            "C": "8,0 m",
+            "D": "3,2 m",
+            "E": "4,0 m"
+          },
+          "answer": "E",
+          "explanation": "Skyggespissen er 3 + 2 = 5 m fra stolpen. Formlike trekanter gir h/5 = 1,6/2, så h = 0,8 · 5 m = 4,0 m."
+        }
+      ]
+    },
+    {
+      "code": "00262",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I et koordinatsystem tegnes firkanten med hjørner A(1, 1), B(5, 1), C(5, 4) og D(1, 4). Hvilken figur er det, og hva er arealet?",
+          "choices": {
+            "A": "Rektangel, areal 12",
+            "B": "Kvadrat, areal 16",
+            "C": "Rektangel, areal 14",
+            "D": "Parallellogram, areal 7",
+            "E": "Rektangel, areal 7"
+          },
+          "answer": "A",
+          "explanation": "AB er 4 lang og BC er 3 lang, og alle vinklene er rette. Det er et rektangel med areal 4 · 3 = 12."
+        },
+        {
+          "points": 4,
+          "text": "I et koordinatsystem tegnes firkanten med hjørner A(0, 0), B(6, 0), C(8, 4) og D(2, 4). Hvilken figur er det, og hva er arealet?",
+          "choices": {
+            "A": "Rombe, areal 24",
+            "B": "Rektangel, areal 32",
+            "C": "Parallellogram, areal 12",
+            "D": "Parallellogram, areal 24",
+            "E": "Parallellogram, areal 26,8"
+          },
+          "answer": "D",
+          "explanation": "AB og DC er begge vannrette og 6 lange, og AD og BC er parallelle. Det er et parallellogram med grunnlinje 6 og høyde 4, så arealet er 6 · 4 = 24."
+        }
+      ]
+    },
+    {
+      "code": "00263",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En trekant har hjørner A(1, 1), B(7, 1) og C(4, 5). Hva slags trekant er dette?",
+          "choices": {
+            "A": "Likesidet",
+            "B": "Likebeint",
+            "C": "Rettvinklet",
+            "D": "Stumpvinklet",
+            "E": "Rettvinklet og likebeint"
+          },
+          "answer": "B",
+          "explanation": "AC = √(3² + 4²) = 5 og BC = √(3² + 4²) = 5, mens AB = 6. To like sider gir likebeint trekant, og ingen av vinklene er rette eller stumpe."
+        },
+        {
+          "points": 4,
+          "text": "Tre av hjørnene i kvadratet ABCD er A(1, 1), B(4, 2) og C(3, 5). Hva er koordinatene til D, og hva er arealet av kvadratet?",
+          "choices": {
+            "A": "D(0, 4), areal 16",
+            "B": "D(2, 4), areal 10",
+            "C": "D(0, 4), areal 10",
+            "D": "D(0, 5), areal 10",
+            "E": "D(0, 4), areal √10"
+          },
+          "answer": "C",
+          "explanation": "Fra B til C går vi 1 til venstre og 3 opp, så fra A til D gjør vi det samme: D(0, 4). Siden er √(3² + 1²) = √10, så arealet er (√10)² = 10."
+        }
+      ]
+    },
+    {
+      "code": "00264",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hva er avstanden mellom punktene A(1, 2) og B(4, 6) i et koordinatsystem?",
+          "choices": {
+            "A": "7",
+            "B": "25",
+            "C": "3",
+            "D": "5",
+            "E": "2,6"
+          },
+          "answer": "D",
+          "explanation": "Vi går 3 til siden og 4 opp. Pytagoras gir √(3² + 4²) = √25 = 5."
+        },
+        {
+          "points": 4,
+          "text": "En trekant har hjørner A(0, 0), B(6, 0) og C(2, 3). Hva er omkretsen av trekanten? Rund av til én desimal.",
+          "choices": {
+            "A": "14,6",
+            "B": "18,0",
+            "C": "16,0",
+            "D": "11,0",
+            "E": "13,1"
+          },
+          "answer": "A",
+          "explanation": "AB = 6, AC = √(2² + 3²) = √13 ≈ 3,61 og BC = √(4² + 3²) = 5. Omkretsen er 6 + 3,61 + 5 ≈ 14,6."
+        }
+      ]
+    },
+    {
+      "code": "00265",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Én liter maling dekker 8 m². Du skal male en vegg på 24 m² med to strøk. Hvor mange liter maling trenger du?",
+          "choices": {
+            "A": "3 liter",
+            "B": "4 liter",
+            "C": "12 liter",
+            "D": "48 liter",
+            "E": "6 liter"
+          },
+          "answer": "E",
+          "explanation": "To strøk betyr 2 · 24 m² = 48 m² som skal males. 48 : 8 = 6 liter."
+        },
+        {
+          "points": 5,
+          "text": "Et rom er 5,0 m langt, 4,0 m bredt og 2,5 m høyt. Alle fire veggene skal males med to strøk. Dør og vindu utgjør til sammen 3,5 m² og skal ikke males. Én liter maling dekker 8 m², og malingen selges i spann på 3 liter. Hvor mange spann må du kjøpe?",
+          "choices": {
+            "A": "2 spann",
+            "B": "3 spann",
+            "C": "6 spann",
+            "D": "11 spann",
+            "E": "4 spann"
+          },
+          "answer": "E",
+          "explanation": "Veggflaten er 2 · (5,0 + 4,0) · 2,5 − 3,5 = 41,5 m². To strøk gir 83 m², som krever 83 : 8 ≈ 10,4 liter. 10,4 : 3 ≈ 3,5, så du må kjøpe 4 spann."
+        }
+      ]
+    },
+    {
+      "code": "00266",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Fra toppen av en 40 m høy, loddrett klippe er avstanden i rett linje ned til et skip 104 m. Skipet og foten av klippen ligger ved havflaten. Hvor langt er det fra foten av klippen ut til skipet?",
+          "choices": {
+            "A": "64 m",
+            "B": "96 m",
+            "C": "144 m",
+            "D": "112 m",
+            "E": "100 m"
+          },
+          "answer": "B",
+          "explanation": "Klippen, havflaten og synslinjen danner en rettvinklet trekant med hypotenus 104 m. Avstanden er √(104² − 40²) = √9216 = 96 m."
+        },
+        {
+          "points": 4,
+          "text": "Et skip S ligger ute på sjøen. Punktet A på en rett strand ligger slik at AS står vinkelrett på stranda. Kari går 60 m langs stranda fra A til B og videre 20 m til C. Fra C går hun vinkelrett inn på land til punktet D, der hun ser at D, B og S ligger på en rett linje. CD = 30 m. Hvor langt er det fra A ut til skipet?",
+          "choices": {
+            "A": "90 m",
+            "B": "10 m",
+            "C": "40 m",
+            "D": "110 m",
+            "E": "45 m"
+          },
+          "answer": "A",
+          "explanation": "ΔSAB og ΔDCB er formlike (rette vinkler i A og C og toppvinkler i B). AS/CD = AB/CB gir AS = 30 m · 60/20 = 90 m."
+        }
+      ]
+    },
+    {
+      "code": "00267",
+      "questions": [
+        {
+          "points": 3,
+          "text": "AB er en diameter i en sirkel, og C er et punkt på sirkelen (ulikt A og B). Hvor stor er ∠ACB?",
+          "choices": {
+            "A": "45°",
+            "B": "60°",
+            "C": "90°",
+            "D": "180°",
+            "E": "Avhenger av hvor C ligger"
+          },
+          "answer": "C",
+          "explanation": "Etter Thales' setning er en periferivinkel som spenner over en diameter alltid 90°."
+        },
+        {
+          "points": 4,
+          "text": "AB er en diameter i en sirkel med sentrum M, og C er et punkt på sirkelen. ∠CAB = 34°. Hvor stor er ∠MCB?",
+          "choices": {
+            "A": "34°",
+            "B": "68°",
+            "C": "90°",
+            "D": "56°",
+            "E": "112°"
+          },
+          "answer": "D",
+          "explanation": "∠ACB = 90° (Thales), så ∠ABC = 180° − 90° − 34° = 56°. MB = MC (radier), så ΔMBC er likebeint og ∠MCB = ∠MBC = 56°."
+        }
+      ]
+    },
+    {
+      "code": "00268",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En figur består av et rektangel på 10 cm × 4 cm og en rettvinklet trekant satt inntil den ene kortsiden. Trekanten har kateter på 4 cm (felles med kortsiden) og 6 cm. Hva er arealet av hele figuren?",
+          "choices": {
+            "A": "64 cm²",
+            "B": "40 cm²",
+            "C": "28 cm²",
+            "D": "56 cm²",
+            "E": "52 cm²"
+          },
+          "answer": "E",
+          "explanation": "Rektangelet har areal 10 · 4 = 40 cm² og trekanten (4 · 6) : 2 = 12 cm². Til sammen 40 + 12 = 52 cm²."
+        },
+        {
+          "points": 4,
+          "text": "En figur består av et rektangel på 8 cm × 6 cm og en halvsirkel som er satt utenpå den ene 6 cm-siden (diameteren er 6 cm). Hva er omkretsen av figuren? Bruk π ≈ 3,14 og rund av til én desimal.",
+          "choices": {
+            "A": "37,4 cm",
+            "B": "40,8 cm",
+            "C": "62,1 cm",
+            "D": "31,4 cm",
+            "E": "28,0 cm"
+          },
+          "answer": "D",
+          "explanation": "De rette sidene som er ytterkant er 8 + 6 + 8 = 22 cm. Halvsirkelbuen er π · 6 : 2 ≈ 9,42 cm. Omkretsen er 22 + 9,42 ≈ 31,4 cm."
+        }
+      ]
+    },
+    {
+      "code": "00269",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Fra en kvadratisk plate med side 10 cm skjæres det ut et sirkelrundt hull med radius 3 cm. Hva er arealet av platen som er igjen? Bruk π ≈ 3,14 og rund av til én desimal.",
+          "choices": {
+            "A": "81,2 cm²",
+            "B": "90,6 cm²",
+            "C": "128,3 cm²",
+            "D": "28,3 cm²",
+            "E": "71,7 cm²"
+          },
+          "answer": "E",
+          "explanation": "Kvadratet har areal 10 · 10 = 100 cm². Hullet har areal 3,14 · 3² = 28,26 cm². Igjen er 100 − 28,26 ≈ 71,7 cm²."
+        },
+        {
+          "points": 4,
+          "text": "En gressplen består av et rektangel på 100 m × 60 m med en halvsirkel på hver av de to kortsidene (diameter 60 m). Hva er arealet av hele gressplenen? Bruk π ≈ 3,14.",
+          "choices": {
+            "A": "8 826 m²",
+            "B": "7 413 m²",
+            "C": "11 652 m²",
+            "D": "17 304 m²",
+            "E": "6 188 m²"
+          },
+          "answer": "A",
+          "explanation": "De to halvsirklene utgjør én hel sirkel med radius 30 m: 3,14 · 30² = 2 826 m². Totalt 100 · 60 + 2 826 = 8 826 m²."
+        }
+      ]
+    },
+    {
+      "code": "00270",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I trapeset ABCD er AB parallell med DC, AB = 12 cm og DC = 8 cm. Diagonalene AC og BD skjærer hverandre i S, og ΔABS ~ ΔCDS. Diagonalen AC er 15 cm. Hvor lang er AS?",
+          "choices": {
+            "A": "6 cm",
+            "B": "7,5 cm",
+            "C": "9 cm",
+            "D": "10 cm",
+            "E": "11,25 cm"
+          },
+          "answer": "C",
+          "explanation": "Forholdet AS : SC = AB : DC = 12 : 8 = 3 : 2. AC deles i 5 deler à 3 cm, så AS = 3 · 3 cm = 9 cm."
+        },
+        {
+          "points": 5,
+          "text": "I trapeset ABCD er AB parallell med DC, AB = 12 cm, DC = 8 cm, og avstanden mellom AB og DC er 5 cm. Beina AD og BC forlenges til de møtes i punktet E på den siden av DC som ligger lengst fra AB. Hva er avstanden fra E til linjen AB?",
+          "choices": {
+            "A": "10 cm",
+            "B": "8,3 cm",
+            "C": "7,5 cm",
+            "D": "20 cm",
+            "E": "15 cm"
+          },
+          "answer": "E",
+          "explanation": "ΔEDC ~ ΔEAB. Kall avstanden fra E til DC for t: t/(t + 5) = 8/12. Det gir 12t = 8t + 40, så t = 10 cm. Avstanden til AB er 10 + 5 = 15 cm."
+        }
+      ]
+    },
+    {
+      "code": "00271",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En avkuttet kjegle får du når du skjærer toppen av en stor kjegle parallelt med grunnflaten. Hvordan kan du finne volumet av den avkuttede kjeglen uten egen formel?",
+          "choices": {
+            "A": "V(stor kjegle) + V(liten kjegle)",
+            "B": "V(stor kjegle) : 2",
+            "C": "π · R² · h for den store",
+            "D": "V(stor kjegle) − V(liten kjegle)",
+            "E": "V(liten kjegle) · 2"
+          },
+          "answer": "D",
+          "explanation": "Den avkuttede kjeglen er det som er igjen av den store kjeglen når den lille toppkjeglen er fjernet. Volumet er derfor differansen."
+        },
+        {
+          "points": 5,
+          "text": "En kjegle har radius 6 cm og høyde 12 cm. Den skjæres parallelt med grunnflaten midt på høyden, og toppen fjernes. Den lille toppkjeglen har da radius 3 cm og høyde 6 cm. Hva er volumet av den avkuttede kjeglen? Bruk π ≈ 3,14 og rund av til hele cm³.",
+          "choices": {
+            "A": "452 cm³",
+            "B": "226 cm³",
+            "C": "1 187 cm³",
+            "D": "396 cm³",
+            "E": "170 cm³"
+          },
+          "answer": "D",
+          "explanation": "Stor kjegle: (3,14 · 6² · 12) : 3 = 452,16 cm³. Liten kjegle: (3,14 · 3² · 6) : 3 = 56,52 cm³. Differansen er 395,64 ≈ 396 cm³."
+        }
+      ]
+    },
+    {
+      "code": "00272",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Volumet av en avkuttet kjegle er V = (π · h / 3) · (R² + R · r + r²), der R og r er radiene og h er høyden. Finn V når R = 4 cm, r = 2 cm og h = 3 cm. Bruk π ≈ 3,14 og rund av til én desimal.",
+          "choices": {
+            "A": "87,9 cm³",
+            "B": "62,8 cm³",
+            "C": "263,8 cm³",
+            "D": "150,7 cm³",
+            "E": "50,2 cm³"
+          },
+          "answer": "A",
+          "explanation": "R² + R · r + r² = 16 + 8 + 4 = 28. V = (3,14 · 3 / 3) · 28 = 3,14 · 28 ≈ 87,9 cm³."
+        },
+        {
+          "points": 5,
+          "text": "En kjegle skjæres parallelt med grunnflaten midt på høyden, slik at radien i toppkjeglen er halvparten av radien i hele kjeglen. Hvor stor brøkdel av volumet til hele kjeglen utgjør den avkuttede delen (bunnstykket)?",
+          "choices": {
+            "A": "1/2",
+            "B": "7/8",
+            "C": "3/4",
+            "D": "1/8",
+            "E": "2/3"
+          },
+          "answer": "B",
+          "explanation": "Toppkjeglen er formlik med hele kjeglen med lineært forholdstall ½, så volumet er (½)³ = 1/8 av hele. Bunnstykket er 1 − 1/8 = 7/8."
+        }
+      ]
+    },
+    {
+      "code": "00273",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En kube har kanter på 30 cm. Hvor lang er diagonalen i én av sideflatene? Rund av til én desimal.",
+          "choices": {
+            "A": "60,0 cm",
+            "B": "52,0 cm",
+            "C": "30,0 cm",
+            "D": "45,0 cm",
+            "E": "42,4 cm"
+          },
+          "answer": "E",
+          "explanation": "Sideflaten er et kvadrat med side 30 cm. Diagonalen er √(30² + 30²) = 30√2 ≈ 42,4 cm."
+        },
+        {
+          "points": 4,
+          "text": "En kubeformet eske har kanter på 40 cm (innvendig mål). Hvor lang er den lengste rette, tynne pinnen som får plass i esken? Rund av til hele centimeter.",
+          "choices": {
+            "A": "57 cm",
+            "B": "69 cm",
+            "C": "80 cm",
+            "D": "120 cm",
+            "E": "40 cm"
+          },
+          "answer": "B",
+          "explanation": "Den lengste pinnen ligger langs romdiagonalen. Flatediagonalen er √(40² + 40²) = 40√2. Romdiagonalen er √((40√2)² + 40²) = 40√3 ≈ 69 cm."
+        }
+      ]
+    },
+    {
+      "code": "00274",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et rektangel er 9 cm × 3 cm, og et kvadrat har side 6 cm. Hvilket utsagn er riktig?",
+          "choices": {
+            "A": "Samme omkrets og samme areal",
+            "B": "Samme areal, men ulik omkrets",
+            "C": "Rektangelet har størst areal",
+            "D": "Rektangelet har størst omkrets",
+            "E": "Samme omkrets, kvadratet har størst areal"
+          },
+          "answer": "E",
+          "explanation": "Begge har omkrets 24 cm. Arealene er 9 · 3 = 27 cm² og 6 · 6 = 36 cm², så kvadratet har størst areal."
+        },
+        {
+          "points": 4,
+          "text": "Et rektangel og et kvadrat har begge areal 36 cm². Rektangelet er 4 cm bredt. Hvor mye større omkrets har rektangelet enn kvadratet?",
+          "choices": {
+            "A": "0 cm",
+            "B": "1 cm",
+            "C": "4 cm",
+            "D": "2 cm",
+            "E": "5 cm"
+          },
+          "answer": "D",
+          "explanation": "Rektangelet er 4 cm × 9 cm med omkrets 26 cm. Kvadratet er 6 cm × 6 cm med omkrets 24 cm. Forskjellen er 2 cm."
+        }
+      ]
+    },
+    {
+      "code": "00275",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En lukket sylinder (med bunn og lokk) har radius r og høyde h. Hvilket uttrykk gir overflaten O?",
+          "choices": {
+            "A": "O = πr²h",
+            "B": "O = πr² + 2πrh",
+            "C": "O = 2πr² + 2πrh",
+            "D": "O = 2πrh",
+            "E": "O = 2πr² + πrh"
+          },
+          "answer": "C",
+          "explanation": "Bunn og lokk er to sirkler: 2πr². Sideflaten er et rektangel med lengde 2πr og høyde h: 2πrh. Sum: 2πr² + 2πrh."
+        },
+        {
+          "points": 5,
+          "text": "En lukket sylinder skal ha overflate 600 cm². Da kan volumet skrives som V(r) = 300r − π · r³, der r er radien i cm. En graftegner viser at grafen til V har ett toppunkt. For hvilken radius er volumet størst? Rund av til én desimal.",
+          "choices": {
+            "A": "9,8 cm",
+            "B": "5,6 cm",
+            "C": "6,9 cm",
+            "D": "4,0 cm",
+            "E": "3,2 cm"
+          },
+          "answer": "B",
+          "explanation": "Toppunktet ligger der V'(r) = 300 − 3πr² = 0, altså r = √(100/π) ≈ 5,6 cm. Det gir V ≈ 1 128 cm³, mer enn for de andre radiene."
+        }
+      ]
+    },
+    {
+      "code": "00276",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Sidelengden i et kvadrat dobles. Hvor mange ganger større blir arealet?",
+          "choices": {
+            "A": "2 ganger",
+            "B": "8 ganger",
+            "C": "4 ganger",
+            "D": "6 ganger",
+            "E": "16 ganger"
+          },
+          "answer": "C",
+          "explanation": "Arealet regnes som side · side. Når begge faktorene dobles, blir arealet 2 · 2 = 4 ganger så stort."
+        },
+        {
+          "points": 4,
+          "text": "To formlike sylindre har lengdeforhold 2 : 5. Den minste har volum 40 cm³. Hva er volumet av den største?",
+          "choices": {
+            "A": "100 cm³",
+            "B": "250 cm³",
+            "C": "1 000 cm³",
+            "D": "625 cm³",
+            "E": "400 cm³"
+          },
+          "answer": "D",
+          "explanation": "Volumforholdet er lengdeforholdet i tredje: (5/2)³ = 15,625. Volumet blir 40 cm³ · 15,625 = 625 cm³."
+        }
+      ]
+    },
+    {
+      "code": "00277",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I et regneark står radius r i celle A2 og høyde h i celle B2. Hvilken formel i C2 regner ut volumet π · r² · h av en sylinder?",
+          "choices": {
+            "A": "=PI()*A2*2*B2",
+            "B": "=PI()*A2^2*B2",
+            "C": "=PI()*(A2*B2)^2",
+            "D": "=2*PI()*A2*B2",
+            "E": "=PI()*A2^2+B2"
+          },
+          "answer": "B",
+          "explanation": "π skrives PI(), r² skrives A2^2, og alt skal ganges med høyden B2: =PI()*A2^2*B2."
+        },
+        {
+          "points": 4,
+          "text": "En lukket sylinder skal ha overflate 600 cm². Da er høyden h = (600 − 2π · r²) / (2π · r). I et regneark regnes volumet V = π · r² · h ut for r = 4, 5, 6, 7 og 8 cm. Hvilken av disse radiene gir størst volum?",
+          "choices": {
+            "A": "4 cm",
+            "B": "5 cm",
+            "C": "7 cm",
+            "D": "8 cm",
+            "E": "6 cm"
+          },
+          "answer": "E",
+          "explanation": "Volumene blir omtrent 999, 1 107, 1 121, 1 022 og 792 cm³ for r = 4, 5, 6, 7 og 8 cm. Størst volum får vi for r = 6 cm."
+        }
+      ]
+    },
+    {
+      "code": "00096",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et rektangel har en diagonal på 13 cm, og den ene siden er 5 cm. Hva er arealet av rektangelet?",
+          "choices": {
+            "A": "65 cm²",
+            "B": "60 cm²",
+            "C": "32,5 cm²",
+            "D": "30 cm²",
+            "E": "169 cm²"
+          },
+          "answer": "B",
+          "explanation": "Den andre siden er √(13² − 5²) = √144 = 12 cm. Arealet er 5 · 12 = 60 cm²."
+        },
+        {
+          "points": 4,
+          "text": "En sirkel er tegnet inni et kvadrat med side 10 cm, slik at sirkelen akkurat berører alle fire sidene. Hva er arealet av den delen av kvadratet som ligger utenfor sirkelen? Bruk π ≈ 3,14 og rund av til én desimal.",
+          "choices": {
+            "A": "78,5 cm²",
+            "B": "68,6 cm²",
+            "C": "21,5 cm²",
+            "D": "50,0 cm²",
+            "E": "31,4 cm²"
+          },
+          "answer": "C",
+          "explanation": "Sirkelen har radius 5 cm og areal 3,14 · 5² = 78,5 cm². Kvadratet har areal 100 cm², så resten er 100 − 78,5 = 21,5 cm²."
+        }
+      ]
+    },
+    {
+      "code": "00097",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et kvadrat er tegnet inni en sirkel med radius 5 cm, slik at alle fire hjørnene ligger på sirkelen. Hva er arealet av kvadratet?",
+          "choices": {
+            "A": "100 cm²",
+            "B": "50 cm²",
+            "C": "25 cm²",
+            "D": "78,5 cm²",
+            "E": "70,7 cm²"
+          },
+          "answer": "B",
+          "explanation": "Diagonalen i kvadratet er en diameter, altså 10 cm. Med side s er s² + s² = 10², så s² = 50. Arealet er 50 cm²."
+        },
+        {
+          "points": 5,
+          "text": "Et kvadrat er tegnet inni en sirkel med radius 5 cm, slik at alle fire hjørnene ligger på sirkelen. Hva er arealet av den delen av sirkelen som ligger utenfor kvadratet? Bruk π ≈ 3,14 og rund av til én desimal.",
+          "choices": {
+            "A": "28,5 cm²",
+            "B": "53,5 cm²",
+            "C": "21,5 cm²",
+            "D": "0,0 cm²",
+            "E": "128,5 cm²"
+          },
+          "answer": "A",
+          "explanation": "Sirkelen har areal 3,14 · 5² = 78,5 cm². Kvadratets diagonal er 10 cm, så arealet er 10² : 2 = 50 cm². Differansen er 28,5 cm²."
+        }
+      ]
+    },
+    {
+      "code": "00098",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En likebeint trekant har grunnlinje 10 cm, og de to like sidene er 13 cm hver. Hvor høy er trekanten (høyden ned på grunnlinjen)?",
+          "choices": {
+            "A": "8 cm",
+            "B": "13 cm",
+            "C": "12 cm",
+            "D": "18 cm",
+            "E": "11 cm"
+          },
+          "answer": "C",
+          "explanation": "Høyden deler grunnlinjen i to deler på 5 cm. Pytagoras: h = √(13² − 5²) = √144 = 12 cm."
+        },
+        {
+          "points": 4,
+          "text": "En likebeint trekant har grunnlinje 10 cm, og de to like sidene er 13 cm hver. Hva er arealet av trekanten?",
+          "choices": {
+            "A": "65 cm²",
+            "B": "120 cm²",
+            "C": "130 cm²",
+            "D": "30 cm²",
+            "E": "60 cm²"
+          },
+          "answer": "E",
+          "explanation": "Høyden er √(13² − 5²) = 12 cm. Arealet er (10 · 12) : 2 = 60 cm²."
+        }
+      ]
+    },
+    {
+      "code": "00250",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant har areal 30 cm², og den ene kateten er 5 cm. Hvor lang er den andre kateten?",
+          "choices": {
+            "A": "6 cm",
+            "B": "12 cm",
+            "C": "13 cm",
+            "D": "25 cm",
+            "E": "150 cm"
+          },
+          "answer": "B",
+          "explanation": "Arealet er (5 · b) : 2 = 30, så 5 · b = 60 og b = 12 cm."
+        },
+        {
+          "points": 5,
+          "text": "Et rektangel har omkrets 28 cm og diagonal 10 cm. Hva er arealet av rektangelet? (Tips: kall sidene a og b, og bruk at (a + b)² = a² + 2ab + b².)",
+          "choices": {
+            "A": "49 cm²",
+            "B": "96 cm²",
+            "C": "48 cm²",
+            "D": "24 cm²",
+            "E": "40 cm²"
+          },
+          "answer": "C",
+          "explanation": "a + b = 14 og a² + b² = 10² = 100. Da er 14² = 100 + 2ab, så 2ab = 96 og ab = 48 cm². (Sidene er 6 cm og 8 cm.)"
+        }
+      ]
+    },
+    {
+      "code": "00113",
+      "questions": [
+        {
+          "points": 3,
+          "text": "To sirkler med radius 4 cm ligger slik at de berører hverandre utvendig i ett punkt. Hva er avstanden mellom sentrene deres?",
+          "choices": {
+            "A": "4 cm",
+            "B": "16 cm",
+            "C": "2 cm",
+            "D": "12 cm",
+            "E": "8 cm"
+          },
+          "answer": "E",
+          "explanation": "Når to sirkler berører hverandre utvendig, ligger berøringspunktet på linjen mellom sentrene. Avstanden er summen av radiene: 4 + 4 = 8 cm."
+        },
+        {
+          "points": 5,
+          "text": "To sirkler med radius 4 cm ligger på samme side av en rett linje l, berører begge linjen l og berører hverandre. En liten sirkel med radius r ligger mellom dem og berører begge sirklene og linjen l. Hvor stor er r?",
+          "choices": {
+            "A": "1 cm",
+            "B": "2 cm",
+            "C": "0,5 cm",
+            "D": "1,5 cm",
+            "E": "4/3 cm"
+          },
+          "answer": "A",
+          "explanation": "Sentrum i den lille sirkelen ligger 4 cm til siden for hvert stort sentrum og 4 − r lavere. Pytagoras: (4 + r)² = 4² + (4 − r)² gir 16r = 16, så r = 1 cm."
+        }
+      ]
+    }
+  ]
+}

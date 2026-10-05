@@ -1,0 +1,36 @@
+{
+ "slug": "getsmart_divisjon",
+ "videos": [
+  {
+   "code": "00038",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et tall er delelig med 3 hvis tverrsummen (summen av sifrene) er delelig med 3. Hvilket av tallene er delelig med 3?",
+     "choices": {
+      "A": "1 241",
+      "B": "2 003",
+      "C": "1 245",
+      "D": "1 000",
+      "E": "4 451"
+     },
+     "answer": "C",
+     "explanation": "Tverrsummen av 1 245 er 1 + 2 + 4 + 5 = 12, som er delelig med 3. De andre har tverrsum 8, 5, 1 og 14."
+    },
+    {
+     "points": 4,
+     "text": "Hvilket av tallene er delelig med både 4 og 9?",
+     "choices": {
+      "A": "1 458",
+      "B": "1 236",
+      "C": "1 548",
+      "D": "2 718",
+      "E": "4 444"
+     },
+     "answer": "C",
+     "explanation": "Delelig på 4: de to siste sifrene (48) er delelig med 4. Delelig på 9: tverrsummen 1 + 5 + 4 + 8 = 18 er delelig med 9."
+    }
+   ]
+  }
+ ]
+}

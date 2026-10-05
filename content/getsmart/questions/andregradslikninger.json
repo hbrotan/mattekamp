@@ -1,0 +1,98 @@
+{
+  "slug": "andregradslikninger",
+  "videos": [
+    {
+      "code": "00046",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Løs likningen x² = 49.",
+          "choices": {
+            "A": "bare x = 7",
+            "B": "x = 24,5",
+            "C": "x = 49 eller x = −49",
+            "D": "x = 7 eller x = −7",
+            "E": "bare x = −7"
+          },
+          "answer": "D",
+          "explanation": "Både 7² og (−7)² er 49, så likningen har to løsninger: x = ±7."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningen 3x² − 48 = 0.",
+          "choices": {
+            "A": "x = 16 eller x = −16",
+            "B": "x = 4 eller x = −4",
+            "C": "x = 8 eller x = −8",
+            "D": "bare x = 4",
+            "E": "x = 12 eller x = −12"
+          },
+          "answer": "B",
+          "explanation": "3x² = 48 gir x² = 16. Da er x = 4 eller x = −4."
+        }
+      ]
+    },
+    {
+      "code": "00047",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Se på likningen (x + 3)/x − (2x − 2)/(2x) = x/9. Hvilken x-verdi kan ikke være en løsning?",
+          "choices": {
+            "A": "x = 1",
+            "B": "x = −3",
+            "C": "x = 9",
+            "D": "x = 0",
+            "E": "x = 2"
+          },
+          "answer": "D",
+          "explanation": "x = 0 gir null i nevnerne x og 2x, og vi kan ikke dele på null. De andre verdiene gir ikke null i noen nevner."
+        },
+        {
+          "points": 5,
+          "text": "Løs likningen (x + 3)/x − (2x − 2)/(2x) = x/9.",
+          "choices": {
+            "A": "bare x = 6",
+            "B": "x = 3√2 eller x = −3√2",
+            "C": "x = 36 eller x = −36",
+            "D": "x = 6 eller x = −6",
+            "E": "x = 0 eller x = 6"
+          },
+          "answer": "D",
+          "explanation": "Gang med 18x: 18(x + 3) − 9(2x − 2) = 2x². Det gir 54 + 18 = 2x², så x² = 36 og x = ±6. Ingen av dem gir null i nevner."
+        }
+      ]
+    },
+    {
+      "code": "00093",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Grafen til y = x² − 4 skjærer x-aksen i to punkter. Hvilke løsninger har da likningen x² − 4 = 0?",
+          "choices": {
+            "A": "x = 2 og x = −2",
+            "B": "x = 4 og x = −4",
+            "C": "bare x = 2",
+            "D": "bare x = −4",
+            "E": "x = 16 og x = −16"
+          },
+          "answer": "A",
+          "explanation": "Løsningene er x-verdiene der grafen skjærer x-aksen (der y = 0). Kontroll: 2² − 4 = 0 og (−2)² − 4 = 0."
+        },
+        {
+          "points": 4,
+          "text": "Likningen x² = x + 2 løses grafisk ved å tegne y = x² og y = x + 2 i samme koordinatsystem. Hvilke x-verdier har skjæringspunktene?",
+          "choices": {
+            "A": "x = 1 og x = −2",
+            "B": "x = 0 og x = 2",
+            "C": "bare x = 2",
+            "D": "x = −1 og x = 2",
+            "E": "x = 1 og x = 4"
+          },
+          "answer": "D",
+          "explanation": "Grafene møtes i (−1, 1) og (2, 4). Løsningene er x-verdiene: (−1)² = −1 + 2 og 2² = 2 + 2."
+        }
+      ]
+    }
+  ]
+}

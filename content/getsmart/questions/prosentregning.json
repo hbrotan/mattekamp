@@ -1,0 +1,873 @@
+{
+ "slug": "prosentregning",
+ "videos": [
+  {
+   "code": "00050",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva betyr det at 37 % av elevene på en skole går med briller?",
+     "choices": {
+      "A": "37 av 10 elever",
+      "B": "3,7 av 100 elever",
+      "C": "37 av 100 elever",
+      "D": "37 av 1 000 elever",
+      "E": "100 av 37 elever"
+     },
+     "answer": "C",
+     "explanation": "Prosent betyr «av hundre». 37 % betyr derfor 37 av hver 100."
+    },
+    {
+     "points": 4,
+     "text": "Hvilket av disse tallene er størst?",
+     "choices": {
+      "A": "0,63",
+      "B": "⅝",
+      "C": "64 %",
+      "D": "⅗",
+      "E": "0,605"
+     },
+     "answer": "C",
+     "explanation": "Skriv alt som desimaltall: 64 % = 0,64, ⅝ = 0,625 og ⅗ = 0,6. Det største er 0,64, altså 64 %."
+    }
+   ]
+  },
+  {
+   "code": "00139",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skriv desimaltallet 0,35 som prosent.",
+     "choices": {
+      "A": "3,5 %",
+      "B": "0,35 %",
+      "C": "35 %",
+      "D": "350 %",
+      "E": "65 %"
+     },
+     "answer": "C",
+     "explanation": "Gang med 100 (flytt kommaet to plasser til høyre): 0,35 = 35 %."
+    },
+    {
+     "points": 4,
+     "text": "Skriv 12,5 % som en brøk på enklest mulig form.",
+     "choices": {
+      "A": "1/12",
+      "B": "5/4",
+      "C": "1/8",
+      "D": "1/80",
+      "E": "2/25"
+     },
+     "answer": "C",
+     "explanation": "12,5 % = 12,5/100 = 125/1000. Forkort med 125 og få 1/8."
+    }
+   ]
+  },
+  {
+   "code": "00141",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Kari arver 240 000 kr. Hun gir 5 % av arven til et veldedig formål. Hvor mange kroner gir hun bort?",
+     "choices": {
+      "A": "1 200 kr",
+      "B": "2 400 kr",
+      "C": "48 000 kr",
+      "D": "120 000 kr",
+      "E": "12 000 kr"
+     },
+     "answer": "E",
+     "explanation": "1 % av 240 000 kr er 2 400 kr. 5 % er da 5 · 2 400 kr = 12 000 kr."
+    },
+    {
+     "points": 4,
+     "text": "En arv på 360 000 kr skal deles. Ola får 35 %, Siri får 40 %, og resten går til et museum. Hvor mye får museet?",
+     "choices": {
+      "A": "126 000 kr",
+      "B": "144 000 kr",
+      "C": "90 000 kr",
+      "D": "270 000 kr",
+      "E": "9 000 kr"
+     },
+     "answer": "C",
+     "explanation": "Museet får 100 % − 35 % − 40 % = 25 %. 25 % av 360 000 kr er 360 000 · 0,25 = 90 000 kr."
+    }
+   ]
+  },
+  {
+   "code": "00200",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Grunnlaget er G og prosenten er p %. Hvilken formel gir prosentdelen (hvor mye p % av G er)?",
+     "choices": {
+      "A": "G / p · 100",
+      "B": "G · p / 100",
+      "C": "p / G · 100",
+      "D": "G · 100 / p",
+      "E": "G + p / 100"
+     },
+     "answer": "B",
+     "explanation": "Vi finner først 1 % ved å dele G på 100, og ganger så med p. Det gir G · p / 100."
+    },
+    {
+     "points": 4,
+     "text": "En skole har 480 elever. 15 % av elevene går på 10. trinn, og 25 % av 10.-klassingene har valgt tysk. Hvor mange elever på 10. trinn har valgt tysk?",
+     "choices": {
+      "A": "72",
+      "B": "18",
+      "C": "120",
+      "D": "192",
+      "E": "54"
+     },
+     "answer": "B",
+     "explanation": "10. trinn: 480 · 15/100 = 72 elever. Tysk: 72 · 25/100 = 18 elever."
+    }
+   ]
+  },
+  {
+   "code": "00142",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er prosentfaktoren til 7 %?",
+     "choices": {
+      "A": "0,7",
+      "B": "7",
+      "C": "1,07",
+      "D": "0,07",
+      "E": "0,93"
+     },
+     "answer": "D",
+     "explanation": "Prosentfaktoren er p/100. 7 % = 7/100 = 0,07."
+    },
+    {
+     "points": 4,
+     "text": "En sykkel koster 4 200 kr. Bruk prosentfaktor til å finne 2,5 % av prisen.",
+     "choices": {
+      "A": "105 kr",
+      "B": "1 050 kr",
+      "C": "10,50 kr",
+      "D": "10 500 kr",
+      "E": "4 095 kr"
+     },
+     "answer": "A",
+     "explanation": "Prosentfaktoren til 2,5 % er 0,025. 4 200 · 0,025 = 105 kr."
+    }
+   ]
+  },
+  {
+   "code": "00192",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I en klasse er det 25 elever, og 7 av dem har hund. Hvor mange prosent av elevene har hund?",
+     "choices": {
+      "A": "7 %",
+      "B": "25 %",
+      "C": "14 %",
+      "D": "35 %",
+      "E": "28 %"
+     },
+     "answer": "E",
+     "explanation": "Brøken er 7/25. Utvid med 4: 7/25 = 28/100 = 28 %."
+    },
+    {
+     "points": 4,
+     "text": "På en prøve fikk Ali 33 av 40 mulige poeng. Hvor mange prosent av poengene fikk han?",
+     "choices": {
+      "A": "82,5 %",
+      "B": "33 %",
+      "C": "80 %",
+      "D": "87,5 %",
+      "E": "17,5 %"
+     },
+     "answer": "A",
+     "explanation": "33/40 = 0,825. Flytt kommaet to plasser til høyre: 82,5 %."
+    }
+   ]
+  },
+  {
+   "code": "00157",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En genser kostet 400 kr. Nå får du 60 kr i rabatt. Hvor mange prosent av den opprinnelige prisen er rabatten?",
+     "choices": {
+      "A": "60 %",
+      "B": "6 %",
+      "C": "85 %",
+      "D": "15 %",
+      "E": "17,6 %"
+     },
+     "answer": "D",
+     "explanation": "Rabatt delt på opprinnelig pris: 60/400 = 0,15 = 15 %."
+    },
+    {
+     "points": 4,
+     "text": "En TV kostet 7 990 kr. Nå er prisen satt ned til 6 490 kr. Hvor mange prosent er rabatten? Avrund til hele prosent.",
+     "choices": {
+      "A": "23 %",
+      "B": "81 %",
+      "C": "15 %",
+      "D": "18 %",
+      "E": "19 %"
+     },
+     "answer": "E",
+     "explanation": "Rabatten er 7 990 − 6 490 = 1 500 kr. 1 500/7 990 ≈ 0,188, som avrundes til 19 %."
+    }
+   ]
+  },
+  {
+   "code": "00143",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En vare koster 200 kr. Prisen øker først med 10 %. Deretter settes den nye prisen ned med 10 %. Hva koster varen nå?",
+     "choices": {
+      "A": "200 kr",
+      "B": "202 kr",
+      "C": "180 kr",
+      "D": "220 kr",
+      "E": "198 kr"
+     },
+     "answer": "E",
+     "explanation": "Etter økningen: 200 · 1,10 = 220 kr. Nedgangen regnes av 220 kr: 220 · 0,90 = 198 kr."
+    },
+    {
+     "points": 4,
+     "text": "Prisen på en vare ble satt ned med 20 %. Hvor mange prosent må den nye prisen økes med for at varen skal koste det samme som før?",
+     "choices": {
+      "A": "20 %",
+      "B": "80 %",
+      "C": "25 %",
+      "D": "120 %",
+      "E": "16 %"
+     },
+     "answer": "C",
+     "explanation": "Ny pris er 80 % av gammel pris. Økningen på 20 % skal regnes av 80: 20/80 = 0,25 = 25 %."
+    }
+   ]
+  },
+  {
+   "code": "00144",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Lise er 150 cm høy, og broren hennes er 120 cm. Hvor mange prosent høyere er Lise enn broren?",
+     "choices": {
+      "A": "20 %",
+      "B": "30 %",
+      "C": "25 %",
+      "D": "80 %",
+      "E": "125 %"
+     },
+     "answer": "C",
+     "explanation": "Forskjellen er 30 cm. Vi sammenlikner med broren, så 30/120 = 0,25 = 25 %."
+    },
+    {
+     "points": 5,
+     "text": "En sekk med 2 kg epler koster 48 kr. En pose med 750 g epler koster 21 kr. Hvor mange prosent dyrere er eplene i posen enn i sekken, regnet per kilo? Avrund til én desimal.",
+     "choices": {
+      "A": "14,3 %",
+      "B": "4 %",
+      "C": "116,7 %",
+      "D": "16,7 %",
+      "E": "85,7 %"
+     },
+     "answer": "D",
+     "explanation": "Sekken: 48 : 2 = 24 kr/kg. Posen: 21 : 0,75 = 28 kr/kg. Forskjellen 4 kr regnes av 24 kr: 4/24 ≈ 16,7 %."
+    }
+   ]
+  },
+  {
+   "code": "00145",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Klasse A har 24 elever, og klasse B har 30 elever. Hvor mange prosent færre elever har klasse A enn klasse B?",
+     "choices": {
+      "A": "25 %",
+      "B": "6 %",
+      "C": "80 %",
+      "D": "20 %",
+      "E": "125 %"
+     },
+     "answer": "D",
+     "explanation": "Forskjellen er 6 elever. Vi sammenlikner med klasse B: 6/30 = 0,20 = 20 %."
+    },
+    {
+     "points": 4,
+     "text": "En kiosk solgte 1 250 is i juli i fjor og 1 400 is i juli i år. Hvor mange prosent økte salget?",
+     "choices": {
+      "A": "12 %",
+      "B": "10,7 %",
+      "C": "15 %",
+      "D": "112 %",
+      "E": "89,3 %"
+     },
+     "answer": "A",
+     "explanation": "Økningen er 150 is. Den regnes av fjorårets salg: 150/1 250 = 0,12 = 12 %."
+    }
+   ]
+  },
+  {
+   "code": "00146",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange prosent er 45 av 60?",
+     "choices": {
+      "A": "133,3 %",
+      "B": "45 %",
+      "C": "75 %",
+      "D": "15 %",
+      "E": "25 %"
+     },
+     "answer": "C",
+     "explanation": "45/60 = 0,75 = 75 %."
+    },
+    {
+     "points": 4,
+     "text": "En liter melk gikk opp fra 20 kr til 23 kr. Noras timelønn gikk opp fra 400 kr til 440 kr. Hva økte mest i prosent, og med hvor mye?",
+     "choices": {
+      "A": "Timelønnen, med 10 %",
+      "B": "Timelønnen, med 40 %",
+      "C": "Melkeprisen, med 15 %",
+      "D": "Melkeprisen, med 3 %",
+      "E": "Begge økte like mye"
+     },
+     "answer": "C",
+     "explanation": "Melk: 3/20 = 15 %. Lønn: 40/400 = 10 %. Melkeprisen økte mest i prosent."
+    }
+   ]
+  },
+  {
+   "code": "00147",
+   "questions": [
+    {
+     "points": 3,
+     "text": "12 % av et tall er 36. Hvilket tall er det?",
+     "choices": {
+      "A": "4,32",
+      "B": "432",
+      "C": "3",
+      "D": "300",
+      "E": "30"
+     },
+     "answer": "D",
+     "explanation": "1 % er 36 : 12 = 3. Hele tallet (100 %) er 3 · 100 = 300."
+    },
+    {
+     "points": 4,
+     "text": "Siri har spart 1 680 kr. Det er 35 % av det hun trenger for å kjøpe en ny mobil. Hva koster mobilen?",
+     "choices": {
+      "A": "4 800 kr",
+      "B": "588 kr",
+      "C": "2 268 kr",
+      "D": "3 120 kr",
+      "E": "2 585 kr"
+     },
+     "answer": "A",
+     "explanation": "1 % er 1 680 : 35 = 48 kr. 100 % er 48 · 100 = 4 800 kr."
+    }
+   ]
+  },
+  {
+   "code": "00148",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Ved et valg fikk et parti 2 400 stemmer. Det var 8 % av alle stemmene. Hvor mange stemmer ble det avgitt totalt?",
+     "choices": {
+      "A": "192",
+      "B": "30 000",
+      "C": "3 000",
+      "D": "19 200",
+      "E": "300 000"
+     },
+     "answer": "B",
+     "explanation": "1 % er 2 400 : 8 = 300 stemmer. 100 % er 300 · 100 = 30 000."
+    },
+    {
+     "points": 4,
+     "text": "En vare er satt ned med 30 %, og du sparer 270 kr. Hva var den opprinnelige prisen?",
+     "choices": {
+      "A": "630 kr",
+      "B": "81 kr",
+      "C": "386 kr",
+      "D": "900 kr",
+      "E": "351 kr"
+     },
+     "answer": "D",
+     "explanation": "Rabatten på 270 kr er 30 % av den opprinnelige prisen. 1 % er 9 kr, så 100 % er 900 kr."
+    }
+   ]
+  },
+  {
+   "code": "00149",
+   "questions": [
+    {
+     "points": 3,
+     "text": "På en skole går 45 elever på 9. trinn. Det er 15 % av alle elevene på skolen. Hvor mange elever går på skolen?",
+     "choices": {
+      "A": "675",
+      "B": "30",
+      "C": "3 000",
+      "D": "60",
+      "E": "300"
+     },
+     "answer": "E",
+     "explanation": "1 % er 45 : 15 = 3 elever. 100 % er 3 · 100 = 300 elever."
+    },
+    {
+     "points": 4,
+     "text": "Etter et avslag på 25 % koster en jakke 1 200 kr. Hva kostet jakka før avslaget?",
+     "choices": {
+      "A": "1 500 kr",
+      "B": "900 kr",
+      "C": "1 225 kr",
+      "D": "1 600 kr",
+      "E": "4 800 kr"
+     },
+     "answer": "D",
+     "explanation": "1 200 kr er 75 % av den gamle prisen. 1 % er 1 200 : 75 = 16 kr, så 100 % er 1 600 kr."
+    }
+   ]
+  },
+  {
+   "code": "00150",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et linjediagram viser antall besøkende på et bibliotek: januar 800, februar 600 og mars 900. Hvor mange prosent sank besøket fra januar til februar?",
+     "choices": {
+      "A": "33,3 %",
+      "B": "25 %",
+      "C": "20 %",
+      "D": "200 %",
+      "E": "75 %"
+     },
+     "answer": "B",
+     "explanation": "Nedgangen er 200 besøkende. Den regnes av januar: 200/800 = 0,25 = 25 %."
+    },
+    {
+     "points": 4,
+     "text": "Et linjediagram viser antall besøkende på et bibliotek: januar 800, februar 600 og mars 900. Hvor mange prosent økte besøket fra februar til mars?",
+     "choices": {
+      "A": "33,3 %",
+      "B": "300 %",
+      "C": "12,5 %",
+      "D": "150 %",
+      "E": "50 %"
+     },
+     "answer": "E",
+     "explanation": "Økningen er 300 besøkende. Den regnes av februar: 300/600 = 0,5 = 50 %."
+    }
+   ]
+  },
+  {
+   "code": "00151",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Renten på et lån øker fra 4 % til 5 %. Hvor mange prosentpoeng har renten økt?",
+     "choices": {
+      "A": "25 prosentpoeng",
+      "B": "1 prosentpoeng",
+      "C": "20 prosentpoeng",
+      "D": "5 prosentpoeng",
+      "E": "9 prosentpoeng"
+     },
+     "answer": "B",
+     "explanation": "Prosentpoeng er den absolutte forskjellen mellom to prosenttall: 5 − 4 = 1 prosentpoeng."
+    },
+    {
+     "points": 4,
+     "text": "Oppslutningen om et parti går fra 8 % til 10 %. Hvilken påstand er riktig?",
+     "choices": {
+      "A": "2 prosentpoeng, altså 25 % økning",
+      "B": "2 %, altså 25 prosentpoeng",
+      "C": "2 prosentpoeng, altså 20 % økning",
+      "D": "25 prosentpoeng økning",
+      "E": "10 prosentpoeng økning"
+     },
+     "answer": "A",
+     "explanation": "Absolutt endring: 10 − 8 = 2 prosentpoeng. Relativ endring: 2/8 = 0,25 = 25 %."
+    }
+   ]
+  },
+  {
+   "code": "00152",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Andelen elever som sykler til skolen, gikk ned fra 40 % til 30 %. Hvor mange prosent gikk andelen ned (relativ endring)?",
+     "choices": {
+      "A": "10 %",
+      "B": "25 %",
+      "C": "33,3 %",
+      "D": "75 %",
+      "E": "70 %"
+     },
+     "answer": "B",
+     "explanation": "Andelen sank med 10 prosentpoeng. Relativt: 10/40 = 0,25 = 25 %."
+    },
+    {
+     "points": 4,
+     "text": "En skole har 600 elever. Andelen som spiser frokost hjemme, økte fra 70 % til 78 %. Hvor mange flere elever spiser frokost, og hvor stor er økningen i prosentpoeng?",
+     "choices": {
+      "A": "8 elever og 8 prosentpoeng",
+      "B": "48 elever og 8 prosentpoeng",
+      "C": "48 elever og 11,4 prosentpoeng",
+      "D": "56 elever og 8 prosentpoeng",
+      "E": "42 elever og 10 prosentpoeng"
+     },
+     "answer": "B",
+     "explanation": "Økningen er 78 − 70 = 8 prosentpoeng. 8 % av 600 elever er 600 · 0,08 = 48 elever."
+    }
+   ]
+  },
+  {
+   "code": "00153",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er vekstfaktoren når en pris øker med 12 %?",
+     "choices": {
+      "A": "0,12",
+      "B": "0,88",
+      "C": "12",
+      "D": "1,012",
+      "E": "1,12"
+     },
+     "answer": "E",
+     "explanation": "Vekstfaktor ved økning: 1 + 12/100 = 1,12."
+    },
+    {
+     "points": 4,
+     "text": "En vare koster 650 kr. Prisen settes ned med 15 %. Hvilken utregning og hvilket svar er riktig?",
+     "choices": {
+      "A": "650 · 0,85 = 552,50 kr",
+      "B": "650 · 0,15 = 97,50 kr",
+      "C": "650 · 1,15 = 747,50 kr",
+      "D": "650 · 0,85 = 562,50 kr",
+      "E": "650 − 15 = 635 kr"
+     },
+     "answer": "A",
+     "explanation": "Vekstfaktoren ved 15 % nedgang er 1 − 0,15 = 0,85. 650 · 0,85 = 552,50 kr."
+    }
+   ]
+  },
+  {
+   "code": "00154",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En pris har økt med 25 % og er nå 500 kr. Hvilket regnestykke gir prisen før økningen?",
+     "choices": {
+      "A": "500 : 1,25",
+      "B": "500 · 0,75",
+      "C": "500 · 1,25",
+      "D": "500 : 0,25",
+      "E": "500 − 25"
+     },
+     "answer": "A",
+     "explanation": "Gammel pris · 1,25 = 500. For å gå tilbake i tid deler vi på vekstfaktoren: 500 : 1,25 = 400 kr."
+    },
+    {
+     "points": 4,
+     "text": "Et hus koster 3 000 000 kr. Verdien øker med 4 % per år. Hva er verdien etter 3 år? Avrund til nærmeste tusen kroner.",
+     "choices": {
+      "A": "3 360 000 kr",
+      "B": "3 245 000 kr",
+      "C": "3 120 000 kr",
+      "D": "3 375 000 kr",
+      "E": "3 510 000 kr"
+     },
+     "answer": "D",
+     "explanation": "Sluttverdi = 3 000 000 · 1,04³ ≈ 3 374 592 kr, som avrundes til 3 375 000 kr."
+    }
+   ]
+  },
+  {
+   "code": "00155",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En bil taper 10 % av verdien hvert år. Hva er vekstfaktoren for ett år?",
+     "choices": {
+      "A": "0,90",
+      "B": "0,10",
+      "C": "1,10",
+      "D": "−0,10",
+      "E": "0,09"
+     },
+     "answer": "A",
+     "explanation": "Ved nedgang er vekstfaktoren 1 − 10/100 = 0,90."
+    },
+    {
+     "points": 5,
+     "text": "En bil ble kjøpt for 400 000 kr. Verdien synker med 10 % hvert år. Etter hvor mange hele år er verdien for første gang under 250 000 kr?",
+     "choices": {
+      "A": "3 år",
+      "B": "5 år",
+      "C": "4 år",
+      "D": "6 år",
+      "E": "7 år"
+     },
+     "answer": "B",
+     "explanation": "400 000 · 0,9⁴ ≈ 262 440 kr, som er over 250 000. 400 000 · 0,9⁵ ≈ 236 196 kr, som er under. Svaret er 5 år."
+    }
+   ]
+  },
+  {
+   "code": "00156",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Prisen på en vare økte fra 800 kr til 920 kr i løpet av ett år. Hva er vekstfaktoren?",
+     "choices": {
+      "A": "0,15",
+      "B": "1,12",
+      "C": "1,15",
+      "D": "0,87",
+      "E": "1,20"
+     },
+     "answer": "C",
+     "explanation": "Vekstfaktor = ny verdi : gammel verdi = 920 : 800 = 1,15."
+    },
+    {
+     "points": 5,
+     "text": "Et beløp i banken vokste fra 10 000 kr til 12 100 kr på 2 år med samme rente hvert år. Hva var den årlige renten i prosent?",
+     "choices": {
+      "A": "10,5 %",
+      "B": "21 %",
+      "C": "11 %",
+      "D": "10 %",
+      "E": "9,5 %"
+     },
+     "answer": "D",
+     "explanation": "Vekstfaktoren x må oppfylle x² = 12 100 : 10 000 = 1,21. Da er x = √1,21 = 1,1, altså 10 % per år."
+    }
+   ]
+  },
+  {
+   "code": "00158",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En vare koster 400 kr uten merverdiavgift. Merverdiavgiften er 25 %. Hva koster varen med mva?",
+     "choices": {
+      "A": "425 kr",
+      "B": "100 kr",
+      "C": "480 kr",
+      "D": "300 kr",
+      "E": "500 kr"
+     },
+     "answer": "E",
+     "explanation": "Mva er 25 % av 400 kr = 100 kr. Pris med mva: 400 · 1,25 = 500 kr."
+    },
+    {
+     "points": 4,
+     "text": "En vare koster 1 250 kr medregnet 25 % merverdiavgift. Hvor mange kroner av prisen er mva?",
+     "choices": {
+      "A": "250 kr",
+      "B": "312,50 kr",
+      "C": "1 000 kr",
+      "D": "200 kr",
+      "E": "937,50 kr"
+     },
+     "answer": "A",
+     "explanation": "Pris uten mva: 1 250 : 1,25 = 1 000 kr. Mva er 1 250 − 1 000 = 250 kr."
+    }
+   ]
+  },
+  {
+   "code": "00159",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Mva på matvarer er 15 %. En matvare koster 80 kr uten mva. Hvor mange kroner er mva?",
+     "choices": {
+      "A": "92 kr",
+      "B": "8 kr",
+      "C": "12 kr",
+      "D": "15 kr",
+      "E": "1,20 kr"
+     },
+     "answer": "C",
+     "explanation": "15 % av 80 kr er 80 · 0,15 = 12 kr."
+    },
+    {
+     "points": 4,
+     "text": "En kinobillett koster 150 kr. I prisen er det inkludert 12 % mva. Hvor mye av billettprisen går til staten som mva? Avrund til hele øre.",
+     "choices": {
+      "A": "16,07 kr",
+      "B": "18,00 kr",
+      "C": "133,93 kr",
+      "D": "12,00 kr",
+      "E": "1,80 kr"
+     },
+     "answer": "A",
+     "explanation": "Pris uten mva: 150 : 1,12 ≈ 133,93 kr. Mva er 150 − 133,93 = 16,07 kr."
+    }
+   ]
+  },
+  {
+   "code": "00160",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Du har 20 000 kr i banken med 3 % rente per år. Hvor mye rente får du etter ett år?",
+     "choices": {
+      "A": "600 kr",
+      "B": "60 kr",
+      "C": "6 000 kr",
+      "D": "20 600 kr",
+      "E": "300 kr"
+     },
+     "answer": "A",
+     "explanation": "Renten er 3 % av 20 000 kr: 20 000 · 0,03 = 600 kr."
+    },
+    {
+     "points": 4,
+     "text": "Du setter 18 000 kr i banken med 2,5 % rente per år. Pengene står inne i 2 måneder. Hvor mye rente får du?",
+     "choices": {
+      "A": "900 kr",
+      "B": "450 kr",
+      "C": "37,50 kr",
+      "D": "150 kr",
+      "E": "75 kr"
+     },
+     "answer": "E",
+     "explanation": "Rente for ett år: 18 000 · 0,025 = 450 kr. For 2 av 12 måneder: 450 · 2/12 = 75 kr."
+    }
+   ]
+  },
+  {
+   "code": "00161",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange dager er det fra og med 1. mars til og med 30. april?",
+     "choices": {
+      "A": "60 dager",
+      "B": "61 dager",
+      "C": "59 dager",
+      "D": "62 dager",
+      "E": "31 dager"
+     },
+     "answer": "B",
+     "explanation": "Mars har 31 dager og april har 30 dager: 31 + 30 = 61 dager."
+    },
+    {
+     "points": 4,
+     "text": "Du setter inn 36 500 kr på en konto med 2 % rente per år. Pengene står inne i 73 dager. Regn med 365 dager i året. Hvor mye rente får du?",
+     "choices": {
+      "A": "730 kr",
+      "B": "14,60 kr",
+      "C": "148,03 kr",
+      "D": "1 460 kr",
+      "E": "146 kr"
+     },
+     "answer": "E",
+     "explanation": "Rente = 36 500 · 0,02 · 73/365 = 730 · 0,2 = 146 kr."
+    }
+   ]
+  },
+  {
+   "code": "00162",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Promille betyr «av tusen». Hva er 4 ‰ av 2 500?",
+     "choices": {
+      "A": "100",
+      "B": "1",
+      "C": "25",
+      "D": "10",
+      "E": "0,4"
+     },
+     "answer": "D",
+     "explanation": "4 ‰ = 4/1 000 = 0,004. 2 500 · 0,004 = 10."
+    },
+    {
+     "points": 4,
+     "text": "En person har 5,5 liter blod og 0,2 ‰ alkohol i blodet. Hvor mange milliliter alkohol tilsvarer det, hvis vi regner promillen som andel av blodmengden?",
+     "choices": {
+      "A": "11 mL",
+      "B": "0,11 mL",
+      "C": "110 mL",
+      "D": "1,1 mL",
+      "E": "1 100 mL"
+     },
+     "answer": "D",
+     "explanation": "5,5 L = 5 500 mL. 0,2 ‰ av 5 500 mL er 5 500 · 0,2/1 000 = 1,1 mL."
+    }
+   ]
+  },
+  {
+   "code": "00163",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skriv 0,8 % som promille.",
+     "choices": {
+      "A": "8 ‰",
+      "B": "0,08 ‰",
+      "C": "80 ‰",
+      "D": "0,8 ‰",
+      "E": "800 ‰"
+     },
+     "answer": "A",
+     "explanation": "1 % = 10 ‰. Da er 0,8 % = 0,8 · 10 ‰ = 8 ‰."
+    },
+    {
+     "points": 4,
+     "text": "Promillegrensen for å kjøre bil i Norge er 0,2 ‰. En sjåfør blir målt til 0,5 ‰. Hvor mange prosent over grensen ligger sjåføren?",
+     "choices": {
+      "A": "150 %",
+      "B": "0,3 %",
+      "C": "250 %",
+      "D": "60 %",
+      "E": "30 %"
+     },
+     "answer": "A",
+     "explanation": "Sjåføren ligger 0,5 − 0,2 = 0,3 ‰ over grensen. Sammenliknet med grensen: 0,3/0,2 = 1,5 = 150 %."
+    }
+   ]
+  },
+  {
+   "code": "00049",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I et kortspill skal du finne par av kort som viser samme verdi. Hvilket par hører sammen?",
+     "choices": {
+      "A": "⅖ og 25 %",
+      "B": "⅛ og 18 %",
+      "C": "0,05 og 50 %",
+      "D": "1,2 og 12 %",
+      "E": "⅗ og 60 %"
+     },
+     "answer": "E",
+     "explanation": "⅗ = 6/10 = 0,6 = 60 %. De andre parene har ulike verdier, for eksempel er ⅖ = 40 % og ⅛ = 12,5 %."
+    },
+    {
+     "points": 4,
+     "text": "En pris øker med 20 %, og deretter øker den nye prisen med 20 % til. Hvor mange prosent har prisen økt totalt?",
+     "choices": {
+      "A": "40 %",
+      "B": "4 %",
+      "C": "1,44 %",
+      "D": "44 %",
+      "E": "144 %"
+     },
+     "answer": "D",
+     "explanation": "Samlet vekstfaktor: 1,2 · 1,2 = 1,44. Prisen har økt med 44 %."
+    }
+   ]
+  }
+ ]
+}

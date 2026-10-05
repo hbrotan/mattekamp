@@ -39,6 +39,22 @@ beforeAll(async () => {
     }],
   }));
 
+  // Tekstoppgaver med video og forklaring (som GetSmart)
+  await fs.mkdir(path.join(contentDir, "tekst"), { recursive: true });
+  await fs.writeFile(path.join(contentDir, "tekst", "sets.json"), JSON.stringify({
+    source: "tekst",
+    sourceName: "Tekstsett",
+    sets: [{
+      id: "emne-1", level: "tall", levelName: "Tall og tallregning", title: "Avrunding",
+      tasks: [{
+        n: 1, points: 3, answer: "B", text: "Rund av 3,46 til én desimal.",
+        choices: { A: "3,4", B: "3,5", C: "3,0", D: "4,0", E: "3,46" },
+        video: { youtubeId: "abcDEF12345", title: "Avrunding" },
+        explanation: "Andre desimal er 6, så vi runder opp til 3,5.",
+      }],
+    }],
+  }));
+
   db = await connect(TEST_URL);
   await migrate(db, path.resolve("migrations"));
   // Tøm data fra forrige kjøring (barn før foreldre)
@@ -48,7 +64,7 @@ beforeAll(async () => {
   await seedContent(db, contentDir);
   // Andre gang skal migrering og innhold være uendret
   expect(await migrate(db, path.resolve("migrations"))).toEqual([]);
-  expect((await seedContent(db, contentDir)).skipped).toBe(1);
+  expect((await seedContent(db, contentDir)).skipped).toBe(2);
   const config: Config = {
     port: 0, databaseUrl: TEST_URL, autoCreateDatabase: false, secureCookies: false,
     webDir: path.resolve("web"), contentDir, migrationsDir: path.resolve("migrations"),
@@ -166,6 +182,28 @@ describe("forsøk og poeng", () => {
     await other.post("/api/groups", { groupName: "H", playerName: "Q" });
     expect((await other.get(`/api/attempts/${attempt.id}`)).status).toBe(404);
     expect((await other.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "A" })).status).toBe(404);
+  });
+});
+
+describe("tekstoppgaver med video", () => {
+  it("viser tekst, alternativer og video, og forklaringen etter svar", async () => {
+    const c = client();
+    await c.post("/api/groups", { groupName: "G", playerName: "P" });
+    const sets = (await c.get("/api/sets")).json;
+    expect(sets.find((s: any) => s.id === "tekst-emne-1")).toMatchObject({ sourceName: "Tekstsett", title: "Avrunding", year: null });
+
+    const { json: attempt } = await c.post("/api/attempts", { setId: "tekst-emne-1", mode: "practice" });
+    expect(attempt.tasks[0]).toMatchObject({
+      text: "Rund av 3,46 til én desimal.",
+      choices: { B: "3,5" },
+      options: ["A", "B", "C", "D", "E"],
+      video: { youtubeId: "abcDEF12345", title: "Avrunding" },
+      images: [],
+    });
+    expect(attempt.tasks[0]).not.toHaveProperty("solutionText");
+
+    const res = await c.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "B" });
+    expect(res.json.task).toMatchObject({ isCorrect: true, correctAnswer: "B", solutionText: "Andre desimal er 6, så vi runder opp til 3,5." });
   });
 });
 

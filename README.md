@@ -1,6 +1,6 @@
 # Mattekamp
 
-Nettside for å løse oppgaver fra Kengurukonkurransen, med felles toppliste per gruppe
+Nettside for å løse matteoppgaver – fra Kengurukonkurransen og til GetSmart-videoer – med felles toppliste per gruppe
 (klasse, familie ...). Man lager eller blir med i en gruppe med en kode, skriver navnet sitt,
 og får 3, 4 eller 5 poeng per riktig svar. Rettingen skjer på serveren, så fasiten sendes
 ikke til nettleseren før oppgaven er besvart (øving) eller levert (konkurranse).
@@ -73,6 +73,20 @@ Kenguru-innholdet er opphavsrettslig beskyttet og ligger derfor **ikke** i dette
 pip install pymupdf pillow
 python tools/kenguru_extract.py <mappe-med-pdf-er>
 ```
+
+### GetSmart
+
+Samlingen «GetSmart» bygger inn de gratis videoene fra [getsmart.no](https://www.getsmart.no)
+(YouTube, lastes først når man trykker «Se videoen») og har **egne** flervalgsoppgaver, to per video.
+GetSmarts egne oppgaver og fasit er betalt innhold og brukes ikke.
+
+```bash
+python tools/getsmart_fetch.py   # henter videokatalogen (åpne sider) til content/getsmart/catalog.json
+python tools/getsmart_build.py   # lager content/getsmart/sets.json fra katalogen og content/getsmart/questions/
+```
+
+Oppgavene ligger i `content/getsmart/questions/<emne>.json` (én fil per emne). Katalogen med
+videobeskrivelsene er bare arbeidsgrunnlag og ligger ikke i git.
 
 ## Deploy (Azure)
 

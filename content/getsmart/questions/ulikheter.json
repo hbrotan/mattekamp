@@ -1,0 +1,36 @@
+{
+  "slug": "ulikheter",
+  "videos": [
+    {
+      "code": "00037",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Løs ulikheten 3x + 2 < 14.",
+          "choices": {
+            "A": "x > 4",
+            "B": "x ≤ 4",
+            "C": "x < 12",
+            "D": "x < 5⅓",
+            "E": "x < 4"
+          },
+          "answer": "E",
+          "explanation": "Trekk fra 2 på begge sider: 3x < 12. Del på 3 (positivt tall, så ulikhetstegnet snus ikke): x < 4."
+        },
+        {
+          "points": 4,
+          "text": "Løs ulikheten −2x + 5 ≥ 11. Hvordan ser løsningen ut på tallinja?",
+          "choices": {
+            "A": "Fylt prikk i −3, pil mot venstre",
+            "B": "Fylt prikk i −3, pil mot høyre",
+            "C": "Åpen prikk i −3, pil mot venstre",
+            "D": "Fylt prikk i 3, pil mot venstre",
+            "E": "Åpen prikk i 3, pil mot høyre"
+          },
+          "answer": "A",
+          "explanation": "−2x ≥ 6. Når vi deler på et negativt tall, snus tegnet: x ≤ −3. Tegnet ≤ betyr at −3 er med (fylt prikk), og løsningen er alle tall til venstre for −3."
+        }
+      ]
+    }
+  ]
+}

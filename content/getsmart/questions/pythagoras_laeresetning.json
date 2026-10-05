@@ -1,0 +1,284 @@
+{
+  "slug": "pythagoras_laeresetning",
+  "videos": [
+    {
+      "code": "00231",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant har kateter på 6 cm og 8 cm. Hvor lang er hypotenusen?",
+          "choices": {
+            "A": "14 cm",
+            "B": "10 cm",
+            "C": "48 cm",
+            "D": "100 cm",
+            "E": "7 cm"
+          },
+          "answer": "B",
+          "explanation": "Pytagoras: c² = 6² + 8² = 36 + 64 = 100. Da er c = √100 = 10 cm."
+        },
+        {
+          "points": 4,
+          "text": "En rektangulær park er 120 m lang og 50 m bred. Ola skal fra ett hjørne til det motsatte hjørnet. Hvor mye kortere er det å gå rett langs diagonalen enn å gå langs to av sidene?",
+          "choices": {
+            "A": "130 m",
+            "B": "70 m",
+            "C": "40 m",
+            "D": "50 m",
+            "E": "30 m"
+          },
+          "answer": "C",
+          "explanation": "Diagonalen er √(120² + 50²) = √16 900 = 130 m. Langs sidene er det 120 + 50 = 170 m, så diagonalen er 170 − 130 = 40 m kortere."
+        }
+      ]
+    },
+    {
+      "code": "00232",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I en rettvinklet trekant er hypotenusen 13 cm og den ene kateten 5 cm. Hvor lang er den andre kateten?",
+          "choices": {
+            "A": "12 cm",
+            "B": "8 cm",
+            "C": "18 cm",
+            "D": "13,9 cm",
+            "E": "144 cm"
+          },
+          "answer": "A",
+          "explanation": "Kateten er √(13² − 5²) = √(169 − 25) = √144 = 12 cm."
+        },
+        {
+          "points": 4,
+          "text": "En 5,0 m lang stige står lent mot en loddrett vegg på flat mark. Foten av stigen står 1,4 m fra veggen. Hvor høyt opp på veggen når stigen?",
+          "choices": {
+            "A": "3,6 m",
+            "B": "5,2 m",
+            "C": "4,8 m",
+            "D": "6,4 m",
+            "E": "4,6 m"
+          },
+          "answer": "C",
+          "explanation": "Stigen er hypotenusen. Høyden er √(5,0² − 1,4²) = √(25 − 1,96) = √23,04 = 4,8 m."
+        }
+      ]
+    },
+    {
+      "code": "00233",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et pytagoreisk talltrippel er tre hele tall a, b og c der a² + b² = c². Hvilke tre tall er et pytagoreisk talltrippel?",
+          "choices": {
+            "A": "4, 5 og 6",
+            "B": "6, 8 og 12",
+            "C": "9, 12 og 16",
+            "D": "5, 6 og 7",
+            "E": "8, 15 og 17"
+          },
+          "answer": "E",
+          "explanation": "8² + 15² = 64 + 225 = 289 = 17². For de andre stemmer ikke a² + b² = c²."
+        },
+        {
+          "points": 4,
+          "text": "En trekant har sidene 20 cm, 48 cm og 52 cm. Hvilket utsagn er riktig?",
+          "choices": {
+            "A": "Rettvinklet, rett vinkel mellom 48 og 52",
+            "B": "Ikke rettvinklet, for 20 + 48 ≠ 52",
+            "C": "Rettvinklet, rett vinkel mellom 20 og 48",
+            "D": "Spissvinklet",
+            "E": "Stumpvinklet"
+          },
+          "answer": "C",
+          "explanation": "20, 48, 52 er 4 ganger trippelet 5, 12, 13, så 20² + 48² = 52². Den rette vinkelen ligger mellom de to korteste sidene (katetene)."
+        }
+      ]
+    },
+    {
+      "code": "00234",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant har vinklene 30°, 60° og 90°. Hypotenusen er 14 cm. Hvor lang er den korteste kateten?",
+          "choices": {
+            "A": "28 cm",
+            "B": "14 cm",
+            "C": "12,1 cm",
+            "D": "7 cm",
+            "E": "4,7 cm"
+          },
+          "answer": "D",
+          "explanation": "En 30°-60°-90°-trekant er en halv likesidet trekant, så korteste katet er halvparten av hypotenusen: 14 : 2 = 7 cm."
+        },
+        {
+          "points": 4,
+          "text": "En rettvinklet trekant har vinklene 30°, 60° og 90°, og hypotenusen er 12 cm. Hvor lang er den lengste kateten? Rund av til én desimal.",
+          "choices": {
+            "A": "6,0 cm",
+            "B": "13,4 cm",
+            "C": "8,5 cm",
+            "D": "10,4 cm",
+            "E": "20,8 cm"
+          },
+          "answer": "D",
+          "explanation": "Korteste katet er 12 : 2 = 6 cm. Lengste katet er √(12² − 6²) = √108 ≈ 10,4 cm."
+        }
+      ]
+    },
+    {
+      "code": "00235",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I en trekant med vinklene 30°, 60° og 90° er den lengste kateten 6√3. Hvor lang er den korteste kateten?",
+          "choices": {
+            "A": "6",
+            "B": "3",
+            "C": "12",
+            "D": "18",
+            "E": "3√3"
+          },
+          "answer": "A",
+          "explanation": "I en 30°-60°-90°-trekant er lengste katet √3 ganger korteste katet. Korteste katet er derfor 6√3 : √3 = 6."
+        },
+        {
+          "points": 4,
+          "text": "I en trekant med vinklene 30°, 60° og 90° er den lengste kateten 9. Hvor lang er hypotenusen? Oppgi eksakt svar.",
+          "choices": {
+            "A": "3√3",
+            "B": "6√3",
+            "C": "18",
+            "D": "9√3",
+            "E": "9√2"
+          },
+          "answer": "B",
+          "explanation": "Korteste katet er 9 : √3 = 3√3. Hypotenusen er dobbelt så lang som korteste katet: 2 · 3√3 = 6√3."
+        }
+      ]
+    },
+    {
+      "code": "00236",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant har vinklene 30°, 60° og 90°. Den lengste kateten er 15 cm. Hvor lang er den korteste kateten? Rund av til én desimal.",
+          "choices": {
+            "A": "7,5 cm",
+            "B": "26,0 cm",
+            "C": "10,6 cm",
+            "D": "5,0 cm",
+            "E": "8,7 cm"
+          },
+          "answer": "E",
+          "explanation": "Lengste katet = √3 · korteste katet. Korteste katet = 15 cm : √3 ≈ 8,7 cm."
+        },
+        {
+          "points": 5,
+          "text": "En rettvinklet trekant har vinklene 30°, 60° og 90°. Den lengste kateten er 12 cm. Hva er arealet av trekanten? Rund av til én desimal.",
+          "choices": {
+            "A": "36,0 cm²",
+            "B": "83,1 cm²",
+            "C": "41,6 cm²",
+            "D": "72,0 cm²",
+            "E": "20,8 cm²"
+          },
+          "answer": "C",
+          "explanation": "Korteste katet er 12 cm : √3 ≈ 6,93 cm. Arealet er (12 cm · 6,93 cm) : 2 ≈ 41,6 cm²."
+        }
+      ]
+    },
+    {
+      "code": "00237",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En likesidet trekant har sidelengde s. Hvilket uttrykk gir høyden h i trekanten?",
+          "choices": {
+            "A": "h = s / 2",
+            "B": "h = √3 · s",
+            "C": "h = (√2 / 2) · s",
+            "D": "h = (√3 / 2) · s",
+            "E": "h = (√3 / 4) · s²"
+          },
+          "answer": "D",
+          "explanation": "Høyden deler trekanten i to rettvinklete trekanter med hypotenus s og katet s/2. h² = s² − (s/2)² = ¾s², så h = (√3 / 2) · s."
+        },
+        {
+          "points": 4,
+          "text": "En likesidet trekant har sidelengde 8 cm. Hva er arealet av trekanten? Rund av til én desimal.",
+          "choices": {
+            "A": "32,0 cm²",
+            "B": "27,7 cm²",
+            "C": "55,4 cm²",
+            "D": "24,0 cm²",
+            "E": "16,0 cm²"
+          },
+          "answer": "B",
+          "explanation": "Høyden er (√3 / 2) · 8 = 4√3 ≈ 6,93 cm. Arealet er (8 · 6,93) : 2 ≈ 27,7 cm²."
+        }
+      ]
+    },
+    {
+      "code": "00238",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant har vinklene 30°, 60° og 90° og hypotenus 10 cm. Den er en halv likesidet trekant med side 10 cm, så den lengste kateten er høyden i den likesidete trekanten. Hvor lang er den lengste kateten, eksakt?",
+          "choices": {
+            "A": "10√3 cm",
+            "B": "5√3 cm",
+            "C": "5 cm",
+            "D": "5√2 cm",
+            "E": "10 cm"
+          },
+          "answer": "B",
+          "explanation": "Høyden i en likesidet trekant er (√3 / 2) · s. Med s = 10 cm blir den (√3 / 2) · 10 = 5√3 cm."
+        },
+        {
+          "points": 4,
+          "text": "En gavlvegg har form som en likesidet trekant. Høyden i trekanten er 3,0 m. Hvor lang er hver side i trekanten? Rund av til én desimal.",
+          "choices": {
+            "A": "6,0 m",
+            "B": "1,7 m",
+            "C": "2,6 m",
+            "D": "4,2 m",
+            "E": "3,5 m"
+          },
+          "answer": "E",
+          "explanation": "h = (√3 / 2) · s gir s = 2h : √3 = 6,0 m : √3 ≈ 3,5 m."
+        }
+      ]
+    },
+    {
+      "code": "00239",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En rettvinklet trekant er likebeint, og begge katetene har lengde x. Hvilket uttrykk gir hypotenusen?",
+          "choices": {
+            "A": "2x",
+            "B": "x√2",
+            "C": "x²",
+            "D": "x√3",
+            "E": "2x²"
+          },
+          "answer": "B",
+          "explanation": "c² = x² + x² = 2x², så c = √(2x²) = x√2."
+        },
+        {
+          "points": 4,
+          "text": "Diagonalen i et kvadrat er 10 cm. Hvor lang er siden i kvadratet? Rund av til én desimal.",
+          "choices": {
+            "A": "5,0 cm",
+            "B": "14,1 cm",
+            "C": "3,2 cm",
+            "D": "7,1 cm",
+            "E": "8,7 cm"
+          },
+          "answer": "D",
+          "explanation": "Diagonalen deler kvadratet i to likebeinte rettvinklete trekanter, så diagonal = s√2. s = 10 cm : √2 ≈ 7,1 cm."
+        }
+      ]
+    }
+  ]
+}

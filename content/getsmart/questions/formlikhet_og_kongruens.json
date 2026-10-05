@@ -1,0 +1,346 @@
+{
+ "slug": "formlikhet_og_kongruens",
+ "videos": [
+  {
+   "code": "00240",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To figurer er formlike. Hva må alltid gjelde for dem?",
+     "choices": {
+      "A": "Samsvarende vinkler er like store",
+      "B": "Samsvarende sider er like lange",
+      "C": "De har samme areal",
+      "D": "De har samme omkrets",
+      "E": "Alle vinklene er 90°"
+     },
+     "answer": "A",
+     "explanation": "Formlike figurer har samme form: samsvarende vinkler er like store, og samsvarende sider står i samme forhold. Størrelsen kan være ulik."
+    },
+    {
+     "points": 4,
+     "text": "Hvilke to figurer er alltid formlike, uansett hvor store de er?",
+     "choices": {
+      "A": "To rektangler",
+      "B": "To romber",
+      "C": "To kvadrater",
+      "D": "To likebeinte trekanter",
+      "E": "To rettvinklete trekanter"
+     },
+     "answer": "C",
+     "explanation": "Alle kvadrater har bare 90°-vinkler og fire like lange sider, så de har alltid samme form. De andre figurene kan ha ulike vinkler eller ulikt sideforhold."
+    }
+   ]
+  },
+  {
+   "code": "00241",
+   "questions": [
+    {
+     "points": 3,
+     "text": "ΔABC ~ ΔDEF, der A svarer til D, B til E og C til F. AB = 4 cm, BC = 5 cm og DE = 12 cm. Hvor lang er EF?",
+     "choices": {
+      "A": "15 cm",
+      "B": "13 cm",
+      "C": "20 cm",
+      "D": "9 cm",
+      "E": "60 cm"
+     },
+     "answer": "A",
+     "explanation": "Forholdet er DE/AB = 12/4 = 3. Da er EF = 3 · 5 cm = 15 cm."
+    },
+    {
+     "points": 4,
+     "text": "ΔABC ~ ΔPQR, der A svarer til P, B til Q og C til R. AB = 6 cm, BC = 9 cm og AC = 12 cm. PQ = 8 cm. Hva er omkretsen av ΔPQR?",
+     "choices": {
+      "A": "27 cm",
+      "B": "33 cm",
+      "C": "36 cm",
+      "D": "29 cm",
+      "E": "21,75 cm"
+     },
+     "answer": "C",
+     "explanation": "Forholdet er PQ/AB = 8/6 = 4/3. QR = 9 · 4/3 = 12 cm og PR = 12 · 4/3 = 16 cm. Omkretsen er 8 + 12 + 16 = 36 cm."
+    }
+   ]
+  },
+  {
+   "code": "00242",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To trekanter er formlike. Den minste har sidene 3 cm, 4 cm og 5 cm. Den korteste siden i den største trekanten er 9 cm. Hvor lang er den lengste siden i den største trekanten?",
+     "choices": {
+      "A": "11 cm",
+      "B": "15 cm",
+      "C": "12 cm",
+      "D": "20 cm",
+      "E": "45 cm"
+     },
+     "answer": "B",
+     "explanation": "Forholdet mellom trekantene er 9 : 3 = 3. Den lengste siden blir 3 · 5 cm = 15 cm."
+    },
+    {
+     "points": 4,
+     "text": "En loddrett pinne på 1,2 m kaster en skygge på 1,5 m på flat mark. Samtidig kaster et loddrett tre en skygge på 20 m. Hvor høyt er treet?",
+     "choices": {
+      "A": "25 m",
+      "B": "24 m",
+      "C": "19,7 m",
+      "D": "16 m",
+      "E": "30 m"
+     },
+     "answer": "D",
+     "explanation": "Solstrålene gir formlike trekanter, så høyde/skygge er likt: h/20 = 1,2/1,5. Da er h = 0,8 · 20 m = 16 m."
+    }
+   ]
+  },
+  {
+   "code": "00243",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva betyr det at to trekanter er kongruente (ΔABC ≅ ΔDEF)?",
+     "choices": {
+      "A": "Samme form, men ulik størrelse",
+      "B": "Samme form og samme størrelse",
+      "C": "Bare samme areal",
+      "D": "Bare samme omkrets",
+      "E": "Bare like store vinkler"
+     },
+     "answer": "B",
+     "explanation": "Kongruente figurer er helt like: alle samsvarende sider og vinkler er like store. De kan legges oppå hverandre."
+    },
+    {
+     "points": 4,
+     "text": "ΔABC ≅ ΔDEF, der A svarer til D, B til E og C til F. AB = 7 cm, ∠B = 50° og ∠C = 60°. Hvilket utsagn er riktig?",
+     "choices": {
+      "A": "DE = 7 cm og ∠D = 70°",
+      "B": "DE = 7 cm og ∠D = 50°",
+      "C": "DE = 14 cm og ∠D = 70°",
+      "D": "EF = 7 cm og ∠D = 70°",
+      "E": "DE = 7 cm og ∠D = 60°"
+     },
+     "answer": "A",
+     "explanation": "∠A = 180° − 50° − 60° = 70°. Kongruente trekanter har like samsvarende sider og vinkler, så DE = AB = 7 cm og ∠D = ∠A = 70°."
+    }
+   ]
+  },
+  {
+   "code": "00244",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Trekant 1 har to vinkler på 40° og 75°. Trekant 2 har to vinkler på 75° og 65°. Er trekantene formlike?",
+     "choices": {
+      "A": "Nei, bare én vinkel er felles",
+      "B": "Nei, 40° finnes ikke i trekant 2",
+      "C": "Kan ikke avgjøres uten sider",
+      "D": "Ja, alle vinklene er parvis like",
+      "E": "Nei, vinkelsummene er ulike"
+     },
+     "answer": "D",
+     "explanation": "Tredje vinkel i trekant 1 er 180° − 40° − 75° = 65°, og i trekant 2 er den 180° − 75° − 65° = 40°. Begge har 40°, 65° og 75°, så de er formlike."
+    },
+    {
+     "points": 4,
+     "text": "En trekant har sidene 4 cm, 6 cm og 8 cm. Hvilken av disse trekantene er formlik med den?",
+     "choices": {
+      "A": "6 cm, 9 cm og 12 cm",
+      "B": "6 cm, 8 cm og 10 cm",
+      "C": "5 cm, 7 cm og 9 cm",
+      "D": "8 cm, 12 cm og 14 cm",
+      "E": "2 cm, 3 cm og 5 cm"
+     },
+     "answer": "A",
+     "explanation": "Trekanter er formlike når alle samsvarende sider har samme forhold. 6/4 = 9/6 = 12/8 = 1,5. For de andre er forholdene ulike."
+    }
+   ]
+  },
+  {
+   "code": "00245",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I ΔABC er AB = 6 cm, AC = 9 cm og ∠A = 40°. I ΔDEF er DE = 4 cm, DF = 6 cm og ∠D = 40°. Er trekantene formlike?",
+     "choices": {
+      "A": "Nei, sidene er ikke like lange",
+      "B": "Nei, alle tre sidene må være kjent",
+      "C": "Nei, fordi 6 : 4 ≠ 9 : 6",
+      "D": "Ja, sider i samme forhold, lik mellomvinkel",
+      "E": "Bare hvis trekantene er rettvinklet"
+     },
+     "answer": "D",
+     "explanation": "6/4 = 1,5 og 9/6 = 1,5, så to sider står i samme forhold. Vinkelen mellom dem er 40° i begge, og da er trekantene formlike."
+    },
+    {
+     "points": 4,
+     "text": "I ΔABC ligger punktet D på AB og punktet E på AC slik at DE er parallell med BC. AD = 4 cm, AB = 10 cm og BC = 15 cm. Hvor lang er DE?",
+     "choices": {
+      "A": "9 cm",
+      "B": "37,5 cm",
+      "C": "6 cm",
+      "D": "10 cm",
+      "E": "21 cm"
+     },
+     "answer": "C",
+     "explanation": "Fordi DE ∥ BC, er ΔADE ~ ΔABC (samsvarende vinkler er like). DE/BC = AD/AB gir DE = 15 cm · 4/10 = 6 cm."
+    }
+   ]
+  },
+  {
+   "code": "00246",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Lengden av en sandkasse er målt til 2,4 m, avrundet til nærmeste desimeter (0,1 m). Mellom hvilke verdier ligger den virkelige lengden?",
+     "choices": {
+      "A": "2,3 m og 2,5 m",
+      "B": "2,39 m og 2,41 m",
+      "C": "2,40 m og 2,50 m",
+      "D": "2,0 m og 3,0 m",
+      "E": "2,35 m og 2,45 m"
+     },
+     "answer": "E",
+     "explanation": "Når målet er rundet av til nærmeste 0,1 m, kan feilen være opptil 0,05 m begge veier: 2,4 − 0,05 = 2,35 og 2,4 + 0,05 = 2,45."
+    },
+    {
+     "points": 4,
+     "text": "En sandkasse er målt til 2,4 m lang og 1,6 m bred. Begge målene er rundet av til nærmeste desimeter (0,1 m). Hva er det største arealet sandkassen kan ha? Rund av til to desimaler.",
+     "choices": {
+      "A": "3,84 m²",
+      "B": "3,64 m²",
+      "C": "3,94 m²",
+      "D": "4,00 m²",
+      "E": "4,04 m²"
+     },
+     "answer": "E",
+     "explanation": "Største mulige mål er 2,45 m og 1,65 m. Største areal er 2,45 · 1,65 = 4,0425 ≈ 4,04 m²."
+    }
+   ]
+  },
+  {
+   "code": "00247",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange gjeldende siffer har tallet 0,0450?",
+     "choices": {
+      "A": "3",
+      "B": "2",
+      "C": "4",
+      "D": "5",
+      "E": "1"
+     },
+     "answer": "A",
+     "explanation": "Nullene foran 4 er ikke gjeldende, men nullen til slutt etter komma er det. Gjeldende siffer er 4, 5 og 0, altså 3."
+    },
+    {
+     "points": 4,
+     "text": "En sandkasse er målt til 2,35 m lang og 1,8 m bred. Hva er arealet, oppgitt med riktig antall gjeldende siffer?",
+     "choices": {
+      "A": "4,2 m²",
+      "B": "4,23 m²",
+      "C": "4,230 m²",
+      "D": "4 m²",
+      "E": "4,3 m²"
+     },
+     "answer": "A",
+     "explanation": "2,35 · 1,8 = 4,23. Ved multiplikasjon skal svaret ha like mange gjeldende siffer som målet med færrest, her 1,8 med 2 siffer. Svaret blir 4,2 m²."
+    }
+   ]
+  },
+  {
+   "code": "00248",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skriv 45 000 på standardform med to gjeldende siffer.",
+     "choices": {
+      "A": "45 · 10³",
+      "B": "4,5 · 10⁴",
+      "C": "4,5 · 10³",
+      "D": "0,45 · 10⁵",
+      "E": "4,50 · 10⁴"
+     },
+     "answer": "B",
+     "explanation": "På standardform står tallet foran tierpotensen mellom 1 og 10: 45 000 = 4,5 · 10 000 = 4,5 · 10⁴. 4,50 · 10⁴ har tre gjeldende siffer."
+    },
+    {
+     "points": 4,
+     "text": "Et basseng er målt til 25,0 m langt, 12,6 m bredt og 2,0 m dypt. Hva er volumet, oppgitt på standardform med riktig antall gjeldende siffer?",
+     "choices": {
+      "A": "6,3 · 10² m³",
+      "B": "630 m³",
+      "C": "6,30 · 10² m³",
+      "D": "6 · 10² m³",
+      "E": "6,2 · 10² m³"
+     },
+     "answer": "A",
+     "explanation": "25,0 · 12,6 · 2,0 = 630 m³. Dybden 2,0 har bare 2 gjeldende siffer, så svaret skal ha 2: 6,3 · 10² m³."
+    }
+   ]
+  },
+  {
+   "code": "00249",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To formlike trekanter har lineært forholdstall 3 (den største er 3 ganger så lang i alle retninger). Den minste har areal 5 cm². Hva er arealet av den største?",
+     "choices": {
+      "A": "15 cm²",
+      "B": "8 cm²",
+      "C": "45 cm²",
+      "D": "135 cm²",
+      "E": "30 cm²"
+     },
+     "answer": "C",
+     "explanation": "Arealforholdet er kvadratet av det lineære forholdstallet: 3² = 9. Arealet blir 9 · 5 cm² = 45 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangel er 4 cm × 6 cm. Et formlikt rektangel har lengste side 15 cm. Hva er arealet av det største rektangelet?",
+     "choices": {
+      "A": "60 cm²",
+      "B": "90 cm²",
+      "C": "150 cm²",
+      "D": "375 cm²",
+      "E": "225 cm²"
+     },
+     "answer": "C",
+     "explanation": "Lineært forholdstall er 15/6 = 2,5. Arealforholdet er 2,5² = 6,25, så arealet er 24 cm² · 6,25 = 150 cm² (10 cm × 15 cm)."
+    }
+   ]
+  },
+  {
+   "code": "00250",
+   "questions": [
+    {
+     "points": 3,
+     "text": "ΔABC ~ ΔDEF, der A svarer til D, B til E og C til F. AB = 8 cm, BC = 10 cm og DE = 12 cm. Vi kaller EF for x. Hvilken likning gir riktig verdi for x?",
+     "choices": {
+      "A": "x/8 = 12/10",
+      "B": "x/12 = 8/10",
+      "C": "10/x = 12/8",
+      "D": "x/10 = 12/8",
+      "E": "x − 10 = 12 − 8"
+     },
+     "answer": "D",
+     "explanation": "Samsvarende sider står i samme forhold: EF/BC = DE/AB, altså x/10 = 12/8. Det gir x = 15 cm."
+    },
+    {
+     "points": 4,
+     "text": "To rektangler er formlike. Det minste er 6 cm bredt og 9 cm langt. Det største er x cm bredt og (x + 5) cm langt. Hva er x?",
+     "choices": {
+      "A": "10",
+      "B": "15",
+      "C": "7,5",
+      "D": "5",
+      "E": "11"
+     },
+     "answer": "A",
+     "explanation": "Forholdet bredde/lengde er likt i begge: x/(x + 5) = 6/9. Det gir 9x = 6x + 30, altså 3x = 30 og x = 10."
+    }
+   ]
+  }
+ ]
+}

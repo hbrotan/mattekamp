@@ -1,0 +1,36 @@
+{
+ "slug": "getsmart_geometry",
+ "videos": [
+  {
+   "code": "00068",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To trekanter er formlike. Den minste trekanten har sidene 3 cm, 4 cm og 6 cm. Den korteste siden i den største trekanten er 9 cm. Hvor lang er den lengste siden i den største trekanten?",
+     "choices": {
+      "A": "12 cm",
+      "B": "15 cm",
+      "C": "18 cm",
+      "D": "24 cm",
+      "E": "27 cm"
+     },
+     "answer": "C",
+     "explanation": "Forstørrelsesfaktoren er 9 : 3 = 3. Den lengste siden blir 6 cm · 3 = 18 cm."
+    },
+    {
+     "points": 4,
+     "text": "En loddrett stang som er 1,5 m høy, kaster en skygge på 2 m. Samtidig kaster et loddrett tre en skygge på 14 m. Stanga med skygge og treet med skygge danner formlike trekanter. Hvor høyt er treet?",
+     "choices": {
+      "A": "10,5 m",
+      "B": "18,7 m",
+      "C": "13,5 m",
+      "D": "21 m",
+      "E": "7 m"
+     },
+     "answer": "A",
+     "explanation": "Forholdet mellom høyde og skygge er det samme: 1,5 : 2 = 0,75. Treet er 14 m · 0,75 = 10,5 m høyt."
+    }
+   ]
+  }
+ ]
+}
