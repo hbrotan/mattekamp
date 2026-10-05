@@ -11,6 +11,7 @@ Bruk:
     python tools/getsmart_build.py
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -63,7 +64,8 @@ def main() -> int:
                         "answer": q["answer"],
                         "text": q["text"],
                         "choices": {k: q["choices"][k] for k in KEYS},
-                        "video": {"youtubeId": video["youtubeId"], "title": video["title"]},
+                        # GetSmarts interne nummer («β00232: ...») er støy for elevene
+                        "video": {"youtubeId": video["youtubeId"], "title": re.sub(r"^[^\d\s]?\d{3,}:\s*", "", video["title"])},
                         "explanation": q.get("explanation", ""),
                     })
             if tasks:

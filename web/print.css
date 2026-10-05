@@ -1,0 +1,64 @@
+:root {
+  color-scheme: light;
+  --ink: #1d1b18;
+  --muted: #5f5850;
+  --line: #d9d2c7;
+  --accent: #d9661f;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #ece7df; color: var(--ink); line-height: 1.45; }
+
+/* Verktøylinje (vises ikke på papiret) */
+.toolbar { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; padding: 10px 20px; background: #fff; border-bottom: 1px solid var(--line); }
+.toolbar label { display: flex; align-items: center; gap: 6px; font-size: .95rem; }
+.toolbar .spacer { flex: 1; }
+.tool-link { color: var(--muted); text-decoration: none; font-weight: 600; }
+.print-btn { font: inherit; font-weight: 600; padding: 8px 16px; border-radius: 10px; border: 0; background: var(--accent); color: #fff; cursor: pointer; }
+.print-btn:disabled { opacity: .5; cursor: default; }
+
+/* Arket – ser ut som A4 på skjermen */
+#sheet { width: 210mm; max-width: 100%; min-height: 297mm; margin: 20px auto; padding: 16mm 15mm; background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,.12); }
+.status { color: var(--muted); }
+.sheet-head { display: flex; justify-content: space-between; gap: 20px; border-bottom: 2px solid var(--ink); padding-bottom: 10px; margin-bottom: 14px; }
+.sheet-head h1 { font-size: 20pt; margin: 2px 0 4px; }
+.source { font-size: 9pt; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.rules { margin: 0; font-size: 9.5pt; color: var(--muted); max-width: 95mm; }
+.fields { display: flex; flex-direction: column; gap: 9px; font-size: 10pt; min-width: 70mm; padding-top: 4px; }
+.blank { display: inline-block; width: 48mm; border-bottom: 1px solid var(--ink); }
+.blank.short { width: 18mm; margin-right: 6px; }
+
+.task { break-inside: avoid; page-break-inside: avoid; padding: 8px 0 12px; border-bottom: 1px solid var(--line); }
+.task img { display: block; max-width: 100%; height: auto; margin: 4px auto; }
+.task-head { display: flex; justify-content: space-between; font-size: 10.5pt; margin-bottom: 4px; }
+.points { color: var(--muted); font-size: 9.5pt; }
+.question { margin: 2px 0 8px; font-size: 11pt; white-space: pre-line; }
+.choices { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 4px 20px; font-size: 10.5pt; }
+.choices li { display: flex; gap: 8px; align-items: baseline; }
+.key, .circle { display: inline-grid; place-items: center; width: 6.5mm; height: 6.5mm; border: 1px solid var(--ink); border-radius: 50%; font-size: 9pt; font-weight: 700; flex: none; }
+.answer-line { margin: 6px 0 0; font-size: 10pt; display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
+.video-ref { margin: 6px 0 0; font-size: 8.5pt; color: var(--muted); }
+.url { font-family: ui-monospace, Consolas, monospace; }
+
+.fasit { break-before: page; page-break-before: always; padding-top: 4px; }
+.fasit h2 { font-size: 15pt; margin: 0 0 10px; }
+.fasit table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+.fasit th, .fasit td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--line); }
+.fasit th { font-size: 8.5pt; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.solutions-title { margin-top: 18px !important; }
+.solution p { margin: 2px 0 6px; font-size: 10pt; }
+.sheet-foot { margin-top: 16px; font-size: 8pt; color: var(--muted); }
+
+@page { size: A4; margin: 14mm 13mm; }
+@media print {
+  body { background: #fff; }
+  .no-print { display: none !important; }
+  #sheet { width: auto; min-height: 0; margin: 0; padding: 0; box-shadow: none; }
+  a { color: inherit; text-decoration: none; }
+}
+@media (max-width: 700px) {
+  #sheet { margin: 0; padding: 16px; min-height: 0; }
+  .sheet-head { flex-direction: column; }
+  .choices { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Utskrift – Mattekamp</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦘</text></svg>">
+  <link rel="stylesheet" href="print.css">
+</head>
+<body>
+  <div class="toolbar no-print">
+    <a href="/" class="tool-link">← Tilbake</a>
+    <span class="spacer"></span>
+    <label><input type="checkbox" id="opt-fasit"> Fasit bakerst</label>
+    <label><input type="checkbox" id="opt-losning"> Med løsningsforslag</label>
+    <button id="print-btn" class="print-btn" disabled>🖨 Skriv ut</button>
+  </div>
+
+  <main id="sheet"><p class="status">Henter oppgavene …</p></main>
+
+  <script src="print.js"></script>
+</body>
+</html>

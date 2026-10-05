@@ -224,3 +224,5 @@ tr.me td { background: var(--accent-soft); }
 .spinner { width: 18px; height: 18px; flex: none; border: 3px solid var(--accent-soft); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2.4s; } }
+
+a.btn { color: var(--ink); text-decoration: none; }

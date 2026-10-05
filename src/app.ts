@@ -260,6 +260,24 @@ export function createApp(ready: Promise<Db>, config: Config) {
     return c.json(await attemptView(await loadAttempt(created!.id, me.id)), 201);
   });
 
+  // Hele settet til utskrift; fasit og løsningsforslag bare når det bes om (?fasit=1)
+  app.get("/api/sets/:id/print", auth, async (c) => {
+    const setId = c.req.param("id");
+    const [set] = await db.query<{ id: string }>`
+      select id, source, source_name, title, level_name, grades, year from task_sets where id = ${setId} and active = 1`;
+    if (!set) throw notFound("Fant ikke oppgavesettet");
+    const withAnswers = c.req.query("fasit") === "1";
+    const tasks = await db.query<TaskRow>`select * from tasks where set_id = ${setId} order by n`;
+    return c.json({
+      ...set,
+      maxPoints: tasks.reduce((sum, t) => sum + t.points, 0),
+      tasks: tasks.map((t) => {
+        const { answer: _mine, isCorrect: _ok, ...view } = taskView(t, undefined, withAnswers) as Record<string, unknown>;
+        return view;
+      }),
+    });
+  });
+
   app.get("/api/attempts/active", auth, async (c) => {
     const rows = await db.query<{ id: string }>`
       select a.id, a.set_id, s.title, a.mode, a.started_at, a.total,
