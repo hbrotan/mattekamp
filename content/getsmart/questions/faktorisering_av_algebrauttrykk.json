@@ -1,0 +1,67 @@
+{
+  "slug": "faktorisering_av_algebrauttrykk",
+  "videos": [
+    {
+      "code": "00054",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Faktoriser ved hjelp av konjugatsetningen: x² − 25",
+          "choices": {
+            "A": "(x − 5)²",
+            "B": "(x + 5)(x − 5)",
+            "C": "(x + 5)²",
+            "D": "x(x − 25)",
+            "E": "(x + 25)(x − 1)"
+          },
+          "answer": "B",
+          "explanation": "x² − 25 = x² − 5², og konjugatsetningen gir a² − b² = (a + b)(a − b). Svaret blir (x + 5)(x − 5)."
+        },
+        {
+          "points": 4,
+          "text": "Faktoriser: 4x² − 12x + 9",
+          "choices": {
+            "A": "(2x + 3)²",
+            "B": "(4x − 3)²",
+            "C": "(2x − 3)²",
+            "D": "(2x − 3)(2x + 3)",
+            "E": "(2x − 9)²"
+          },
+          "answer": "C",
+          "explanation": "4x² = (2x)² og 9 = 3². Midtleddet er −2 · 2x · 3 = −12x, så andre kvadratsetning gir (2x − 3)²."
+        }
+      ]
+    },
+    {
+      "code": "00005",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av disse er en fullstendig faktorisering av 12a²b?",
+          "choices": {
+            "A": "2 · 6 · a · a · b",
+            "B": "2 · 2 · 3 · a · b",
+            "C": "3 · 4 · a² · b",
+            "D": "2 · 3 · a · a · b",
+            "E": "2 · 2 · 3 · a · a · b"
+          },
+          "answer": "E",
+          "explanation": "Fullstendig faktorisering betyr at tallet deles opp i primtall og potensene skrives som produkter: 12 = 2 · 2 · 3 og a² = a · a."
+        },
+        {
+          "points": 5,
+          "text": "Faktoriser så langt som mulig: 8a³b + 12a²b² − 4a²b",
+          "choices": {
+            "A": "4a²b(2a + 3b)",
+            "B": "4a²b(2a + 3b − 1)",
+            "C": "4ab(2a² + 3ab − a)",
+            "D": "4a²b(2a + 3b + 1)",
+            "E": "4a²b(2a² + 3b − 1)"
+          },
+          "answer": "B",
+          "explanation": "Felles faktor i alle leddene er 4a²b. Vi deler hvert ledd på 4a²b og får 2a, 3b og −1. Husk at det siste leddet blir −1, ikke 0."
+        }
+      ]
+    }
+  ]
+}

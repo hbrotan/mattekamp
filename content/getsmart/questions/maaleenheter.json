@@ -1,0 +1,408 @@
+{
+ "slug": "maaleenheter",
+ "videos": [
+  {
+   "code": "00201",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken av disse er en måleenhet for areal?",
+     "choices": {
+      "A": "m",
+      "B": "m²",
+      "C": "m³",
+      "D": "liter",
+      "E": "kg"
+     },
+     "answer": "B",
+     "explanation": "Areal måles i kvadratenheter, for eksempel m². m er lengde, m³ og liter er volum, og kg er masse."
+    },
+    {
+     "points": 4,
+     "text": "En rektangulær hage er 12 m lang og 8 m bred. Hva er omkretsen O og arealet A av hagen?",
+     "choices": {
+      "A": "O = 40 m og A = 96 m²",
+      "B": "O = 20 m og A = 96 m²",
+      "C": "O = 96 m og A = 40 m²",
+      "D": "O = 40 m² og A = 96 m",
+      "E": "O = 40 m og A = 48 m²"
+     },
+     "answer": "A",
+     "explanation": "Omkretsen er 12 + 8 + 12 + 8 = 40 m. Arealet er 12 m · 8 m = 96 m²."
+    }
+   ]
+  },
+  {
+   "code": "00202",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange centimeter er 3,4 m?",
+     "choices": {
+      "A": "0,34 cm",
+      "B": "34 cm",
+      "C": "340 cm",
+      "D": "3 400 cm",
+      "E": "34 000 cm"
+     },
+     "answer": "C",
+     "explanation": "1 m = 100 cm, så 3,4 m = 3,4 · 100 cm = 340 cm."
+    },
+    {
+     "points": 4,
+     "text": "Hvilken av disse lengdene er lengst?",
+     "choices": {
+      "A": "4 300 cm",
+      "B": "4 600 mm",
+      "C": "46 m",
+      "D": "0,45 km",
+      "E": "52 dm"
+     },
+     "answer": "D",
+     "explanation": "Gjør om alt til meter: 0,45 km = 450 m, 4 300 cm = 43 m, 4 600 mm = 4,6 m og 52 dm = 5,2 m. 450 m er lengst."
+    }
+   ]
+  },
+  {
+   "code": "00204",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En lengdehopper hopper 7,85 m. Hvor mange desimeter er det?",
+     "choices": {
+      "A": "785 dm",
+      "B": "7,85 dm",
+      "C": "0,785 dm",
+      "D": "7 850 dm",
+      "E": "78,5 dm"
+     },
+     "answer": "E",
+     "explanation": "1 m = 10 dm, så 7,85 m = 7,85 · 10 dm = 78,5 dm."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut 2,3 m + 45 cm + 120 mm. Oppgi svaret i centimeter.",
+     "choices": {
+      "A": "287 cm",
+      "B": "395 cm",
+      "C": "2 870 cm",
+      "D": "167,3 cm",
+      "E": "28,7 cm"
+     },
+     "answer": "A",
+     "explanation": "Gjør om til cm først: 2,3 m = 230 cm og 120 mm = 12 cm. 230 cm + 45 cm + 12 cm = 287 cm."
+    }
+   ]
+  },
+  {
+   "code": "00205",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange kvadratcentimeter (cm²) er 1 m²?",
+     "choices": {
+      "A": "10 000 cm²",
+      "B": "10 cm²",
+      "C": "100 cm²",
+      "D": "1 000 cm²",
+      "E": "100 000 cm²"
+     },
+     "answer": "A",
+     "explanation": "1 m² er et kvadrat på 100 cm · 100 cm = 10 000 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangel er 80 cm langt og 1,5 m bredt. Hva er arealet i m²?",
+     "choices": {
+      "A": "120 m²",
+      "B": "12 m²",
+      "C": "0,12 m²",
+      "D": "12 000 m²",
+      "E": "1,2 m²"
+     },
+     "answer": "E",
+     "explanation": "Bruk samme enhet: 80 cm = 0,8 m. Arealet er 0,8 m · 1,5 m = 1,2 m²."
+    }
+   ]
+  },
+  {
+   "code": "00206",
+   "questions": [
+    {
+     "points": 3,
+     "text": "1 dekar (daa) er 1 000 m². Hvor mange m² er 5 dekar?",
+     "choices": {
+      "A": "50 m²",
+      "B": "500 m²",
+      "C": "5 000 m²",
+      "D": "50 000 m²",
+      "E": "0,005 m²"
+     },
+     "answer": "C",
+     "explanation": "5 daa = 5 · 1 000 m² = 5 000 m²."
+    },
+    {
+     "points": 4,
+     "text": "Et fylke har et areal på 15 000 km². Hvor mange m² er det? Oppgi svaret på standardform.",
+     "choices": {
+      "A": "1,5 · 10¹⁰ m²",
+      "B": "1,5 · 10⁷ m²",
+      "C": "1,5 · 10⁸ m²",
+      "D": "1,5 · 10⁹ m²",
+      "E": "1,5 · 10¹² m²"
+     },
+     "answer": "A",
+     "explanation": "1 km² = 1 000 m · 1 000 m = 10⁶ m². 15 000 km² = 1,5 · 10⁴ · 10⁶ m² = 1,5 · 10¹⁰ m²."
+    }
+   ]
+  },
+  {
+   "code": "00207",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Siden 1 m = 100 cm, er 1 m² = 100 cm · 100 cm. Hvor mange cm² er 0,3 m²?",
+     "choices": {
+      "A": "30 cm²",
+      "B": "300 cm²",
+      "C": "30 000 cm²",
+      "D": "3 000 cm²",
+      "E": "0,003 cm²"
+     },
+     "answer": "D",
+     "explanation": "1 m² = 10 000 cm², så 0,3 m² = 0,3 · 10 000 cm² = 3 000 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Gjør om 45 000 mm² til dm².",
+     "choices": {
+      "A": "4,5 dm²",
+      "B": "450 dm²",
+      "C": "45 dm²",
+      "D": "0,45 dm²",
+      "E": "4 500 dm²"
+     },
+     "answer": "A",
+     "explanation": "1 dm = 100 mm, så 1 dm² = 100 mm · 100 mm = 10 000 mm². 45 000 : 10 000 = 4,5 dm²."
+    }
+   ]
+  },
+  {
+   "code": "00208",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange liter er 2,5 m³? (1 dm³ = 1 liter)",
+     "choices": {
+      "A": "25 liter",
+      "B": "250 liter",
+      "C": "25 000 liter",
+      "D": "2,5 liter",
+      "E": "2 500 liter"
+     },
+     "answer": "E",
+     "explanation": "1 m³ = 1 000 dm³ = 1 000 liter. 2,5 m³ = 2,5 · 1 000 = 2 500 liter."
+    },
+    {
+     "points": 4,
+     "text": "Et akvarium er 60 cm langt, 30 cm bredt og 40 cm høyt. Hvor mange liter rommer det?",
+     "choices": {
+      "A": "7,2 liter",
+      "B": "720 liter",
+      "C": "7 200 liter",
+      "D": "130 liter",
+      "E": "72 liter"
+     },
+     "answer": "E",
+     "explanation": "Mål i dm: 6 dm · 3 dm · 4 dm = 72 dm³, og 1 dm³ = 1 liter. Altså 72 liter."
+    }
+   ]
+  },
+  {
+   "code": "00209",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange gram er 2,75 kg?",
+     "choices": {
+      "A": "27,5 g",
+      "B": "275 g",
+      "C": "2 750 g",
+      "D": "27 500 g",
+      "E": "0,002 75 g"
+     },
+     "answer": "C",
+     "explanation": "1 kg = 1 000 g, så 2,75 kg = 2,75 · 1 000 g = 2 750 g."
+    },
+    {
+     "points": 4,
+     "text": "En lastebil har 4,2 tonn last. 1 tonn = 1 000 kg. Hvor mange gram er lasten? Oppgi svaret på standardform.",
+     "choices": {
+      "A": "4,2 · 10³ g",
+      "B": "4,2 · 10⁵ g",
+      "C": "4,2 · 10⁷ g",
+      "D": "4,2 · 10⁶ g",
+      "E": "4,2 · 10⁹ g"
+     },
+     "answer": "D",
+     "explanation": "4,2 tonn = 4 200 kg = 4 200 000 g. På standardform blir det 4,2 · 10⁶ g."
+    }
+   ]
+  },
+  {
+   "code": "00210",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange sekunder er 3 timer?",
+     "choices": {
+      "A": "180 s",
+      "B": "1 080 s",
+      "C": "18 000 s",
+      "D": "300 s",
+      "E": "10 800 s"
+     },
+     "answer": "E",
+     "explanation": "1 time = 60 min = 3 600 s. 3 timer = 3 · 3 600 s = 10 800 s."
+    },
+    {
+     "points": 4,
+     "text": "En film varer i 8 100 sekunder. Hvor lang er filmen i timer og minutter?",
+     "choices": {
+      "A": "1 t 21 min",
+      "B": "2 t 15 min",
+      "C": "1 t 35 min",
+      "D": "2 t 25 min",
+      "E": "13 t 30 min"
+     },
+     "answer": "B",
+     "explanation": "8 100 s : 60 = 135 min. 135 min = 120 min + 15 min = 2 t 15 min."
+    }
+   ]
+  },
+  {
+   "code": "00211",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange minutter er 45 sekunder? Svaret er gitt som brøk.",
+     "choices": {
+      "A": "⅔ min",
+      "B": "¾ min",
+      "C": "⅘ min",
+      "D": "1⅓ min",
+      "E": "0,45 min"
+     },
+     "answer": "B",
+     "explanation": "1 min = 60 s, så 45 s = 45/60 min. Forkortet med 15 blir det ¾ min."
+    },
+    {
+     "points": 4,
+     "text": "En busstur tar 1,35 timer. Hvor mange timer og minutter er det?",
+     "choices": {
+      "A": "1 t 35 min",
+      "B": "1 t 3,5 min",
+      "C": "1 t 21 min",
+      "D": "1 t 30 min",
+      "E": "1 t 25 min"
+     },
+     "answer": "C",
+     "explanation": "0,35 timer = 0,35 · 60 min = 21 min. Turen tar 1 t 21 min."
+    }
+   ]
+  },
+  {
+   "code": "00246",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Lengden av en sandkasse er målt til 2,40 m med en måleusikkerhet på ± 2 cm. Mellom hvilke verdier ligger den virkelige lengden?",
+     "choices": {
+      "A": "2,38 m og 2,42 m",
+      "B": "2,20 m og 2,60 m",
+      "C": "2,40 m og 2,42 m",
+      "D": "2,39 m og 2,41 m",
+      "E": "2,36 m og 2,44 m"
+     },
+     "answer": "A",
+     "explanation": "± 2 cm betyr 0,02 m mindre eller større: 2,40 − 0,02 = 2,38 m og 2,40 + 0,02 = 2,42 m."
+    },
+    {
+     "points": 4,
+     "text": "En sandkasse er målt til 2,0 m ± 0,1 m lang og 1,5 m ± 0,1 m bred. Hva er det største arealet sandkassen kan ha?",
+     "choices": {
+      "A": "3,00 m²",
+      "B": "3,10 m²",
+      "C": "3,20 m²",
+      "D": "2,66 m²",
+      "E": "3,36 m²"
+     },
+     "answer": "E",
+     "explanation": "Størst mulig lengde og bredde er 2,1 m og 1,6 m. Største areal blir 2,1 · 1,6 = 3,36 m²."
+    }
+   ]
+  },
+  {
+   "code": "00247",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor mange gjeldende siffer har tallet 0,0340?",
+     "choices": {
+      "A": "1",
+      "B": "2",
+      "C": "4",
+      "D": "3",
+      "E": "5"
+     },
+     "answer": "D",
+     "explanation": "Nullene foran det første sifferet som ikke er null, teller ikke. Nullen til slutt etter komma teller. Gjeldende siffer er 3, 4 og 0."
+    },
+    {
+     "points": 4,
+     "text": "En sandkasse er målt til 2,35 m lang og 1,8 m bred. Hvordan bør arealet oppgis med riktig antall gjeldende siffer?",
+     "choices": {
+      "A": "4,2 m²",
+      "B": "4,23 m²",
+      "C": "4,230 m²",
+      "D": "4 m²",
+      "E": "4,3 m²"
+     },
+     "answer": "A",
+     "explanation": "2,35 · 1,8 = 4,23. Svaret skal ha like mange gjeldende siffer som målet med færrest, altså 2 (fra 1,8). Da blir det 4,2 m²."
+    }
+   ]
+  },
+  {
+   "code": "00248",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvordan skriver vi 52 000 med to gjeldende siffer på standardform?",
+     "choices": {
+      "A": "52 · 10³",
+      "B": "5,2 · 10⁴",
+      "C": "5,2 · 10³",
+      "D": "0,52 · 10⁵",
+      "E": "5,20 · 10⁴"
+     },
+     "answer": "B",
+     "explanation": "På standardform står det ett siffer foran komma: 52 000 = 5,2 · 10 000 = 5,2 · 10⁴. 5,20 · 10⁴ har tre gjeldende siffer."
+    },
+    {
+     "points": 5,
+     "text": "Et basseng er målt til 25,0 m langt, 12,6 m bredt og 1,8 m dypt. Oppgi volumet med riktig antall gjeldende siffer på standardform.",
+     "choices": {
+      "A": "567 m³",
+      "B": "5,67 · 10² m³",
+      "C": "5,7 · 10² m³",
+      "D": "6 · 10² m³",
+      "E": "5,7 · 10³ m³"
+     },
+     "answer": "C",
+     "explanation": "25,0 · 12,6 · 1,8 = 567 m³. Dybden 1,8 m har bare 2 gjeldende siffer, så svaret blir 570 m³ = 5,7 · 10² m³."
+    }
+   ]
+  }
+ ]
+}

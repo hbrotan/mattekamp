@@ -1,0 +1,36 @@
+{
+ "slug": "potensregning_med_variabler",
+ "videos": [
+  {
+   "code": "00055",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skriv som én potens: x⁸ : x²",
+     "choices": {
+      "A": "x⁴",
+      "B": "x¹⁰",
+      "C": "x¹⁶",
+      "D": "x⁶",
+      "E": "4x"
+     },
+     "answer": "D",
+     "explanation": "Når vi deler potenser med samme grunntall, trekker vi eksponentene fra hverandre: 8 − 2 = 6. Svaret blir x⁶."
+    },
+    {
+     "points": 5,
+     "text": "Forenkle: (a²b)³ · a : (a⁴b²)",
+     "choices": {
+      "A": "a²b",
+      "B": "a⁴b",
+      "C": "a³b",
+      "D": "a³b⁵",
+      "E": "a⁶b"
+     },
+     "answer": "C",
+     "explanation": "(a²b)³ = a⁶b³. Ganger vi med a, får vi a⁷b³. Deler vi på a⁴b², blir det a⁷⁻⁴b³⁻² = a³b."
+    }
+   ]
+  }
+ ]
+}

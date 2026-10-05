@@ -192,6 +192,33 @@ tr.me td { background: var(--accent-soft); }
   .zoom-hint { display: block; }
 }
 
+/* Tekstoppgaver (f.eks. GetSmart) */
+.text-task { padding: 18px 20px; }
+.text-task p { margin: 0; white-space: pre-line; font-size: 1.08rem; line-height: 1.6; }
+.text-task .question { font-size: 1.15rem; }
+.choices { display: grid; gap: 8px; margin-bottom: 14px; }
+.choice { display: flex; align-items: center; gap: 12px; text-align: left; width: 100%; padding: 12px 14px; border-radius: 12px; border: 2px solid var(--line); background: var(--surface); font-size: 1.05rem; }
+.choice .key { flex: none; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; background: var(--bg); font-weight: 700; }
+.choice:hover:not(:disabled) { border-color: var(--accent); }
+.choice.chosen { border-color: var(--accent); background: var(--accent-soft); }
+.choice.chosen .key { background: var(--accent); color: var(--accent-ink); }
+.choice.right { border-color: var(--good); background: var(--good-soft); }
+.choice.right .key { background: var(--good); color: #fff; }
+.choice.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.choice.wrong .key { background: var(--bad); color: #fff; }
+.choice:disabled { cursor: default; }
+
+/* Video (lastes ved trykk) */
+.video { position: relative; aspect-ratio: 16 / 9; width: 100%; max-width: 620px; margin: 0 auto 16px; border-radius: var(--radius); overflow: hidden; background: #111; box-shadow: var(--shadow); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-start { position: absolute; inset: 0; width: 100%; border: 0; padding: 0; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; color: #fff; }
+.video-start::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,.15)); }
+.video-start .play { position: relative; width: 64px; height: 64px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; font-size: 1.6rem; padding-left: 4px; box-shadow: 0 4px 16px rgba(0,0,0,.35); }
+.video-start .video-label { position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px; text-align: center; padding: 0 16px; }
+.video-start .video-label span { font-size: .9rem; opacity: .9; }
+.video-start:hover .play { filter: brightness(1.08); }
+
+.year.topic { text-align: left; max-width: 100%; }
 /* Melding mens databasen våkner */
 .waiting { position: fixed; left: 50%; top: 72px; transform: translateX(-50%); z-index: 30; display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--accent); box-shadow: var(--shadow); border-radius: 12px; padding: 10px 16px; max-width: calc(100% - 32px); font-size: .95rem; }
 .spinner { width: 18px; height: 18px; flex: none; border: 3px solid var(--accent-soft); border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }

@@ -1,0 +1,315 @@
+{
+  "slug": "sammensatt_sannsynlighet",
+  "videos": [
+    {
+      "code": "00294",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Klasse 8A har 12 gutter og 13 jenter. Rektor trekker tilfeldig én elev fra 8A til en middag. Hva er sannsynligheten for at det blir en gutt? Svar som brøk.",
+          "choices": {
+            "A": "13/25",
+            "B": "12/25",
+            "C": "12/13",
+            "D": "11/25",
+            "E": "1/2"
+          },
+          "answer": "B",
+          "explanation": "Det er 12 + 13 = 25 elever, og 12 er gutter. P = 12/25."
+        },
+        {
+          "points": 4,
+          "text": "Klasse 8A har 12 gutter og 13 jenter, og klasse 8B har 10 gutter og 15 jenter. Rektor trekker tilfeldig én elev fra hver klasse. Hva er sannsynligheten for at begge blir gutter? Svar som brøk.",
+          "choices": {
+            "A": "22/25",
+            "B": "11/25",
+            "C": "2/5",
+            "D": "1/4",
+            "E": "24/125"
+          },
+          "answer": "E",
+          "explanation": "P(gutt fra 8A) = 12/25 og P(gutt fra 8B) = 10/25. Trekningene er uavhengige, så P = 12/25 · 10/25 = 120/625 = 24/125."
+        }
+      ]
+    },
+    {
+      "code": "00295",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilke to hendelser er uavhengige av hverandre?",
+          "choices": {
+            "A": "To kort trukket uten tilbakelegging",
+            "B": "Regn i dag og våt bakke i dag",
+            "C": "Kron på en mynt og 6 på en terning",
+            "D": "Feber og å være syk",
+            "E": "Sen leggetid og å være trøtt"
+          },
+          "answer": "C",
+          "explanation": "Hendelser er uavhengige når utfallet av den ene ikke påvirker sannsynligheten for den andre. Mynten påvirker ikke terningen."
+        },
+        {
+          "points": 4,
+          "text": "Sannsynligheten for at bussen er forsinket er 0,2. Sannsynligheten for regn er 0,3. Hendelsene er uavhengige. Hva er sannsynligheten for at bussen IKKE er forsinket og at det regner?",
+          "choices": {
+            "A": "0,06",
+            "B": "0,56",
+            "C": "1,1",
+            "D": "0,24",
+            "E": "0,14"
+          },
+          "answer": "D",
+          "explanation": "P(ikke forsinket) = 1 − 0,2 = 0,8. Produktregelen gir 0,8 · 0,3 = 0,24."
+        }
+      ]
+    },
+    {
+      "code": "00296",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et lykkehjul har 5 like store felt, og 2 av dem er røde. Du snurrer to ganger. Hva er sannsynligheten for å få rød begge gangene? Svar som brøk.",
+          "choices": {
+            "A": "4/5",
+            "B": "4/25",
+            "C": "2/5",
+            "D": "2/25",
+            "E": "1/5"
+          },
+          "answer": "B",
+          "explanation": "P(rød) = 2/5 på hvert snurr. Produktregelen gir 2/5 · 2/5 = 4/25."
+        },
+        {
+          "points": 5,
+          "text": "Et lykkehjul har 8 like store felt: 3 røde, 4 blå og 1 gult. Du snurrer to ganger. Hva er sannsynligheten for å få én rød og én blå, i vilkårlig rekkefølge? Svar som brøk.",
+          "choices": {
+            "A": "3/16",
+            "B": "7/8",
+            "C": "7/64",
+            "D": "1/2",
+            "E": "3/8"
+          },
+          "answer": "E",
+          "explanation": "Rød så blå: 3/8 · 4/8 = 12/64. Blå så rød: 4/8 · 3/8 = 12/64. Til sammen 24/64 = 3/8."
+        }
+      ]
+    },
+    {
+      "code": "00297",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I en bunke ligger 5 kort: 3 hjerter og 2 ruter. Du trekker ett kort, legger det tilbake, stokker og trekker igjen. Hva er sannsynligheten for to hjerter? Svar som brøk.",
+          "choices": {
+            "A": "9/25",
+            "B": "3/10",
+            "C": "3/5",
+            "D": "6/25",
+            "E": "1/5"
+          },
+          "answer": "A",
+          "explanation": "Med tilbakelegging er P(hjerter) = 3/5 begge gangene: 3/5 · 3/5 = 9/25."
+        },
+        {
+          "points": 4,
+          "text": "En pose har 7 kuler: 4 røde og 3 hvite. Du trekker to kuler uten tilbakelegging. Hva er sannsynligheten for at begge er røde? Svar som brøk.",
+          "choices": {
+            "A": "16/49",
+            "B": "12/49",
+            "C": "2/7",
+            "D": "4/7",
+            "E": "3/7"
+          },
+          "answer": "C",
+          "explanation": "Første trekning: 4/7. Uten tilbakelegging er det 3 røde av 6 kuler igjen: 3/6. P = 4/7 · 3/6 = 12/42 = 2/7."
+        }
+      ]
+    },
+    {
+      "code": "00298",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Et lykkehjul har fire like store felt med tallene 1, 1, 2 og 3. Du snurrer tre ganger. Hva er sannsynligheten for å få 1 alle tre gangene? Svar som brøk.",
+          "choices": {
+            "A": "1/64",
+            "B": "3/2",
+            "C": "1/6",
+            "D": "1/2",
+            "E": "1/8"
+          },
+          "answer": "E",
+          "explanation": "P(1) = 2/4 = 1/2 på hvert snurr. Tre ganger på rad: 1/2 · 1/2 · 1/2 = 1/8."
+        },
+        {
+          "points": 5,
+          "text": "Et lykkehjul har fire like store felt med tallene 1, 1, 2 og 3. Du snurrer tre ganger og legger sammen tallene. Hva er sannsynligheten for at summen blir 4? Svar som brøk.",
+          "choices": {
+            "A": "1/16",
+            "B": "3/16",
+            "C": "3/64",
+            "D": "1/8",
+            "E": "1/4"
+          },
+          "answer": "B",
+          "explanation": "Summen 4 krever to enere og én toer: 1+1+2, 1+2+1 eller 2+1+1. Hver rekkefølge har P = 1/2 · 1/2 · 1/4 = 1/16, så P = 3 · 1/16 = 3/16."
+        }
+      ]
+    },
+    {
+      "code": "00299",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Med scenariemetoden finner du alle scenarier (rekkefølger) der hendelsen skjer, og regner ut sannsynligheten for hvert scenario. Hva gjør du til slutt med sannsynlighetene for scenariene?",
+          "choices": {
+            "A": "Legger dem sammen",
+            "B": "Ganger dem sammen",
+            "C": "Trekker dem fra 1",
+            "D": "Deler på antall scenarier",
+            "E": "Velger den største"
+          },
+          "answer": "A",
+          "explanation": "Innenfor hvert scenario ganger vi sannsynlighetene. Scenariene kan ikke skje samtidig, så til slutt legger vi dem sammen."
+        },
+        {
+          "points": 4,
+          "text": "En basketballspiller treffer på straffekast med sannsynlighet 0,8. Hun tar to straffekast, og kastene er uavhengige. Hva er sannsynligheten for nøyaktig ett treff?",
+          "choices": {
+            "A": "0,16",
+            "B": "0,64",
+            "C": "0,96",
+            "D": "0,32",
+            "E": "0,04"
+          },
+          "answer": "D",
+          "explanation": "Scenariene er treff–bom (0,8 · 0,2 = 0,16) og bom–treff (0,2 · 0,8 = 0,16). Summen er 0,16 + 0,16 = 0,32."
+        }
+      ]
+    },
+    {
+      "code": "00300",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I en hatt ligger 5 lapper med navnene til fem elever. Ett av navnene er Sara. Læreren trekker én lapp. Hva er sannsynligheten for at Sara blir trukket? Svar som brøk.",
+          "choices": {
+            "A": "1/4",
+            "B": "2/5",
+            "C": "1/5",
+            "D": "1/10",
+            "E": "4/5"
+          },
+          "answer": "C",
+          "explanation": "Det er 5 lapper og 1 gunstig. P = 1/5."
+        },
+        {
+          "points": 4,
+          "text": "I en hatt ligger 5 lapper med navnene til fem elever, blant dem Sara. Læreren trekker to lapper uten tilbakelegging. Bruk scenariemetoden: Hva er sannsynligheten for at Sara er blant de to som trekkes? Svar som brøk.",
+          "choices": {
+            "A": "1/5",
+            "B": "9/20",
+            "C": "1/20",
+            "D": "1/2",
+            "E": "2/5"
+          },
+          "answer": "E",
+          "explanation": "Scenario 1: Sara først, P = 1/5. Scenario 2: ikke Sara først, så Sara: 4/5 · 1/4 = 1/5. Til sammen 1/5 + 1/5 = 2/5."
+        }
+      ]
+    },
+    {
+      "code": "00301",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Anna, Bo, Cato og Dina er med i trekningen av to elevrådsrepresentanter. Rekkefølgen spiller ingen rolle. Ramse opp alle mulige par. Hvor mange ulike par finnes?",
+          "choices": {
+            "A": "12",
+            "B": "4",
+            "C": "8",
+            "D": "6",
+            "E": "16"
+          },
+          "answer": "D",
+          "explanation": "Parene er AB, AC, AD, BC, BD og CD. Det er 6 par."
+        },
+        {
+          "points": 4,
+          "text": "Fra en hylle med seks ulike bøker trekker du tilfeldig to bøker. En av bøkene heter «Fjellet». Ramse opp alle mulige par. Hva er sannsynligheten for at «Fjellet» er blant de to? Svar som brøk.",
+          "choices": {
+            "A": "1/6",
+            "B": "1/3",
+            "C": "1/15",
+            "D": "1/5",
+            "E": "5/36"
+          },
+          "answer": "B",
+          "explanation": "Det finnes 15 ulike par av seks bøker. «Fjellet» er med i 5 av dem. P = 5/15 = 1/3."
+        }
+      ]
+    },
+    {
+      "code": "00302",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Du kaster to vanlige terninger. Hva er sannsynligheten for å få sekser på begge? Svar som brøk.",
+          "choices": {
+            "A": "1/6",
+            "B": "1/3",
+            "C": "1/36",
+            "D": "1/12",
+            "E": "1/18"
+          },
+          "answer": "C",
+          "explanation": "P(sekser) = 1/6 på hver terning. Produktregelen gir 1/6 · 1/6 = 1/36."
+        },
+        {
+          "points": 4,
+          "text": "Du kaster to vanlige terninger. Bruk scenariemetoden: Hva er sannsynligheten for å få nøyaktig én sekser? Svar som brøk.",
+          "choices": {
+            "A": "5/18",
+            "B": "11/36",
+            "C": "1/6",
+            "D": "1/3",
+            "E": "5/36"
+          },
+          "answer": "A",
+          "explanation": "Scenariene er sekser–ikke sekser (1/6 · 5/6 = 5/36) og ikke sekser–sekser (5/6 · 1/6 = 5/36). Summen er 10/36 = 5/18."
+        }
+      ]
+    },
+    {
+      "code": "00303",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Når du kaster to terninger, er P(ingen sekser) = 25/36. Hva er sannsynligheten for minst én sekser? Svar som brøk.",
+          "choices": {
+            "A": "25/36",
+            "B": "1/36",
+            "C": "5/18",
+            "D": "1/6",
+            "E": "11/36"
+          },
+          "answer": "E",
+          "explanation": "«Minst én sekser» er den komplementære hendelsen til «ingen sekser»: 1 − 25/36 = 11/36."
+        },
+        {
+          "points": 4,
+          "text": "Du kaster en vanlig terning tre ganger. Hva er sannsynligheten for å få minst én sekser? Svar som brøk.",
+          "choices": {
+            "A": "1/2",
+            "B": "125/216",
+            "C": "91/216",
+            "D": "1/216",
+            "E": "25/72"
+          },
+          "answer": "C",
+          "explanation": "P(ingen sekser) = 5/6 · 5/6 · 5/6 = 125/216. Da er P(minst én sekser) = 1 − 125/216 = 91/216."
+        }
+      ]
+    }
+  ]
+}

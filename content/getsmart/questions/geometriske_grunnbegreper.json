@@ -1,0 +1,842 @@
+{
+ "slug": "geometriske_grunnbegreper",
+ "videos": [
+  {
+   "code": "00214",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva kalles en rett strek som starter i et bestemt punkt, men som fortsetter uendelig langt i én retning?",
+     "choices": {
+      "A": "Linjestykke",
+      "B": "Linje",
+      "C": "Stråle",
+      "D": "Punkt",
+      "E": "Diagonal"
+     },
+     "answer": "C",
+     "explanation": "En stråle har ett startpunkt og ingen ende. Et linjestykke har to endepunkter, og en linje har ingen endepunkter."
+    },
+    {
+     "points": 4,
+     "text": "Punktene A, B og C ligger på en rett linje i denne rekkefølgen. Linjestykket AB er 4,5 cm, og linjestykket BC er 7,3 cm. Hvor langt er linjestykket AC?",
+     "choices": {
+      "A": "2,8 cm",
+      "B": "11,7 cm",
+      "C": "12,8 cm",
+      "D": "Uendelig langt",
+      "E": "11,8 cm"
+     },
+     "answer": "E",
+     "explanation": "Siden B ligger mellom A og C, er AC = AB + BC = 4,5 cm + 7,3 cm = 11,8 cm. Et linjestykke har to endepunkter og en bestemt lengde."
+    }
+   ]
+  },
+  {
+   "code": "00215",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er en diagonal i en mangekant?",
+     "choices": {
+      "A": "En av sidene i mangekanten",
+      "B": "Linjestykke mellom to ikke-nabohjørner",
+      "C": "En linje vinkelrett på en side",
+      "D": "Avstanden rundt hele figuren",
+      "E": "Den nederste siden i figuren"
+     },
+     "answer": "B",
+     "explanation": "En diagonal forbinder to hjørner som ikke ligger ved siden av hverandre. Den går altså på tvers inne i figuren."
+    },
+    {
+     "points": 4,
+     "text": "Linjestykket AB er 10 cm langt. Linjen m er midtnormalen til AB og skjærer AB i punktet M. Hvilket utsagn er riktig?",
+     "choices": {
+      "A": "AM = 5 cm og m står vinkelrett på AB",
+      "B": "AM = 5 cm og m er parallell med AB",
+      "C": "AM = 10 cm og m står vinkelrett på AB",
+      "D": "m går gjennom punktet A",
+      "E": "AM = 5 cm og m danner 45° med AB"
+     },
+     "answer": "A",
+     "explanation": "En midtnormal går gjennom midtpunktet til linjestykket og står vinkelrett (90°) på det. Derfor er AM = 10 cm : 2 = 5 cm."
+    }
+   ]
+  },
+  {
+   "code": "00216",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I trekant ABC har hjørnene navnene A, B og C. Hvilken side er motstående side til vinkel A?",
+     "choices": {
+      "A": "AB",
+      "B": "AC",
+      "C": "Både AB og AC",
+      "D": "BC",
+      "E": "Ingen av sidene"
+     },
+     "answer": "D",
+     "explanation": "Motstående side til en vinkel er den siden som ligger rett overfor vinkelen, altså den siden som ikke går gjennom hjørnet. For vinkel A er det BC."
+    },
+    {
+     "points": 4,
+     "text": "I trekant PQR er QR = 8 cm, PR = 6 cm og PQ = 5 cm. Hvilken vinkel er motstående vinkel til den lengste siden, og hva er omkretsen av trekanten?",
+     "choices": {
+      "A": "Vinkel P, 19 cm",
+      "B": "Vinkel R, 19 cm",
+      "C": "Vinkel Q, 19 cm",
+      "D": "Vinkel P, 240 cm",
+      "E": "Vinkel R, 13 cm"
+     },
+     "answer": "A",
+     "explanation": "Den lengste siden er QR, og vinkelen rett overfor den er vinkel P. Omkretsen er 8 cm + 6 cm + 5 cm = 19 cm."
+    }
+   ]
+  },
+  {
+   "code": "00217",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I et koordinatsystem skjærer førsteaksen (x-aksen) og andreaksen (y-aksen) hverandre i punktet (0, 0). Hva kalles dette punktet?",
+     "choices": {
+      "A": "Førstekoordinaten",
+      "B": "Andreaksen",
+      "C": "Toppunktet",
+      "D": "Tallparet",
+      "E": "Origo"
+     },
+     "answer": "E",
+     "explanation": "Punktet (0, 0), der aksene møtes, kalles origo."
+    },
+    {
+     "points": 4,
+     "text": "Punktet A har koordinatene (3, −2). Du flytter punktet 5 enheter til venstre og 4 enheter opp. Hvilke koordinater får det nye punktet?",
+     "choices": {
+      "A": "(8, 2)",
+      "B": "(−2, −6)",
+      "C": "(2, −2)",
+      "D": "(−2, 2)",
+      "E": "(8, −6)"
+     },
+     "answer": "D",
+     "explanation": "Til venstre betyr at x-koordinaten minker: 3 − 5 = −2. Opp betyr at y-koordinaten øker: −2 + 4 = 2."
+    }
+   ]
+  },
+  {
+   "code": "00218",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Vinkelen ∠PQR er dannet av to stråler med felles startpunkt. Hvilket punkt er toppunktet til vinkelen?",
+     "choices": {
+      "A": "P",
+      "B": "R",
+      "C": "Q",
+      "D": "Både P og R",
+      "E": "Ingen av dem"
+     },
+     "answer": "C",
+     "explanation": "Når en vinkel skrives med tre bokstaver, står toppunktet alltid i midten. I ∠PQR er toppunktet Q."
+    },
+    {
+     "points": 4,
+     "text": "Minuttviseren på en klokke dreier en hel runde, altså 360°, på 60 minutter. Hvor mange grader dreier minuttviseren på 25 minutter?",
+     "choices": {
+      "A": "25°",
+      "B": "150°",
+      "C": "125°",
+      "D": "144°",
+      "E": "250°"
+     },
+     "answer": "B",
+     "explanation": "På ett minutt dreier viseren 360° : 60 = 6°. På 25 minutter dreier den 25 · 6° = 150°."
+    }
+   ]
+  },
+  {
+   "code": "00219",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En vinkel er 127°. Hva slags vinkel er dette?",
+     "choices": {
+      "A": "Spiss vinkel",
+      "B": "Rett vinkel",
+      "C": "Stump vinkel",
+      "D": "Likevinkel",
+      "E": "Full vinkel"
+     },
+     "answer": "C",
+     "explanation": "En stump vinkel er større enn 90° og mindre enn 180°. 127° ligger mellom disse."
+    },
+    {
+     "points": 4,
+     "text": "Klokka er nøyaktig 4.00. Hvor stor er den minste vinkelen mellom timeviseren og minuttviseren, og hva slags vinkel er det?",
+     "choices": {
+      "A": "120°, spiss vinkel",
+      "B": "40°, spiss vinkel",
+      "C": "90°, rett vinkel",
+      "D": "240°, stump vinkel",
+      "E": "120°, stump vinkel"
+     },
+     "answer": "E",
+     "explanation": "Mellom to tall på urskiven er det 360° : 12 = 30°. Fra 12 til 4 er det 4 · 30° = 120°, som er større enn 90° og derfor stump."
+    }
+   ]
+  },
+  {
+   "code": "00220",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To vinkler er komplementvinkler. Den ene vinkelen er 28°. Hvor stor er den andre?",
+     "choices": {
+      "A": "152°",
+      "B": "28°",
+      "C": "332°",
+      "D": "62°",
+      "E": "72°"
+     },
+     "answer": "D",
+     "explanation": "Komplementvinkler er til sammen 90°. Den andre vinkelen er 90° − 28° = 62°."
+    },
+    {
+     "points": 4,
+     "text": "To rette linjer skjærer hverandre og danner fire vinkler rundt skjæringspunktet. Én av vinklene er 38°. Hvor store er de tre andre vinklene?",
+     "choices": {
+      "A": "52°, 52° og 38°",
+      "B": "142°, 142° og 38°",
+      "C": "142°, 142° og 142°",
+      "D": "38°, 38° og 38°",
+      "E": "322°, 322° og 38°"
+     },
+     "answer": "B",
+     "explanation": "Toppvinkelen til 38° er også 38°. De to nabovinklene er 180° − 38° = 142° hver."
+    }
+   ]
+  },
+  {
+   "code": "00221",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To parallelle linjer skjæres av en tredje linje. En av vinklene ved den første parallelle linjen er 72°. Hvor stor er den samsvarende vinkelen ved den andre parallelle linjen?",
+     "choices": {
+      "A": "72°",
+      "B": "108°",
+      "C": "18°",
+      "D": "144°",
+      "E": "288°"
+     },
+     "answer": "A",
+     "explanation": "Samsvarende vinkler ved parallelle linjer er like store. Den samsvarende vinkelen er derfor også 72°."
+    },
+    {
+     "points": 4,
+     "text": "Linjene l og m er vannrette og parallelle, og l ligger over m. Linjen t går skrått og skjærer begge. Ved skjæringspunktet med l er vinkelen øverst til høyre mellom l og t lik 115°. Hvor stor er vinkelen nederst til høyre ved skjæringspunktet med m?",
+     "choices": {
+      "A": "115°",
+      "B": "25°",
+      "C": "245°",
+      "D": "65°",
+      "E": "75°"
+     },
+     "answer": "D",
+     "explanation": "Vinkelen øverst til høyre ved m er samsvarende med 115°, altså 115°. Vinkelen nederst til høyre er nabovinkelen til den: 180° − 115° = 65°."
+    }
+   ]
+  },
+  {
+   "code": "00222",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken beskrivelse passer på et trapes?",
+     "choices": {
+      "A": "En firkant med fire like lange sider",
+      "B": "En firkant med fire rette vinkler",
+      "C": "En femkant med parallelle sider",
+      "D": "En trekant med en rett vinkel",
+      "E": "En firkant med ett par parallelle sider"
+     },
+     "answer": "E",
+     "explanation": "Et trapes er en firkant der (minst) to av sidene er parallelle."
+    },
+    {
+     "points": 4,
+     "text": "En regelmessig mangekant har omkrets 42 cm, og hver side er 6 cm lang. Hvor mange hjørner har mangekanten, og hva kalles den?",
+     "choices": {
+      "A": "7 hjørner, sjukant",
+      "B": "6 hjørner, sekskant",
+      "C": "8 hjørner, åttekant",
+      "D": "5 hjørner, femkant",
+      "E": "9 hjørner, nikant"
+     },
+     "answer": "A",
+     "explanation": "I en regelmessig mangekant er alle sidene like lange. Antall sider er 42 cm : 6 cm = 7, og en mangekant med 7 sider har 7 hjørner og kalles en sjukant."
+    }
+   ]
+  },
+  {
+   "code": "00223",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et trapes har to parallelle sider som er 8 cm og 12 cm lange. Avstanden (høyden) mellom de parallelle sidene er 5 cm. Hva er arealet av trapeset?",
+     "choices": {
+      "A": "100 cm²",
+      "B": "480 cm²",
+      "C": "50 cm²",
+      "D": "25 cm²",
+      "E": "60 cm²"
+     },
+     "answer": "C",
+     "explanation": "Arealet av et trapes er (a + b) · h : 2 = (8 + 12) · 5 : 2 = 50 cm²."
+    },
+    {
+     "points": 4,
+     "text": "To like trapeser med parallelle sider a og b og høyde h legges inntil hverandre, den ene snudd opp ned, slik at de danner et parallellogram. Hva blir grunnlinjen i parallellogrammet, og hva blir arealet av ett trapes?",
+     "choices": {
+      "A": "a + b, og (a + b) · h",
+      "B": "a + b, og (a + b) · h : 2",
+      "C": "a · b, og a · b · h : 2",
+      "D": "2a, og a · h",
+      "E": "a + b, og (a + b) : 2"
+     },
+     "answer": "B",
+     "explanation": "Grunnlinjen i parallellogrammet består av a og b etter hverandre, altså a + b. Parallellogrammet har areal (a + b) · h, og ett trapes er halvparten av dette."
+    }
+   ]
+  },
+  {
+   "code": "00224",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket utsagn gjelder for alle rektangler?",
+     "choices": {
+      "A": "Alle sidene er like lange",
+      "B": "Alle vinklene er 90°",
+      "C": "Diagonalene står vinkelrett på hverandre",
+      "D": "Bare ett par sider er parallelle",
+      "E": "Diagonalene er ulike lange"
+     },
+     "answer": "B",
+     "explanation": "Et rektangel er en firkant der alle fire vinklene er rette (90°). Sidene trenger ikke være like lange."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangulært gulv er 4,5 m langt og 3,2 m bredt. Du skal legge gulvlist langs hele kanten av gulvet, unntatt i en døråpning som er 0,9 m bred. Hvor mange meter gulvlist trenger du?",
+     "choices": {
+      "A": "15,4 m",
+      "B": "14,4 m",
+      "C": "14,5 m",
+      "D": "13,6 m",
+      "E": "6,8 m"
+     },
+     "answer": "C",
+     "explanation": "Omkretsen er 2 · (4,5 m + 3,2 m) = 15,4 m. Uten døråpningen blir det 15,4 m − 0,9 m = 14,5 m."
+    }
+   ]
+  },
+  {
+   "code": "00225",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er et parallellogram?",
+     "choices": {
+      "A": "Firkant med bare ett par parallelle sider",
+      "B": "Firkant med fire rette vinkler",
+      "C": "Firkant med fire like lange sider",
+      "D": "Trekant med to parallelle sider",
+      "E": "Firkant med to par parallelle sider"
+     },
+     "answer": "E",
+     "explanation": "I et parallellogram er begge parene av motstående sider parallelle."
+    },
+    {
+     "points": 4,
+     "text": "Et parallellogram har en grunnlinje på 9 cm og to skrå sider på 5 cm. Høyden fra grunnlinjen opp til motstående side er 4 cm. Hva er arealet og omkretsen av parallellogrammet?",
+     "choices": {
+      "A": "45 cm² og 28 cm",
+      "B": "36 cm² og 18 cm",
+      "C": "18 cm² og 28 cm",
+      "D": "36 cm² og 28 cm",
+      "E": "45 cm² og 14 cm"
+     },
+     "answer": "D",
+     "explanation": "Arealet er grunnlinje · høyde = 9 · 4 = 36 cm². Omkretsen er 9 + 5 + 9 + 5 = 28 cm."
+    }
+   ]
+  },
+  {
+   "code": "00226",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva kjennetegner en rombe?",
+     "choices": {
+      "A": "Firkant med fire like lange sider",
+      "B": "Firkant med fire rette vinkler",
+      "C": "Firkant med bare ett par parallelle sider",
+      "D": "Firkant med like lange diagonaler",
+      "E": "Trekant med to like lange sider"
+     },
+     "answer": "A",
+     "explanation": "En rombe er en firkant der alle fire sidene er like lange. Vinklene trenger ikke være rette."
+    },
+    {
+     "points": 4,
+     "text": "En rombe har omkrets 32 cm. Høyden i romben, altså avstanden mellom to motstående sider, er 6,5 cm. Hva er arealet av romben?",
+     "choices": {
+      "A": "208 cm²",
+      "B": "26 cm²",
+      "C": "52 cm²",
+      "D": "32 cm²",
+      "E": "38,5 cm²"
+     },
+     "answer": "C",
+     "explanation": "Hver side er 32 cm : 4 = 8 cm. Arealet er grunnlinje · høyde = 8 · 6,5 = 52 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00227",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et kvadrat har omkrets 36 cm. Hvor lang er hver side i kvadratet?",
+     "choices": {
+      "A": "6 cm",
+      "B": "18 cm",
+      "C": "12 cm",
+      "D": "9 cm",
+      "E": "144 cm"
+     },
+     "answer": "D",
+     "explanation": "Et kvadrat har fire like lange sider. Hver side er 36 cm : 4 = 9 cm."
+    },
+    {
+     "points": 4,
+     "text": "En kvadratisk bordplate har areal 1,44 m². Hva er omkretsen av bordplaten?",
+     "choices": {
+      "A": "5,76 m",
+      "B": "4,8 m",
+      "C": "0,36 m",
+      "D": "2,4 m",
+      "E": "1,2 m"
+     },
+     "answer": "B",
+     "explanation": "Siden er √1,44 = 1,2 m fordi 1,2 · 1,2 = 1,44. Omkretsen er 4 · 1,2 m = 4,8 m."
+    }
+   ]
+  },
+  {
+   "code": "00228",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En trekant har grunnlinje 10 cm og høyde 7 cm. Hva er arealet av trekanten?",
+     "choices": {
+      "A": "70 cm²",
+      "B": "17 cm²",
+      "C": "140 cm²",
+      "D": "8,5 cm²",
+      "E": "35 cm²"
+     },
+     "answer": "E",
+     "explanation": "Arealet av en trekant er grunnlinje · høyde : 2 = 10 · 7 : 2 = 35 cm²."
+    },
+    {
+     "points": 4,
+     "text": "Et trekantet blomsterbed har grunnlinje 6,4 m og høyde 3,5 m. En sekk med jord rekker til 4 m². Hvor mange hele sekker trenger du for å dekke hele bedet?",
+     "choices": {
+      "A": "3 sekker",
+      "B": "2 sekker",
+      "C": "5 sekker",
+      "D": "6 sekker",
+      "E": "12 sekker"
+     },
+     "answer": "A",
+     "explanation": "Arealet er 6,4 · 3,5 : 2 = 11,2 m². 11,2 : 4 = 2,8, så du trenger 3 hele sekker."
+    }
+   ]
+  },
+  {
+   "code": "00229",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En trekant har nøyaktig to sider som er like lange. Hva kalles en slik trekant?",
+     "choices": {
+      "A": "Likesidet trekant",
+      "B": "Likebeint trekant",
+      "C": "Rettvinklet trekant",
+      "D": "Stumpvinklet trekant",
+      "E": "Spissvinklet trekant"
+     },
+     "answer": "B",
+     "explanation": "En trekant med to like lange sider kalles likebeint. Er alle tre sidene like lange, kalles den likesidet."
+    },
+    {
+     "points": 4,
+     "text": "En likebeint trekant har omkrets 31 cm. Grunnlinjen, som er den siden som ikke er lik de andre, er 9 cm. Hvor lange er hver av de to like sidene?",
+     "choices": {
+      "A": "11 cm",
+      "B": "22 cm",
+      "C": "9 cm",
+      "D": "15,5 cm",
+      "E": "20 cm"
+     },
+     "answer": "A",
+     "explanation": "De to like sidene er til sammen 31 cm − 9 cm = 22 cm. Hver av dem er 22 cm : 2 = 11 cm."
+    }
+   ]
+  },
+  {
+   "code": "00230",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilket utsagn er riktig?",
+     "choices": {
+      "A": "Alle rektangler er kvadrater",
+      "B": "Alle romber er kvadrater",
+      "C": "Alle parallellogrammer er rektangler",
+      "D": "Alle kvadrater er rektangler",
+      "E": "Ingen kvadrater er romber"
+     },
+     "answer": "D",
+     "explanation": "Et kvadrat har fire rette vinkler, så det oppfyller kravet til et rektangel. Et rektangel trenger ikke ha like lange sider, så ikke alle rektangler er kvadrater."
+    },
+    {
+     "points": 4,
+     "text": "Et kvadrat har fire like lange sider og fire rette vinkler. Hvilke av navnene parallellogram, rektangel og rombe passer også på et kvadrat?",
+     "choices": {
+      "A": "Bare rektangel",
+      "B": "Bare rombe",
+      "C": "Alle tre",
+      "D": "Rektangel og rombe",
+      "E": "Ingen av dem"
+     },
+     "answer": "C",
+     "explanation": "Kvadratet har to par parallelle sider (parallellogram), fire rette vinkler (rektangel) og fire like lange sider (rombe). Alle tre navnene passer."
+    }
+   ]
+  },
+  {
+   "code": "00252",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En sirkel har diameter 14 cm. Hvor lang er radien?",
+     "choices": {
+      "A": "28 cm",
+      "B": "14 cm",
+      "C": "3,5 cm",
+      "D": "44 cm",
+      "E": "7 cm"
+     },
+     "answer": "E",
+     "explanation": "Radien er halvparten av diameteren: 14 cm : 2 = 7 cm."
+    },
+    {
+     "points": 4,
+     "text": "Punktet S er sentrum i en sirkel med radius 5 cm. Punktet A ligger 4 cm fra S, punktet B ligger 5 cm fra S, og punktet C ligger 6 cm fra S. Hvilket utsagn er riktig?",
+     "choices": {
+      "A": "A, B og C ligger på sirkelen",
+      "B": "A på sirkelen, B og C utenfor",
+      "C": "A inni, B på sirkelen, C utenfor",
+      "D": "A og B inni, C på sirkelen",
+      "E": "A utenfor, B på sirkelen, C inni"
+     },
+     "answer": "C",
+     "explanation": "Sirkelen består av alle punkter som er nøyaktig 5 cm fra sentrum. Punkter nærmere enn 5 cm ligger inni, og punkter lenger unna ligger utenfor."
+    }
+   ]
+  },
+  {
+   "code": "00253",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva kalles en rett linje som berører en sirkel i nøyaktig ett punkt?",
+     "choices": {
+      "A": "Korde",
+      "B": "Sekant",
+      "C": "Radius",
+      "D": "Diameter",
+      "E": "Tangent"
+     },
+     "answer": "E",
+     "explanation": "En tangent berører sirkelen i bare ett punkt. En sekant skjærer sirkelen i to punkter."
+    },
+    {
+     "points": 4,
+     "text": "En sirkel har radius 6 cm. En korde er et linjestykke mellom to punkter på sirkelen. Hvilket utsagn om kordene i denne sirkelen er riktig?",
+     "choices": {
+      "A": "Den lengste korden er 6 cm",
+      "B": "Alle korder går gjennom sentrum",
+      "C": "En korde berører sirkelen i ett punkt",
+      "D": "Den lengste korden er 12 cm",
+      "E": "En korde kan være 15 cm lang"
+     },
+     "answer": "D",
+     "explanation": "Den lengste korden er den som går gjennom sentrum, altså diameteren: 2 · 6 cm = 12 cm. Ingen korde kan være lengre enn det."
+    }
+   ]
+  },
+  {
+   "code": "00254",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En sirkel har radius 5 cm. Bruk π ≈ 3,14. Hva er omkretsen av sirkelen?",
+     "choices": {
+      "A": "15,7 cm",
+      "B": "31,4 cm",
+      "C": "62,8 cm",
+      "D": "78,5 cm",
+      "E": "314 cm"
+     },
+     "answer": "B",
+     "explanation": "Omkretsen er 2 · π · r = 2 · 3,14 · 5 cm = 31,4 cm."
+    },
+    {
+     "points": 4,
+     "text": "Et sirkelformet blomsterbed har omkrets 18,84 m. Bruk π ≈ 3,14. Hva er arealet av bedet?",
+     "choices": {
+      "A": "28,26 m²",
+      "B": "113,04 m²",
+      "C": "9,42 m²",
+      "D": "56,52 m²",
+      "E": "18,84 m²"
+     },
+     "answer": "A",
+     "explanation": "Først finner vi radien: r = 18,84 : (2 · 3,14) = 3 m. Arealet er π · r² = 3,14 · 9 = 28,26 m²."
+    }
+   ]
+  },
+  {
+   "code": "00255",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En sirkelsektor har sentralvinkel 90°. Hvor stor del av hele sirkelen er sektoren?",
+     "choices": {
+      "A": "½",
+      "B": "¼",
+      "C": "⅓",
+      "D": "⅛",
+      "E": "⅑"
+     },
+     "answer": "B",
+     "explanation": "En hel sirkel er 360°. Sektoren er 90° : 360° = ¼ av sirkelen."
+    },
+    {
+     "points": 5,
+     "text": "En sirkelsektor har radius 6 cm og sentralvinkel 60°. Omkretsen av sektoren består av sirkelbuen og de to radiene. Bruk π ≈ 3,14. Hva er omkretsen av sektoren?",
+     "choices": {
+      "A": "18,28 cm",
+      "B": "6,28 cm",
+      "C": "12,28 cm",
+      "D": "18,84 cm",
+      "E": "49,68 cm"
+     },
+     "answer": "A",
+     "explanation": "Sirkelbuen er 60/360 av hele omkretsen: 2 · 3,14 · 6 : 6 = 6,28 cm. Omkretsen av sektoren er 6,28 + 6 + 6 = 18,28 cm."
+    }
+   ]
+  },
+  {
+   "code": "00256",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En kube har kanter som er 4 cm lange. Hva er volumet av kuben?",
+     "choices": {
+      "A": "16 cm³",
+      "B": "48 cm³",
+      "C": "64 cm³",
+      "D": "96 cm³",
+      "E": "12 cm³"
+     },
+     "answer": "C",
+     "explanation": "Volumet av en kube er s · s · s = 4 · 4 · 4 = 64 cm³."
+    },
+    {
+     "points": 4,
+     "text": "En kube har overflateareal 150 cm². Hvor lang er hver kant i kuben?",
+     "choices": {
+      "A": "25 cm",
+      "B": "6 cm",
+      "C": "12,5 cm",
+      "D": "5 cm",
+      "E": "37,5 cm"
+     },
+     "answer": "D",
+     "explanation": "En kube har 6 like store kvadratiske flater. Hver flate er 150 : 6 = 25 cm², og kanten er √25 = 5 cm."
+    }
+   ]
+  },
+  {
+   "code": "00257",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et prisme har en grunnflate med areal 24 cm² og høyde 10 cm. Hva er volumet av prismet?",
+     "choices": {
+      "A": "120 cm³",
+      "B": "34 cm³",
+      "C": "2400 cm³",
+      "D": "80 cm³",
+      "E": "240 cm³"
+     },
+     "answer": "E",
+     "explanation": "Volumet av et prisme er grunnflate · høyde = 24 cm² · 10 cm = 240 cm³."
+    },
+    {
+     "points": 5,
+     "text": "Et rett prisme har en rettvinklet trekant som grunnflate. Trekanten har kateter 3 cm og 4 cm og hypotenus 5 cm. Prismet er 10 cm høyt. Hva er overflatearealet av prismet?",
+     "choices": {
+      "A": "120 cm²",
+      "B": "126 cm²",
+      "C": "144 cm²",
+      "D": "60 cm²",
+      "E": "132 cm²"
+     },
+     "answer": "E",
+     "explanation": "De to trekantene har til sammen 2 · (3 · 4 : 2) = 12 cm². De tre rektanglene på sidene har (3 + 4 + 5) · 10 = 120 cm². Totalt 132 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00258",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En sylinder har radius 2 cm og høyde 10 cm. Bruk π ≈ 3,14. Hva er volumet av sylinderen?",
+     "choices": {
+      "A": "62,8 cm³",
+      "B": "502,4 cm³",
+      "C": "1256 cm³",
+      "D": "125,6 cm³",
+      "E": "40 cm³"
+     },
+     "answer": "D",
+     "explanation": "Volumet er π · r² · h = 3,14 · 2² · 10 = 3,14 · 4 · 10 = 125,6 cm³."
+    },
+    {
+     "points": 4,
+     "text": "En hermetikkboks har form som en sylinder med diameter 8 cm og høyde 12 cm. Bruk π ≈ 3,14. Hva er overflatearealet av boksen, med både lokk og bunn?",
+     "choices": {
+      "A": "301,44 cm²",
+      "B": "351,68 cm²",
+      "C": "401,92 cm²",
+      "D": "1004,8 cm²",
+      "E": "200,96 cm²"
+     },
+     "answer": "C",
+     "explanation": "Radien er 4 cm. Lokk og bunn: 2 · 3,14 · 4² = 100,48 cm². Sideflaten: 2 · 3,14 · 4 · 12 = 301,44 cm². Til sammen 401,92 cm²."
+    }
+   ]
+  },
+  {
+   "code": "00259",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En pyramide har kvadratisk grunnflate med sider på 6 cm. Høyden i pyramiden er 10 cm. Hva er volumet?",
+     "choices": {
+      "A": "120 cm³",
+      "B": "360 cm³",
+      "C": "60 cm³",
+      "D": "180 cm³",
+      "E": "20 cm³"
+     },
+     "answer": "A",
+     "explanation": "Volumet av en pyramide er grunnflate · høyde : 3 = 6 · 6 · 10 : 3 = 120 cm³."
+    },
+    {
+     "points": 4,
+     "text": "En kjegle har radius 3 cm og høyde 8 cm. Bruk π ≈ 3,14. Hva er volumet av kjeglen?",
+     "choices": {
+      "A": "226,08 cm³",
+      "B": "75,36 cm³",
+      "C": "25,12 cm³",
+      "D": "301,44 cm³",
+      "E": "37,68 cm³"
+     },
+     "answer": "B",
+     "explanation": "Grunnflaten er π · r² = 3,14 · 9 = 28,26 cm². Volumet er grunnflate · høyde : 3 = 28,26 · 8 : 3 = 75,36 cm³."
+    }
+   ]
+  },
+  {
+   "code": "00260",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken formel gir overflatearealet av en kule med radius r?",
+     "choices": {
+      "A": "π · r²",
+      "B": "4/3 · π · r³",
+      "C": "2 · π · r",
+      "D": "4 · π · r²",
+      "E": "2 · π · r²"
+     },
+     "answer": "D",
+     "explanation": "Overflaten av en kule er 4 · π · r², altså fire ganger arealet av en sirkel med samme radius."
+    },
+    {
+     "points": 4,
+     "text": "En badeball har form som en kule med diameter 30 cm. Bruk π ≈ 3,14. Hva er volumet av ballen?",
+     "choices": {
+      "A": "113 040 cm³",
+      "B": "2826 cm³",
+      "C": "14 130 cm³",
+      "D": "10 597,5 cm³",
+      "E": "42 390 cm³"
+     },
+     "answer": "C",
+     "explanation": "Radien er 15 cm. Volumet er 4/3 · π · r³ = 4/3 · 3,14 · 3375 = 14 130 cm³."
+    }
+   ]
+  },
+  {
+   "code": "00261",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En badeball har volum 14 130 cm³. Hvor mange liter luft er det i ballen? (1 liter = 1 dm³ = 1000 cm³)",
+     "choices": {
+      "A": "141,3 liter",
+      "B": "14,13 liter",
+      "C": "1,413 liter",
+      "D": "1413 liter",
+      "E": "14 130 liter"
+     },
+     "answer": "B",
+     "explanation": "Siden 1 liter = 1000 cm³, deler vi på 1000: 14 130 : 1000 = 14,13 liter."
+    },
+    {
+     "points": 4,
+     "text": "En badeball har form som en kule med radius 15 cm. Bruk π ≈ 3,14. Hvor mange kvadratmeter plast trengs for å lage overflaten til ballen? Avrund til to desimaler.",
+     "choices": {
+      "A": "0,28 m²",
+      "B": "2,83 m²",
+      "C": "28,26 m²",
+      "D": "0,03 m²",
+      "E": "0,07 m²"
+     },
+     "answer": "A",
+     "explanation": "Overflaten er 4 · 3,14 · 15² = 2826 cm². Siden 1 m² = 10 000 cm², blir det 2826 : 10 000 ≈ 0,28 m²."
+    }
+   ]
+  }
+ ]
+}

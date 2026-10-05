@@ -1,0 +1,222 @@
+{
+  "slug": "uoppstilte_likninger",
+  "videos": [
+    {
+      "code": "00006",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Jeg tenker på et tall. Ganger jeg tallet med 4 og legger til 7, får jeg 43. Hvilket tall tenker jeg på?",
+          "choices": {
+            "A": "12,5",
+            "B": "9",
+            "C": "36",
+            "D": "11",
+            "E": "50"
+          },
+          "answer": "B",
+          "explanation": "4x + 7 = 43 gir 4x = 36, så x = 9."
+        },
+        {
+          "points": 4,
+          "text": "Per er 3 år eldre enn Kari, og Ola er dobbelt så gammel som Kari. Til sammen er de tre 43 år. Hvor gammel er Kari?",
+          "choices": {
+            "A": "13 år",
+            "B": "20 år",
+            "C": "11,5 år",
+            "D": "14 år",
+            "E": "10 år"
+          },
+          "answer": "E",
+          "explanation": "Kari = x, Per = x + 3, Ola = 2x. Da er 4x + 3 = 43, så 4x = 40 og x = 10."
+        }
+      ]
+    },
+    {
+      "code": "00017",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Martin klipper plen. Han får 75 kr for oppmøte og 15 kr per kvadratmeter han klipper. En dag tjente han 1 035 kr. Hvilken likning kan du bruke for å finne antall kvadratmeter x?",
+          "choices": {
+            "A": "75x + 15 = 1 035",
+            "B": "15(x + 75) = 1 035",
+            "C": "75 + 15x = 1 035",
+            "D": "75 − 15x = 1 035",
+            "E": "15x = 1 035 + 75"
+          },
+          "answer": "C",
+          "explanation": "Oppmøtet gir fast 75 kr, og hver kvadratmeter gir 15 kr. Til sammen 75 + 15x, som skal være lik 1 035 kr."
+        },
+        {
+          "points": 5,
+          "text": "Martin får 75 kr for oppmøte og 15 kr per m² han klipper. Han tjente 1 035 kr, og det han klipte var 16 % av en kvadratisk plen. Hvor langt gjerde trengs rundt hele plenen?",
+          "choices": {
+            "A": "20 m",
+            "B": "32 m",
+            "C": "100 m",
+            "D": "256 m",
+            "E": "80 m"
+          },
+          "answer": "E",
+          "explanation": "75 + 15x = 1 035 gir x = 64 m². Hele plenen er 64 : 0,16 = 400 m², så siden er √400 = 20 m. Gjerdet blir 4 · 20 = 80 m."
+        }
+      ]
+    },
+    {
+      "code": "00009",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En svømmeklubb har 12 jenter og 18 gutter. Hvor mange prosent av medlemmene er jenter?",
+          "choices": {
+            "A": "12 %",
+            "B": "60 %",
+            "C": "40 %",
+            "D": "66,7 %",
+            "E": "30 %"
+          },
+          "answer": "C",
+          "explanation": "Det er 30 medlemmer til sammen. 12/30 = 0,4 = 40 %."
+        },
+        {
+          "points": 5,
+          "text": "En svømmeklubb har 12 jenter og 18 gutter. Hvor mange nye jenter må begynne (og ingen nye gutter) for at jentene skal utgjøre 60 % av medlemmene?",
+          "choices": {
+            "A": "6",
+            "B": "9",
+            "C": "18",
+            "D": "27",
+            "E": "15"
+          },
+          "answer": "E",
+          "explanation": "(12 + x)/(30 + x) = 0,6 gir 12 + x = 18 + 0,6x, så 0,4x = 6 og x = 15. Kontroll: 27 av 45 er 60 %."
+        }
+      ]
+    },
+    {
+      "code": "00020",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Differansen mellom to tall er 12. Det største tallet er 4 ganger så stort som det minste. Hvilken likning passer når x er det minste tallet?",
+          "choices": {
+            "A": "4x + x = 12",
+            "B": "4x − x = 12",
+            "C": "x − 4x = 12",
+            "D": "4x = 12",
+            "E": "4(x − 12) = x"
+          },
+          "answer": "B",
+          "explanation": "Det største tallet er 4x. Differansen er største minus minste: 4x − x = 12."
+        },
+        {
+          "points": 4,
+          "text": "Differansen mellom to tall er 15. Det største tallet er 4 ganger så stort som det minste. Hva er summen av de to tallene?",
+          "choices": {
+            "A": "20",
+            "B": "15",
+            "C": "25",
+            "D": "5",
+            "E": "30"
+          },
+          "answer": "C",
+          "explanation": "4x − x = 15 gir 3x = 15, så x = 5 og det største tallet er 20. Summen er 5 + 20 = 25."
+        }
+      ]
+    },
+    {
+      "code": "00019",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Fem personer kjøper billetter, og gjennomsnittsprisen per billett er 92 kr. Hvor mye betaler de til sammen?",
+          "choices": {
+            "A": "92 kr",
+            "B": "368 kr",
+            "C": "18,40 kr",
+            "D": "460 kr",
+            "E": "552 kr"
+          },
+          "answer": "D",
+          "explanation": "Sum = gjennomsnitt · antall = 92 kr · 5 = 460 kr."
+        },
+        {
+          "points": 4,
+          "text": "En voksenbillett koster 120 kr og en barnebillett 50 kr. Fem personer går på museum: 2 voksne, 2 barn og én person vi ikke vet om. Gjennomsnittsprisen ble 92 kr. Er den siste personen voksen eller barn?",
+          "choices": {
+            "A": "Barn, betalte 50 kr",
+            "B": "Voksen, betalte 92 kr",
+            "C": "Barn, betalte 70 kr",
+            "D": "Kan ikke avgjøres",
+            "E": "Voksen, betalte 120 kr"
+          },
+          "answer": "E",
+          "explanation": "Til sammen 5 · 92 = 460 kr. De fire kjente betalte 2·120 + 2·50 = 340 kr. Likningen 340 + x = 460 gir x = 120 kr, altså en voksen."
+        }
+      ]
+    },
+    {
+      "code": "00095",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En bukse er satt ned 20 % og koster nå 480 kr. Hvilken likning gir den gamle prisen x?",
+          "choices": {
+            "A": "x − 20 = 480",
+            "B": "0,8x = 480",
+            "C": "1,2x = 480",
+            "D": "0,2x = 480",
+            "E": "x = 480 · 0,8"
+          },
+          "answer": "B",
+          "explanation": "Etter 20 % rabatt betaler du 80 % av den gamle prisen, altså 0,8x. Det skal være lik 480 kr."
+        },
+        {
+          "points": 4,
+          "text": "En bukse koster 525 kr etter at prisen er satt ned 25 %. Hva var den gamle prisen?",
+          "choices": {
+            "A": "700 kr",
+            "B": "656,25 kr",
+            "C": "550 kr",
+            "D": "393,75 kr",
+            "E": "2 100 kr"
+          },
+          "answer": "A",
+          "explanation": "Den nye prisen er 75 % av den gamle: 0,75x = 525, så x = 525 : 0,75 = 700 kr."
+        }
+      ]
+    },
+    {
+      "code": "00018",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En kjole koster 1 170 kr etter at prisen økte med 30 %. Hva kostet kjolen før økningen?",
+          "choices": {
+            "A": "819 kr",
+            "B": "1 140 kr",
+            "C": "1 521 kr",
+            "D": "3 900 kr",
+            "E": "900 kr"
+          },
+          "answer": "E",
+          "explanation": "Ny pris er 130 % av gammel pris: 1,3x = 1 170, så x = 1 170 : 1,3 = 900 kr."
+        },
+        {
+          "points": 5,
+          "text": "En kjole ble først satt ned 20 %. Senere økte salgsprisen med 30 %, og da kostet kjolen 1 040 kr. Hva var den opprinnelige prisen?",
+          "choices": {
+            "A": "800 kr",
+            "B": "1 000 kr",
+            "C": "ca. 945 kr",
+            "D": "1 040 kr",
+            "E": "1 248 kr"
+          },
+          "answer": "B",
+          "explanation": "Salgsprisen var 1 040 : 1,3 = 800 kr. Den er 80 % av opprinnelig pris: 0,8x = 800 gir x = 1 000 kr."
+        }
+      ]
+    }
+  ]
+}

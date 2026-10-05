@@ -1,0 +1,98 @@
+{
+ "slug": "analyse_av_datamateriale",
+ "videos": [
+  {
+   "code": "00315",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Tallene er: 12, 7, 19, 4, 15. Hva er variasjonsbredden?",
+     "choices": {
+      "A": "3",
+      "B": "15",
+      "C": "19",
+      "D": "23",
+      "E": "12"
+     },
+     "answer": "B",
+     "explanation": "Variasjonsbredde = største verdi − minste verdi = 19 − 4 = 15."
+    },
+    {
+     "points": 4,
+     "text": "Variasjonsbredden for temperaturene en uke var 14 °C. Den laveste temperaturen var −5 °C. Hva var den høyeste temperaturen?",
+     "choices": {
+      "A": "19 °C",
+      "B": "−19 °C",
+      "C": "9 °C",
+      "D": "14 °C",
+      "E": "4 °C"
+     },
+     "answer": "C",
+     "explanation": "Høyeste − laveste = 14, så høyeste = −5 + 14 = 9 °C."
+    }
+   ]
+  },
+  {
+   "code": "00316",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Dataene står i cellene B2:B21. Hvilken formel gir variasjonsbredden?",
+     "choices": {
+      "A": "=STØRST(B2:B21)-MIN(B2:B21)",
+      "B": "=MIN(B2:B21)-STØRST(B2:B21)",
+      "C": "=STØRST(B2:B21)-B2",
+      "D": "=SUMMER(B2:B21)/20",
+      "E": "=STØRST(B2:B21)+MIN(B2:B21)"
+     },
+     "answer": "A",
+     "explanation": "Variasjonsbredden er største verdi minus minste verdi. STØRST finner den største og MIN den minste."
+    },
+    {
+     "points": 4,
+     "text": "Cellene A1:A6 inneholder 23, 31, 18, 40, 27 og 35. En elev skriver =STØRST(A1:A6)-A1 for å finne variasjonsbredden. Hva viser formelen, og hva er den riktige variasjonsbredden?",
+     "choices": {
+      "A": "22, og det er riktig",
+      "B": "17, men riktig er 22",
+      "C": "17, og det er riktig",
+      "D": "22, men riktig er 17",
+      "E": "17, men riktig er 58"
+     },
+     "answer": "B",
+     "explanation": "Formelen gir 40 − 23 = 17, fordi A1 ikke er den minste verdien. Riktig er =STØRST(A1:A6)-MIN(A1:A6) = 40 − 18 = 22."
+    }
+   ]
+  },
+  {
+   "code": "00317",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Tallene er: 2, 5, 5, 7, 9, 14. Hva er medianen?",
+     "choices": {
+      "A": "7",
+      "B": "5",
+      "C": "12",
+      "D": "6",
+      "E": "8"
+     },
+     "answer": "D",
+     "explanation": "Det er seks tall, så medianen er gjennomsnittet av de to midterste: (5 + 7) : 2 = 6."
+    },
+    {
+     "points": 4,
+     "text": "Månedslønnene i en liten bedrift er (kr): 32 000, 34 000, 34 000, 36 000, 38 000 og 150 000. Hvilket sentralmål beskriver best hva som er en typisk lønn her, og hva er verdien?",
+     "choices": {
+      "A": "Gjennomsnitt, 54 000 kr",
+      "B": "Typetall, 150 000 kr",
+      "C": "Median, 34 000 kr",
+      "D": "Gjennomsnitt, 35 000 kr",
+      "E": "Median, 35 000 kr"
+     },
+     "answer": "E",
+     "explanation": "Gjennomsnittet (324 000 : 6 = 54 000 kr) dras opp av den ene høye lønna. Medianen, (34 000 + 36 000) : 2 = 35 000 kr, påvirkes ikke av den og viser bedre en typisk lønn."
+    }
+   ]
+  }
+ ]
+}

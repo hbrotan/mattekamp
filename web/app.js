@@ -2,6 +2,12 @@
   "use strict";
 
   const LEVEL_ORDER = ["preecolier", "ecolier", "duo", "benjamin", "cadet"];
+  // Tekster per samling; ukjente samlinger får standardtekstene
+  const SOURCE_INFO = {
+    kenguru: { desc: "Oppgaver fra Kengurukonkurransen, 1.–10. trinn", levelLabel: "Velg nivå", setLabel: "Velg år" },
+    getsmart: { desc: "Videoer fra getsmart.no med oppgaver til hver video, 8.–10. trinn", levelLabel: "Velg område", setLabel: "Velg emne" },
+  };
+  const sourceInfo = (key) => SOURCE_INFO[key] ?? { desc: "", levelLabel: "Velg nivå", setLabel: "Velg sett" };
   const app = document.getElementById("app");
   const userBox = document.getElementById("user");
 
@@ -78,7 +84,7 @@
   // ---------- Tilstand ----------
   let session = null; // { player, group }
   let sets = [];
-  let ui = { level: local.get("level", null), setId: null, mode: local.get("mode", "practice"), boardSet: "" };
+  let ui = { source: local.get("source", "kenguru"), level: local.get("level", null), setId: null, mode: local.get("mode", "practice"), boardSet: "" };
   let attempt = null; // pågående forsøk (visning fra serveren)
   let lastResult = null; // sist viste resultat, for gjennomgang av oppgavene
   let current = 0;
@@ -87,10 +93,17 @@
   let timer = null;
 
   const setById = (id) => sets.find((s) => s.id === id);
+  const sources = () => {
+    const seen = new Map();
+    for (const s of sets) if (!seen.has(s.source)) seen.set(s.source, { key: s.source, name: s.sourceName || s.source });
+    // Kenguru først, ellers i rekkefølgen serveren gir
+    return [...seen.values()].sort((a, b) => (b.key === "kenguru") - (a.key === "kenguru"));
+  };
   const levels = () => {
     const seen = new Map();
-    for (const s of sets) if (!seen.has(s.level)) seen.set(s.level, { key: s.level, name: s.levelName, grades: s.grades });
-    return [...seen.values()].sort((a, b) => LEVEL_ORDER.indexOf(a.key) - LEVEL_ORDER.indexOf(b.key));
+    for (const s of sets) if (s.source === ui.source && !seen.has(s.level)) seen.set(s.level, { key: s.level, name: s.levelName, grades: s.grades });
+    const list = [...seen.values()];
+    return ui.source === "kenguru" ? list.sort((a, b) => LEVEL_ORDER.indexOf(a.key) - LEVEL_ORDER.indexOf(b.key)) : list;
   };
 
   function renderUser() {
@@ -177,9 +190,15 @@
   async function renderHome() {
     stopTimer();
     attempt = null;
+    const src = sources();
+    if (!src.some((x) => x.key === ui.source)) ui.source = src[0]?.key;
+    const info = sourceInfo(ui.source);
     const lv = levels();
     if (!ui.level || !lv.some((l) => l.key === ui.level)) ui.level = lv.find((l) => l.key === "ecolier")?.key || lv[0]?.key;
-    const levelSets = sets.filter((s) => s.level === ui.level).sort((a, b) => b.year - a.year);
+    const levelSets = sets.filter((s) => s.source === ui.source && s.level === ui.level);
+    if (levelSets.every((s) => s.year)) levelSets.sort((a, b) => b.year - a.year);
+    let step = 0;
+    const stepLabel = (text) => `${++step} · ${text}`;
     if (!levelSets.some((s) => s.id === ui.setId)) ui.setId = levelSets[0]?.id;
     let active = [];
     try { active = await api("GET", "/api/attempts/active"); } catch (err) { showError(err); }
@@ -199,19 +218,27 @@
           <button class="btn primary" data-action="resume" data-id="${a.id}">Fortsett</button>
         </div>`).join("")}
 
+      ${src.length > 1 ? `
+        <section class="card">
+          <div class="step-label">${stepLabel("Velg samling")}</div>
+          <div class="modes">
+            ${src.map((x) => `<button class="mode ${x.key === ui.source ? "on" : ""}" data-action="source" data-source="${esc(x.key)}"><strong>${esc(x.name)}</strong><span>${esc(sourceInfo(x.key).desc)}</span></button>`).join("")}
+          </div>
+        </section>` : ""}
+
       <section class="card">
-        <div class="step-label">1 · Velg nivå</div>
+        <div class="step-label">${stepLabel(info.levelLabel)}</div>
         <div class="levels">
-          ${lv.map((l) => `<button class="level ${l.key === ui.level ? "on" : ""}" data-action="level" data-level="${l.key}"><strong>${esc(l.name)}</strong><span>${esc(l.grades)}</span></button>`).join("")}
+          ${lv.map((l) => `<button class="level ${l.key === ui.level ? "on" : ""}" data-action="level" data-level="${esc(l.key)}"><strong>${esc(l.name)}</strong><span>${esc(l.grades)}</span></button>`).join("")}
         </div>
-        <div class="step-label" style="margin-top:18px">2 · Velg år</div>
+        <div class="step-label" style="margin-top:18px">${stepLabel(info.setLabel)}</div>
         <div class="years">
-          ${levelSets.map((s) => `<button class="year ${s.id === ui.setId ? "on" : ""}" data-action="set" data-set="${s.id}">${s.year}${s.myBest !== null ? `<small>Best: ${s.myBest}/${s.maxPoints}</small>` : ""}</button>`).join("")}
+          ${levelSets.map((s) => `<button class="year ${s.year ? "" : "topic"} ${s.id === ui.setId ? "on" : ""}" data-action="set" data-set="${esc(s.id)}">${esc(s.year ?? s.title)}${s.myBest !== null ? `<small>Best: ${s.myBest}/${s.maxPoints}</small>` : ""}</button>`).join("")}
         </div>
       </section>
 
       <section class="card">
-        <div class="step-label">3 · Hvordan vil du løse?</div>
+        <div class="step-label">${stepLabel("Hvordan vil du løse?")}</div>
         <div class="modes">
           <button class="mode ${ui.mode === "practice" ? "on" : ""}" data-action="mode" data-mode="practice"><strong>Øving</strong><span>Se med en gang om svaret er riktig, og les løsningsforslaget.</span></button>
           <button class="mode ${ui.mode === "contest" ? "on" : ""}" data-action="mode" data-mode="contest"><strong>Konkurranse</strong><span>Som den ekte konkurransen: svar på alt, få poengene til slutt.</span></button>
@@ -226,6 +253,7 @@
     if (!ui.setId || busy) return;
     busy = true;
     try {
+      local.set("source", ui.source);
       local.set("level", ui.level);
       local.set("mode", ui.mode);
       openAttempt(await api("POST", "/api/attempts", { setId: ui.setId, mode: ui.mode }));
@@ -241,8 +269,48 @@
     renderQuiz();
   }
 
+  // ---------- Felles visning av oppgaver ----------
+  // Video lastes først ved trykk (raskere side og ingen YouTube-sporing før man velger å se)
+  function videoBlock(video) {
+    if (!video) return "";
+    const id = esc(video.youtubeId);
+    return `
+      <div class="video" data-yt="${id}">
+        <button class="video-start" data-action="play-video" style="background-image:url('https://i.ytimg.com/vi/${id}/hqdefault.jpg')">
+          <span class="play" aria-hidden="true">▶</span>
+          <span class="video-label"><strong>Se videoen</strong><span>${esc(video.title)}</span></span>
+        </button>
+      </div>`;
+  }
+
+  function promptBlock(task) {
+    if (task.text) return `<div class="task text-task"><p class="question">${esc(task.text)}</p></div>`;
+    return `<div class="task">${task.images.map((src) => `<img src="${esc(src)}" alt="Oppgave ${task.n}">`).join("")}</div>
+      <p class="zoom-hint">Trykk på bildet for å forstørre</p>`;
+  }
+
+  function solutionBlock(task) {
+    const imgs = task.solution?.length ? `<div class="task">${task.solution.map((src) => `<img src="${esc(src)}" alt="Løsningsforslag til oppgave ${task.n}">`).join("")}</div>` : "";
+    const text = task.solutionText ? `<div class="task text-task"><p>${esc(task.solutionText)}</p></div>` : "";
+    return imgs + text;
+  }
+
+  // Svarknapper: bare bokstaver når alternativene står i bildet, ellers en liste med tekst
+  function answerButtons(task, classFor, disabled) {
+    if (task.choices) {
+      return `<div class="choices" role="group" aria-label="Svaralternativer">
+        ${task.options.map((L) => `<button class="choice ${classFor(L)}" data-action="answer" data-l="${esc(L)}" ${disabled ? "disabled" : ""}>
+          <span class="key">${esc(L)}</span><span class="choice-text">${esc(task.choices[L] ?? "")}</span></button>`).join("")}
+      </div>`;
+    }
+    return `<div class="answers" role="group" aria-label="Svaralternativer">
+      ${task.options.map((L) => `<button class="answer ${classFor(L)}" data-action="answer" data-l="${esc(L)}" ${disabled ? "disabled" : ""}>${esc(L)}</button>`).join("")}
+    </div>`;
+  }
+
   // ---------- Oppgaver ----------
   const elapsed = () => clock.base + (document.hidden ? 0 : (Date.now() - clock.since) / 1000);
+  let renderedIndex = -1;
 
   function renderQuiz() {
     const a = attempt;
@@ -260,13 +328,13 @@
       return c;
     };
     const answerClass = (L) => {
-      if (!locked) return L === task.answer ? "answer chosen" : "answer";
-      if (L === task.correctAnswer) return "answer right";
-      if (L === task.answer) return "answer wrong";
-      return "answer";
+      if (!locked) return L === task.answer ? "chosen" : "";
+      if (L === task.correctAnswer) return "right";
+      if (L === task.answer) return "wrong";
+      return "";
     };
 
-    app.innerHTML = `
+    const top = `
       <div class="quiz-head">
         <span class="quiz-title">${esc(a.title)}</span>
         <span class="pill">${practice ? "Øving" : "Konkurranse"}</span>
@@ -277,28 +345,25 @@
 
       <div class="dots" aria-label="Oppgaver">
         ${a.tasks.map((t, k) => `<button class="${dotClass(t, k)}" data-action="goto" data-i="${k}" aria-label="Oppgave ${t.n}">${t.n}</button>`).join("")}
-      </div>
+      </div>`;
 
+    const body = `
       <div class="row" style="margin-bottom:10px">
         <strong>Oppgave ${task.n} av ${total}</strong>
         <span class="pill points">${task.points} poeng</span>
       </div>
 
-      <div class="task">${task.images.map((src) => `<img src="${esc(src)}" alt="Oppgave ${task.n}">`).join("")}</div>
-      <p class="zoom-hint">Trykk på bildet for å forstørre</p>
-
-      <div class="answers" role="group" aria-label="Svaralternativer">
-        ${task.options.map((L) => `<button class="${answerClass(L)}" data-action="answer" data-l="${esc(L)}" ${locked ? "disabled" : ""}>${esc(L)}</button>`).join("")}
-      </div>
+      ${promptBlock(task)}
+      ${answerButtons(task, answerClass, locked)}
 
       ${locked ? `
         <div class="feedback ${task.isCorrect ? "right" : "wrong"}">
           ${task.isCorrect ? `Riktig! Du fikk ${task.points} poeng. 🎉` : `Ikke helt. Riktig svar er ${esc(task.correctAnswer)}.`}
         </div>
-        ${task.solution?.length ? `
+        ${solutionBlock(task) ? `
           <details class="solution" ${task.isCorrect ? "" : "open"}>
             <summary>Vis løsningsforslag</summary>
-            <div class="task">${task.solution.map((src) => `<img src="${esc(src)}" alt="Løsningsforslag til oppgave ${task.n}">`).join("")}</div>
+            ${solutionBlock(task)}
           </details>` : ""}` : ""}
 
       <div class="nav">
@@ -309,8 +374,22 @@
       </div>
       <p class="hint hide-sm">Tips: Trykk <kbd>A</kbd>–<kbd>E</kbd> for å svare og <kbd>←</kbd> <kbd>→</kbd> for å bla.</p>`;
 
+    // Samme video som sist: behold videospilleren, så avspillingen ikke starter på nytt
+    const yt = task.video?.youtubeId ?? "";
+    const videoBox = document.getElementById("quiz-video");
+    if (videoBox && videoBox.dataset.attempt === a.id && videoBox.dataset.yt === yt) {
+      document.getElementById("quiz-top").innerHTML = top;
+      document.getElementById("quiz-body").innerHTML = body;
+      if (renderedIndex !== i) document.getElementById("quiz-body").scrollIntoView({ block: "nearest" });
+    } else {
+      app.innerHTML = `
+        <div id="quiz-top">${top}</div>
+        <div id="quiz-video" data-attempt="${esc(a.id)}" data-yt="${esc(yt)}">${videoBlock(task.video)}</div>
+        <div id="quiz-body">${body}</div>`;
+      window.scrollTo({ top: 0 });
+    }
+    renderedIndex = i;
     startTimer();
-    window.scrollTo({ top: 0 });
   }
 
   async function answer(letter) {
@@ -405,8 +484,10 @@
             <span class="pill">Ditt svar: <strong>${esc(t.answer || "–")}</strong></span>
             <span class="pill">Riktig: <strong>${esc(t.correctAnswer)}</strong></span>
           </div>
-          <div class="task">${t.images.map((src) => `<img src="${esc(src)}" alt="Oppgave ${t.n}">`).join("")}</div>
-          ${t.solution?.length ? `<h2>Løsningsforslag</h2><div class="task">${t.solution.map((src) => `<img src="${esc(src)}" alt="Løsningsforslag">`).join("")}</div>` : ""}
+          ${videoBlock(t.video)}
+          ${promptBlock(t)}
+          ${t.choices ? answerButtons(t, (L) => (L === t.correctAnswer ? "right" : L === t.answer ? "wrong" : ""), true) : ""}
+          ${solutionBlock(t) ? `<h2>Løsningsforslag</h2>${solutionBlock(t)}` : ""}
         </section>` : ""}`;
 
     if (t) document.getElementById("review-task").scrollIntoView({ behavior: "smooth", block: "start" });
@@ -533,6 +614,7 @@
         case "copy-code":
           try { await navigator.clipboard.writeText(session.group.code); toast("Koden er kopiert"); } catch { toast("Koden er " + session.group.code); }
           break;
+        case "source": ui.source = d.source; ui.level = null; ui.setId = null; await renderHome(); break;
         case "level": ui.level = d.level; ui.setId = null; await renderHome(); break;
         case "set": ui.setId = d.set; await renderHome(); break;
         case "mode": ui.mode = d.mode; await renderHome(); break;
@@ -546,13 +628,21 @@
           }
           break;
         case "answer": await answer(d.l); break;
+        case "play-video": {
+          const box = el.closest(".video");
+          const id = encodeURIComponent(box.dataset.yt);
+          box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&modestbranding=1"
+            title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>`;
+          break;
+        }
         case "goto": go(+d.i); break;
         case "prev": go(current - 1); break;
         case "next": go(current + 1); break;
         case "finish": await finish(); break;
         case "retry": {
           const s = setById(d.set);
-          if (s) { ui.setId = s.id; ui.level = s.level; ui.mode = d.mode || ui.mode; await start(); }
+          if (s) { ui.setId = s.id; ui.source = s.source; ui.level = s.level; ui.mode = d.mode || ui.mode; await start(); }
           break;
         }
         case "review": if (lastResult) renderResult(lastResult, +d.i); break;
@@ -562,7 +652,7 @@
   });
 
   document.addEventListener("keydown", (e) => {
-    if (!attempt || !document.querySelector(".answers")) return;
+    if (!attempt || !document.querySelector(".answers, .choices")) return;
     if (e.target.matches("input, textarea, select") || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key.toUpperCase();
     if (attempt.tasks[current].options.includes(k)) { e.preventDefault(); answer(k); }

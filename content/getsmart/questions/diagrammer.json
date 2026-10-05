@@ -1,0 +1,346 @@
+{
+ "slug": "diagrammer",
+ "videos": [
+  {
+   "code": "00304",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er statistikk?",
+     "choices": {
+      "A": "Regning med bokstaver",
+      "B": "Å samle inn, ordne og tolke data",
+      "C": "Læren om figurer og vinkler",
+      "D": "Å gjette hva som skjer i framtiden",
+      "E": "Bare det å tegne diagrammer"
+     },
+     "answer": "B",
+     "explanation": "Statistikk handler om å samle inn data, ordne dem i tabeller og diagrammer og tolke hva de forteller."
+    },
+    {
+     "points": 4,
+     "text": "Et linjediagram viser antall besøkende på et bibliotek en uke: mandag 120, tirsdag 95, onsdag 140, torsdag 110 og fredag 150. Mellom hvilke to dager som kommer etter hverandre, er økningen størst?",
+     "choices": {
+      "A": "Fra tirsdag til onsdag",
+      "B": "Fra torsdag til fredag",
+      "C": "Fra onsdag til torsdag",
+      "D": "Fra mandag til tirsdag",
+      "E": "Fra mandag til fredag"
+     },
+     "answer": "A",
+     "explanation": "Økningene er tirsdag–onsdag: 140 − 95 = 45 og torsdag–fredag: 150 − 110 = 40. De andre endringene er nedganger. Størst økning er fra tirsdag til onsdag."
+    }
+   ]
+  },
+  {
+   "code": "00305",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Skostørrelsene i en gruppe er: 38, 39, 38, 40, 41, 38, 39, 40. Hva er frekvensen til skostørrelse 38?",
+     "choices": {
+      "A": "1",
+      "B": "8",
+      "C": "38",
+      "D": "3",
+      "E": "2"
+     },
+     "answer": "D",
+     "explanation": "Frekvensen er hvor mange ganger verdien forekommer. 38 forekommer 3 ganger."
+    },
+    {
+     "points": 4,
+     "text": "En frekvenstabell viser antall søsken: 0 søsken: 4 elever. 1 søsken: 9 elever. 2 søsken: 7 elever. 3 søsken: 3 elever. 4 søsken: 1 elev. Hvor mange elever er med, og hvor mange søsken har de til sammen?",
+     "choices": {
+      "A": "24 elever, 10 søsken",
+      "B": "10 elever, 24 søsken",
+      "C": "5 elever, 24 søsken",
+      "D": "24 elever, 24 søsken",
+      "E": "24 elever, 36 søsken"
+     },
+     "answer": "E",
+     "explanation": "Antall elever er summen av frekvensene: 4 + 9 + 7 + 3 + 1 = 24. Antall søsken: 0·4 + 1·9 + 2·7 + 3·3 + 4·1 = 36."
+    }
+   ]
+  },
+  {
+   "code": "00306",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I et sektordiagram utgjør en gruppe 25 % av dataene. Hvor stor vinkel får sektoren til denne gruppen?",
+     "choices": {
+      "A": "25°",
+      "B": "90°",
+      "C": "45°",
+      "D": "100°",
+      "E": "75°"
+     },
+     "answer": "B",
+     "explanation": "En hel sirkel er 360°. 25 % av 360° er 0,25 · 360° = 90°."
+    },
+    {
+     "points": 4,
+     "text": "Målene til et håndballag i en kamp: Ida 6, Nora 4, Sofie 3, Thea 2 og Maja 3. Du lager et sektordiagram over hvem som skåret. Hvor stor vinkel får sektoren til Ida?",
+     "choices": {
+      "A": "60°",
+      "B": "33°",
+      "C": "120°",
+      "D": "6°",
+      "E": "108°"
+     },
+     "answer": "C",
+     "explanation": "Laget skåret 6 + 4 + 3 + 2 + 3 = 18 mål. Ida har 6/18 = 1/3 av målene, og 1/3 av 360° er 120°."
+    }
+   ]
+  },
+  {
+   "code": "00307",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I et regneark står navnene på kategoriene i A2:A6 og frekvensene i B2:B6. Hvilket område bør du markere før du setter inn et sektordiagram, slik at sektorene får riktige navn?",
+     "choices": {
+      "A": "B2:B6",
+      "B": "A2:A6",
+      "C": "A1:A6",
+      "D": "A2:B6",
+      "E": "B1:B2"
+     },
+     "answer": "D",
+     "explanation": "Du markerer både navnene (kolonne A) og frekvensene (kolonne B), altså A2:B6."
+    },
+    {
+     "points": 4,
+     "text": "Frekvensene står i B2:B6, og summen står i B7. I kolonne C vil du regne ut gradtallet til hver sektor. Du skriver én formel i C2 og kopierer den ned til C6. Hvilken formel bør stå i C2?",
+     "choices": {
+      "A": "=B2/$B$7*360",
+      "B": "=B2/B7*360",
+      "C": "=B2*360",
+      "D": "=B7/B2*360",
+      "E": "=$B$2/B7*360"
+     },
+     "answer": "A",
+     "explanation": "Gradtallet er frekvens : sum · 360. Summen må låses med $B$7, ellers flytter referansen seg nedover når formelen kopieres."
+    }
+   ]
+  },
+  {
+   "code": "00308",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva viser en formelutskrift av et regneark?",
+     "choices": {
+      "A": "Formlene i stedet for svarene",
+      "B": "Bare diagrammene",
+      "C": "Svarene uten formler",
+      "D": "Bare tallene i kolonne A",
+      "E": "Arket lagret som bilde"
+     },
+     "answer": "A",
+     "explanation": "I en formelutskrift ser man formlene som står i cellene, slik at andre kan se hvordan svarene er regnet ut."
+    },
+    {
+     "points": 4,
+     "text": "En formelutskrift viser: B2:B6 inneholder tallene 5, 8, 3, 4 og 10. I B7 står =SUMMER(B2:B6), og i C2 står =B2/$B$7. Hvilken verdi vises i C2 i vanlig visning (avrundet til to desimaler)?",
+     "choices": {
+      "A": "30",
+      "B": "6",
+      "C": "0,5",
+      "D": "5",
+      "E": "≈ 0,17"
+     },
+     "answer": "E",
+     "explanation": "B7 blir 5 + 8 + 3 + 4 + 10 = 30. C2 blir 5 : 30 ≈ 0,17."
+    }
+   ]
+  },
+  {
+   "code": "00309",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilke data passer best å vise i et linjediagram?",
+     "choices": {
+      "A": "Favorittfargene til elevene",
+      "B": "Temperaturen hver måned i ett år",
+      "C": "Hvor mange som stemte på hvert parti",
+      "D": "Hvilke kjæledyr elevene har",
+      "E": "Hvilket fag elevene liker best"
+     },
+     "answer": "B",
+     "explanation": "Linjediagram brukes særlig når vi vil vise hvordan noe endrer seg over tid, for eksempel temperatur måned for måned."
+    },
+    {
+     "points": 4,
+     "text": "Gjennomsnittstemperaturen (°C) i en by: januar −4, februar −3, mars 1, april 6, mai 12, juni 15. Dataene vises i et linjediagram. Hvor mye stiger temperaturen fra februar til juni, og mellom hvilke to måneder stiger linjen brattest?",
+     "choices": {
+      "A": "12 grader, april–mai",
+      "B": "18 grader, mai–juni",
+      "C": "18 grader, april–mai",
+      "D": "12 grader, februar–mars",
+      "E": "19 grader, januar–juni"
+     },
+     "answer": "C",
+     "explanation": "Fra februar til juni: 15 − (−3) = 18 grader. Den største økningen fra én måned til neste er april–mai: 12 − 6 = 6 grader."
+    }
+   ]
+  },
+  {
+   "code": "00310",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et linjediagram har to linjer, én for nedbøren i Bergen og én for nedbøren i Oslo, måned for måned. Hva er den viktigste fordelen med å vise begge i samme diagram?",
+     "choices": {
+      "A": "Gjennomsnittet vises automatisk",
+      "B": "Man trenger ingen tegnforklaring",
+      "C": "Linjene kan ikke krysse hverandre",
+      "D": "Det er lett å sammenligne byene",
+      "E": "Det viser prosentfordelingen"
+     },
+     "answer": "D",
+     "explanation": "Når flere datasett står i samme linjediagram (med tegnforklaring), kan vi lett sammenligne utviklingen."
+    },
+    {
+     "points": 4,
+     "text": "Et linjediagram viser issalget (antall) for to kiosker. Kiosk A: mai 200, juni 350, juli 500, august 300. Kiosk B: mai 250, juni 280, juli 450, august 400. I hvilken måned er forskjellen mellom kioskene størst, og hvor stor er den?",
+     "choices": {
+      "A": "Juli, 950 is",
+      "B": "August, 100 is",
+      "C": "Juni, 70 is",
+      "D": "Juli, 50 is",
+      "E": "Mai, 50 is"
+     },
+     "answer": "B",
+     "explanation": "Forskjellene er mai 50, juni 70, juli 50 og august 100. Størst er august med 400 − 300 = 100 is."
+    }
+   ]
+  },
+  {
+   "code": "00311",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva viser høyden på hver søyle i et søylediagram?",
+     "choices": {
+      "A": "Hvor mange kategorier det er",
+      "B": "Rekkefølgen dataene kom i",
+      "C": "Vinkelen i grader",
+      "D": "Verdien eller frekvensen til kategorien",
+      "E": "Bredden på klassen"
+     },
+     "answer": "D",
+     "explanation": "I et søylediagram har hver kategori sin søyle, og høyden viser verdien eller frekvensen."
+    },
+    {
+     "points": 5,
+     "text": "Et søylediagram viser månedslønn: sykepleier 52 000 kr, lærer 56 000 kr, elektriker 49 000 kr og frisør 38 000 kr. Den loddrette aksen starter på 30 000 kr i stedet for 0. Hvor mange ganger så høy blir lærersøylen som frisørsøylen i diagrammet?",
+     "choices": {
+      "A": "≈ 1,47",
+      "B": "18",
+      "C": "3,25",
+      "D": "2",
+      "E": "0,31"
+     },
+     "answer": "C",
+     "explanation": "Lærersøylen går fra 30 000 til 56 000, altså 26 000 høy. Frisørsøylen er 38 000 − 30 000 = 8 000 høy. 26 000 : 8 000 = 3,25, selv om lønna bare er om lag 1,47 ganger så stor."
+    }
+   ]
+  },
+  {
+   "code": "00312",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Høyden til elevene i en klasse er delt inn i klassene 150–160 cm, 160–170 cm og 170–180 cm. Hva er klassebredden?",
+     "choices": {
+      "A": "10 cm",
+      "B": "150 cm",
+      "C": "30 cm",
+      "D": "3 cm",
+      "E": "5 cm"
+     },
+     "answer": "A",
+     "explanation": "Klassebredden er øvre grense minus nedre grense: 160 − 150 = 10 cm."
+    },
+    {
+     "points": 4,
+     "text": "I et histogram er høyden til hver søyle lik relativ frekvens : klassebredde. Av 50 elever har 20 en høyde i klassen 160–170 cm. Hvor høy blir søylen for denne klassen?",
+     "choices": {
+      "A": "0,4",
+      "B": "2",
+      "C": "4",
+      "D": "0,004",
+      "E": "0,04"
+     },
+     "answer": "E",
+     "explanation": "Relativ frekvens = 20 : 50 = 0,4. Klassebredden er 10, så høyden blir 0,4 : 10 = 0,04."
+    }
+   ]
+  },
+  {
+   "code": "00313",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Høydene står i A2:A41. Hvilken formel teller hvor mange verdier som er større enn eller lik 160 og mindre enn 170?",
+     "choices": {
+      "A": "=ANTALL.HVIS(A2:A41;\"<170\")",
+      "B": "=ANTALL.HVIS.SETT(A2:A41;\">160\";A2:A41;\"<=170\")",
+      "C": "=SUMMER(A2:A41;160;170)",
+      "D": "=ANTALL(A2:A41)",
+      "E": "=ANTALL.HVIS.SETT(A2:A41;\">=160\";A2:A41;\"<170\")"
+     },
+     "answer": "E",
+     "explanation": "ANTALL.HVIS.SETT teller celler som oppfyller flere krav samtidig. Kravene \">=160\" og \"<170\" gir klassen fra og med 160 til 170."
+    },
+    {
+     "points": 4,
+     "text": "Vekten (kg) til 12 hunder: 8, 12, 15, 20, 9, 18, 25, 10, 14, 27, 19, 6. Du lager et histogram med klassene 0–10, 10–20 og 20–30, der nedre grense er med i klassen og øvre grense ikke er med. Hvilke frekvenser får de tre klassene?",
+     "choices": {
+      "A": "4, 6, 2",
+      "B": "4, 5, 3",
+      "C": "3, 5, 4",
+      "D": "3, 6, 3",
+      "E": "2, 7, 3"
+     },
+     "answer": "D",
+     "explanation": "0–10: 8, 9 og 6 (3 hunder). 10–20: 12, 15, 18, 10, 14 og 19 (6 hunder). 20–30: 20, 25 og 27 (3 hunder). 10 og 20 hører til klassen der de er nedre grense."
+    }
+   ]
+  },
+  {
+   "code": "00314",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Når høyden i et histogram er relativ frekvens : klassebredde, hva viser da arealet av hver søyle?",
+     "choices": {
+      "A": "Klassebredden",
+      "B": "Antall klasser",
+      "C": "Andelen (relativ frekvens) i klassen",
+      "D": "Gjennomsnittet i klassen",
+      "E": "Summen av alle verdiene"
+     },
+     "answer": "C",
+     "explanation": "Areal = høyde · bredde = (relativ frekvens : klassebredde) · klassebredde = relativ frekvens. Derfor blir histogrammet riktig også når klassene er ulike brede."
+    },
+    {
+     "points": 5,
+     "text": "Reisetiden til skolen for 40 elever: 0–10 min: 12 elever, 10–30 min: 20 elever, 30–60 min: 8 elever. Histogrammet bruker høyden relativ frekvens : klassebredde. Hvilken klasse får høyest søyle, og hvor høy blir den?",
+     "choices": {
+      "A": "0–10 min, høyde 0,03",
+      "B": "10–30 min, høyde 0,5",
+      "C": "10–30 min, høyde 0,025",
+      "D": "0–10 min, høyde 0,3",
+      "E": "30–60 min, høyde 0,2"
+     },
+     "answer": "A",
+     "explanation": "0–10: 0,3 : 10 = 0,03. 10–30: 0,5 : 20 = 0,025. 30–60: 0,2 : 30 ≈ 0,0067. Klassen 0–10 min får høyest søyle, selv om 10–30 min har flest elever."
+    }
+   ]
+  }
+ ]
+}

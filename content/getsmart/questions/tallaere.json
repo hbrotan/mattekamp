@@ -1,0 +1,253 @@
+{
+  "slug": "tallaere",
+  "videos": [
+    {
+      "code": "00164",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilken verdi har sifferet 7 i tallet 47 382?",
+          "choices": {
+            "A": "700",
+            "B": "7 000",
+            "C": "70 000",
+            "D": "70",
+            "E": "7"
+          },
+          "answer": "B",
+          "explanation": "Sifferet 7 står på tusenerplassen. Det betyr 7 · 1 000 = 7 000."
+        },
+        {
+          "points": 4,
+          "text": "Hvilket av disse tallene er et irrasjonalt tall?",
+          "choices": {
+            "A": "−5",
+            "B": "0,75",
+            "C": "√2",
+            "D": "⅓",
+            "E": "√16"
+          },
+          "answer": "C",
+          "explanation": "√16 = 4, −5, 0,75 og ⅓ kan alle skrives som en brøk og er rasjonale. √2 kan ikke skrives som en brøk og har uendelig mange desimaler uten mønster."
+        }
+      ]
+    },
+    {
+      "code": "00165",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvordan skrives tallet 3 405 på utvidet form?",
+          "choices": {
+            "A": "3 · 1 000 + 4 · 100 + 5 · 10",
+            "B": "3 · 100 + 4 · 10 + 5 · 1",
+            "C": "3 · 1 000 + 4 · 10 + 5 · 1",
+            "D": "3 · 1 000 + 40 · 100 + 5",
+            "E": "3 · 1 000 + 4 · 100 + 5 · 1"
+          },
+          "answer": "E",
+          "explanation": "3 405 har 3 tusenere, 4 hundrere, 0 tiere og 5 enere. Tierne kan vi sløyfe fordi det er 0 av dem."
+        },
+        {
+          "points": 4,
+          "text": "Et tall er skrevet på utvidet form: 6 · 10 000 + 2 · 1 000 + 9 · 10 + 4 · 1. Hvilket tall er det?",
+          "choices": {
+            "A": "62 940",
+            "B": "6 294",
+            "C": "62 094",
+            "D": "62 904",
+            "E": "620 094"
+          },
+          "answer": "C",
+          "explanation": "Det er 6 titusenere, 2 tusenere, 0 hundrere, 9 tiere og 4 enere. Husk 0 på hundrerplassen: 62 094."
+        }
+      ]
+    },
+    {
+      "code": "00166",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av utsagnene er riktig?",
+          "choices": {
+            "A": "−7 > −3",
+            "B": "0,5 > 0,55",
+            "C": "−7 < −3",
+            "D": "−2 < −10",
+            "E": "3,09 > 3,1"
+          },
+          "answer": "C",
+          "explanation": "På tallinja ligger −7 til venstre for −3, så −7 er minst. Spissen på ulikhetstegnet peker mot det minste tallet."
+        },
+        {
+          "points": 4,
+          "text": "Ordne tallene fra minst til størst: 0,6   −1,5   0,06   −0,8   ½",
+          "choices": {
+            "A": "−0,8; −1,5; 0,06; ½; 0,6",
+            "B": "−1,5; −0,8; 0,06; 0,6; ½",
+            "C": "−1,5; −0,8; 0,06; ½; 0,6",
+            "D": "−1,5; −0,8; ½; 0,06; 0,6",
+            "E": "0,06; ½; 0,6; −0,8; −1,5"
+          },
+          "answer": "C",
+          "explanation": "Negative tall er minst, og −1,5 er mindre enn −0,8. Siden ½ = 0,5, blir rekkefølgen 0,06 < 0,5 < 0,6 for de positive."
+        }
+      ]
+    },
+    {
+      "code": "00167",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket siffer står på hundredelsplassen i tallet 52,387?",
+          "choices": {
+            "A": "3",
+            "B": "7",
+            "C": "8",
+            "D": "5",
+            "E": "2"
+          },
+          "answer": "C",
+          "explanation": "Første desimal er tideler (3), andre desimal er hundredeler (8) og tredje desimal er tusendeler (7)."
+        },
+        {
+          "points": 4,
+          "text": "Hvilket desimaltall er 4 · 10 + 3 · 1 + 0 · 0,1 + 7 · 0,01 + 2 · 0,001?",
+          "choices": {
+            "A": "43,72",
+            "B": "43,702",
+            "C": "4,3072",
+            "D": "430,72",
+            "E": "43,072"
+          },
+          "answer": "E",
+          "explanation": "4 tiere og 3 enere gir 43. Deretter 0 tideler, 7 hundredeler og 2 tusendeler: 43,072."
+        }
+      ]
+    },
+    {
+      "code": "00168",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Rund av 4 862 til nærmeste hundre.",
+          "choices": {
+            "A": "4 800",
+            "B": "4 860",
+            "C": "5 000",
+            "D": "4 900",
+            "E": "4 870"
+          },
+          "answer": "D",
+          "explanation": "Vi ser på tierplassen. Den er 6, som er 5 eller mer, så vi runder opp: 4 862 ≈ 4 900."
+        },
+        {
+          "points": 4,
+          "text": "Hvilket tall blir 7 000 når det rundes av til nærmeste tusen, og 6 500 når det rundes av til nærmeste hundre?",
+          "choices": {
+            "A": "6 449",
+            "B": "6 551",
+            "C": "7 480",
+            "D": "6 538",
+            "E": "6 499"
+          },
+          "answer": "D",
+          "explanation": "6 538 ≈ 7 000 fordi hundrersifferet er 5, og 6 538 ≈ 6 500 fordi tierssifferet er 3. De andre tallene passer bare med én av avrundingene eller ingen."
+        }
+      ]
+    },
+    {
+      "code": "00169",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Rund av 3,476 til én desimal.",
+          "choices": {
+            "A": "3,4",
+            "B": "3,48",
+            "C": "3,47",
+            "D": "3,5",
+            "E": "4"
+          },
+          "answer": "D",
+          "explanation": "Vi ser på andre desimal, som er 7. Den er 5 eller mer, så tidelene rundes opp fra 4 til 5: 3,476 ≈ 3,5."
+        },
+        {
+          "points": 4,
+          "text": "Rund av 12,996 til to desimaler.",
+          "choices": {
+            "A": "12,99",
+            "B": "12,00",
+            "C": "13,10",
+            "D": "13,00",
+            "E": "12,9"
+          },
+          "answer": "D",
+          "explanation": "Tredje desimal er 6, så vi runder opp. 12,99 + 0,01 = 13,00, og vi skriver to desimaler."
+        }
+      ]
+    },
+    {
+      "code": "00177",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av tallene er et oddetall?",
+          "choices": {
+            "A": "2 018",
+            "B": "3 457",
+            "C": "5 790",
+            "D": "1 234",
+            "E": "9 996"
+          },
+          "answer": "B",
+          "explanation": "Et tall er oddetall når siste siffer er 1, 3, 5, 7 eller 9. Bare 3 457 slutter på et slikt siffer."
+        },
+        {
+          "points": 4,
+          "text": "Du legger sammen to oddetall og ganger summen med et oddetall. Hva slags tall får du?",
+          "choices": {
+            "A": "Alltid et oddetall",
+            "B": "Det kommer an på tallene",
+            "C": "Partall bare hvis tallene er like",
+            "D": "Alltid et primtall",
+            "E": "Alltid et partall"
+          },
+          "answer": "E",
+          "explanation": "Oddetall + oddetall gir alltid et partall. Et partall ganget med hva som helst blir et partall."
+        }
+      ]
+    },
+    {
+      "code": "00178",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket av tallene er et primtall?",
+          "choices": {
+            "A": "29",
+            "B": "21",
+            "C": "27",
+            "D": "1",
+            "E": "39"
+          },
+          "answer": "A",
+          "explanation": "21 = 3 · 7, 27 = 3 · 9 og 39 = 3 · 13. Tallet 1 er ikke et primtall. 29 kan bare deles på 1 og seg selv."
+        },
+        {
+          "points": 4,
+          "text": "Hvor mange primtall finnes det mellom 40 og 60?",
+          "choices": {
+            "A": "4",
+            "B": "6",
+            "C": "3",
+            "D": "7",
+            "E": "5"
+          },
+          "answer": "E",
+          "explanation": "Primtallene mellom 40 og 60 er 41, 43, 47, 53 og 59. Det er 5 primtall."
+        }
+      ]
+    }
+  ]
+}

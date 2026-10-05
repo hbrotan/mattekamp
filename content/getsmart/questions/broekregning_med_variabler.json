@@ -1,0 +1,191 @@
+{
+ "slug": "broekregning_med_variabler",
+ "videos": [
+  {
+   "code": "00056",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Forkort brøken (15x³)/(5x)",
+     "choices": {
+      "A": "3x³",
+      "B": "10x²",
+      "C": "3x²",
+      "D": "3x",
+      "E": "x²/3"
+     },
+     "answer": "C",
+     "explanation": "15 : 5 = 3 og x³ : x = x². Svaret blir 3x²."
+    },
+    {
+     "points": 4,
+     "text": "Forkort brøken (3a + 6)/(a² + 2a)",
+     "choices": {
+      "A": "3/a²",
+      "B": "3a",
+      "C": "6/a",
+      "D": "3/(2a)",
+      "E": "3/a"
+     },
+     "answer": "E",
+     "explanation": "Vi faktoriserer først: 3a + 6 = 3(a + 2) og a² + 2a = a(a + 2). Så forkorter vi med (a + 2) og får 3/a."
+    }
+   ]
+  },
+  {
+   "code": "00057",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: 5/a − 2/a",
+     "choices": {
+      "A": "3",
+      "B": "7/a",
+      "C": "3/a",
+      "D": "3/(2a)",
+      "E": "10/a²"
+     },
+     "answer": "C",
+     "explanation": "Lik nevner, så vi trekker fra tellerne og beholder nevneren: (5 − 2)/a = 3/a."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: 3/(2a) − 1/(4a)",
+     "choices": {
+      "A": "1/(2a)",
+      "B": "1/(3a)",
+      "C": "7/(4a)",
+      "D": "5/(8a)",
+      "E": "5/(4a)"
+     },
+     "answer": "E",
+     "explanation": "Fellesnevner er 4a. 3/(2a) = 6/(4a), så vi får 6/(4a) − 1/(4a) = 5/(4a)."
+    }
+   ]
+  },
+  {
+   "code": "00058",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (2x + 1)/3 − (x − 4)/3",
+     "choices": {
+      "A": "(x − 3)/3",
+      "B": "(x + 5)/3",
+      "C": "(3x − 3)/3",
+      "D": "(x − 5)/3",
+      "E": "(x + 5)/6"
+     },
+     "answer": "B",
+     "explanation": "Minus foran brøkstreken gjelder hele telleren: 2x + 1 − (x − 4) = 2x + 1 − x + 4 = x + 5. Svaret blir (x + 5)/3."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut: (2x − 1)/3 + (x + 2)/6",
+     "choices": {
+      "A": "(3x + 1)/9",
+      "B": "(5x + 1)/6",
+      "C": "(3x + 1)/6",
+      "D": "5x/12",
+      "E": "5x/6"
+     },
+     "answer": "E",
+     "explanation": "Fellesnevner 6: (2x − 1)/3 = (4x − 2)/6. Da blir telleren 4x − 2 + x + 2 = 5x, og svaret er 5x/6."
+    }
+   ]
+  },
+  {
+   "code": "00059",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut: (x/2) · (x/5)",
+     "choices": {
+      "A": "2x/10",
+      "B": "x²/7",
+      "C": "2x/7",
+      "D": "x/10",
+      "E": "x²/10"
+     },
+     "answer": "E",
+     "explanation": "Teller ganger teller og nevner ganger nevner: (x · x)/(2 · 5) = x²/10."
+    },
+    {
+     "points": 4,
+     "text": "Regn ut og forkort: (4a²/b) : (2a/b²)",
+     "choices": {
+      "A": "2ab",
+      "B": "8a³/b³",
+      "C": "2a/b",
+      "D": "2ab²",
+      "E": "1/(2ab)"
+     },
+     "answer": "A",
+     "explanation": "Vi ganger med den omvendte brøken: (4a²/b) · (b²/(2a)) = 4a²b²/(2ab). Forkortet blir det 2ab."
+    }
+   ]
+  },
+  {
+   "code": "00060",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Regn ut og forkort: 3/(x + 1) · (x + 1)²/6",
+     "choices": {
+      "A": "2/(x + 1)",
+      "B": "(x + 1)²/2",
+      "C": "18(x + 1)",
+      "D": "(x + 1)/2",
+      "E": "x + 1"
+     },
+     "answer": "D",
+     "explanation": "Vi får 3(x + 1)²/(6(x + 1)). Vi forkorter med 3 og med én faktor (x + 1) og står igjen med (x + 1)/2."
+    },
+    {
+     "points": 5,
+     "text": "Regn ut og forkort: (x² + 6x + 9)/(x² − 9) · (x − 3)/(2x + 6)",
+     "choices": {
+      "A": "½",
+      "B": "2",
+      "C": "(x + 3)/2",
+      "D": "(x − 3)/2",
+      "E": "1/(2(x − 3))"
+     },
+     "answer": "A",
+     "explanation": "Faktoriser: x² + 6x + 9 = (x + 3)², x² − 9 = (x + 3)(x − 3) og 2x + 6 = 2(x + 3). Alle faktorene med x forkortes bort, og igjen står 1/2."
+    }
+   ]
+  },
+  {
+   "code": "00063",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er den minste fellesnevneren for brøkene 2/(x − 3) og 5/(x² − 9)?",
+     "choices": {
+      "A": "(x − 3)(x² − 9)",
+      "B": "x − 3",
+      "C": "x² + 9",
+      "D": "(x − 3)²",
+      "E": "x² − 9"
+     },
+     "answer": "E",
+     "explanation": "x² − 9 = (x + 3)(x − 3) inneholder allerede faktoren (x − 3). Derfor er x² − 9 den minste fellesnevneren."
+    },
+    {
+     "points": 5,
+     "text": "Regn ut og forkort: 2/(x + 2) + 8/(x² − 4)",
+     "choices": {
+      "A": "10/(x² − 4)",
+      "B": "2/(x + 2)",
+      "C": "2/(x − 2)",
+      "D": "(2x + 12)/(x² − 4)",
+      "E": "−2/(x − 2)"
+     },
+     "answer": "C",
+     "explanation": "Fellesnevner (x + 2)(x − 2): (2(x − 2) + 8)/(x² − 4) = (2x + 4)/(x² − 4) = 2(x + 2)/((x + 2)(x − 2)) = 2/(x − 2)."
+    }
+   ]
+  }
+ ]
+}

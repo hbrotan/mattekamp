@@ -1,0 +1,160 @@
+{
+ "slug": "teoretisk_sannsynlighet",
+ "videos": [
+  {
+   "code": "00278",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Sannsynligheten for en hendelse er alltid et tall fra og med 0 til og med 1. Hvilket av tallene nedenfor kan IKKE være en sannsynlighet?",
+     "choices": {
+      "A": "0",
+      "B": "1,2",
+      "C": "1",
+      "D": "0,35",
+      "E": "3/4"
+     },
+     "answer": "B",
+     "explanation": "En sannsynlighet ligger alltid mellom 0 (umulig) og 1 (helt sikkert). 1,2 er større enn 1 og kan derfor ikke være en sannsynlighet."
+    },
+    {
+     "points": 4,
+     "text": "Tre hendelser: P: Du får kron eller mynt når du kaster en mynt. Q: Du får en sekser på en vanlig terning. R: Du får et tall større enn 6 på en vanlig terning. Ordne hendelsene fra minst til størst sannsynlighet.",
+     "choices": {
+      "A": "P, Q, R",
+      "B": "Q, R, P",
+      "C": "R, P, Q",
+      "D": "Q, P, R",
+      "E": "R, Q, P"
+     },
+     "answer": "E",
+     "explanation": "R er umulig (sannsynlighet 0), Q har sannsynlighet 1/6, og P er helt sikker (sannsynlighet 1). Rekkefølgen blir R, Q, P."
+    }
+   ]
+  },
+  {
+   "code": "00279",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva er den teoretiske sannsynligheten for å få en treer når du kaster en vanlig terning én gang? Svar som brøk.",
+     "choices": {
+      "A": "1/3",
+      "B": "1/2",
+      "C": "1/5",
+      "D": "1/6",
+      "E": "5/6"
+     },
+     "answer": "D",
+     "explanation": "Det er 6 like sannsynlige utfall, og bare ett av dem er en treer. P(treer) = 1/6."
+    },
+    {
+     "points": 4,
+     "text": "Mia kaster en vanlig terning 60 ganger og får sekser 14 ganger. Hvilken påstand er riktig? (Brøkene er forkortet.)",
+     "choices": {
+      "A": "Eksperimentell 1/6, teoretisk 7/30",
+      "B": "Eksperimentell 7/30, teoretisk 7/30",
+      "C": "Eksperimentell 7/30, teoretisk 1/6",
+      "D": "Eksperimentell 7/23, teoretisk 1/6",
+      "E": "Eksperimentell 1/14, teoretisk 1/6"
+     },
+     "answer": "C",
+     "explanation": "Den eksperimentelle sannsynligheten bygger på forsøket: 14/60 = 7/30. Den teoretiske bygger på like sannsynlige utfall: 1/6."
+    }
+   ]
+  },
+  {
+   "code": "00280",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I en bøtte ligger 3 røde, 5 blå og 2 gule baller. Du trekker én ball uten å se. Hvor mange mulige utfall er det, og hvor mange av dem er gunstige for hendelsen «blå ball»?",
+     "choices": {
+      "A": "10 mulige, 5 gunstige",
+      "B": "3 mulige, 1 gunstig",
+      "C": "5 mulige, 10 gunstige",
+      "D": "10 mulige, 1 gunstig",
+      "E": "8 mulige, 5 gunstige"
+     },
+     "answer": "A",
+     "explanation": "Hver ball er et mulig utfall, altså 3 + 5 + 2 = 10 mulige. De 5 blå ballene er gunstige for hendelsen «blå ball»."
+    },
+    {
+     "points": 4,
+     "text": "En pose inneholder 4 jordbærdrops, 6 sitrondrops og 5 lakrisdrops. Du trekker én drops tilfeldig. Hva er sannsynligheten for at den IKKE smaker sitron? Svar som brøk.",
+     "choices": {
+      "A": "3/5",
+      "B": "2/5",
+      "C": "1/3",
+      "D": "9/16",
+      "E": "4/15"
+     },
+     "answer": "A",
+     "explanation": "Det er 4 + 6 + 5 = 15 mulige utfall. Gunstige er alle som ikke er sitron: 4 + 5 = 9. P = 9/15 = 3/5."
+    }
+   ]
+  },
+  {
+   "code": "00281",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et lykkehjul er delt i 8 like store felt. 3 felt gir gevinst, resten gir ingen gevinst. Du snurrer én gang. Hva er sannsynligheten for IKKE å få gevinst? Svar som brøk.",
+     "choices": {
+      "A": "3/8",
+      "B": "5/3",
+      "C": "1/5",
+      "D": "3/5",
+      "E": "5/8"
+     },
+     "answer": "E",
+     "explanation": "Det er 8 mulige utfall, og 8 − 3 = 5 felt er gunstige for hendelsen «ingen gevinst». P = 5/8."
+    },
+    {
+     "points": 4,
+     "text": "Et lykkehjul har 12 like store felt: 1 felt gir 100 kr, 2 felt gir 50 kr, 3 felt gir 10 kr, og resten gir ingenting. Hva er sannsynligheten for at du får mindre enn 50 kr på ett snurr? Svar som brøk.",
+     "choices": {
+      "A": "1/4",
+      "B": "1/2",
+      "C": "3/4",
+      "D": "11/12",
+      "E": "2/3"
+     },
+     "answer": "C",
+     "explanation": "Feltene med ingenting (12 − 1 − 2 − 3 = 6) og med 10 kr (3) er gunstige, til sammen 9. P = 9/12 = 3/4. «Gunstig» betyr bare at utfallet passer hendelsen."
+    }
+   ]
+  },
+  {
+   "code": "00282",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Sannsynligheten for at det regner i morgen er 0,35. Hva er sannsynligheten for at det IKKE regner i morgen?",
+     "choices": {
+      "A": "0,35",
+      "B": "1,35",
+      "C": "0,5",
+      "D": "0,65",
+      "E": "0,55"
+     },
+     "answer": "D",
+     "explanation": "«Regn» og «ikke regn» er komplementære hendelser, så sannsynlighetene har sum 1. P(ikke regn) = 1 − 0,35 = 0,65."
+    },
+    {
+     "points": 4,
+     "text": "En vanlig kortstokk har 52 kort. 12 av dem er bildekort (knekt, dame og konge). Du trekker ett kort. Bruk komplementære hendelser og finn sannsynligheten for at kortet IKKE er et bildekort. Svar som brøk.",
+     "choices": {
+      "A": "3/13",
+      "B": "10/13",
+      "C": "12/13",
+      "D": "9/13",
+      "E": "1/12"
+     },
+     "answer": "B",
+     "explanation": "P(bildekort) = 12/52 = 3/13. Den komplementære hendelsen får P = 1 − 3/13 = 10/13."
+    }
+   ]
+  }
+ ]
+}

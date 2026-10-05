@@ -83,7 +83,8 @@ export function createApp(ready: Promise<Db>, config: Config) {
   };
   const loginLimit = rateLimit(30, 10 * 60_000, clientIp);
 
-  app.use("*", secureHeaders({ crossOriginResourcePolicy: "same-origin" }));
+  // YouTube-innbygging krever at nettleseren sender opphavet (Referer) – «no-referrer» gir feil 153
+  app.use("*", secureHeaders({ crossOriginResourcePolicy: "same-origin", referrerPolicy: "strict-origin-when-cross-origin" }));
 
   app.onError((err, c) => {
     if (err instanceof HTTPException) return c.json({ error: err.message }, err.status);
@@ -162,14 +163,14 @@ export function createApp(ready: Promise<Db>, config: Config) {
   app.get("/api/sets", auth, async (c) => {
     const me = c.get("player");
     const rows = await db.query`
-      select s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year,
+      select s.id, s.source, s.source_name, s.title, s.level, s.level_name, s.grades, s.year,
              count(t.id) as task_count, sum(t.points) as max_points,
              (select max(a.points) from attempts a
                where a.set_id = s.id and a.player_id = ${me.id} and a.finished_at is not null) as my_best
       from task_sets s
       join tasks t on t.set_id = s.id
       where s.active = 1
-      group by s.id, s.source, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key
+      group by s.id, s.source, s.source_name, s.title, s.level, s.level_name, s.grades, s.year, s.sort_key
       order by s.source, s.year desc, s.sort_key`;
     return c.json(rows);
   });
@@ -217,19 +218,25 @@ export function createApp(ready: Promise<Db>, config: Config) {
   }
 
   function taskView(t: TaskRow, mine: { answer: string; isCorrect: boolean } | undefined, reveal: boolean) {
-    const prompt = JSON.parse(t.prompt) as { images: string[] };
-    const solution = t.solution ? (JSON.parse(t.solution) as { images: string[] }) : null;
+    const prompt = JSON.parse(t.prompt) as {
+      images?: string[]; text?: string; choices?: Record<string, string>; video?: { youtubeId: string; title: string };
+    };
+    const solution = t.solution ? (JSON.parse(t.solution) as { images?: string[]; text?: string }) : null;
     return {
       n: t.n,
       kind: t.kind,
       points: t.points,
       options: t.options ? (JSON.parse(t.options) as string[]) : null,
-      images: prompt.images.map(assetUrl),
+      images: (prompt.images ?? []).map(assetUrl),
+      text: prompt.text ?? null,
+      choices: prompt.choices ?? null,
+      video: prompt.video ?? null,
       answer: mine?.answer ?? null,
       ...(reveal ? {
         isCorrect: mine ? mine.isCorrect : false,
         correctAnswer: t.answer,
         solution: (solution?.images ?? []).map(assetUrl),
+        solutionText: solution?.text ?? null,
       } : {}),
     };
   }

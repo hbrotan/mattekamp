@@ -1,0 +1,222 @@
+{
+  "slug": "kvadratsetningene",
+  "videos": [
+    {
+      "code": "00051",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Bruk første kvadratsetning, (a + b)² = a² + 2ab + b². Hva blir (x + 5)²?",
+          "choices": {
+            "A": "x² + 25",
+            "B": "x² + 5x + 25",
+            "C": "x² + 10x + 10",
+            "D": "x² + 10x + 25",
+            "E": "2x + 10"
+          },
+          "answer": "D",
+          "explanation": "Med a = x og b = 5 får vi x² + 2·x·5 + 5² = x² + 10x + 25. Husk det doble produktet 2ab i midten."
+        },
+        {
+          "points": 4,
+          "text": "Skriv (2a + 3b)² uten parentes ved hjelp av første kvadratsetning.",
+          "choices": {
+            "A": "4a² + 6ab + 9b²",
+            "B": "2a² + 12ab + 3b²",
+            "C": "4a² + 9b²",
+            "D": "4a² + 12ab + 6b²",
+            "E": "4a² + 12ab + 9b²"
+          },
+          "answer": "E",
+          "explanation": "(2a)² = 4a², 2·2a·3b = 12ab og (3b)² = 9b². Til sammen 4a² + 12ab + 9b²."
+        }
+      ]
+    },
+    {
+      "code": "00052",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Bruk andre kvadratsetning, (a − b)² = a² − 2ab + b². Hva blir (x − 4)²?",
+          "choices": {
+            "A": "x² − 8x + 16",
+            "B": "x² − 16",
+            "C": "x² + 8x + 16",
+            "D": "x² − 8x − 16",
+            "E": "x² − 4x + 16"
+          },
+          "answer": "A",
+          "explanation": "x² − 2·x·4 + 4² = x² − 8x + 16. Det siste leddet er positivt fordi (−4)² = 16."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 99² i hodet ved å skrive 99 = 100 − 1 og bruke andre kvadratsetning.",
+          "choices": {
+            "A": "9999",
+            "B": "9800",
+            "C": "9701",
+            "D": "9811",
+            "E": "9801"
+          },
+          "answer": "E",
+          "explanation": "(100 − 1)² = 100² − 2·100·1 + 1² = 10 000 − 200 + 1 = 9801."
+        }
+      ]
+    },
+    {
+      "code": "00053",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Forenkle uttrykket (x + 3)² − x².",
+          "choices": {
+            "A": "9",
+            "B": "6x",
+            "C": "x² + 6x + 9",
+            "D": "6x + 9",
+            "E": "2x² + 6x + 9"
+          },
+          "answer": "D",
+          "explanation": "(x + 3)² = x² + 6x + 9. Trekker vi fra x², står vi igjen med 6x + 9."
+        },
+        {
+          "points": 4,
+          "text": "Forenkle uttrykket (a + 2)² − (a − 2)² + (a + 2)(a − 2).",
+          "choices": {
+            "A": "a² − 4",
+            "B": "a² + 8a + 4",
+            "C": "3a² + 4",
+            "D": "a² + 8a − 4",
+            "E": "a² + 4a − 4"
+          },
+          "answer": "D",
+          "explanation": "(a² + 4a + 4) − (a² − 4a + 4) = 8a, og (a + 2)(a − 2) = a² − 4. Summen blir a² + 8a − 4."
+        }
+      ]
+    },
+    {
+      "code": "00054",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Faktoriser uttrykket x² + 6x + 9 ved hjelp av en kvadratsetning.",
+          "choices": {
+            "A": "(x − 3)²",
+            "B": "(x + 9)²",
+            "C": "(x + 3)(x − 3)",
+            "D": "(x + 6)(x + 3)",
+            "E": "(x + 3)²"
+          },
+          "answer": "E",
+          "explanation": "x² + 6x + 9 = x² + 2·x·3 + 3², som er første kvadratsetning med a = x og b = 3."
+        },
+        {
+          "points": 4,
+          "text": "Faktoriser 3x² − 12x + 12 så langt som mulig.",
+          "choices": {
+            "A": "3(x − 4)²",
+            "B": "3(x − 2)²",
+            "C": "(3x − 2)²",
+            "D": "3(x + 2)(x − 2)",
+            "E": "(x − 2)²"
+          },
+          "answer": "B",
+          "explanation": "Sett 3 utenfor: 3(x² − 4x + 4). Parentesen er andre kvadratsetning: x² − 4x + 4 = (x − 2)²."
+        }
+      ]
+    },
+    {
+      "code": "00061",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Bruk konjugatsetningen, (a + b)(a − b) = a² − b². Hva blir (x + 7)(x − 7)?",
+          "choices": {
+            "A": "x² + 49",
+            "B": "x² − 49",
+            "C": "x² − 14x − 49",
+            "D": "x² − 14",
+            "E": "x² − 7"
+          },
+          "answer": "B",
+          "explanation": "Med a = x og b = 7 blir produktet x² − 7² = x² − 49. Leddene med 7x opphever hverandre."
+        },
+        {
+          "points": 4,
+          "text": "Regn ut 43 · 37 ved å skrive tallene som (40 + 3) og (40 − 3) og bruke konjugatsetningen.",
+          "choices": {
+            "A": "1609",
+            "B": "1591",
+            "C": "1597",
+            "D": "1581",
+            "E": "1691"
+          },
+          "answer": "B",
+          "explanation": "(40 + 3)(40 − 3) = 40² − 3² = 1600 − 9 = 1591."
+        }
+      ]
+    },
+    {
+      "code": "00062",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Forkort brøken (x² − 9)/(x + 3). Anta at x ≠ −3.",
+          "choices": {
+            "A": "x + 3",
+            "B": "x − 9",
+            "C": "x − 3",
+            "D": "x² − 3",
+            "E": "(x − 3)/(x + 3)"
+          },
+          "answer": "C",
+          "explanation": "Telleren er x² − 9 = (x + 3)(x − 3) etter konjugatsetningen. Vi forkorter med (x + 3) og får x − 3."
+        },
+        {
+          "points": 4,
+          "text": "Forkort brøken (x² + 4x + 4)/(x² − 4). Anta at x ≠ 2 og x ≠ −2.",
+          "choices": {
+            "A": "(x − 2)/(x + 2)",
+            "B": "x + 2",
+            "C": "(x + 2)/(x − 2)",
+            "D": "1",
+            "E": "−x − 1"
+          },
+          "answer": "C",
+          "explanation": "Telleren er (x + 2)² og nevneren er (x + 2)(x − 2). Vi forkorter med én faktor (x + 2) og får (x + 2)/(x − 2)."
+        }
+      ]
+    },
+    {
+      "code": "00064",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Skriv 6/√3 uten rottegn i nevneren og forenklet så langt som mulig.",
+          "choices": {
+            "A": "2",
+            "B": "3√3",
+            "C": "2√3",
+            "D": "6√3",
+            "E": "2√2"
+          },
+          "answer": "C",
+          "explanation": "Gang med √3 over og under: 6√3/3 = 2√3."
+        },
+        {
+          "points": 5,
+          "text": "Skriv 1/(√5 − 2) uten rottegn i nevneren. Tips: Gang med (√5 + 2) i både teller og nevner.",
+          "choices": {
+            "A": "√5 − 2",
+            "B": "(√5 + 2)/3",
+            "C": "(√5 + 2)/9",
+            "D": "(√5 − 2)/9",
+            "E": "√5 + 2"
+          },
+          "answer": "E",
+          "explanation": "Nevneren blir (√5 − 2)(√5 + 2) = 5 − 4 = 1 etter konjugatsetningen. Da står bare telleren √5 + 2 igjen."
+        }
+      ]
+    }
+  ]
+}

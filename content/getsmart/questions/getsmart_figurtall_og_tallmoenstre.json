@@ -1,0 +1,222 @@
+{
+  "slug": "getsmart_figurtall_og_tallmoenstre",
+  "videos": [
+    {
+      "code": "00067",
+      "questions": [
+        {
+          "points": 3,
+          "text": "I et kortspill skal man finne kort som hører sammen. Hvilken eksplisitt formel hører sammen med tallfølgen 7, 12, 17, 22, …?",
+          "choices": {
+            "A": "aₙ = 7n",
+            "B": "aₙ = 5n + 2",
+            "C": "aₙ = 5n + 7",
+            "D": "aₙ = 2n + 5",
+            "E": "aₙ = 5n − 3"
+          },
+          "answer": "B",
+          "explanation": "Differansen er 5, så formelen er 5n + b. For n = 1 skal vi få 7, så b = 2. Formelen er 5n + 2."
+        },
+        {
+          "points": 4,
+          "text": "Hvilken tallfølge hører sammen med den rekursive formelen a₁ = 3 og aₙ = aₙ₋₁ + 2n?",
+          "choices": {
+            "A": "3, 5, 7, 9, …",
+            "B": "3, 5, 9, 15, …",
+            "C": "3, 6, 12, 24, …",
+            "D": "3, 7, 13, 21, …",
+            "E": "3, 7, 11, 15, …"
+          },
+          "answer": "D",
+          "explanation": "a₂ = 3 + 2 · 2 = 7, a₃ = 7 + 2 · 3 = 13 og a₄ = 13 + 2 · 4 = 21."
+        }
+      ]
+    },
+    {
+      "code": "00212",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n består av to rader med n kuler i hver rad og én ekstra kule på toppen. Hvor mange kuler har figur 12?",
+          "choices": {
+            "A": "24",
+            "B": "25",
+            "C": "26",
+            "D": "36",
+            "E": "13"
+          },
+          "answer": "B",
+          "explanation": "To rader med 12 kuler gir 24 kuler, pluss én på toppen: 24 + 1 = 25. Formelen er 2n + 1."
+        },
+        {
+          "points": 4,
+          "text": "Figurene i en figurfølge har 6, 10, 14, 18, … kuler. Hvilken setning beskriver sammenhengen mellom figurnummeret og antall kuler?",
+          "choices": {
+            "A": "Figurnummeret pluss fire",
+            "B": "Fire ganger figurnummeret",
+            "C": "Seks ganger figurnummeret",
+            "D": "Fire ganger figurnummeret pluss seks",
+            "E": "Fire ganger figurnummeret pluss to"
+          },
+          "answer": "E",
+          "explanation": "Det kommer 4 nye kuler for hver figur, og figur 1 har 6 = 4 · 1 + 2. Formelen er 4n + 2."
+        }
+      ]
+    },
+    {
+      "code": "00213",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n er en T-form: en vannrett rad med 2n + 1 klosser og en loddrett stamme med n klosser under midten. Hvor mange klosser har figur 7?",
+          "choices": {
+            "A": "21",
+            "B": "22",
+            "C": "15",
+            "D": "28",
+            "E": "23"
+          },
+          "answer": "B",
+          "explanation": "Raden har 2 · 7 + 1 = 15 klosser og stammen 7. Til sammen 15 + 7 = 22. Formelen er 3n + 1."
+        },
+        {
+          "points": 4,
+          "text": "Figur n består av et kvadrat på n · n klosser og en «skorstein» på 3 klosser oppå. Hvilken figur har 147 klosser?",
+          "choices": {
+            "A": "Figur 11",
+            "B": "Figur 13",
+            "C": "Figur 12",
+            "D": "Figur 14",
+            "E": "Figur 49"
+          },
+          "answer": "C",
+          "explanation": "Antall klosser er n² + 3. Vi løser n² + 3 = 147, som gir n² = 144 og n = 12."
+        }
+      ]
+    },
+    {
+      "code": "00013",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Figur n er et kvadrat med 2n + 1 klosser langs hver side og et åpent kvadratisk hull med 2n − 1 klosser langs hver side i midten. Hvor mange klosser har figur 6?",
+          "choices": {
+            "A": "36",
+            "B": "48",
+            "C": "42",
+            "D": "52",
+            "E": "24"
+          },
+          "answer": "B",
+          "explanation": "Hele kvadratet har 13 · 13 = 169 klosser, og hullet har 11 · 11 = 121. 169 − 121 = 48."
+        },
+        {
+          "points": 4,
+          "text": "Figur n er et kvadrat med 2n + 1 klosser langs hver side og et kvadratisk hull med 2n − 1 klosser langs hver side. Hvilken rekursiv formel gir antall klosser Fₙ?",
+          "choices": {
+            "A": "F₁ = 8 og Fₙ = Fₙ₋₁ + 8",
+            "B": "F₁ = 8 og Fₙ = Fₙ₋₁ + 4",
+            "C": "F₁ = 9 og Fₙ = Fₙ₋₁ + 8",
+            "D": "F₁ = 8 og Fₙ = 2Fₙ₋₁",
+            "E": "F₁ = 8 og Fₙ = Fₙ₋₁ + 2"
+          },
+          "answer": "A",
+          "explanation": "F₁ = 3² − 1² = 8 og F₂ = 5² − 3² = 16. Eksplisitt er Fₙ = (2n + 1)² − (2n − 1)² = 8n, så det kommer 8 nye klosser hver gang."
+        }
+      ]
+    },
+    {
+      "code": "00028",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Tallfølgen 7, 10, 13, 16, … har konstant differanse 3, så formelen er aₙ = 3n + b. Hva er b?",
+          "choices": {
+            "A": "7",
+            "B": "3",
+            "C": "4",
+            "D": "10",
+            "E": "−4"
+          },
+          "answer": "C",
+          "explanation": "For n = 1 skal vi få 7: 3 · 1 + b = 7 gir b = 4. Formelen er 3n + 4."
+        },
+        {
+          "points": 4,
+          "text": "Finn en eksplisitt formel for tallfølgen 3, 8, 15, 24, 35, … uten å tegne figurer. Hvilken formel stemmer?",
+          "choices": {
+            "A": "n² + 2",
+            "B": "2n² + 1",
+            "C": "5n − 2",
+            "D": "n² + 2n + 1",
+            "E": "(n + 1)² − 1"
+          },
+          "answer": "E",
+          "explanation": "Legger vi 1 til hvert tall, får vi 4, 9, 16, 25, 36, som er kvadrattallene (n + 1)². Da er formelen (n + 1)² − 1."
+        }
+      ]
+    },
+    {
+      "code": "00023",
+      "questions": [
+        {
+          "points": 3,
+          "text": "En kvadratisk ramme har n + 1 klosser langs hver side, og hjørneklossene hører til to sider. Én måte å telle på er 4(n + 1) − 4. En annen måte er å dele rammen i fire like biter med n klosser i hver. Hvilket uttrykk gir det?",
+          "choices": {
+            "A": "4(n + 1)",
+            "B": "4n",
+            "C": "4n − 4",
+            "D": "n⁴",
+            "E": "4n + 4"
+          },
+          "answer": "B",
+          "explanation": "Fire biter med n klosser gir 4 · n = 4n. Det stemmer med 4(n + 1) − 4 = 4n + 4 − 4 = 4n."
+        },
+        {
+          "points": 4,
+          "text": "Ola og Kari ser på samme figurfølge. Ola finner formelen (n + 2)² − n² og Kari finner 4(n + 1). Hvilken påstand er riktig?",
+          "choices": {
+            "A": "Bare Ola har rett",
+            "B": "Bare Kari har rett",
+            "C": "Begge har rett, begge blir 4n + 4",
+            "D": "De er like bare når n = 1",
+            "E": "Olas formel blir alltid 4"
+          },
+          "answer": "C",
+          "explanation": "(n + 2)² − n² = n² + 4n + 4 − n² = 4n + 4, og 4(n + 1) = 4n + 4. Formlene er like for alle n."
+        }
+      ]
+    },
+    {
+      "code": "00014",
+      "questions": [
+        {
+          "points": 3,
+          "text": "To like trappefigurer med 1 + 2 + … + n klosser kan settes sammen til et rektangel på n · (n + 1) klosser. Hvor mange klosser er det i én trapp når n = 12?",
+          "choices": {
+            "A": "156",
+            "B": "144",
+            "C": "72",
+            "D": "66",
+            "E": "78"
+          },
+          "answer": "E",
+          "explanation": "Rektangelet har 12 · 13 = 156 klosser. Én trapp er halvparten: 156/2 = 78."
+        },
+        {
+          "points": 4,
+          "text": "Summen 1 + 2 + 3 + … + n er lik 300. Hva er n? (Husk at summen er n(n + 1)/2.)",
+          "choices": {
+            "A": "24",
+            "B": "25",
+            "C": "20",
+            "D": "30",
+            "E": "150"
+          },
+          "answer": "A",
+          "explanation": "n(n + 1)/2 = 300 gir n(n + 1) = 600. To påfølgende tall med produkt 600 er 24 og 25, så n = 24."
+        }
+      ]
+    }
+  ]
+}

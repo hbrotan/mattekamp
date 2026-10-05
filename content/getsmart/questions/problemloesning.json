@@ -1,0 +1,253 @@
+{
+ "slug": "problemloesning",
+ "videos": [
+  {
+   "code": "00016",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et fly flyr 1 200 km med en fart på 400 km/t. Hvor lang tid bruker flyet?",
+     "choices": {
+      "A": "0,3 timer",
+      "B": "4 timer",
+      "C": "30 timer",
+      "D": "1 600 timer",
+      "E": "3 timer"
+     },
+     "answer": "E",
+     "explanation": "Tid = strekning : fart = 1 200 km : 400 km/t = 3 timer."
+    },
+    {
+     "points": 5,
+     "text": "Et fly har drivstoff til 6 timer. Det flyr ut i motvind med 400 km/t, snur og flyr tilbake i medvind med 600 km/t. Hvor langt ut kan flyet fly og fortsatt rekke tilbake?",
+     "choices": {
+      "A": "1 200 km",
+      "B": "1 500 km",
+      "C": "1 800 km",
+      "D": "2 880 km",
+      "E": "1 440 km"
+     },
+     "answer": "E",
+     "explanation": "Med strekningen x er tiden x/400 + x/600 = 6. Det gir 3x/1 200 + 2x/1 200 = 6, altså 5x = 7 200 og x = 1 440 km."
+    }
+   ]
+  },
+  {
+   "code": "00015",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et rektangulært butikklokale har omkrets 56 m. Lengden er 4 m mer enn bredden b. Hvilken likning passer?",
+     "choices": {
+      "A": "2b + 2(b + 4) = 56",
+      "B": "b + (b + 4) = 56",
+      "C": "b(b + 4) = 56",
+      "D": "2b + 4 = 56",
+      "E": "4b + 4 = 56"
+     },
+     "answer": "A",
+     "explanation": "Omkretsen er to bredder og to lengder. Lengden er b + 4, så 2b + 2(b + 4) = 56."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangulært butikklokale har omkrets 56 m, og lengden er 4 m mer enn bredden. Hva er arealet av lokalet?",
+     "choices": {
+      "A": "140 m²",
+      "B": "180 m²",
+      "C": "196 m²",
+      "D": "192 m²",
+      "E": "780 m²"
+     },
+     "answer": "D",
+     "explanation": "2b + 2(b + 4) = 56 gir 4b + 8 = 56, så b = 12 m og lengden er 16 m. Arealet er 12 · 16 = 192 m²."
+    }
+   ]
+  },
+  {
+   "code": "00012",
+   "questions": [
+    {
+     "points": 3,
+     "text": "To trekanter har de samme vinklene, men den ene er større enn den andre. Hva kaller vi slike trekanter?",
+     "choices": {
+      "A": "Kongruente",
+      "B": "Likebeinte",
+      "C": "Rettvinklede",
+      "D": "Likesidede",
+      "E": "Formlike"
+     },
+     "answer": "E",
+     "explanation": "Trekanter med like vinkler har samme form og kalles formlike. Sidene i den ene er da like mange ganger større som sidene i den andre."
+    },
+    {
+     "points": 5,
+     "text": "Ola står i A rett overfor et tre T på andre siden av en elv. Han går 20 m langs elvebredden til B og 5 m videre til C. Fra C går han 6 m rett bort fra elva til D, der D, B og T ligger på linje. Trekantene TAB og DCB er formlike. Hvor bred er elva (AT)?",
+     "choices": {
+      "A": "1,5 m",
+      "B": "16,7 m",
+      "C": "21 m",
+      "D": "24 m",
+      "E": "30 m"
+     },
+     "answer": "D",
+     "explanation": "Samsvarende sider gir AT/AB = CD/CB, altså AT/20 = 6/5. Da er AT = 20 · 6 : 5 = 24 m."
+    }
+   ]
+  },
+  {
+   "code": "00011",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvor langt en kule faller loddrett etter t sekunder er gitt ved s = 5t², der s er i meter. Hvor langt har kula falt etter 0,4 s?",
+     "choices": {
+      "A": "0,16 m",
+      "B": "1,6 m",
+      "C": "0,8 m",
+      "D": "2 m",
+      "E": "4 m"
+     },
+     "answer": "C",
+     "explanation": "s = 5 · 0,4² = 5 · 0,16 = 0,8 m. Husk å kvadrere 0,4 før du ganger med 5."
+    },
+    {
+     "points": 5,
+     "text": "En kule skytes vannrett fra 1,8 m høyde over flat mark med farten 400 m/s. Fallet er s = 5t² (meter, sekunder). Hvor langt bortover går kula før den treffer bakken?",
+     "choices": {
+      "A": "144 m",
+      "B": "720 m",
+      "C": "1 200 m",
+      "D": "240 m",
+      "E": "2 400 m"
+     },
+     "answer": "D",
+     "explanation": "Kula treffer bakken når 5t² = 1,8, altså t² = 0,36 og t = 0,6 s. Bortover går den 400 m/s · 0,6 s = 240 m."
+    }
+   ]
+  },
+  {
+   "code": "00008",
+   "questions": [
+    {
+     "points": 3,
+     "text": "I en rettvinklet trekant er katetene 6 cm og 8 cm. Hvor lang er hypotenusen?",
+     "choices": {
+      "A": "7 cm",
+      "B": "14 cm",
+      "C": "48 cm",
+      "D": "100 cm",
+      "E": "10 cm"
+     },
+     "answer": "E",
+     "explanation": "Pytagoras: c² = 6² + 8² = 36 + 64 = 100, så c = √100 = 10 cm."
+    },
+    {
+     "points": 4,
+     "text": "Endeflaten av et telt er en likebeint trekant. Grunnlinjen (bredden på teltet) er 2,4 m, og hver av de skrå sidene er 2,0 m. Hvor høyt er teltet på midten?",
+     "choices": {
+      "A": "0,8 m",
+      "B": "1,2 m",
+      "C": "1,6 m",
+      "D": "2,3 m",
+      "E": "3,1 m"
+     },
+     "answer": "C",
+     "explanation": "Høyden deler trekanten i to rettvinklede trekanter med katet 1,2 m og hypotenus 2,0 m. h² = 2,0² − 1,2² = 4 − 1,44 = 2,56, så h = 1,6 m."
+    }
+   ]
+  },
+  {
+   "code": "00007",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En flaggstang er 10 m høy. Den knekker x m over bakken, men toppdelen henger fortsatt fast. Hvilket uttrykk gir lengden av delen som knakk?",
+     "choices": {
+      "A": "x − 10",
+      "B": "10x",
+      "C": "10 + x",
+      "D": "10 − x",
+      "E": "10 : x"
+     },
+     "answer": "D",
+     "explanation": "Hele stangen er 10 m. Delen under knekkpunktet er x m, så resten er 10 − x m."
+    },
+    {
+     "points": 5,
+     "text": "En 10 m høy flaggstang knekker x m over bakken. Toppen treffer bakken 4 m fra foten av stangen, og den knekte delen er rett. Hvor høyt over bakken knakk stangen?",
+     "choices": {
+      "A": "3 m",
+      "B": "4,2 m",
+      "C": "5 m",
+      "D": "5,8 m",
+      "E": "6 m"
+     },
+     "answer": "B",
+     "explanation": "Pytagoras gir x² + 4² = (10 − x)². Det blir x² + 16 = 100 − 20x + x², så 20x = 84 og x = 4,2 m."
+    }
+   ]
+  },
+  {
+   "code": "00004",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En 16 m høy flaggstang knekker x m over bakken, og toppen treffer bakken 8 m fra foten. Hvilken likning gir x?",
+     "choices": {
+      "A": "x² + 8² = 16² − x²",
+      "B": "x + 8 = 16 − x",
+      "C": "x² + (16 − x)² = 8²",
+      "D": "x² + 8² = (16 − x)²",
+      "E": "(x + 8)² = (16 − x)²"
+     },
+     "answer": "D",
+     "explanation": "Stangen, bakken og den knekte delen danner en rettvinklet trekant med kateter x og 8 og hypotenus 16 − x."
+    },
+    {
+     "points": 4,
+     "text": "En 16 m høy flaggstang knekker, og toppen treffer bakken 8 m fra foten. Den knekte delen er rett. Hvor lang er delen som knakk av?",
+     "choices": {
+      "A": "10 m",
+      "B": "6 m",
+      "C": "8 m",
+      "D": "9 m",
+      "E": "12 m"
+     },
+     "answer": "A",
+     "explanation": "x² + 64 = (16 − x)² gir 64 = 256 − 32x, så x = 6 m. Delen som knakk er 16 − 6 = 10 m."
+    }
+   ]
+  },
+  {
+   "code": "00250",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Trekant ABC og trekant DEF er formlike. AB = 6 cm og BC = 9 cm. Siden DE = 4 cm svarer til AB, og EF svarer til BC. Hvor lang er EF?",
+     "choices": {
+      "A": "7 cm",
+      "B": "13,5 cm",
+      "C": "3 cm",
+      "D": "6 cm",
+      "E": "4,5 cm"
+     },
+     "answer": "D",
+     "explanation": "Forholdet mellom samsvarende sider er 4/6 = ⅔. EF = 9 cm · ⅔ = 6 cm."
+    },
+    {
+     "points": 4,
+     "text": "Et rektangel har sider 4 cm og 10 cm. Et formlikt rektangel har kortside 6 cm. Hva er arealet av det største rektangelet?",
+     "choices": {
+      "A": "90 cm²",
+      "B": "60 cm²",
+      "C": "72 cm²",
+      "D": "96 cm²",
+      "E": "135 cm²"
+     },
+     "answer": "A",
+     "explanation": "Forholdet mellom sidene i rektangelet er 10/4 = 2,5. Langsiden blir 6 · 2,5 = 15 cm, og arealet 6 · 15 = 90 cm²."
+    }
+   ]
+  }
+ ]
+}

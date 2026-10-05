@@ -1,0 +1,284 @@
+{
+  "slug": "likninger_med_to_ukjente",
+  "videos": [
+    {
+      "code": "00104",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Hvilket tallpar (x, y) passer i begge likningene x + y = 10 og x − y = 4?",
+          "choices": {
+            "A": "(3, 7)",
+            "B": "(6, 4)",
+            "C": "(8, 2)",
+            "D": "(5, 5)",
+            "E": "(7, 3)"
+          },
+          "answer": "E",
+          "explanation": "7 + 3 = 10 og 7 − 3 = 4. De andre parene passer bare i den ene likningen eller ingen av dem."
+        },
+        {
+          "points": 4,
+          "text": "To tall har summen 25, og differansen mellom dem er 7. Hva er det største tallet?",
+          "choices": {
+            "A": "9",
+            "B": "18",
+            "C": "12,5",
+            "D": "32",
+            "E": "16"
+          },
+          "answer": "E",
+          "explanation": "x + y = 25 og x − y = 7. Adderer vi likningene, får vi 2x = 32, så x = 16 og y = 9."
+        }
+      ]
+    },
+    {
+      "code": "00105",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Se på likningssettet x + y = 9 og x − y = 3. Hva får du når du adderer de to likningene?",
+          "choices": {
+            "A": "2x = 12",
+            "B": "2y = 12",
+            "C": "2x = 6",
+            "D": "2x + 2y = 12",
+            "E": "x = 12"
+          },
+          "answer": "A",
+          "explanation": "(x + y) + (x − y) = 2x og 9 + 3 = 12. Leddene med y opphever hverandre, så vi får 2x = 12."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet med addisjonsmetoden: 3x + y = 14 og 2x − y = 1.",
+          "choices": {
+            "A": "x = 3, y = 5",
+            "B": "x = 5, y = −1",
+            "C": "x = 3, y = −5",
+            "D": "x = 2, y = 8",
+            "E": "x = 4, y = 2"
+          },
+          "answer": "A",
+          "explanation": "Addisjon gir 5x = 15, så x = 3. Innsatt i første likning: 9 + y = 14, så y = 5."
+        }
+      ]
+    },
+    {
+      "code": "00106",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Likningssettet er 2x + 3y = 12 og x − y = 1. Hva bør du gange den andre likningen med for at y skal forsvinne når du adderer?",
+          "choices": {
+            "A": "2",
+            "B": "3",
+            "C": "−2",
+            "D": "−3",
+            "E": "1"
+          },
+          "answer": "B",
+          "explanation": "3(x − y) = 3x − 3y. Da opphever −3y og +3y hverandre når likningene legges sammen."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet 2x + 3y = 12 og x − y = 1.",
+          "choices": {
+            "A": "x = 2, y = 3",
+            "B": "x = 4, y = 3",
+            "C": "x = 3, y = −2",
+            "D": "x = 3, y = 2",
+            "E": "x = 6, y = 0"
+          },
+          "answer": "D",
+          "explanation": "Gang andre likning med 3 og adder: 5x = 15, så x = 3. Da er y = x − 1 = 2. Prøve: 6 + 6 = 12."
+        }
+      ]
+    },
+    {
+      "code": "00107",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Likningssettet er 4x + y = 11 og 2x + y = 7. Du ganger den andre likningen med −1 og adderer. Hva får du?",
+          "choices": {
+            "A": "6x = 18",
+            "B": "2x + 2y = 4",
+            "C": "2x = 4",
+            "D": "2x = 18",
+            "E": "6x + 2y = 18"
+          },
+          "answer": "C",
+          "explanation": "Andre likning blir −2x − y = −7. Addert til 4x + y = 11 gir det 2x = 4."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet 5x + 2y = 16 og 3x − 4y = 7.",
+          "choices": {
+            "A": "x = 3, y = 2",
+            "B": "x = 2, y = 3",
+            "C": "x = 3, y = 0,5",
+            "D": "x = 3, y = −0,5",
+            "E": "x = 0,5, y = 3"
+          },
+          "answer": "C",
+          "explanation": "Gang første likning med 2: 10x + 4y = 32. Addert til andre gir 13x = 39, så x = 3. Da er 15 + 2y = 16, så y = 0,5."
+        }
+      ]
+    },
+    {
+      "code": "00108",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Likningssettet er 3x + 2y = 16 og 2x + 5y = 18. Hvilke tall kan du gange likningene med for at x forsvinner når du adderer?",
+          "choices": {
+            "A": "Første med 2, andre med −3",
+            "B": "Første med 3, andre med −2",
+            "C": "Første med 2, andre med 3",
+            "D": "Første med 5, andre med −2",
+            "E": "Første med −2, andre med −3"
+          },
+          "answer": "A",
+          "explanation": "Da får vi 6x og −6x, som blir 0 når vi adderer."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet 3x + 2y = 16 og 2x + 5y = 18.",
+          "choices": {
+            "A": "x = 2, y = 4",
+            "B": "x = 2, y = 5",
+            "C": "x = 4, y = −2",
+            "D": "x = 4, y = 2",
+            "E": "x = 6, y = −1"
+          },
+          "answer": "D",
+          "explanation": "6x + 4y = 32 og −6x − 15y = −54 gir −11y = −22, så y = 2. Da er 3x + 4 = 16 og x = 4."
+        }
+      ]
+    },
+    {
+      "code": "00109",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Likningssettet er 2x + 3y = 13 og 3x + 2y = 12. Du ganger den første likningen med 3 og den andre med −2 og adderer. Hva får du?",
+          "choices": {
+            "A": "5y = 15",
+            "B": "13y = 63",
+            "C": "5y = 63",
+            "D": "13y = 15",
+            "E": "y = 15"
+          },
+          "answer": "A",
+          "explanation": "6x + 9y = 39 og −6x − 4y = −24. Summen blir 5y = 15."
+        },
+        {
+          "points": 4,
+          "text": "I en kiosk koster 2 is og 3 brus til sammen 130 kr. 3 is og 2 brus koster til sammen 120 kr. Hva koster én is?",
+          "choices": {
+            "A": "30 kr",
+            "B": "20 kr",
+            "C": "24 kr",
+            "D": "26 kr",
+            "E": "25 kr"
+          },
+          "answer": "B",
+          "explanation": "2x + 3y = 130 og 3x + 2y = 120. Ganger vi første med 3 og andre med −2, får vi 5y = 150, så y = 30 kr. Da er 2x + 90 = 130 og x = 20 kr."
+        }
+      ]
+    },
+    {
+      "code": "00110",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Løs likningssettet y = 2x og x + y = 12 med innsettingsmetoden. Hva er x?",
+          "choices": {
+            "A": "x = 6",
+            "B": "x = 3",
+            "C": "x = 12",
+            "D": "x = 8",
+            "E": "x = 4"
+          },
+          "answer": "E",
+          "explanation": "Sett inn y = 2x i den andre likningen: x + 2x = 12, altså 3x = 12 og x = 4."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet y = x − 3 og 2x + 3y = 16 med innsettingsmetoden.",
+          "choices": {
+            "A": "x = 2, y = 5",
+            "B": "x = 3,8, y = 0,8",
+            "C": "x = 5, y = 2",
+            "D": "x = 5, y = 8",
+            "E": "x = 7, y = 4"
+          },
+          "answer": "C",
+          "explanation": "2x + 3(x − 3) = 16 gir 5x − 9 = 16, så x = 5. Da er y = 5 − 3 = 2."
+        }
+      ]
+    },
+    {
+      "code": "00111",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Likningssettet er 3x + y = 10 og 2x − 3y = 3. Hva blir y uttrykt ved x fra den første likningen?",
+          "choices": {
+            "A": "y = 10 − 3x",
+            "B": "y = 3x − 10",
+            "C": "y = 10 + 3x",
+            "D": "y = 10/(3x)",
+            "E": "y = (10 − x)/3"
+          },
+          "answer": "A",
+          "explanation": "Flytt 3x over til høyre side og bytt fortegn: y = 10 − 3x."
+        },
+        {
+          "points": 4,
+          "text": "Løs likningssettet 3x + y = 10 og 2x − 3y = 3 med innsettingsmetoden.",
+          "choices": {
+            "A": "x = 1, y = 7",
+            "B": "x = 3, y = −1",
+            "C": "x = 2, y = 4",
+            "D": "x = 3, y = 1",
+            "E": "x = 4, y = −2"
+          },
+          "answer": "D",
+          "explanation": "y = 10 − 3x settes inn: 2x − 3(10 − 3x) = 3 gir 2x − 30 + 9x = 3, så 11x = 33 og x = 3. Da er y = 10 − 9 = 1."
+        }
+      ]
+    },
+    {
+      "code": "00112",
+      "questions": [
+        {
+          "points": 3,
+          "text": "Sett prøve. Hvilket tallpar (x, y) er løsningen av x + 2y = 8 og 3x − y = 3?",
+          "choices": {
+            "A": "(3, 2)",
+            "B": "(4, 2)",
+            "C": "(0, 4)",
+            "D": "(2, 3)",
+            "E": "(1, 0)"
+          },
+          "answer": "D",
+          "explanation": "2 + 2·3 = 8 og 3·2 − 3 = 3. Begge likningene stemmer. De andre parene stemmer i høyst én av likningene."
+        },
+        {
+          "points": 4,
+          "text": "Emma har løst likningssettet 2x + 3y = 5 og x − 2y = 2 og fått x = 4 og y = −1. Hva viser prøven?",
+          "choices": {
+            "A": "Bare den første stemmer",
+            "B": "Begge likningene stemmer",
+            "C": "Bare den andre stemmer",
+            "D": "Ingen av dem stemmer",
+            "E": "Den første gir 11"
+          },
+          "answer": "A",
+          "explanation": "Første: 2·4 + 3·(−1) = 5, stemmer. Andre: 4 − 2·(−1) = 6, ikke 2. Svaret er derfor feil."
+        }
+      ]
+    }
+  ]
+}

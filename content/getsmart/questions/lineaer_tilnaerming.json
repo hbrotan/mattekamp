@@ -1,0 +1,67 @@
+{
+ "slug": "lineaer_tilnaerming",
+ "videos": [
+  {
+   "code": "00125",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva gjør vi når vi finner en lineær tilnærming (lineær regresjon) til et sett med måledata?",
+     "choices": {
+      "A": "Finner linjen som passer best",
+      "B": "Lager en linje gjennom alle punktene",
+      "C": "Regner ut gjennomsnittet av y-verdiene",
+      "D": "Finner en parabel gjennom punktene",
+      "E": "Fjerner punktene som ikke passer"
+     },
+     "answer": "A",
+     "explanation": "Måledata ligger sjelden nøyaktig på en linje. Vi finner derfor den rette linjen som ligger nærmest alle punktene samlet."
+    },
+    {
+     "points": 4,
+     "text": "En lineær modell for høyden til en plante er h(t) = 1,8t + 4, der t er antall uker og h er høyden i cm. Etter hvor mange uker er planten 31 cm høy ifølge modellen?",
+     "choices": {
+      "A": "17,2 uker",
+      "B": "15 uker",
+      "C": "19,4 uker",
+      "D": "12,9 uker",
+      "E": "59,8 uker"
+     },
+     "answer": "B",
+     "explanation": "Løs 1,8t + 4 = 31. Da er 1,8t = 27, og t = 27 : 1,8 = 15."
+    }
+   ]
+  },
+  {
+   "code": "00126",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Du tegner for hånd en rett linje som passer godt til noen målepunkter. Linjen går gjennom (0, 12) og (5, 22). Hva er stigningstallet til linjen?",
+     "choices": {
+      "A": "10",
+      "B": "0,5",
+      "C": "2",
+      "D": "4,4",
+      "E": "12"
+     },
+     "answer": "C",
+     "explanation": "Stigningstallet er endring i y delt på endring i x: (22 − 12) : (5 − 0) = 10 : 5 = 2."
+    },
+    {
+     "points": 4,
+     "text": "En tilnærmingslinje går gjennom (0, 12) og (5, 22). Bruk linjen til å anslå y-verdien når x = 8.",
+     "choices": {
+      "A": "16",
+      "B": "32",
+      "C": "35,2",
+      "D": "108",
+      "E": "28"
+     },
+     "answer": "E",
+     "explanation": "Linjen er y = 2x + 12, fordi stigningstallet er 2 og den krysser y-aksen i 12. For x = 8: y = 2 · 8 + 12 = 28."
+    }
+   ]
+  }
+ ]
+}

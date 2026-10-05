@@ -1,0 +1,160 @@
+{
+ "slug": "sannsynlighet_basert_paa_erfaringer",
+ "videos": [
+  {
+   "code": "00289",
+   "questions": [
+    {
+     "points": 3,
+     "text": "En skogvokter har registrert at turgåere ved et veiskille har valgt venstre sti 120 ganger og høyre sti 80 ganger. Hva er sannsynligheten for at neste turgåer velger venstre sti, basert på erfaringene? Svar i prosent.",
+     "choices": {
+      "A": "40 %",
+      "B": "50 %",
+      "C": "150 %",
+      "D": "12 %",
+      "E": "60 %"
+     },
+     "answer": "E",
+     "explanation": "Totalt er det registrert 120 + 80 = 200 valg. P(venstre) ≈ 120/200 = 0,6 = 60 %."
+    },
+    {
+     "points": 4,
+     "text": "Et ektepar går ofte samme tur i skogen. Ved første veiskille går de til venstre på 70 % av turene. Når de har gått til venstre, velger de stien mot vannet på 40 % av turene. Hva er sannsynligheten for at de går til venstre og ender ved vannet? Svar i prosent.",
+     "choices": {
+      "A": "30 %",
+      "B": "40 %",
+      "C": "12 %",
+      "D": "28 %",
+      "E": "42 %"
+     },
+     "answer": "D",
+     "explanation": "Vi ganger sannsynlighetene langs greinene: 0,7 · 0,4 = 0,28 = 28 %."
+    }
+   ]
+  },
+  {
+   "code": "00290",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Ali kaster en tegnestift 250 ganger. Den lander med spissen opp 95 ganger. Hva er den relative frekvensen for «spissen opp»? Svar som desimaltall.",
+     "choices": {
+      "A": "0,38",
+      "B": "0,62",
+      "C": "0,95",
+      "D": "0,5",
+      "E": "2,63"
+     },
+     "answer": "A",
+     "explanation": "Relativ frekvens = antall ganger hendelsen skjedde : antall forsøk = 95 : 250 = 0,38."
+    },
+    {
+     "points": 4,
+     "text": "Fire grupper kaster tegnestift. Gruppe 1: 20 kast, 12 med spissen opp. Gruppe 2: 80 kast, 28. Gruppe 3: 50 kast, 20. Gruppe 4: 50 kast, 22. Slå sammen alle kastene. Hva er sannsynligheten for «spissen opp», basert på erfaringene? Svar i prosent.",
+     "choices": {
+      "A": "41 %",
+      "B": "82 %",
+      "C": "59 %",
+      "D": "45 %",
+      "E": "20,5 %"
+     },
+     "answer": "A",
+     "explanation": "Til sammen er det 200 kast og 82 med spissen opp. 82 : 200 = 0,41 = 41 %. Å ta gjennomsnittet av prosentene til gruppene blir feil, fordi gruppene har ulikt antall kast."
+    }
+   ]
+  },
+  {
+   "code": "00291",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hva menes med en simulering i sannsynlighetsregning?",
+     "choices": {
+      "A": "Å regne ut teoretisk sannsynlighet",
+      "B": "Å gjette svaret uten å regne",
+      "C": "Å telle gunstige utfall i en tabell",
+      "D": "Å gjøre forsøket bare én gang",
+      "E": "Å etterligne et forsøk med noe enklere"
+     },
+     "answer": "E",
+     "explanation": "I en simulering etterligner vi et virkelig forsøk, for eksempel med mynt eller terning, og gjentar det mange ganger for å finne en sannsynlighet."
+    },
+    {
+     "points": 4,
+     "text": "En klasse simulerer søskenflokker på tre barn ved å kaste tre mynter: kron = gutt og mynt = jente. Hvilken sannsynlighet for «to gutter og én jente» bør resultatet nærme seg når de gjør veldig mange forsøk? Svar som brøk.",
+     "choices": {
+      "A": "1/3",
+      "B": "1/8",
+      "C": "1/4",
+      "D": "3/8",
+      "E": "2/3"
+     },
+     "answer": "D",
+     "explanation": "Det er 2 · 2 · 2 = 8 like sannsynlige utfall. To gutter og én jente får du på 3 måter (GGJ, GJG, JGG), så P = 3/8."
+    }
+   ]
+  },
+  {
+   "code": "00292",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Hvilken formel i regnearket gir et tilfeldig heltall fra og med 1 til og med 6, slik som et terningkast?",
+     "choices": {
+      "A": "=TILFELDIG()*6",
+      "B": "=TILFELDIGMELLOM(1;6)",
+      "C": "=TILFELDIG(1;6)",
+      "D": "=TILFELDIGMELLOM(0;6)",
+      "E": "=ANTALL.HVIS(1;6)"
+     },
+     "answer": "B",
+     "explanation": "TILFELDIGMELLOM(1;6) gir et heltall fra og med 1 til og med 6. TILFELDIG()*6 gir desimaltall mellom 0 og 6."
+    },
+    {
+     "points": 4,
+     "text": "Cellene A1:A2000 inneholder 2000 simulerte terningkast. Hvilken formel gir den relative frekvensen for sekser?",
+     "choices": {
+      "A": "=ANTALL.HVIS(A1:A2000;6)",
+      "B": "=SUMMER(A1:A2000)/2000",
+      "C": "=ANTALL.HVIS(A1:A2000;6)/2000",
+      "D": "=ANTALL.HVIS(A1:A2000;6)/6",
+      "E": "=6/2000"
+     },
+     "answer": "C",
+     "explanation": "ANTALL.HVIS teller hvor mange seksere det er. Relativ frekvens får vi ved å dele på antall kast, 2000."
+    }
+   ]
+  },
+  {
+   "code": "00293",
+   "questions": [
+    {
+     "points": 3,
+     "text": "Et regneark simulerer 1000 myntkast og får mynt 514 ganger. Hva er den relative frekvensen for mynt? Svar som desimaltall.",
+     "choices": {
+      "A": "0,486",
+      "B": "0,5",
+      "C": "5,14",
+      "D": "0,514",
+      "E": "0,0514"
+     },
+     "answer": "D",
+     "explanation": "Relativ frekvens = 514 : 1000 = 0,514."
+    },
+    {
+     "points": 4,
+     "text": "Fire elever simulerer myntkast i regneark. Eva: 10 kast, 5 mynt. Per: 50 kast, 31 mynt. Ali: 500 kast, 240 mynt. Kari: 5000 kast, 2470 mynt. Hvem sitt resultat gir det beste anslaget for P(mynt), og hva er den relative frekvensen der?",
+     "choices": {
+      "A": "Kari, 0,494",
+      "B": "Eva, 0,5",
+      "C": "Per, 0,62",
+      "D": "Ali, 0,48",
+      "E": "Kari, 0,506"
+     },
+     "answer": "A",
+     "explanation": "Jo flere forsøk, desto sikrere anslag. Kari har flest kast: 2470 : 5000 = 0,494."
+    }
+   ]
+  }
+ ]
+}
