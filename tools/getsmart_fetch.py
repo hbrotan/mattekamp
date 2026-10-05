@@ -56,7 +56,7 @@ def videos(slug: str) -> list[dict]:
             continue
         out.append({
             "code": code,
-            "title": re.sub(r"^α?\d+:\s*", "", text(title.group(1))),
+            "title": re.sub(r"^[^\d\s]?\d{3,}:\s*", "", text(title.group(1))),
             "youtubeId": yt.group(1),
             "duration": duration.group(1) if duration else None,
             "description": text(desc.group(1)) if desc else "",

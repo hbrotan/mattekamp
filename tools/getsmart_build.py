@@ -64,8 +64,8 @@ def main() -> int:
                         "answer": q["answer"],
                         "text": q["text"],
                         "choices": {k: q["choices"][k] for k in KEYS},
-                        # GetSmarts interne nummer («[00232] ...») er støy for elevene
-                        "video": {"youtubeId": video["youtubeId"], "title": re.sub(r"^\[\d+\]\s*", "", video["title"])},
+                        # GetSmarts interne nummer («β00232: ...») er støy for elevene
+                        "video": {"youtubeId": video["youtubeId"], "title": re.sub(r"^[^\d\s]?\d{3,}:\s*", "", video["title"])},
                         "explanation": q.get("explanation", ""),
                     })
             if tasks:
