@@ -1,0 +1,555 @@
+{
+  "id": "8-9-trinn-3",
+  "title": "Øvingsprøve 3",
+  "level": "8-9-trinn",
+  "tasks": [
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "En vintermorgen viste termometeret −3 °C. Ved lunsjtid viste det 5 °C. Hvor mange grader steg temperaturen?",
+      "choices": {
+        "A": "2 grader",
+        "B": "8 grader",
+        "C": "−2 grader",
+        "D": "−8 grader",
+        "E": "3 grader"
+      },
+      "answer": "B",
+      "explanation": "Fra −3 °C til 0 °C er 3 grader, og fra 0 °C til 5 °C er 5 grader. 3 + 5 = 8 grader."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvor mange millimeter nedbør som kom hver dag i en uke. Hvilken dag kom det mest nedbør?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Nedbør (mm)"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "4"
+          ],
+          [
+            "Tirsdag",
+            "0"
+          ],
+          [
+            "Onsdag",
+            "12"
+          ],
+          [
+            "Torsdag",
+            "7"
+          ],
+          [
+            "Fredag",
+            "15"
+          ],
+          [
+            "Lørdag",
+            "9"
+          ],
+          [
+            "Søndag",
+            "3"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Onsdag",
+        "C": "Torsdag",
+        "D": "Fredag",
+        "E": "Lørdag"
+      },
+      "answer": "D",
+      "explanation": "Den høyeste verdien i tabellen er 15 mm, og den hører til fredag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Klokka 15 viste termometeret −4 °C. Fram til midnatt falt temperaturen med 6 grader. Hvilken temperatur viste termometeret ved midnatt?",
+      "answer": "-10",
+      "unit": "°C",
+      "explanation": "Når temperaturen faller, trekker vi fra: −4 − 6 = −10. Termometeret viste −10 °C."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Jonas startet i et skirenn klokka 10.45 og kom i mål klokka 12.10. Hvor mange minutter brukte han?",
+      "answer": "85",
+      "unit": "minutter",
+      "explanation": "Fra 10.45 til 11.00 er 15 minutter, og fra 11.00 til 12.10 er 70 minutter. 15 + 70 = 85 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Et skirenn for ungdom er 7,5 km langt. Hvor mange meter er det?",
+      "choices": {
+        "A": "75 m",
+        "B": "750 m",
+        "C": "7 500 m",
+        "D": "75 000 m",
+        "E": "7 005 m"
+      },
+      "answer": "C",
+      "explanation": "1 km = 1 000 m, så 7,5 km = 7,5 · 1 000 m = 7 500 m."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "En morgen ble temperaturen målt fem steder: Fjellet −7 °C, Dalen −2 °C, Byen 1 °C, Kysten 3 °C og Innsjøen −4 °C. Hvilken liste viser temperaturene fra lavest til høyest?",
+      "choices": {
+        "A": "−2, −4, −7, 1, 3",
+        "B": "1, −2, 3, −4, −7",
+        "C": "3, 1, −2, −4, −7",
+        "D": "−7, −2, −4, 1, 3",
+        "E": "−7, −4, −2, 1, 3"
+      },
+      "answer": "E",
+      "explanation": "Jo lenger under null, jo kaldere. −7 er lavest, så kommer −4 og −2, og deretter 1 og 3."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "En fotballbane er 105 m lang og 68 m bred. Hvor lang er omkretsen av banen?",
+      "choices": {
+        "A": "346 m",
+        "B": "173 m",
+        "C": "692 m",
+        "D": "3 460 m",
+        "E": "7 140 m"
+      },
+      "answer": "A",
+      "explanation": "Omkretsen er summen av alle sidene: 105 + 68 + 105 + 68 = 346 m."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "Du kaster en vanlig terning med tallene 1 til 6. Hva er sannsynligheten for å få et partall?",
+      "choices": {
+        "A": "1/6",
+        "B": "1/3",
+        "C": "1/2",
+        "D": "2/3",
+        "E": "5/6"
+      },
+      "answer": "C",
+      "explanation": "Partallene er 2, 4 og 6, altså 3 av 6 mulige utfall. 3/6 = 1/2."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Skiklubben kjøper 15 par skistaver. Hvert par koster 349 kr. Hvor mange kroner koster stavene til sammen?",
+      "answer": "5235",
+      "unit": "kr",
+      "explanation": "15 · 349 kr = 5 235 kr. (For eksempel: 10 · 349 = 3 490 og 5 · 349 = 1 745, til sammen 5 235.)"
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "I et 100-meterløp fikk Sara tiden 12,47 sekunder, og Emma fikk 12,5 sekunder. Hvor mange hundredels sekunder kom Sara foran Emma?",
+      "answer": "3",
+      "unit": "hundredeler",
+      "explanation": "12,5 er det samme som 12,50. 12,50 − 12,47 = 0,03 sekunder, altså 3 hundredeler."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "En rektangelformet kjøkkenhage er 12 m lang og 8,5 m bred. Hvor stort er arealet av hagen?",
+      "choices": {
+        "A": "20,5 m²",
+        "B": "41 m²",
+        "C": "96 m²",
+        "D": "102 m²",
+        "E": "1 020 m²"
+      },
+      "answer": "D",
+      "explanation": "Arealet av et rektangel er lengde · bredde: 12 m · 8,5 m = 102 m²."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Elevene i 9B svarte på hvor mange timer de trener i uka. Tabellen viser svarene. Hva er typetallet?",
+      "table": {
+        "headers": [
+          "Timer trening per uke",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "0",
+            "2"
+          ],
+          [
+            "1",
+            "4"
+          ],
+          [
+            "2",
+            "7"
+          ],
+          [
+            "3",
+            "5"
+          ],
+          [
+            "4",
+            "3"
+          ],
+          [
+            "5",
+            "1"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "1 time",
+        "B": "2 timer",
+        "C": "3 timer",
+        "D": "7 timer",
+        "E": "2,5 timer"
+      },
+      "answer": "B",
+      "explanation": "Typetallet er svaret som forekommer oftest. Flest elever (7) svarte 2 timer."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Et par langrennski koster 3 200 kr. I januar får du 25 % rabatt. Hva koster skiene med rabatt?",
+      "choices": {
+        "A": "800 kr",
+        "B": "3 175 kr",
+        "C": "2 800 kr",
+        "D": "2 500 kr",
+        "E": "2 400 kr"
+      },
+      "answer": "E",
+      "explanation": "25 % av 3 200 kr er 800 kr. 3 200 kr − 800 kr = 2 400 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "48 deltakere i et turløp betaler 195 kr hver i startkontingent. Omtrent hvor mye betaler de til sammen?",
+      "choices": {
+        "A": "10 000 kr",
+        "B": "1 000 kr",
+        "C": "5 000 kr",
+        "D": "50 000 kr",
+        "E": "100 000 kr"
+      },
+      "answer": "A",
+      "explanation": "Rund av: 48 ≈ 50 og 195 ≈ 200. 50 · 200 = 10 000 kr. (Nøyaktig svar er 9 360 kr.)"
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "Til en skitur blander Ole saft og vann i forholdet 1 : 4. Det betyr 1 del saft til 4 deler vann. Han bruker 3 dL saft. Hvor mange desiliter vann trenger han?",
+      "answer": "12",
+      "unit": "dL",
+      "explanation": "For hver del saft trengs 4 deler vann. 3 dL · 4 = 12 dL vann."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Tabellen viser temperaturen klokka 12 fem dager på rad. Hva var gjennomsnittstemperaturen for disse fem dagene?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Temperatur"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "−2 °C"
+          ],
+          [
+            "Tirsdag",
+            "3 °C"
+          ],
+          [
+            "Onsdag",
+            "5 °C"
+          ],
+          [
+            "Torsdag",
+            "−1 °C"
+          ],
+          [
+            "Fredag",
+            "0 °C"
+          ]
+        ]
+      },
+      "answer": "1",
+      "unit": "°C",
+      "explanation": "Summen er −2 + 3 + 5 + (−1) + 0 = 5. Gjennomsnittet er 5 : 5 = 1 °C."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "En vanlig kortstokk har 52 kort, og 13 av dem er hjerter. Du trekker ett tilfeldig kort. Hva er sannsynligheten for at kortet er hjerter?",
+      "choices": {
+        "A": "1/52",
+        "B": "1/13",
+        "C": "1/2",
+        "D": "1/4",
+        "E": "4/13"
+      },
+      "answer": "D",
+      "explanation": "13 av 52 kort er hjerter. 13/52 = 1/4."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "En vinterdag var det −18,5 °C på Finnmarksvidda og 2,5 °C i Bergen. Hvor mange grader var forskjellen?",
+      "choices": {
+        "A": "16 grader",
+        "B": "21 grader",
+        "C": "20,5 grader",
+        "D": "−16 grader",
+        "E": "21,5 grader"
+      },
+      "answer": "B",
+      "explanation": "Fra −18,5 °C opp til 0 °C er 18,5 grader, og videre til 2,5 °C er 2,5 grader. 18,5 + 2,5 = 21 grader."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Seks venner løp en terrengløype. Tidene deres var 31, 24, 29, 35, 26 og 27 minutter. Hva er medianen?",
+      "choices": {
+        "A": "27 min",
+        "B": "29 min",
+        "C": "32 min",
+        "D": "ca. 28,7 min",
+        "E": "28 min"
+      },
+      "answer": "E",
+      "explanation": "Sorter tidene: 24, 26, 27, 29, 31, 35. De to midterste er 27 og 29, og medianen er (27 + 29) : 2 = 28 min."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "I en klasse med 25 elever spiller 8 elever fotball på fritiden. Hvor mange prosent av elevene spiller fotball?",
+      "answer": "32",
+      "unit": "%",
+      "explanation": "8/25 = 32/100 = 32 %. (Gang med 4 over og under brøkstreken.)"
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Ingrid løper 5 km på 27 minutter og 30 sekunder. Hvor lang tid bruker hun i gjennomsnitt per kilometer?",
+      "choices": {
+        "A": "5 min 15 s",
+        "B": "5 min 24 s",
+        "C": "5 min 30 s",
+        "D": "5 min 46 s",
+        "E": "5 min 50 s"
+      },
+      "answer": "C",
+      "explanation": "27 min 30 s = 1 650 s. 1 650 s : 5 = 330 s, som er 5 min 30 s."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "Et turkart har målestokk 1 : 50 000. På kartet er skiløypa 9 cm lang. Hvor lang er skiløypa i virkeligheten?",
+      "choices": {
+        "A": "0,45 km",
+        "B": "4,5 km",
+        "C": "45 km",
+        "D": "450 km",
+        "E": "0,9 km"
+      },
+      "answer": "B",
+      "explanation": "9 cm · 50 000 = 450 000 cm = 4 500 m = 4,5 km."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Snødybden på en målestasjon var 84 cm. I løpet av en mildværsuke smeltet ¾ av snøen. Hvor mange centimeter snø var igjen?",
+      "answer": "21",
+      "unit": "cm",
+      "explanation": "¼ av snøen er igjen. 84 cm : 4 = 21 cm."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "En skiløper går 18 km på 1 time og 30 minutter. Hva er gjennomsnittsfarten i kilometer per time?",
+      "answer": "12",
+      "unit": "km/t",
+      "explanation": "1 time og 30 minutter = 1,5 timer. 18 km : 1,5 t = 12 km/t."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "I et brettspill kaster du to vanlige terninger og legger sammen øynene. Hva er sannsynligheten for at summen blir 7?",
+      "choices": {
+        "A": "1/36",
+        "B": "1/12",
+        "C": "7/36",
+        "D": "1/6",
+        "E": "1/11"
+      },
+      "answer": "D",
+      "explanation": "Det er 6 · 6 = 36 mulige utfall. Summen 7 får du på 6 måter (1+6, 2+5, 3+4, 4+3, 5+2, 6+1). 6/36 = 1/6."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "En hage er formet som et rektangel som er 20 m langt og 15 m bredt. I det ene hjørnet er det en terrasse på 5 m · 4 m. Resten av hagen er plen. Hvor mange kvadratmeter plen er det?",
+      "answer": "280",
+      "unit": "m²",
+      "explanation": "Hele hagen: 20 · 15 = 300 m². Terrassen: 5 · 4 = 20 m². Plen: 300 − 20 = 280 m²."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Klokka 18 var temperaturen 3 °C. Deretter falt den med 2,5 grader hver time. Hva var temperaturen klokka 22?",
+      "choices": {
+        "A": "−7 °C",
+        "B": "−10 °C",
+        "C": "−4,5 °C",
+        "D": "7 °C",
+        "E": "−9,5 °C"
+      },
+      "answer": "A",
+      "explanation": "Fra klokka 18 til 22 går det 4 timer. 4 · 2,5 = 10 grader. 3 − 10 = −7 °C."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "En skijakke kostet 1 500 kr. Butikken satte først opp prisen med 20 %. Senere satte de ned den nye prisen med 20 %. Hva koster jakka nå?",
+      "choices": {
+        "A": "1 500 kr",
+        "B": "1 200 kr",
+        "C": "1 560 kr",
+        "D": "1 800 kr",
+        "E": "1 440 kr"
+      },
+      "answer": "E",
+      "explanation": "Etter prisøkningen: 1 500 · 1,2 = 1 800 kr. Etter rabatten: 1 800 · 0,8 = 1 440 kr."
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "En skiløper bruker 18 minutter på 4 km. Hvor mange minutter bruker hun på 10 km hvis hun holder samme fart hele veien?",
+      "answer": "45",
+      "unit": "minutter",
+      "explanation": "18 : 4 = 4,5 minutter per km. 4,5 · 10 = 45 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Det kommer 8 mm regn på et flatt tak med areal 50 m². Hvor mange liter regnvann faller på taket? (1 m³ = 1 000 L)",
+      "choices": {
+        "A": "4 L",
+        "B": "40 L",
+        "C": "400 L",
+        "D": "4 000 L",
+        "E": "40 000 L"
+      },
+      "answer": "C",
+      "explanation": "8 mm = 0,008 m. Volumet er 50 m² · 0,008 m = 0,4 m³ = 400 L."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "De fem første dagene i en måned var gjennomsnittlig nedbør 6 mm per dag. Hvor mange millimeter nedbør må det komme dag 6 for at gjennomsnittet for de seks dagene skal bli 7 mm?",
+      "answer": "12",
+      "unit": "mm",
+      "explanation": "Fem dager: 5 · 6 = 30 mm. Seks dager med snitt 7 mm: 6 · 7 = 42 mm. Dag 6 må ha 42 − 30 = 12 mm."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "En tom vanntank er formet som et rett prisme som er 1,2 m langt, 0,8 m bredt og 1 m høyt. Tanken fylles med 40 liter per minutt. Hvor mange minutter tar det å fylle tanken? (1 m³ = 1 000 L)",
+      "answer": "24",
+      "unit": "minutter",
+      "explanation": "Volum: 1,2 · 0,8 · 1 = 0,96 m³ = 960 L. 960 L : 40 L per minutt = 24 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "25 elever svarte på hvor mange turer i skog og mark de gikk forrige måned. Tabellen viser svarene. Hvilken påstand er riktig?",
+      "table": {
+        "headers": [
+          "Antall turer",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "0",
+            "3"
+          ],
+          [
+            "1",
+            "5"
+          ],
+          [
+            "2",
+            "8"
+          ],
+          [
+            "3",
+            "4"
+          ],
+          [
+            "4",
+            "2"
+          ],
+          [
+            "5",
+            "3"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Gjennomsnittet er større enn medianen",
+        "B": "Typetallet er 8",
+        "C": "Medianen er 2,5",
+        "D": "25 elever gikk minst én tur",
+        "E": "Gjennomsnittet er 3 turer"
+      },
+      "answer": "A",
+      "explanation": "Sum turer: 0 + 5 + 16 + 12 + 8 + 15 = 56, og gjennomsnittet er 56 : 25 = 2,24. Den 13. eleven i sortert rekkefølge svarte 2, så medianen er 2. 2,24 > 2."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "I en eske med spillkort er det 4 røde kort, 6 blå kort og noen grønne kort. Sannsynligheten for å trekke et grønt kort er 1/3. Hvor mange grønne kort er det i esken?",
+      "choices": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5",
+        "E": "15"
+      },
+      "answer": "D",
+      "explanation": "Med 5 grønne kort er det 15 kort i alt, og 5/15 = 1/3. Ingen av de andre tallene gir 1/3."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Mari løper 10 km. De første 6 km holder hun et tempo på 5 min 30 s per km. De siste 4 km holder hun 4 min 45 s per km. Hvor mange minutter bruker hun totalt?",
+      "answer": "52",
+      "unit": "minutter",
+      "explanation": "6 · 5,5 min = 33 min og 4 · 4,75 min = 19 min. 33 + 19 = 52 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "I en hoppkonkurranse var gjennomsnittet av 8 hopp 45 m. Ett hopp på 31 m ble strøket fordi hopperen hadde feil utstyr. Hva ble gjennomsnittet av de 7 hoppene som var igjen?",
+      "choices": {
+        "A": "45 m",
+        "B": "47 m",
+        "C": "ca. 41 m",
+        "D": "38 m",
+        "E": "50 m"
+      },
+      "answer": "B",
+      "explanation": "Sum av 8 hopp: 8 · 45 = 360 m. Uten hoppet på 31 m: 360 − 31 = 329 m. 329 : 7 = 47 m."
+    }
+  ]
+}

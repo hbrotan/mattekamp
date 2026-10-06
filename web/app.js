@@ -6,6 +6,16 @@
   const SOURCE_INFO = {
     kenguru: { desc: "Oppgaver fra Kengurukonkurransen, 1.–10. trinn", levelLabel: "Velg nivå", setLabel: "Velg år" },
     getsmart: { desc: "Videoer fra getsmart.no med oppgaver til hver video, 8.–10. trinn", levelLabel: "Velg område", setLabel: "Velg emne" },
+    "nasjonale-prover": {
+      desc: "Egne øvingsprøver i stil med nasjonale prøver i regning, 5. og 8.–9. trinn",
+      levelLabel: "Velg trinn",
+      setLabel: "Velg prøve",
+      note: "Dette er Mattekamps egne øvingsoppgaver, ikke Udirs prøver. Udirs egne tidligere prøver med fasit finner du her:",
+      links: [
+        ["5. trinn hos Udir", "https://www.udir.no/eksamen-og-prover/prover/eksempeloppgaver-tidligere-nasjonale-prover/5.-trinn/regning/bokmal/"],
+        ["8. og 9. trinn hos Udir", "https://www.udir.no/eksamen-og-prover/prover/eksempeloppgaver-tidligere-nasjonale-prover/8-9-trinn/regning/bokmal/"],
+      ],
+    },
   };
   const sourceInfo = (key) => SOURCE_INFO[key] ?? { desc: "", levelLabel: "Velg nivå", setLabel: "Velg sett" };
   const app = document.getElementById("app");
@@ -237,6 +247,8 @@
         </div>
       </section>
 
+      ${info.links ? `<p class="source-note">${esc(info.note ?? "")} ${info.links.map(([t, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</p>` : ""}
+
       <section class="card">
         <div class="step-label">${stepLabel("Hvordan vil du løse?")}</div>
         <div class="modes">
@@ -286,8 +298,18 @@
       </div>`;
   }
 
+  function tableBlock(table) {
+    if (!table) return "";
+    const chart = table.chart === "bar" && window.barChartSvg ? `<div class="chart">${window.barChartSvg(table)}</div>` : "";
+    if (chart && !table.showTable) return chart;
+    return `${chart}<div class="table-wrap"><table class="data-table">
+      <thead><tr>${table.headers.map((h) => `<th>${esc(h)}</th>`).join("")}</tr></thead>
+      <tbody>${table.rows.map((r) => `<tr>${r.map((c) => `<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>
+    </table></div>`;
+  }
+
   function promptBlock(task) {
-    if (task.text) return `<div class="task text-task"><p class="question">${esc(task.text)}</p></div>`;
+    if (task.text) return `<div class="task text-task"><p class="question">${esc(task.text)}</p>${tableBlock(task.table)}</div>`;
     return `<div class="task">${task.images.map((src) => `<img src="${esc(src)}" alt="Oppgave ${task.n}">`).join("")}</div>
       <p class="zoom-hint">Trykk på bildet for å forstørre</p>`;
   }
@@ -298,8 +320,21 @@
     return imgs + text;
   }
 
+  // Svarfelt for tallsvar; i konkurranse kan svaret endres eller tømmes
+  function numberField(task, locked) {
+    const state = locked ? (task.isCorrect ? "right" : "wrong") : task.answer ? "chosen" : "";
+    return `<form class="number-answer ${state}" autocomplete="off">
+      <label class="sr-only" for="number-input">Ditt svar</label>
+      <input id="number-input" type="text" inputmode="decimal" value="${esc(task.answer ?? "")}" placeholder="Skriv svaret" ${locked ? "disabled" : ""}>
+      ${task.unit ? `<span class="unit">${esc(task.unit)}</span>` : ""}
+      ${locked ? "" : `<button class="btn primary" type="submit">${task.answer ? "Endre svar" : "Svar"}</button>`}
+    </form>`;
+  }
+  const withUnit = (value, task) => `${value}${task.unit ? ` ${task.unit}` : ""}`;
+
   // Svarknapper: bare bokstaver når alternativene står i bildet, ellers en liste med tekst
   function answerButtons(task, classFor, disabled) {
+    if (!task.options) return numberField(task, disabled);
     if (task.choices) {
       return `<div class="choices" role="group" aria-label="Svaralternativer">
         ${task.options.map((L) => `<button class="choice ${classFor(L)}" data-action="answer" data-l="${esc(L)}" ${disabled ? "disabled" : ""}>
@@ -361,7 +396,7 @@
 
       ${locked ? `
         <div class="feedback ${task.isCorrect ? "right" : "wrong"}">
-          ${task.isCorrect ? `Riktig! Du fikk ${task.points} poeng. 🎉` : `Ikke helt. Riktig svar er ${esc(task.correctAnswer)}.`}
+          ${task.isCorrect ? `Riktig! Du fikk ${task.points} poeng. 🎉` : `Ikke helt. Riktig svar er ${esc(withUnit(task.correctAnswer, task))}.`}
         </div>
         ${solutionBlock(task) ? `
           <details class="solution" ${task.isCorrect ? "" : "open"}>
@@ -395,12 +430,17 @@
     startTimer();
   }
 
-  async function answer(letter) {
+  async function answer(input) {
     const a = attempt;
     const i = current;
     const task = a.tasks[i];
     if (busy || (a.mode === "practice" && task.answer)) return;
-    const value = a.mode === "contest" && task.answer === letter ? null : letter;
+    let value;
+    if (task.options) value = a.mode === "contest" && task.answer === input ? null : input;
+    else {
+      value = String(input ?? "").trim() || null;
+      if (value === null && (a.mode === "practice" || !task.answer)) return;
+    }
     busy = true;
     try {
       const res = await api("PUT", `/api/attempts/${a.id}/answers/${task.n}`, { answer: value, elapsedSeconds: Math.round(elapsed()) });
@@ -484,8 +524,8 @@
             <h2 style="margin:0">Oppgave ${t.n}</h2>
             <span class="pill points">${t.points} poeng</span>
             <span class="spacer"></span>
-            <span class="pill">Ditt svar: <strong>${esc(t.answer || "–")}</strong></span>
-            <span class="pill">Riktig: <strong>${esc(t.correctAnswer)}</strong></span>
+            <span class="pill">Ditt svar: <strong>${esc(t.answer ? withUnit(t.answer, t) : "–")}</strong></span>
+            <span class="pill">Riktig: <strong>${esc(withUnit(t.correctAnswer, t))}</strong></span>
           </div>
           ${videoBlock(t.video)}
           ${promptBlock(t)}
@@ -654,11 +694,18 @@
     } catch (err) { showError(err); }
   });
 
+  document.addEventListener("submit", (e) => {
+    const form = e.target.closest(".number-answer");
+    if (!form || !attempt) return;
+    e.preventDefault();
+    answer(form.querySelector("input").value);
+  });
+
   document.addEventListener("keydown", (e) => {
     if (!attempt || !document.querySelector(".answers, .choices")) return;
     if (e.target.matches("input, textarea, select") || e.ctrlKey || e.metaKey || e.altKey) return;
     const k = e.key.toUpperCase();
-    if (attempt.tasks[current].options.includes(k)) { e.preventDefault(); answer(k); }
+    if (attempt.tasks[current].options?.includes(k)) { e.preventDefault(); answer(k); }
     else if (e.key === "ArrowRight") go(current + 1);
     else if (e.key === "ArrowLeft") go(current - 1);
   });

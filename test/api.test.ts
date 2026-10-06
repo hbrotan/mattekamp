@@ -52,6 +52,14 @@ beforeAll(async () => {
         video: { youtubeId: "abcDEF12345", title: "Avrunding" },
         explanation: "Andre desimal er 6, så vi runder opp til 3,5.",
       }],
+    }, {
+      id: "emne-2", level: "tall", levelName: "Tall og tallregning", title: "Tallsvar",
+      tasks: [{
+        n: 1, points: 4, kind: "number", answer: "37,5", unit: "kr",
+        text: "Hva koster 1,5 kg epler?",
+        table: { headers: ["Vare", "Pris per kg"], rows: [["Epler", "25 kr"], ["Pærer", "30 kr"]] },
+        explanation: "1,5 · 25 kr = 37,5 kr.",
+      }],
     }],
   }));
 
@@ -204,6 +212,29 @@ describe("tekstoppgaver med video", () => {
 
     const res = await c.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "B" });
     expect(res.json.task).toMatchObject({ isCorrect: true, correctAnswer: "B", solutionText: "Andre desimal er 6, så vi runder opp til 3,5." });
+  });
+});
+
+describe("tallsvar", () => {
+  it("retter tall uansett skrivemåte, og viser tabell og enhet", async () => {
+    const c = client();
+    await c.post("/api/groups", { groupName: "G", playerName: "P" });
+    const { json: attempt } = await c.post("/api/attempts", { setId: "tekst-emne-2", mode: "contest" });
+    expect(attempt.tasks[0]).toMatchObject({
+      kind: "number", options: null, unit: "kr",
+      table: { headers: ["Vare", "Pris per kg"], rows: [["Epler", "25 kr"], ["Pærer", "30 kr"]] },
+    });
+
+    const bad = await c.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "trettisju" });
+    expect(bad.status).toBe(400);
+    expect(bad.json.error).toMatch(/tall/);
+
+    await c.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "40" });
+    const changed = await c.put(`/api/attempts/${attempt.id}/answers/1`, { answer: "37.50" });
+    expect(changed.json.task.answer).toBe("37,5");
+    const done = await c.post(`/api/attempts/${attempt.id}/finish`, {});
+    expect(done.json).toMatchObject({ points: 4, correct: 1 });
+    expect(done.json.tasks[0]).toMatchObject({ isCorrect: true, correctAnswer: "37,5" });
   });
 });
 

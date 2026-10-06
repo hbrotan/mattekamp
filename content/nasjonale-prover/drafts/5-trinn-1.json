@@ -1,0 +1,642 @@
+{
+  "id": "5-trinn-1",
+  "title": "Øvingsprøve 1",
+  "level": "5-trinn",
+  "tasks": [
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "I klasse 5B er det 14 jenter og 13 gutter. Hvor mange elever er det i klassen?",
+      "choices": {
+        "A": "26",
+        "B": "27",
+        "C": "28",
+        "D": "29",
+        "E": "1"
+      },
+      "answer": "B",
+      "explanation": "14 + 13 = 27. Det er 27 elever i klassen."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "På timeplanen står det at mattetimen på mandag starter kl. 08.30 og slutter kl. 09.15. Hvor mange minutter varer mattetimen?",
+      "answer": "45",
+      "unit": "minutter",
+      "explanation": "Fra 08.30 til 09.00 er det 30 minutter, og fra 09.00 til 09.15 er det 15 minutter. 30 + 15 = 45 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser temperaturen klokka 12 hver dag i skoleuka. Hvilken dag var det varmest?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Temperatur"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "12 °C"
+          ],
+          [
+            "Tirsdag",
+            "15 °C"
+          ],
+          [
+            "Onsdag",
+            "9 °C"
+          ],
+          [
+            "Torsdag",
+            "17 °C"
+          ],
+          [
+            "Fredag",
+            "14 °C"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Tirsdag",
+        "C": "Onsdag",
+        "D": "Torsdag",
+        "E": "Fredag"
+      },
+      "answer": "D",
+      "explanation": "Den høyeste temperaturen i tabellen er 17 °C, og den målte de på torsdag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Ida har 6 skoletimer hver dag. Hvor mange skoletimer har hun i løpet av en uke med 5 skoledager?",
+      "answer": "30",
+      "unit": "timer",
+      "explanation": "Hun har 6 timer hver av de 5 dagene: 6 · 5 = 30 timer."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Sara kjøper en bolle og en juice i skolekiosken. Hun betaler med en femtilapp. Hvor mye får hun igjen?",
+      "table": {
+        "headers": [
+          "Vare",
+          "Pris"
+        ],
+        "rows": [
+          [
+            "Bolle",
+            "15 kr"
+          ],
+          [
+            "Juice",
+            "12 kr"
+          ],
+          [
+            "Eple",
+            "6 kr"
+          ],
+          [
+            "Yoghurt",
+            "18 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "27 kr",
+        "B": "33 kr",
+        "C": "23 kr",
+        "D": "37 kr",
+        "E": "13 kr"
+      },
+      "answer": "C",
+      "explanation": "Bolle og juice koster 15 kr + 12 kr = 27 kr. Hun får igjen 50 kr − 27 kr = 23 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Klassen har samlet inn 3 070 kr til klasseturen. Hvilken verdi har sifferet 7 i tallet 3 070?",
+      "choices": {
+        "A": "70",
+        "B": "7",
+        "C": "700",
+        "D": "7 000",
+        "E": "307"
+      },
+      "answer": "A",
+      "explanation": "I 3 070 står 7 på tierplassen. Det betyr 7 tiere, altså 70."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvordan elevene i 5A kommer seg til skolen. Alle elevene i klassen er med, og hver elev er bare telt én gang. Hvor mange elever er det i 5A?",
+      "table": {
+        "headers": [
+          "Måte",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "Går",
+            "9"
+          ],
+          [
+            "Sykler",
+            "7"
+          ],
+          [
+            "Buss",
+            "6"
+          ],
+          [
+            "Bil",
+            "3"
+          ]
+        ]
+      },
+      "answer": "25",
+      "unit": "elever",
+      "explanation": "Legg sammen alle søylene: 9 + 7 + 6 + 3 = 25 elever."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "På turdagen går klassen først 1 200 m til badeplassen. Etterpå går de 800 m videre til grillplassen. Hvor langt går de til sammen?",
+      "choices": {
+        "A": "20 km",
+        "B": "200 m",
+        "C": "2 000 km",
+        "D": "1 280 m",
+        "E": "2 km"
+      },
+      "answer": "E",
+      "explanation": "1 200 m + 800 m = 2 000 m. 1 000 m er 1 km, så 2 000 m er 2 km."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Det går 487 elever på skolen. Hva er 487 rundet av til nærmeste hundre?",
+      "choices": {
+        "A": "400",
+        "B": "480",
+        "C": "490",
+        "D": "500",
+        "E": "600"
+      },
+      "answer": "D",
+      "explanation": "487 ligger mellom 400 og 500, men nærmest 500 fordi 87 er mer enn 50."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Skolebussen går fra holdeplassen kl. 07.48. Turen til skolen tar 25 minutter. Når kommer bussen fram til skolen?",
+      "choices": {
+        "A": "08.03",
+        "B": "08.13",
+        "C": "08.23",
+        "D": "07.73",
+        "E": "08.15"
+      },
+      "answer": "B",
+      "explanation": "Fra 07.48 til 08.00 er det 12 minutter. Det er 25 − 12 = 13 minutter igjen, så bussen kommer 08.13."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser hvor mange boller skolekiosken solgte hver dag denne uka. På hvilken dag solgte kiosken dobbelt så mange boller som på onsdag?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Solgte boller"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "18"
+          ],
+          [
+            "Tirsdag",
+            "24"
+          ],
+          [
+            "Onsdag",
+            "15"
+          ],
+          [
+            "Torsdag",
+            "21"
+          ],
+          [
+            "Fredag",
+            "30"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Tirsdag",
+        "C": "Onsdag",
+        "D": "Torsdag",
+        "E": "Fredag"
+      },
+      "answer": "E",
+      "explanation": "På onsdag ble det solgt 15 boller. Dobbelt så mange er 15 · 2 = 30, og det solgte de på fredag."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "24 elever skal på tur. Hver elev skal ha med 3 boller. Hvor mange boller trenger de til sammen?",
+      "choices": {
+        "A": "72",
+        "B": "27",
+        "C": "62",
+        "D": "48",
+        "E": "82"
+      },
+      "answer": "A",
+      "explanation": "Hver av de 24 elevene skal ha 3 boller: 24 · 3 = 72 boller."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Sekken til Jonas veier 3 kg. Han legger oppi en matboks som veier 400 g og en vannflaske som veier 750 g. Hvor mange gram veier sekken nå?",
+      "answer": "4150",
+      "unit": "g",
+      "explanation": "3 kg = 3 000 g. 3 000 g + 400 g + 750 g = 4 150 g."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Elevene stemte over hvor klasseturen skal gå. Hver elev hadde én stemme. Tabellen viser resultatet. Hvilken påstand stemmer?",
+      "table": {
+        "headers": [
+          "Turmål",
+          "Antall stemmer"
+        ],
+        "rows": [
+          [
+            "Badeplassen",
+            "8"
+          ],
+          [
+            "Skogen",
+            "5"
+          ],
+          [
+            "Museet",
+            "4"
+          ],
+          [
+            "Fjellet",
+            "7"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Badeplassen fikk dobbelt så mange som museet",
+        "B": "Fjellet fikk flest stemmer",
+        "C": "Skogen fikk færrest stemmer",
+        "D": "Det var 25 elever som stemte",
+        "E": "Skogen og museet fikk like mange"
+      },
+      "answer": "A",
+      "explanation": "Badeplassen fikk 8 stemmer og museet 4. 8 er dobbelt så mye som 4. De andre påstandene stemmer ikke (det stemte for eksempel 24 elever)."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Kokken lager saft til 26 elever. Hver elev skal få 2 dL saft. Hvor mye saft må kokken lage?",
+      "choices": {
+        "A": "52 L",
+        "B": "5,2 L",
+        "C": "0,52 L",
+        "D": "2,6 L",
+        "E": "28 L"
+      },
+      "answer": "B",
+      "explanation": "26 · 2 dL = 52 dL. Det går 10 dL på 1 liter, så 52 dL = 5,2 L."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Læreren kjøper 6 pakker pølser til grillingen. Det er 8 pølser i hver pakke. 25 elever skal ha 2 pølser hver. Hva stemmer?",
+      "choices": {
+        "A": "Det er akkurat nok pølser",
+        "B": "Det er 2 pølser for mye",
+        "C": "Det mangler 2 pølser",
+        "D": "Det mangler 12 pølser",
+        "E": "Det er 23 pølser for mye"
+      },
+      "answer": "C",
+      "explanation": "Læreren har 6 · 8 = 48 pølser. Elevene trenger 25 · 2 = 50 pølser. Det mangler 50 − 48 = 2 pølser."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Bussen til leirskolen går fra skolen kl. 09.40 og er framme kl. 11.15. Hvor mange minutter tar bussturen?",
+      "answer": "95",
+      "unit": "minutter",
+      "explanation": "Fra 09.40 til 10.00 er det 20 minutter, fra 10.00 til 11.00 er det 60 minutter, og så 15 minutter til. 20 + 60 + 15 = 95 minutter."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Klassen kjøper 3 kartonger egg til frokosten på leirskolen. Det er 12 egg i hver kartong. De bruker 29 egg. Hvor mange egg er igjen?",
+      "answer": "7",
+      "unit": "egg",
+      "explanation": "De har 3 · 12 = 36 egg. 36 − 29 = 7 egg er igjen."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Klassen har tjent 4 350 kr på vaffelsalg. Klasseturen koster 6 000 kr. Hvor mange kroner mangler klassen?",
+      "answer": "1650",
+      "unit": "kr",
+      "explanation": "6 000 kr − 4 350 kr = 1 650 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Bussen kjører fra skolen til hytta. Tabellen viser avstandene på veien. Bussen har kjørt 15 km fra skolen. Hvor er bussen nå?",
+      "table": {
+        "headers": [
+          "Strekning",
+          "Avstand"
+        ],
+        "rows": [
+          [
+            "Skolen – bensinstasjonen",
+            "12 km"
+          ],
+          [
+            "Bensinstasjonen – brua",
+            "7 km"
+          ],
+          [
+            "Brua – hytta",
+            "4 km"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Før bensinstasjonen",
+        "B": "Mellom bensinstasjonen og brua",
+        "C": "Mellom brua og hytta",
+        "D": "Ved brua",
+        "E": "Framme ved hytta"
+      },
+      "answer": "B",
+      "explanation": "Bensinstasjonen er 12 km fra skolen, og brua er 12 + 7 = 19 km fra skolen. 15 km er mellom 12 km og 19 km."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "75 elever på 5. trinn skal kjøres til leirskolen i minibusser. Hver minibuss har plass til 16 elever. Hvor mange minibusser trenger de minst?",
+      "choices": {
+        "A": "4",
+        "B": "6",
+        "C": "5",
+        "D": "11",
+        "E": "59"
+      },
+      "answer": "C",
+      "explanation": "4 minibusser har plass til 4 · 16 = 64 elever. Det er for lite, så de trenger 5 minibusser (5 · 16 = 80 plasser)."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Rutetabellen viser når bussene går. Emma er ferdig på skolen kl. 14.15. Hun skal ta buss fra skolen og må være på stasjonen senest kl. 15.00. Når går bussen hun må ta fra skolen?",
+      "table": {
+        "headers": [
+          "Holdeplass",
+          "Buss 1",
+          "Buss 2",
+          "Buss 3",
+          "Buss 4"
+        ],
+        "rows": [
+          [
+            "Skolen",
+            "14.05",
+            "14.35",
+            "15.05",
+            "15.35"
+          ],
+          [
+            "Torget",
+            "14.12",
+            "14.42",
+            "15.12",
+            "15.42"
+          ],
+          [
+            "Stasjonen",
+            "14.20",
+            "14.50",
+            "15.20",
+            "15.50"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "14.05",
+        "B": "14.20",
+        "C": "15.05",
+        "D": "14.42",
+        "E": "14.35"
+      },
+      "answer": "E",
+      "explanation": "Bussen 14.05 har gått når Emma er ferdig. Bussen 14.35 er på stasjonen 14.50, og det er før 15.00. Bussen 15.05 er for sen."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Petter kjøper 2 rosinboller og 1 melk i kantina. Hvor mange kroner må han betale?",
+      "table": {
+        "headers": [
+          "Vare",
+          "Pris"
+        ],
+        "rows": [
+          [
+            "Rosinbolle",
+            "14,50 kr"
+          ],
+          [
+            "Melk",
+            "9,50 kr"
+          ],
+          [
+            "Eple",
+            "6 kr"
+          ]
+        ]
+      },
+      "answer": "38,5",
+      "unit": "kr",
+      "explanation": "To rosinboller koster 14,50 kr + 14,50 kr = 29 kr. Med melk blir det 29 kr + 9,50 kr = 38,50 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser temperaturen kl. 07 og kl. 14 hver dag på klasseturen. Hvilken dag steg temperaturen mest fra kl. 07 til kl. 14?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Kl. 07",
+          "Kl. 14"
+        ],
+        "rows": [
+          [
+            "Mandag",
+            "6 °C",
+            "11 °C"
+          ],
+          [
+            "Tirsdag",
+            "8 °C",
+            "12 °C"
+          ],
+          [
+            "Onsdag",
+            "5 °C",
+            "13 °C"
+          ],
+          [
+            "Torsdag",
+            "9 °C",
+            "15 °C"
+          ],
+          [
+            "Fredag",
+            "10 °C",
+            "14 °C"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Mandag",
+        "B": "Tirsdag",
+        "C": "Onsdag",
+        "D": "Torsdag",
+        "E": "Fredag"
+      },
+      "answer": "C",
+      "explanation": "Økningen var 5, 4, 8, 6 og 4 grader. Den største økningen, 8 grader (fra 5 °C til 13 °C), var på onsdag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Det er 32 elever på klasseturen. Halvparten av elevene vil bade, ¼ av elevene vil fiske, og resten vil spille fotball. Hvor mange elever vil spille fotball?",
+      "answer": "8",
+      "unit": "elever",
+      "explanation": "Halvparten av 32 er 16, og ¼ av 32 er 8. 32 − 16 − 8 = 8 elever vil spille fotball."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Kokken på leirskolen har 3 kg pasta. Hver elev spiser 125 g pasta til middag. Hvor mange elever kan få middag?",
+      "answer": "24",
+      "unit": "elever",
+      "explanation": "3 kg = 3 000 g. 3 000 g : 125 g = 24. (8 porsjoner på 125 g er 1 kg, og 3 · 8 = 24.)"
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Klassen hadde kiosk på foreldremøtet for å tjene penger til turen. Tabellen viser prisene og hvor mange av hver vare de solgte. Hvor mange kroner fikk klassen inn til sammen?",
+      "table": {
+        "headers": [
+          "Vare",
+          "Pris",
+          "Antall solgt"
+        ],
+        "rows": [
+          [
+            "Vaffel",
+            "10 kr",
+            "23"
+          ],
+          [
+            "Saft",
+            "8 kr",
+            "15"
+          ],
+          [
+            "Eple",
+            "5 kr",
+            "12"
+          ]
+        ]
+      },
+      "answer": "410",
+      "unit": "kr",
+      "explanation": "Vafler: 23 · 10 kr = 230 kr. Saft: 15 · 8 kr = 120 kr. Epler: 12 · 5 kr = 60 kr. Til sammen 230 + 120 + 60 = 410 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Skolen skal kjøpe 52 billetter til en fornøyelsespark. Hver billett koster 98 kr. Omtrent hvor mye koster billettene til sammen?",
+      "choices": {
+        "A": "5 000 kr",
+        "B": "500 kr",
+        "C": "1 500 kr",
+        "D": "50 000 kr",
+        "E": "15 000 kr"
+      },
+      "answer": "A",
+      "explanation": "52 er nesten 50, og 98 kr er nesten 100 kr. 50 · 100 kr = 5 000 kr."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Alle de 312 elevene på skolen skal være med på aktivitetsdagen. De deles i lag med 8 elever på hvert lag. Hvor mange lag blir det?",
+      "answer": "39",
+      "unit": "lag",
+      "explanation": "312 : 8 = 39, fordi 8 · 40 = 320 og 320 − 8 = 312. Det blir 39 lag."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Alle elevene i 5A og 5B valgte én aktivitet på klasseturen. Tabellen viser hva de valgte. Hvilken påstand stemmer?",
+      "table": {
+        "headers": [
+          "Aktivitet",
+          "5A",
+          "5B"
+        ],
+        "rows": [
+          [
+            "Bading",
+            "8",
+            "10"
+          ],
+          [
+            "Fotball",
+            "6",
+            "4"
+          ],
+          [
+            "Klatring",
+            "5",
+            "7"
+          ],
+          [
+            "Fisking",
+            "4",
+            "5"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Det er flere elever i 5A enn i 5B",
+        "B": "Til sammen valgte 12 elever fotball",
+        "C": "Like mange valgte klatring som fotball",
+        "D": "Det er 49 elever i de to klassene",
+        "E": "Fisking var minst populært i 5B"
+      },
+      "answer": "D",
+      "explanation": "5A har 8 + 6 + 5 + 4 = 23 elever, og 5B har 10 + 4 + 7 + 5 = 26 elever. Til sammen er det 23 + 26 = 49 elever."
+    }
+  ]
+}

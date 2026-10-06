@@ -1,0 +1,3730 @@
+{
+ "source": "nasjonale-prover",
+ "sourceName": "Nasjonale prøver",
+ "sets": [
+  {
+   "id": "5-trinn-1",
+   "level": "5-trinn",
+   "levelName": "5. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 1",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "choice",
+     "text": "I klasse 5B er det 14 jenter og 13 gutter. Hvor mange elever er det i klassen?",
+     "answer": "B",
+     "explanation": "14 + 13 = 27. Det er 27 elever i klassen.",
+     "choices": {
+      "A": "26",
+      "B": "27",
+      "C": "28",
+      "D": "29",
+      "E": "1"
+     }
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "number",
+     "text": "På timeplanen står det at mattetimen på mandag starter kl. 08.30 og slutter kl. 09.15. Hvor mange minutter varer mattetimen?",
+     "answer": "45",
+     "explanation": "Fra 08.30 til 09.00 er det 30 minutter, og fra 09.00 til 09.15 er det 15 minutter. 30 + 15 = 45 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "choice",
+     "text": "Tabellen viser temperaturen klokka 12 hver dag i skoleuka. Hvilken dag var det varmest?",
+     "answer": "D",
+     "explanation": "Den høyeste temperaturen i tabellen er 17 °C, og den målte de på torsdag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Temperatur"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "12 °C"
+       ],
+       [
+        "Tirsdag",
+        "15 °C"
+       ],
+       [
+        "Onsdag",
+        "9 °C"
+       ],
+       [
+        "Torsdag",
+        "17 °C"
+       ],
+       [
+        "Fredag",
+        "14 °C"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Tirsdag",
+      "C": "Onsdag",
+      "D": "Torsdag",
+      "E": "Fredag"
+     }
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "number",
+     "text": "Ida har 6 skoletimer hver dag. Hvor mange skoletimer har hun i løpet av en uke med 5 skoledager?",
+     "answer": "30",
+     "explanation": "Hun har 6 timer hver av de 5 dagene: 6 · 5 = 30 timer.",
+     "unit": "timer"
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "choice",
+     "text": "Sara kjøper en bolle og en juice i skolekiosken. Hun betaler med en femtilapp. Hvor mye får hun igjen?",
+     "answer": "C",
+     "explanation": "Bolle og juice koster 15 kr + 12 kr = 27 kr. Hun får igjen 50 kr − 27 kr = 23 kr.",
+     "table": {
+      "headers": [
+       "Vare",
+       "Pris"
+      ],
+      "rows": [
+       [
+        "Bolle",
+        "15 kr"
+       ],
+       [
+        "Juice",
+        "12 kr"
+       ],
+       [
+        "Eple",
+        "6 kr"
+       ],
+       [
+        "Yoghurt",
+        "18 kr"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "27 kr",
+      "B": "33 kr",
+      "C": "23 kr",
+      "D": "37 kr",
+      "E": "13 kr"
+     }
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "choice",
+     "text": "Klassen har samlet inn 3 070 kr til klasseturen. Hvilken verdi har sifferet 7 i tallet 3 070?",
+     "answer": "A",
+     "explanation": "I 3 070 står 7 på tierplassen. Det betyr 7 tiere, altså 70.",
+     "choices": {
+      "A": "70",
+      "B": "7",
+      "C": "700",
+      "D": "7 000",
+      "E": "307"
+     }
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "number",
+     "text": "Søylediagrammet viser hvordan elevene i 5A kommer seg til skolen. Alle elevene i klassen er med, og hver elev er bare telt én gang. Hvor mange elever er det i 5A?",
+     "answer": "25",
+     "explanation": "Legg sammen alle søylene: 9 + 7 + 6 + 3 = 25 elever.",
+     "table": {
+      "headers": [
+       "Måte",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "Går",
+        "9"
+       ],
+       [
+        "Sykler",
+        "7"
+       ],
+       [
+        "Buss",
+        "6"
+       ],
+       [
+        "Bil",
+        "3"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": false
+     },
+     "unit": "elever"
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "choice",
+     "text": "På turdagen går klassen først 1 200 m til badeplassen. Etterpå går de 800 m videre til grillplassen. Hvor langt går de til sammen?",
+     "answer": "E",
+     "explanation": "1 200 m + 800 m = 2 000 m. 1 000 m er 1 km, så 2 000 m er 2 km.",
+     "choices": {
+      "A": "20 km",
+      "B": "200 m",
+      "C": "2 000 km",
+      "D": "1 280 m",
+      "E": "2 km"
+     }
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "choice",
+     "text": "Det går 487 elever på skolen. Hva er 487 rundet av til nærmeste hundre?",
+     "answer": "D",
+     "explanation": "487 ligger mellom 400 og 500, men nærmest 500 fordi 87 er mer enn 50.",
+     "choices": {
+      "A": "400",
+      "B": "480",
+      "C": "490",
+      "D": "500",
+      "E": "600"
+     }
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "choice",
+     "text": "Skolebussen går fra holdeplassen kl. 07.48. Turen til skolen tar 25 minutter. Når kommer bussen fram til skolen?",
+     "answer": "B",
+     "explanation": "Fra 07.48 til 08.00 er det 12 minutter. Det er 25 − 12 = 13 minutter igjen, så bussen kommer 08.13.",
+     "choices": {
+      "A": "08.03",
+      "B": "08.13",
+      "C": "08.23",
+      "D": "07.73",
+      "E": "08.15"
+     }
+    },
+    {
+     "n": 11,
+     "points": 4,
+     "kind": "choice",
+     "text": "Tabellen viser hvor mange boller skolekiosken solgte hver dag denne uka. På hvilken dag solgte kiosken dobbelt så mange boller som på onsdag?",
+     "answer": "E",
+     "explanation": "På onsdag ble det solgt 15 boller. Dobbelt så mange er 15 · 2 = 30, og det solgte de på fredag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Solgte boller"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "18"
+       ],
+       [
+        "Tirsdag",
+        "24"
+       ],
+       [
+        "Onsdag",
+        "15"
+       ],
+       [
+        "Torsdag",
+        "21"
+       ],
+       [
+        "Fredag",
+        "30"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Tirsdag",
+      "C": "Onsdag",
+      "D": "Torsdag",
+      "E": "Fredag"
+     }
+    },
+    {
+     "n": 12,
+     "points": 4,
+     "kind": "choice",
+     "text": "24 elever skal på tur. Hver elev skal ha med 3 boller. Hvor mange boller trenger de til sammen?",
+     "answer": "A",
+     "explanation": "Hver av de 24 elevene skal ha 3 boller: 24 · 3 = 72 boller.",
+     "choices": {
+      "A": "72",
+      "B": "27",
+      "C": "62",
+      "D": "48",
+      "E": "82"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "number",
+     "text": "Sekken til Jonas veier 3 kg. Han legger oppi en matboks som veier 400 g og en vannflaske som veier 750 g. Hvor mange gram veier sekken nå?",
+     "answer": "4150",
+     "explanation": "3 kg = 3 000 g. 3 000 g + 400 g + 750 g = 4 150 g.",
+     "unit": "g"
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "choice",
+     "text": "Elevene stemte over hvor klasseturen skal gå. Hver elev hadde én stemme. Tabellen viser resultatet. Hvilken påstand stemmer?",
+     "answer": "A",
+     "explanation": "Badeplassen fikk 8 stemmer og museet 4. 8 er dobbelt så mye som 4. De andre påstandene stemmer ikke (det stemte for eksempel 24 elever).",
+     "table": {
+      "headers": [
+       "Turmål",
+       "Antall stemmer"
+      ],
+      "rows": [
+       [
+        "Badeplassen",
+        "8"
+       ],
+       [
+        "Skogen",
+        "5"
+       ],
+       [
+        "Museet",
+        "4"
+       ],
+       [
+        "Fjellet",
+        "7"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Badeplassen fikk dobbelt så mange som museet",
+      "B": "Fjellet fikk flest stemmer",
+      "C": "Skogen fikk færrest stemmer",
+      "D": "Det var 25 elever som stemte",
+      "E": "Skogen og museet fikk like mange"
+     }
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "choice",
+     "text": "Kokken lager saft til 26 elever. Hver elev skal få 2 dL saft. Hvor mye saft må kokken lage?",
+     "answer": "B",
+     "explanation": "26 · 2 dL = 52 dL. Det går 10 dL på 1 liter, så 52 dL = 5,2 L.",
+     "choices": {
+      "A": "52 L",
+      "B": "5,2 L",
+      "C": "0,52 L",
+      "D": "2,6 L",
+      "E": "28 L"
+     }
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "choice",
+     "text": "Læreren kjøper 6 pakker pølser til grillingen. Det er 8 pølser i hver pakke. 25 elever skal ha 2 pølser hver. Hva stemmer?",
+     "answer": "C",
+     "explanation": "Læreren har 6 · 8 = 48 pølser. Elevene trenger 25 · 2 = 50 pølser. Det mangler 50 − 48 = 2 pølser.",
+     "choices": {
+      "A": "Det er akkurat nok pølser",
+      "B": "Det er 2 pølser for mye",
+      "C": "Det mangler 2 pølser",
+      "D": "Det mangler 12 pølser",
+      "E": "Det er 23 pølser for mye"
+     }
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "number",
+     "text": "Bussen til leirskolen går fra skolen kl. 09.40 og er framme kl. 11.15. Hvor mange minutter tar bussturen?",
+     "answer": "95",
+     "explanation": "Fra 09.40 til 10.00 er det 20 minutter, fra 10.00 til 11.00 er det 60 minutter, og så 15 minutter til. 20 + 60 + 15 = 95 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "number",
+     "text": "Klassen kjøper 3 kartonger egg til frokosten på leirskolen. Det er 12 egg i hver kartong. De bruker 29 egg. Hvor mange egg er igjen?",
+     "answer": "7",
+     "explanation": "De har 3 · 12 = 36 egg. 36 − 29 = 7 egg er igjen.",
+     "unit": "egg"
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "number",
+     "text": "Klassen har tjent 4 350 kr på vaffelsalg. Klasseturen koster 6 000 kr. Hvor mange kroner mangler klassen?",
+     "answer": "1650",
+     "explanation": "6 000 kr − 4 350 kr = 1 650 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "choice",
+     "text": "Bussen kjører fra skolen til hytta. Tabellen viser avstandene på veien. Bussen har kjørt 15 km fra skolen. Hvor er bussen nå?",
+     "answer": "B",
+     "explanation": "Bensinstasjonen er 12 km fra skolen, og brua er 12 + 7 = 19 km fra skolen. 15 km er mellom 12 km og 19 km.",
+     "table": {
+      "headers": [
+       "Strekning",
+       "Avstand"
+      ],
+      "rows": [
+       [
+        "Skolen – bensinstasjonen",
+        "12 km"
+       ],
+       [
+        "Bensinstasjonen – brua",
+        "7 km"
+       ],
+       [
+        "Brua – hytta",
+        "4 km"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Før bensinstasjonen",
+      "B": "Mellom bensinstasjonen og brua",
+      "C": "Mellom brua og hytta",
+      "D": "Ved brua",
+      "E": "Framme ved hytta"
+     }
+    },
+    {
+     "n": 21,
+     "points": 5,
+     "kind": "choice",
+     "text": "75 elever på 5. trinn skal kjøres til leirskolen i minibusser. Hver minibuss har plass til 16 elever. Hvor mange minibusser trenger de minst?",
+     "answer": "C",
+     "explanation": "4 minibusser har plass til 4 · 16 = 64 elever. Det er for lite, så de trenger 5 minibusser (5 · 16 = 80 plasser).",
+     "choices": {
+      "A": "4",
+      "B": "6",
+      "C": "5",
+      "D": "11",
+      "E": "59"
+     }
+    },
+    {
+     "n": 22,
+     "points": 5,
+     "kind": "choice",
+     "text": "Rutetabellen viser når bussene går. Emma er ferdig på skolen kl. 14.15. Hun skal ta buss fra skolen og må være på stasjonen senest kl. 15.00. Når går bussen hun må ta fra skolen?",
+     "answer": "E",
+     "explanation": "Bussen 14.05 har gått når Emma er ferdig. Bussen 14.35 er på stasjonen 14.50, og det er før 15.00. Bussen 15.05 er for sen.",
+     "table": {
+      "headers": [
+       "Holdeplass",
+       "Buss 1",
+       "Buss 2",
+       "Buss 3",
+       "Buss 4"
+      ],
+      "rows": [
+       [
+        "Skolen",
+        "14.05",
+        "14.35",
+        "15.05",
+        "15.35"
+       ],
+       [
+        "Torget",
+        "14.12",
+        "14.42",
+        "15.12",
+        "15.42"
+       ],
+       [
+        "Stasjonen",
+        "14.20",
+        "14.50",
+        "15.20",
+        "15.50"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "14.05",
+      "B": "14.20",
+      "C": "15.05",
+      "D": "14.42",
+      "E": "14.35"
+     }
+    },
+    {
+     "n": 23,
+     "points": 5,
+     "kind": "number",
+     "text": "Petter kjøper 2 rosinboller og 1 melk i kantina. Hvor mange kroner må han betale?",
+     "answer": "38,5",
+     "explanation": "To rosinboller koster 14,50 kr + 14,50 kr = 29 kr. Med melk blir det 29 kr + 9,50 kr = 38,50 kr.",
+     "table": {
+      "headers": [
+       "Vare",
+       "Pris"
+      ],
+      "rows": [
+       [
+        "Rosinbolle",
+        "14,50 kr"
+       ],
+       [
+        "Melk",
+        "9,50 kr"
+       ],
+       [
+        "Eple",
+        "6 kr"
+       ]
+      ]
+     },
+     "unit": "kr"
+    },
+    {
+     "n": 24,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tabellen viser temperaturen kl. 07 og kl. 14 hver dag på klasseturen. Hvilken dag steg temperaturen mest fra kl. 07 til kl. 14?",
+     "answer": "C",
+     "explanation": "Økningen var 5, 4, 8, 6 og 4 grader. Den største økningen, 8 grader (fra 5 °C til 13 °C), var på onsdag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Kl. 07",
+       "Kl. 14"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "6 °C",
+        "11 °C"
+       ],
+       [
+        "Tirsdag",
+        "8 °C",
+        "12 °C"
+       ],
+       [
+        "Onsdag",
+        "5 °C",
+        "13 °C"
+       ],
+       [
+        "Torsdag",
+        "9 °C",
+        "15 °C"
+       ],
+       [
+        "Fredag",
+        "10 °C",
+        "14 °C"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Tirsdag",
+      "C": "Onsdag",
+      "D": "Torsdag",
+      "E": "Fredag"
+     }
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "number",
+     "text": "Det er 32 elever på klasseturen. Halvparten av elevene vil bade, ¼ av elevene vil fiske, og resten vil spille fotball. Hvor mange elever vil spille fotball?",
+     "answer": "8",
+     "explanation": "Halvparten av 32 er 16, og ¼ av 32 er 8. 32 − 16 − 8 = 8 elever vil spille fotball.",
+     "unit": "elever"
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "number",
+     "text": "Kokken på leirskolen har 3 kg pasta. Hver elev spiser 125 g pasta til middag. Hvor mange elever kan få middag?",
+     "answer": "24",
+     "explanation": "3 kg = 3 000 g. 3 000 g : 125 g = 24. (8 porsjoner på 125 g er 1 kg, og 3 · 8 = 24.)",
+     "unit": "elever"
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "number",
+     "text": "Klassen hadde kiosk på foreldremøtet for å tjene penger til turen. Tabellen viser prisene og hvor mange av hver vare de solgte. Hvor mange kroner fikk klassen inn til sammen?",
+     "answer": "410",
+     "explanation": "Vafler: 23 · 10 kr = 230 kr. Saft: 15 · 8 kr = 120 kr. Epler: 12 · 5 kr = 60 kr. Til sammen 230 + 120 + 60 = 410 kr.",
+     "table": {
+      "headers": [
+       "Vare",
+       "Pris",
+       "Antall solgt"
+      ],
+      "rows": [
+       [
+        "Vaffel",
+        "10 kr",
+        "23"
+       ],
+       [
+        "Saft",
+        "8 kr",
+        "15"
+       ],
+       [
+        "Eple",
+        "5 kr",
+        "12"
+       ]
+      ]
+     },
+     "unit": "kr"
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "choice",
+     "text": "Skolen skal kjøpe 52 billetter til en fornøyelsespark. Hver billett koster 98 kr. Omtrent hvor mye koster billettene til sammen?",
+     "answer": "A",
+     "explanation": "52 er nesten 50, og 98 kr er nesten 100 kr. 50 · 100 kr = 5 000 kr.",
+     "choices": {
+      "A": "5 000 kr",
+      "B": "500 kr",
+      "C": "1 500 kr",
+      "D": "50 000 kr",
+      "E": "15 000 kr"
+     }
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "number",
+     "text": "Alle de 312 elevene på skolen skal være med på aktivitetsdagen. De deles i lag med 8 elever på hvert lag. Hvor mange lag blir det?",
+     "answer": "39",
+     "explanation": "312 : 8 = 39, fordi 8 · 40 = 320 og 320 − 8 = 312. Det blir 39 lag.",
+     "unit": "lag"
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "choice",
+     "text": "Alle elevene i 5A og 5B valgte én aktivitet på klasseturen. Tabellen viser hva de valgte. Hvilken påstand stemmer?",
+     "answer": "D",
+     "explanation": "5A har 8 + 6 + 5 + 4 = 23 elever, og 5B har 10 + 4 + 7 + 5 = 26 elever. Til sammen er det 23 + 26 = 49 elever.",
+     "table": {
+      "headers": [
+       "Aktivitet",
+       "5A",
+       "5B"
+      ],
+      "rows": [
+       [
+        "Bading",
+        "8",
+        "10"
+       ],
+       [
+        "Fotball",
+        "6",
+        "4"
+       ],
+       [
+        "Klatring",
+        "5",
+        "7"
+       ],
+       [
+        "Fisking",
+        "4",
+        "5"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Det er flere elever i 5A enn i 5B",
+      "B": "Til sammen valgte 12 elever fotball",
+      "C": "Like mange valgte klatring som fotball",
+      "D": "Det er 49 elever i de to klassene",
+      "E": "Fisking var minst populært i 5B"
+     }
+    }
+   ]
+  },
+  {
+   "id": "5-trinn-2",
+   "level": "5-trinn",
+   "levelName": "5. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 2",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "choice",
+     "text": "På idrettsdagen er elevene på 5. trinn delt i 4 lag. Hvert lag har 6 elever. Hvor mange elever er det til sammen?",
+     "answer": "C",
+     "explanation": "4 lag med 6 elever i hvert: 4 · 6 = 24 elever.",
+     "choices": {
+      "A": "2",
+      "B": "10",
+      "C": "24",
+      "D": "28",
+      "E": "46"
+     }
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "choice",
+     "text": "Tabellen viser hvor mange bøker som ble lånt ut på skolebiblioteket i én uke. Hvilken dag ble det lånt ut flest bøker?",
+     "answer": "A",
+     "explanation": "Det største tallet i tabellen er 47, og det står ved mandag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Utlånte bøker"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "47"
+       ],
+       [
+        "Tirsdag",
+        "29"
+       ],
+       [
+        "Onsdag",
+        "38"
+       ],
+       [
+        "Torsdag",
+        "44"
+       ],
+       [
+        "Fredag",
+        "26"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Tirsdag",
+      "C": "Onsdag",
+      "D": "Torsdag",
+      "E": "Fredag"
+     }
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "choice",
+     "text": "Sondre har en vanlig sykkel. Hvilket svar passer best for hvor mye sykkelen veier?",
+     "answer": "D",
+     "explanation": "En sykkel er tung å løfte, men en voksen klarer det lett. 15 kg passer best. 15 g er like lett som et brev, og 150 kg er tyngre enn to voksne.",
+     "choices": {
+      "A": "15 g",
+      "B": "150 g",
+      "C": "1,5 kg",
+      "D": "15 kg",
+      "E": "150 kg"
+     }
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "number",
+     "text": "Svømmebassenget er 25 m langt. Emma svømmer 8 lengder. Hvor mange meter svømmer hun?",
+     "answer": "200",
+     "explanation": "8 lengder på 25 m: 8 · 25 m = 200 m.",
+     "unit": "m"
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "choice",
+     "text": "Fotballaget hadde fem hjemmekamper. Svaralternativene viser hvor mange tilskuere som kom på kampene. Hvilket tilskuertall er størst?",
+     "answer": "B",
+     "explanation": "Alle tallene har 4 tusenere. Se på hundrerne: 4 908 har 9 hundrere, som er flest.",
+     "choices": {
+      "A": "4 089",
+      "B": "4 908",
+      "C": "4 890",
+      "D": "4 809",
+      "E": "4 098"
+     }
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "number",
+     "text": "Fritidsklubben har 156 medlemmer. 89 av medlemmene er jenter. Resten er gutter. Hvor mange gutter er medlemmer?",
+     "answer": "67",
+     "explanation": "156 − 89 = 67 gutter.",
+     "unit": "gutter"
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "choice",
+     "text": "En kinobillett koster 85 kr. Hva koster 3 billetter?",
+     "answer": "E",
+     "explanation": "3 · 85 kr = 255 kr.",
+     "choices": {
+      "A": "88 kr",
+      "B": "170 kr",
+      "C": "235 kr",
+      "D": "245 kr",
+      "E": "255 kr"
+     }
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "number",
+     "text": "Søylediagrammet viser hvor mange lengder fem elever svømte på svømmedagen. Verdiene står i tabellen. Hvor mange lengder svømte de til sammen?",
+     "answer": "50",
+     "explanation": "12 + 8 + 10 + 14 + 6 = 50 lengder.",
+     "table": {
+      "headers": [
+       "Elev",
+       "Lengder"
+      ],
+      "rows": [
+       [
+        "Ali",
+        "12"
+       ],
+       [
+        "Ida",
+        "8"
+       ],
+       [
+        "Jon",
+        "10"
+       ],
+       [
+        "Mari",
+        "14"
+       ],
+       [
+        "Tor",
+        "6"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": true
+     },
+     "unit": "lengder"
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "number",
+     "text": "Sara hoppet 2 m og 85 cm i lengdehopp. Hvor mange centimeter hoppet hun?",
+     "answer": "285",
+     "explanation": "1 m = 100 cm, så 2 m = 200 cm. 200 cm + 85 cm = 285 cm.",
+     "unit": "cm"
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "choice",
+     "text": "Det var 12 486 tilskuere på en fotballkamp. Hva er tallet avrundet til nærmeste tusen?",
+     "answer": "C",
+     "explanation": "12 486 ligger mellom 12 000 og 13 000. Hundresifferet er 4, så vi runder ned til 12 000.",
+     "choices": {
+      "A": "10 000",
+      "B": "11 000",
+      "C": "12 000",
+      "D": "12 500",
+      "E": "13 000"
+     }
+    },
+    {
+     "n": 11,
+     "points": 4,
+     "kind": "choice",
+     "text": "Filmen på kinoen starter kl. 17.45 og varer i 1 time og 30 minutter. Når slutter filmen?",
+     "answer": "A",
+     "explanation": "17.45 + 1 time = 18.45. 18.45 + 30 minutter = 19.15.",
+     "choices": {
+      "A": "kl. 19.15",
+      "B": "kl. 19.30",
+      "C": "kl. 18.15",
+      "D": "kl. 19.05",
+      "E": "kl. 18.75"
+     }
+    },
+    {
+     "n": 12,
+     "points": 4,
+     "kind": "choice",
+     "text": "Klassen har 28 elever. ¼ av elevene spiller håndball. Hvor mange elever spiller håndball?",
+     "answer": "D",
+     "explanation": "¼ av 28 betyr 28 : 4 = 7 elever.",
+     "choices": {
+      "A": "4",
+      "B": "14",
+      "C": "24",
+      "D": "7",
+      "E": "21"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "choice",
+     "text": "Søylediagrammet viser hvor mange som så film på kinoen fire dager. Verdiene står i tabellen. Hvor mange flere så film på lørdag enn på fredag?",
+     "answer": "B",
+     "explanation": "215 − 138 = 77 flere på lørdag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Antall besøkende"
+      ],
+      "rows": [
+       [
+        "Torsdag",
+        "96"
+       ],
+       [
+        "Fredag",
+        "138"
+       ],
+       [
+        "Lørdag",
+        "215"
+       ],
+       [
+        "Søndag",
+        "174"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": true
+     },
+     "choices": {
+      "A": "67",
+      "B": "77",
+      "C": "87",
+      "D": "177",
+      "E": "353"
+     }
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "number",
+     "text": "Det er 96 spillere med i en fotballturnering. Hvert lag har 8 spillere. Hvor mange lag er med?",
+     "answer": "12",
+     "explanation": "96 : 8 = 12 lag.",
+     "unit": "lag"
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "choice",
+     "text": "Fem like håndballer veier 2 kg til sammen. Hvor mye veier én håndball?",
+     "answer": "E",
+     "explanation": "2 kg = 2 000 g. 2 000 g : 5 = 400 g.",
+     "choices": {
+      "A": "10 kg",
+      "B": "40 g",
+      "C": "200 g",
+      "D": "250 g",
+      "E": "400 g"
+     }
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "choice",
+     "text": "Fotballklubben skal kjøpe 150 baller. Ballene selges i nett med 6 baller i hvert nett. Hvor mange nett må klubben kjøpe?",
+     "answer": "A",
+     "explanation": "150 : 6 = 25 nett.",
+     "choices": {
+      "A": "25",
+      "B": "15",
+      "C": "30",
+      "D": "144",
+      "E": "900"
+     }
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "choice",
+     "text": "Alle de 24 elevene i 5B valgte sin favorittidrett. Tabellen viser resultatet. Hvor stor del av klassen valgte fotball?",
+     "answer": "C",
+     "explanation": "12 av 24 elever valgte fotball. 12 er halvparten av 24, altså ½.",
+     "table": {
+      "headers": [
+       "Idrett",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "Fotball",
+        "12"
+       ],
+       [
+        "Svømming",
+        "6"
+       ],
+       [
+        "Turn",
+        "4"
+       ],
+       [
+        "Ski",
+        "2"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "¼",
+      "B": "⅓",
+      "C": "½",
+      "D": "¾",
+      "E": "⅙"
+     }
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "number",
+     "text": "Treneren har 3 L saft. Han heller saften i glass som rommer 2 dL hver. Hvor mange glass kan han fylle?",
+     "answer": "15",
+     "explanation": "1 L = 10 dL, så 3 L = 30 dL. 30 dL : 2 dL = 15 glass.",
+     "unit": "glass"
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "choice",
+     "text": "På fredag kom 498 tilskuere på basketkampen. På lørdag kom 307 tilskuere. Omtrent hvor mange tilskuere kom det til sammen?",
+     "answer": "B",
+     "explanation": "498 er nesten 500, og 307 er nesten 300. 500 + 300 = 800.",
+     "choices": {
+      "A": "700",
+      "B": "800",
+      "C": "900",
+      "D": "1 000",
+      "E": "8 000"
+     }
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "choice",
+     "text": "Speidergruppa startet sykkelturen kl. 09.40 og kom fram kl. 13.15. Hvor lang tid brukte de?",
+     "answer": "D",
+     "explanation": "Fra 09.40 til 12.40 er 3 timer. Fra 12.40 til 13.15 er 35 minutter. Til sammen 3 timer og 35 minutter.",
+     "choices": {
+      "A": "3 timer og 25 minutter",
+      "B": "4 timer og 25 minutter",
+      "C": "3 timer og 75 minutter",
+      "D": "3 timer og 35 minutter",
+      "E": "4 timer og 35 minutter"
+     }
+    },
+    {
+     "n": 21,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tabellen viser resultatene i ballkast på idrettsdagen. Hvilken påstand er riktig?",
+     "answer": "A",
+     "explanation": "21 m − 15 m = 6 m, så Sofie kastet 6 m lenger enn Henrik. Elias kastet lengst, Henrik kortest, og bare Elias kastet over 25 m.",
+     "table": {
+      "headers": [
+       "Elev",
+       "Ballkast"
+      ],
+      "rows": [
+       [
+        "Nora",
+        "18 m"
+       ],
+       [
+        "Elias",
+        "26 m"
+       ],
+       [
+        "Sofie",
+        "21 m"
+       ],
+       [
+        "Henrik",
+        "15 m"
+       ],
+       [
+        "Leah",
+        "23 m"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Sofie kastet 6 m lenger enn Henrik",
+      "B": "Leah kastet lengst",
+      "C": "Nora kastet kortest",
+      "D": "To elever kastet over 25 m",
+      "E": "Elias kastet dobbelt så langt som Nora"
+     }
+    },
+    {
+     "n": 22,
+     "points": 5,
+     "kind": "number",
+     "text": "Skolen skal leie 4 busser til skirennet. Hver buss har 52 seter. 187 elever og lærere skal være med. Hvor mange seter blir ledige?",
+     "answer": "21",
+     "explanation": "4 · 52 = 208 seter. 208 − 187 = 21 ledige seter.",
+     "unit": "seter"
+    },
+    {
+     "n": 23,
+     "points": 5,
+     "kind": "number",
+     "text": "Lise kjøper en bok om fotball til 149 kr og en drikkeflaske til 39,50 kr. Hun betaler med en 200-lapp. Hvor mange kroner får hun igjen?",
+     "answer": "11,5",
+     "explanation": "149 kr + 39,50 kr = 188,50 kr. 200 kr − 188,50 kr = 11,50 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 24,
+     "points": 5,
+     "kind": "choice",
+     "text": "Laget hadde med 48 flasker vann på turneringen. ¾ av flaskene ble drukket. Hvor mange flasker var igjen?",
+     "answer": "E",
+     "explanation": "¼ av 48 er 12. ¾ ble drukket, så ¼ er igjen: 12 flasker.",
+     "choices": {
+      "A": "36",
+      "B": "16",
+      "C": "44",
+      "D": "24",
+      "E": "12"
+     }
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "number",
+     "text": "Tabellen viser resultatene i en fotballturnering. Seier gir 3 poeng, uavgjort gir 1 poeng og tap gir 0 poeng. Hvor mange poeng fikk Ørnen?",
+     "answer": "10",
+     "explanation": "Ørnen har 3 seire og 1 uavgjort: 3 · 3 + 1 · 1 = 10 poeng.",
+     "table": {
+      "headers": [
+       "Lag",
+       "Seier",
+       "Uavgjort",
+       "Tap"
+      ],
+      "rows": [
+       [
+        "Ørnen",
+        "3",
+        "1",
+        "0"
+       ],
+       [
+        "Lyn",
+        "2",
+        "1",
+        "1"
+       ],
+       [
+        "Storm",
+        "2",
+        "0",
+        "2"
+       ],
+       [
+        "Falken",
+        "1",
+        "1",
+        "2"
+       ],
+       [
+        "Bjørn",
+        "0",
+        "1",
+        "3"
+       ]
+      ]
+     },
+     "unit": "poeng"
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "choice",
+     "text": "Prislisten viser hva det koster å bade i svømmehallen. Mia skal bade 12 ganger i oktober. Hva er billigst for henne?",
+     "answer": "B",
+     "explanation": "12 enkeltbilletter: 540 kr. Ett klippekort og 2 enkeltbilletter: 380 + 90 = 470 kr. To klippekort: 760 kr. Månedskort: 500 kr. Billigst er 470 kr.",
+     "table": {
+      "headers": [
+       "Billett",
+       "Pris"
+      ],
+      "rows": [
+       [
+        "Enkeltbillett",
+        "45 kr"
+       ],
+       [
+        "Klippekort (10 bad)",
+        "380 kr"
+       ],
+       [
+        "Månedskort",
+        "500 kr"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Bare enkeltbilletter",
+      "B": "Ett klippekort og 2 enkeltbilletter",
+      "C": "To klippekort",
+      "D": "Månedskort for oktober",
+      "E": "Alt koster like mye"
+     }
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "choice",
+     "text": "130 speidere skal sove i telt på leiren. Hvert telt har plass til 6 speidere. Hvor mange telt trenger de minst?",
+     "answer": "C",
+     "explanation": "130 : 6 = 21 med 4 i rest. De 4 speiderne som er igjen, trenger også et telt, så det blir 22 telt.",
+     "choices": {
+      "A": "20",
+      "B": "21",
+      "C": "22",
+      "D": "124",
+      "E": "136"
+     }
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "number",
+     "text": "På treningen løp Jonas 1 500 m tre ganger og 800 m to ganger. Hvor mange kilometer løp han til sammen?",
+     "answer": "6,1",
+     "explanation": "3 · 1 500 m = 4 500 m og 2 · 800 m = 1 600 m. Til sammen 6 100 m = 6,1 km.",
+     "unit": "km"
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "number",
+     "text": "Ola trener til et sykkelritt. Den første dagen sykler han 2 km. Hver dag etter det sykler han 3 km mer enn dagen før. Hvor mange kilometer sykler han på dag 6?",
+     "answer": "17",
+     "explanation": "Dag 1–6: 2, 5, 8, 11, 14 og 17 km. På dag 6 sykler han 17 km.",
+     "unit": "km"
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "number",
+     "text": "Tabellen viser hvor mange bøker 5A og 5B lånte på biblioteket i tre måneder. Hvor mange flere bøker lånte 5A enn 5B til sammen i disse tre månedene?",
+     "answer": "25",
+     "explanation": "5A: 46 + 52 + 61 = 159. 5B: 38 + 49 + 47 = 134. 159 − 134 = 25 flere bøker.",
+     "table": {
+      "headers": [
+       "Måned",
+       "5A",
+       "5B"
+      ],
+      "rows": [
+       [
+        "September",
+        "46",
+        "38"
+       ],
+       [
+        "Oktober",
+        "52",
+        "49"
+       ],
+       [
+        "November",
+        "61",
+        "47"
+       ]
+      ]
+     },
+     "unit": "bøker"
+    }
+   ]
+  },
+  {
+   "id": "5-trinn-3",
+   "level": "5-trinn",
+   "levelName": "5. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 3",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "choice",
+     "text": "Ida kjøper et brød til 34 kr og en liter melk til 23 kr. Hvor mye må hun betale til sammen?",
+     "answer": "B",
+     "explanation": "34 kr + 23 kr = 57 kr.",
+     "choices": {
+      "A": "47 kr",
+      "B": "57 kr",
+      "C": "58 kr",
+      "D": "67 kr",
+      "E": "75 kr"
+     }
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "number",
+     "text": "Mamma satte en kake i ovnen klokka 15.10. Hun tok kaken ut klokka 15.45. Hvor mange minutter var kaken i ovnen?",
+     "answer": "35",
+     "explanation": "Fra 15.10 til 15.45 er det 45 − 10 = 35 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "choice",
+     "text": "Nora har høner i hagen. Tabellen viser hvor mange egg hønene la hver dag i en uke. Hvilken dag la hønene flest egg?",
+     "answer": "E",
+     "explanation": "Det største tallet i tabellen er 8, og det står ved fredag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Antall egg"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "5"
+       ],
+       [
+        "Tirsdag",
+        "6"
+       ],
+       [
+        "Onsdag",
+        "4"
+       ],
+       [
+        "Torsdag",
+        "7"
+       ],
+       [
+        "Fredag",
+        "8"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Tirsdag",
+      "C": "Onsdag",
+      "D": "Torsdag",
+      "E": "Fredag"
+     }
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "number",
+     "text": "Emil har bursdag og har invitert 8 venner. Hver av vennene skal få 3 ballonger. Hvor mange ballonger trenger Emil til vennene sine?",
+     "answer": "24",
+     "explanation": "8 venner · 3 ballonger = 24 ballonger.",
+     "unit": "ballonger"
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "choice",
+     "text": "Jonas kjøper en pakke kjeks til 37 kr. Han betaler med en 100-lapp. Hvor mye får han igjen?",
+     "answer": "A",
+     "explanation": "100 kr − 37 kr = 63 kr.",
+     "choices": {
+      "A": "63 kr",
+      "B": "67 kr",
+      "C": "73 kr",
+      "D": "53 kr",
+      "E": "137 kr"
+     }
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "choice",
+     "text": "Sara sparer 20 kr hver uke. Hvor mye har hun spart etter 6 uker?",
+     "answer": "C",
+     "explanation": "20 kr · 6 = 120 kr.",
+     "choices": {
+      "A": "26 kr",
+      "B": "100 kr",
+      "C": "120 kr",
+      "D": "140 kr",
+      "E": "1 200 kr"
+     }
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "number",
+     "text": "Søylediagrammet viser hvilke kjæledyr elevene i 5B har. Hver elev har bare ett kjæledyr. Hvor mange flere elever har katt enn kanin?",
+     "answer": "5",
+     "explanation": "9 elever har katt og 4 har kanin. 9 − 4 = 5.",
+     "table": {
+      "headers": [
+       "Kjæledyr",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "Hund",
+        "7"
+       ],
+       [
+        "Katt",
+        "9"
+       ],
+       [
+        "Kanin",
+        "4"
+       ],
+       [
+        "Fisk",
+        "3"
+       ],
+       [
+        "Hamster",
+        "2"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": false
+     },
+     "unit": "elever"
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "choice",
+     "text": "En oppskrift trenger 1 liter melk. Mamma har bare et målebeger som rommer 1 dL. Hvor mange ganger må hun fylle målebegeret for å få 1 liter?",
+     "answer": "C",
+     "explanation": "1 liter = 10 dL, så hun må fylle begeret 10 ganger.",
+     "choices": {
+      "A": "1",
+      "B": "5",
+      "C": "10",
+      "D": "100",
+      "E": "1 000"
+     }
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "number",
+     "text": "Pappa planter tomatplanter i hagen. Han lager 4 rader med 7 planter i hver rad. Hvor mange tomatplanter planter han?",
+     "answer": "28",
+     "explanation": "4 · 7 = 28 planter.",
+     "unit": "planter"
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "choice",
+     "text": "Hvilken vekt passer best for en vanlig pose sukker fra butikken?",
+     "answer": "E",
+     "explanation": "En vanlig pose sukker veier 1 kg. Til sammenligning veier en teskje sukker bare noen få gram.",
+     "choices": {
+      "A": "1 g",
+      "B": "10 g",
+      "C": "50 g",
+      "D": "100 g",
+      "E": "1 kg"
+     }
+    },
+    {
+     "n": 11,
+     "points": 4,
+     "kind": "choice",
+     "text": "Emil har bakt 36 muffins til bursdagen sin. Han fordeler dem likt på 4 fat. Hvor mange muffins blir det på hvert fat?",
+     "answer": "B",
+     "explanation": "36 : 4 = 9 muffins på hvert fat.",
+     "choices": {
+      "A": "8",
+      "B": "9",
+      "C": "32",
+      "D": "40",
+      "E": "144"
+     }
+    },
+    {
+     "n": 12,
+     "points": 4,
+     "kind": "choice",
+     "text": "Klassen stemte over hva de skulle spise på klassefesten. Hver elev hadde én stemme. Tabellen viser resultatet. Hvor mange elever stemte?",
+     "answer": "A",
+     "explanation": "9 + 6 + 4 + 5 = 24 elever.",
+     "table": {
+      "headers": [
+       "Mat",
+       "Antall stemmer"
+      ],
+      "rows": [
+       [
+        "Pizza",
+        "9"
+       ],
+       [
+        "Taco",
+        "6"
+       ],
+       [
+        "Pølser",
+        "4"
+       ],
+       [
+        "Pannekaker",
+        "5"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "24",
+      "B": "23",
+      "C": "20",
+      "D": "19",
+      "E": "4"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "choice",
+     "text": "Butikken solgte 4 080 liter melk på en måned. Hvordan skriver vi tallet 4 080 med ord?",
+     "answer": "A",
+     "explanation": "4 080 har 4 tusener, 0 hundrere, 8 tiere og 0 enere: fire tusen og åtti.",
+     "choices": {
+      "A": "fire tusen og åtti",
+      "B": "fire tusen og åtte",
+      "C": "fire hundre og åtti",
+      "D": "førti tusen og åtti",
+      "E": "fire tusen åtte hundre"
+     }
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "number",
+     "text": "Hunden Bamse spiser 300 g fôr hver dag. Hvor mange gram fôr spiser Bamse på en uke?",
+     "answer": "2100",
+     "explanation": "En uke har 7 dager. 300 g · 7 = 2 100 g.",
+     "unit": "g"
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "choice",
+     "text": "Pappa bakte en pizza som var delt i 8 like store biter. Familien spiste ¾ av pizzaen. Hvor mange biter spiste de?",
+     "answer": "E",
+     "explanation": "¼ av 8 biter er 2 biter. ¾ er 3 · 2 = 6 biter.",
+     "choices": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "6"
+     }
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "choice",
+     "text": "Ola har et grønnsaksbed som er 4 m langt og 2 m bredt. Han vil sette et lavt gjerde rundt hele bedet. Hvor mange meter gjerde trenger han?",
+     "answer": "D",
+     "explanation": "Gjerdet går rundt alle fire sidene: 4 m + 2 m + 4 m + 2 m = 12 m.",
+     "choices": {
+      "A": "6 m",
+      "B": "8 m",
+      "C": "10 m",
+      "D": "12 m",
+      "E": "24 m"
+     }
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "choice",
+     "text": "Lea sådde en solsikke. Da hun begynte å måle, var den 10 cm høy. Tabellen viser hvor mange centimeter den vokste hver uke etter det. Hvor høy var solsikken etter uke 4?",
+     "answer": "A",
+     "explanation": "Den vokste 4 + 7 + 9 + 12 = 32 cm. 10 cm + 32 cm = 42 cm.",
+     "table": {
+      "headers": [
+       "Uke",
+       "Vokste (cm)"
+      ],
+      "rows": [
+       [
+        "Uke 1",
+        "4"
+       ],
+       [
+        "Uke 2",
+        "7"
+       ],
+       [
+        "Uke 3",
+        "9"
+       ],
+       [
+        "Uke 4",
+        "12"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "42 cm",
+      "B": "32 cm",
+      "C": "12 cm",
+      "D": "22 cm",
+      "E": "52 cm"
+     }
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "number",
+     "text": "Mia vil kjøpe en sykkel som koster 1 800 kr. Hun har spart 650 kr. Hvor mange kroner mangler hun?",
+     "answer": "1150",
+     "explanation": "1 800 kr − 650 kr = 1 150 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "number",
+     "text": "Tabellen viser hva som trengs til pannekaker for 4 personer. Familien skal lage pannekaker til 12 personer. Hvor mange desiliter melk trenger de?",
+     "answer": "15",
+     "explanation": "12 personer er 3 ganger så mange som 4. 5 dL · 3 = 15 dL.",
+     "table": {
+      "headers": [
+       "Ingrediens",
+       "Mengde (4 personer)"
+      ],
+      "rows": [
+       [
+        "Hvetemel",
+        "3 dL"
+       ],
+       [
+        "Melk",
+        "5 dL"
+       ],
+       [
+        "Egg",
+        "3"
+       ],
+       [
+        "Salt",
+        "½ ts"
+       ]
+      ]
+     },
+     "unit": "dL"
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "choice",
+     "text": "Tobias handler til tacokveld. Tabellen viser prisene. Omtrent hvor mye koster varene til sammen?",
+     "answer": "C",
+     "explanation": "Rund av: 50 + 30 + 100 + 20 = 200. Varene koster ca. 200 kr (nøyaktig 197 kr).",
+     "table": {
+      "headers": [
+       "Vare",
+       "Pris"
+      ],
+      "rows": [
+       [
+        "Kjøttdeig",
+        "48 kr"
+       ],
+       [
+        "Tacolefser",
+        "31 kr"
+       ],
+       [
+        "Revet ost",
+        "99 kr"
+       ],
+       [
+        "Salat",
+        "19 kr"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "ca. 100 kr",
+      "B": "ca. 150 kr",
+      "C": "ca. 200 kr",
+      "D": "ca. 250 kr",
+      "E": "ca. 300 kr"
+     }
+    },
+    {
+     "n": 21,
+     "points": 5,
+     "kind": "choice",
+     "text": "Bursdagsfesten til Nora starter klokka 16.30 og varer i 2 timer og 45 minutter. Når slutter festen?",
+     "answer": "D",
+     "explanation": "16.30 + 2 timer = 18.30. 18.30 + 45 minutter = 19.15.",
+     "choices": {
+      "A": "kl. 18.15",
+      "B": "kl. 18.45",
+      "C": "kl. 18.75",
+      "D": "kl. 19.15",
+      "E": "kl. 19.45"
+     }
+    },
+    {
+     "n": 22,
+     "points": 5,
+     "kind": "choice",
+     "text": "Søylediagrammet viser hvor mange kroner Emma sparte hver måned. I hvilken måned økte sparingen mest sammenlignet med måneden før?",
+     "answer": "B",
+     "explanation": "Fra januar til februar økte sparingen med 100 kr. Fra mars til april økte den bare med 50 kr.",
+     "table": {
+      "headers": [
+       "Måned",
+       "Kroner spart"
+      ],
+      "rows": [
+       [
+        "Januar",
+        "150"
+       ],
+       [
+        "Februar",
+        "250"
+       ],
+       [
+        "Mars",
+        "200"
+       ],
+       [
+        "April",
+        "250"
+       ],
+       [
+        "Mai",
+        "200"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": false
+     },
+     "choices": {
+      "A": "Januar",
+      "B": "Februar",
+      "C": "Mars",
+      "D": "April",
+      "E": "Mai"
+     }
+    },
+    {
+     "n": 23,
+     "points": 5,
+     "kind": "number",
+     "text": "26 barn skal kjøres til bowling på bursdagen til Sofie. I hver bil er det plass til 4 barn. Hvor mange biler trengs det minst?",
+     "answer": "7",
+     "explanation": "26 : 4 = 6 med 2 i rest. De 2 siste barna trenger også en bil, så det trengs 7 biler.",
+     "unit": "biler"
+    },
+    {
+     "n": 24,
+     "points": 5,
+     "kind": "choice",
+     "text": "Mormor har en vannkanne som rommer 5 L. Hver tomatplante skal ha 5 dL vann. Hvor mange planter kan hun vanne med én full kanne?",
+     "answer": "C",
+     "explanation": "5 L = 50 dL. 50 dL : 5 dL = 10 planter.",
+     "choices": {
+      "A": "1",
+      "B": "5",
+      "C": "10",
+      "D": "25",
+      "E": "50"
+     }
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "number",
+     "text": "Line skal kjøpe melk, brød, ost og epler. Hun vil kjøpe alt i samme butikk. Tabellen viser prisene. Hvor mange kroner sparer hun på å handle i den billigste butikken i stedet for den dyreste?",
+     "answer": "3",
+     "explanation": "Nærbutikken: 23 + 36 + 92 + 29 = 180 kr. Storkjøpet: 21 + 39 + 85 + 32 = 177 kr. 180 − 177 = 3 kr.",
+     "table": {
+      "headers": [
+       "Vare",
+       "Nærbutikken",
+       "Storkjøpet"
+      ],
+      "rows": [
+       [
+        "Melk",
+        "23 kr",
+        "21 kr"
+       ],
+       [
+        "Brød",
+        "36 kr",
+        "39 kr"
+       ],
+       [
+        "Ost",
+        "92 kr",
+        "85 kr"
+       ],
+       [
+        "Epler",
+        "29 kr",
+        "32 kr"
+       ]
+      ]
+     },
+     "unit": "kr"
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "number",
+     "text": "Ali kjøper 3 bokser hakkede tomater. Én boks koster 12,50 kr. Han betaler med en 50-kroning. Hvor mange kroner får han igjen?",
+     "answer": "12,5",
+     "explanation": "3 · 12,50 kr = 37,50 kr. 50 kr − 37,50 kr = 12,50 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "choice",
+     "text": "Jonas får 50 kr i ukepenger. Han sparer halvparten hver uke. Hvor mange uker tar det før han har spart 300 kr?",
+     "answer": "D",
+     "explanation": "Halvparten av 50 kr er 25 kr. 300 kr : 25 kr = 12 uker.",
+     "choices": {
+      "A": "6",
+      "B": "10",
+      "C": "11",
+      "D": "12",
+      "E": "24"
+     }
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tabellen viser hvilke kjæledyr elevene i 5A og 5B har. Hver elev svarte bare én ting. Hvilket svar var det flest som ga når vi slår sammen begge klassene?",
+     "answer": "B",
+     "explanation": "Katt: 5 + 8 = 13. Hund: 7 + 4 = 11 og ingen kjæledyr: 6 + 5 = 11. Katt har flest.",
+     "table": {
+      "headers": [
+       "Kjæledyr",
+       "5A",
+       "5B"
+      ],
+      "rows": [
+       [
+        "Hund",
+        "7",
+        "4"
+       ],
+       [
+        "Katt",
+        "5",
+        "8"
+       ],
+       [
+        "Kanin",
+        "3",
+        "2"
+       ],
+       [
+        "Fisk",
+        "4",
+        "3"
+       ],
+       [
+        "Ingen kjæledyr",
+        "6",
+        "5"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Hund",
+      "B": "Katt",
+      "C": "Kanin",
+      "D": "Fisk",
+      "E": "Ingen kjæledyr"
+     }
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "number",
+     "text": "En pose kattemat veier 2 kg. Katten Pus spiser 50 g kattemat hver dag. Hvor mange dager varer posen?",
+     "answer": "40",
+     "explanation": "2 kg = 2 000 g. 2 000 g : 50 g = 40 dager.",
+     "unit": "dager"
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "number",
+     "text": "Kari skal lage pannekaker til bursdagsfesten og trenger 30 egg. Hun har 7 egg i kjøleskapet. Eggene selges i kartonger med 12 egg. Hvor mange kartonger må hun minst kjøpe?",
+     "answer": "2",
+     "explanation": "Hun mangler 30 − 7 = 23 egg. 1 kartong gir bare 12 egg, 2 kartonger gir 24 egg. Hun må kjøpe 2 kartonger.",
+     "unit": "kartonger"
+    }
+   ]
+  },
+  {
+   "id": "8-9-trinn-1",
+   "level": "8-9-trinn",
+   "levelName": "8.–9. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 1",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "number",
+     "text": "Familien kjører fra Oslo til Trondheim. Hele strekningen er 495 km. Etter den første pausen har de kjørt 238 km. Hvor mange kilometer har de igjen?",
+     "answer": "257",
+     "explanation": "495 km − 238 km = 257 km.",
+     "unit": "km"
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "choice",
+     "text": "Toget går fra Oslo S kl. 08.25 og kommer fram til Lillehammer kl. 10.37. Hvor lang tid tar togturen?",
+     "answer": "C",
+     "explanation": "Fra 08.25 til 10.25 er det 2 timer, og fra 10.25 til 10.37 er det 12 minutter. Til sammen 2 t 12 min.",
+     "choices": {
+      "A": "1 t 12 min",
+      "B": "1 t 52 min",
+      "C": "2 t 12 min",
+      "D": "2 t 52 min",
+      "E": "3 t 12 min"
+     }
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "choice",
+     "text": "Familien skal bo 4 netter på et hotell. Familierommet koster 1 250 kr per natt. Hvor mye koster rommet til sammen?",
+     "answer": "B",
+     "explanation": "4 · 1 250 kr = 5 000 kr.",
+     "choices": {
+      "A": "3 750 kr",
+      "B": "5 000 kr",
+      "C": "5 200 kr",
+      "D": "6 250 kr",
+      "E": "7 500 kr"
+     }
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "number",
+     "text": "Flyselskapet tillater at kofferten veier høyst 23 kg. Sara har pakket kofferten sin, og den veier 18,6 kg. Hvor mange kilogram mer kan hun pakke?",
+     "answer": "4,4",
+     "explanation": "23 kg − 18,6 kg = 4,4 kg.",
+     "unit": "kg"
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "choice",
+     "text": "En båttur langs kysten koster 800 kr for voksne. Barn får 25 % rabatt. Hvor mye koster en barnebillett?",
+     "answer": "D",
+     "explanation": "25 % av 800 kr er 200 kr. Barnebilletten koster 800 kr − 200 kr = 600 kr.",
+     "choices": {
+      "A": "200 kr",
+      "B": "400 kr",
+      "C": "560 kr",
+      "D": "600 kr",
+      "E": "775 kr"
+     }
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "number",
+     "text": "Tabellen viser billettprisene på en ferje. Mor kjører bilen. Med i bilen er også far og tre barn som er 12, 9 og 2 år gamle. Hvor mange kroner må familien betale til sammen?",
+     "answer": "369",
+     "explanation": "Bil med fører 245 kr + voksen 62 kr + to barn 2 · 31 kr = 369 kr. Barnet på 2 år reiser gratis.",
+     "table": {
+      "headers": [
+       "Billett",
+       "Pris"
+      ],
+      "rows": [
+       [
+        "Bil med fører",
+        "245 kr"
+       ],
+       [
+        "Voksen passasjer",
+        "62 kr"
+       ],
+       [
+        "Barn 4–17 år",
+        "31 kr"
+       ],
+       [
+        "Barn under 4 år",
+        "Gratis"
+       ]
+      ]
+     },
+     "unit": "kr"
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "choice",
+     "text": "Et turkart har målestokk 1 : 100 000. Hvor langt er 1 cm på kartet i virkeligheten?",
+     "answer": "A",
+     "explanation": "1 cm på kartet er 100 000 cm i virkeligheten. 100 000 cm = 1 000 m = 1 km.",
+     "choices": {
+      "A": "1 km",
+      "B": "10 km",
+      "C": "100 km",
+      "D": "100 m",
+      "E": "10 m"
+     }
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "number",
+     "text": "Flyet fra Bodø går kl. 13.40 og lander på Gardermoen kl. 15.05. Hvor mange minutter varer flyturen?",
+     "answer": "85",
+     "explanation": "Fra 13.40 til 14.40 er det 60 minutter, og fra 14.40 til 15.05 er det 25 minutter. 60 + 25 = 85 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "choice",
+     "text": "Søylediagrammet viser hvor elevene i 9B var i høstferien. Hver elev er bare med i én søyle. Hvor mange av elevene var ikke hjemme i høstferien?",
+     "answer": "E",
+     "explanation": "Alle unntatt de som var hjemme: 7 + 5 + 4 + 3 = 19 elever.",
+     "table": {
+      "headers": [
+       "Hvor var eleven?",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "Hjemme",
+        "9"
+       ],
+       [
+        "På hytta",
+        "7"
+       ],
+       [
+        "I utlandet",
+        "5"
+       ],
+       [
+        "Hos besteforeldre",
+        "4"
+       ],
+       [
+        "Et annet sted",
+        "3"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": false
+     },
+     "choices": {
+      "A": "5",
+      "B": "9",
+      "C": "12",
+      "D": "16",
+      "E": "19"
+     }
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "choice",
+     "text": "En morgen i februar var temperaturen i Tromsø −7 °C. Om ettermiddagen var den 4 °C. Hvor mange grader steg temperaturen?",
+     "answer": "C",
+     "explanation": "Fra −7 °C til 0 °C er 7 grader, og fra 0 °C til 4 °C er 4 grader. 7 + 4 = 11 grader.",
+     "choices": {
+      "A": "3 grader",
+      "B": "10 grader",
+      "C": "11 grader",
+      "D": "−3 grader",
+      "E": "−11 grader"
+     }
+    },
+    {
+     "n": 11,
+     "points": 3,
+     "kind": "number",
+     "text": "Familien skal kjøre 60 km til hytta. Nå har de kjørt 45 km. Hvor mange prosent av veien har de kjørt?",
+     "answer": "75",
+     "explanation": "45 : 60 = 0,75 = 75 %.",
+     "unit": "%"
+    },
+    {
+     "n": 12,
+     "points": 3,
+     "kind": "choice",
+     "text": "Et tog kjører 240 km på 3 timer. Hva er gjennomsnittsfarten til toget?",
+     "answer": "B",
+     "explanation": "Fart = strekning : tid = 240 km : 3 t = 80 km/t.",
+     "choices": {
+      "A": "60 km/t",
+      "B": "80 km/t",
+      "C": "120 km/t",
+      "D": "237 km/t",
+      "E": "720 km/t"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "choice",
+     "text": "På ferie i Spania leier Nora en strandparasoll for 6 euro. 1 euro koster 11,50 kr. Hvor mye koster parasollen i norske kroner?",
+     "answer": "D",
+     "explanation": "6 · 11,50 kr = 69 kr.",
+     "choices": {
+      "A": "17,50 kr",
+      "B": "52 kr",
+      "C": "66 kr",
+      "D": "69 kr",
+      "E": "690 kr"
+     }
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "number",
+     "text": "En bil bruker 0,6 liter bensin per 10 km. Hvor mange liter bensin bruker bilen på 250 km?",
+     "answer": "15",
+     "explanation": "250 km er 25 ganger 10 km. 25 · 0,6 L = 15 L.",
+     "unit": "liter"
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "number",
+     "text": "Et fly går fra Oslo kl. 10.15 norsk tid og lander i London kl. 11.20 lokal tid. I London er klokka 1 time mindre enn i Norge. Hvor mange minutter varer flyturen?",
+     "answer": "125",
+     "explanation": "Når flyet lander, er klokka 12.20 i Norge. Fra 10.15 til 12.20 er det 2 timer og 5 minutter = 125 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "choice",
+     "text": "På bilturen har Emil en pose med 4 røde, 5 blå og 3 gule drops. Han tar ett drops uten å se. Hva er sannsynligheten for at dropset er blått?",
+     "answer": "A",
+     "explanation": "Det er 4 + 5 + 3 = 12 drops, og 5 av dem er blå. Sannsynligheten er 5/12.",
+     "choices": {
+      "A": "5/12",
+      "B": "1/3",
+      "C": "5/7",
+      "D": "1/5",
+      "E": "7/12"
+     }
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "choice",
+     "text": "En ferjebillett kostet 500 kr i fjor. I år koster den samme billetten 560 kr. Hvor mange prosent har prisen økt?",
+     "answer": "E",
+     "explanation": "Prisen har økt med 60 kr. 60 : 500 = 0,12 = 12 %.",
+     "choices": {
+      "A": "60 %",
+      "B": "6 %",
+      "C": "112 %",
+      "D": "10,7 %",
+      "E": "12 %"
+     }
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "choice",
+     "text": "Familien Hansen skal bo 6 netter på et hotell som koster 1 890 kr per natt. Omtrent hvor mye koster oppholdet?",
+     "answer": "B",
+     "explanation": "1 890 kr er nesten 1 900 kr. 6 · 1 900 kr = 11 400 kr, altså ca. 11 000 kr.",
+     "choices": {
+      "A": "ca. 1 100 kr",
+      "B": "ca. 11 000 kr",
+      "C": "ca. 14 000 kr",
+      "D": "ca. 20 000 kr",
+      "E": "ca. 110 000 kr"
+     }
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "choice",
+     "text": "Gulvet i et telt er et rektangel som er 2,4 m langt og 1,5 m bredt. Hvor stort er arealet av teltgulvet?",
+     "answer": "C",
+     "explanation": "Areal = lengde · bredde = 2,4 m · 1,5 m = 3,6 m².",
+     "choices": {
+      "A": "0,36 m²",
+      "B": "1,8 m²",
+      "C": "3,6 m²",
+      "D": "3,9 m²",
+      "E": "7,8 m²"
+     }
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "choice",
+     "text": "Mia ser på et kart med målestokk 1 : 50 000. På kartet er avstanden fra campingplassen til stranda 7 cm. Hvor langt er det i virkeligheten?",
+     "answer": "A",
+     "explanation": "7 cm · 50 000 = 350 000 cm = 3 500 m = 3,5 km.",
+     "choices": {
+      "A": "3,5 km",
+      "B": "35 km",
+      "C": "350 km",
+      "D": "350 m",
+      "E": "0,7 km"
+     }
+    },
+    {
+     "n": 21,
+     "points": 4,
+     "kind": "number",
+     "text": "Tabellen viser hvor mange kilometer familien syklet hver dag på sykkelferien. Hvor mange kilometer syklet de i gjennomsnitt per dag?",
+     "answer": "40",
+     "explanation": "Til sammen 34 + 42 + 28 + 51 + 45 = 200 km. 200 km : 5 dager = 40 km per dag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Kilometer"
+      ],
+      "rows": [
+       [
+        "1",
+        "34"
+       ],
+       [
+        "2",
+        "42"
+       ],
+       [
+        "3",
+        "28"
+       ],
+       [
+        "4",
+        "51"
+       ],
+       [
+        "5",
+        "45"
+       ]
+      ]
+     },
+     "unit": "km"
+    },
+    {
+     "n": 22,
+     "points": 4,
+     "kind": "number",
+     "text": "Før ferien veksler Lisa 2 900 kr til euro. Kursen er 1 euro = 11,60 kr. Hvor mange euro får hun? Se bort fra gebyrer.",
+     "answer": "250",
+     "explanation": "2 900 kr : 11,60 kr = 250 euro.",
+     "unit": "euro"
+    },
+    {
+     "n": 23,
+     "points": 4,
+     "kind": "number",
+     "text": "Et hotell gir 20 % rabatt på hele oppholdet til gjester som bor 5 netter eller mer. Vanlig pris er 1 150 kr per natt. Familien Berg bor 5 netter. Hvor mange kroner betaler de til sammen?",
+     "answer": "4600",
+     "explanation": "5 · 1 150 kr = 5 750 kr. 20 % rabatt er 1 150 kr, så de betaler 5 750 kr − 1 150 kr = 4 600 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 24,
+     "points": 4,
+     "kind": "choice",
+     "text": "Ferja kjører 18 km over fjorden med en gjennomsnittsfart på 24 km/t. Hvor lang tid tar overfarten?",
+     "answer": "D",
+     "explanation": "Tid = 18 km : 24 km/t = 0,75 t. 0,75 · 60 minutter = 45 minutter.",
+     "choices": {
+      "A": "6 minutter",
+      "B": "24 minutter",
+      "C": "42 minutter",
+      "D": "45 minutter",
+      "E": "75 minutter"
+     }
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "number",
+     "text": "Klasse 9C har 27 elever. De skal på tur sammen med 3 lærere. De leier minibusser med plass til 8 passasjerer i hver. Sjåføren kommer i tillegg. Hvor mange minibusser må de minst leie?",
+     "answer": "4",
+     "explanation": "Det er 27 + 3 = 30 passasjerer. 30 : 8 = 3,75. Tre busser er for lite, så de må leie 4 minibusser.",
+     "unit": "minibusser"
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "choice",
+     "text": "Klasse 9A har 32 elever. ¾ av elevene reiser med tog til leirskolen. Av de andre elevene blir halvparten kjørt av foreldrene sine, og resten tar buss. Hvor mange elever tar buss?",
+     "answer": "E",
+     "explanation": "¾ av 32 er 24 elever på toget. Da er det 8 elever igjen, og halvparten av dem, 4 elever, tar buss.",
+     "choices": {
+      "A": "24",
+      "B": "8",
+      "C": "16",
+      "D": "12",
+      "E": "4"
+     }
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tabellen viser en del av en togtabell. Kari bor på Dale. Hun skal møte en venn i Bergen kl. 14.15. Det tar 15 minutter å gå fra stasjonen i Bergen til møtestedet. Hvilket tog er det seneste hun kan ta fra Dale for å rekke møtet?",
+     "answer": "B",
+     "explanation": "Tog 3 er i Bergen kl. 14.05, og 15 minutter senere er klokka 14.20. Det er for sent. Tog 2 er i Bergen kl. 12.22, så hun må ta det.",
+     "table": {
+      "headers": [
+       "Stasjon",
+       "Tog 1",
+       "Tog 2",
+       "Tog 3",
+       "Tog 4"
+      ],
+      "rows": [
+       [
+        "Voss",
+        "09.12",
+        "11.05",
+        "12.48",
+        "14.20"
+       ],
+       [
+        "Dale",
+        "09.41",
+        "11.34",
+        "13.17",
+        "14.49"
+       ],
+       [
+        "Arna",
+        "10.18",
+        "12.11",
+        "13.54",
+        "15.26"
+       ],
+       [
+        "Bergen",
+        "10.29",
+        "12.22",
+        "14.05",
+        "15.37"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Tog 1",
+      "B": "Tog 2",
+      "C": "Tog 3",
+      "D": "Tog 4",
+      "E": "Ingen av togene"
+     }
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tabellen viser prisen for én natt på seks hoteller i en by. Hva er medianprisen?",
+     "answer": "A",
+     "explanation": "Sorter prisene: 980, 1 050, 1 120, 1 200, 1 450, 2 300. De to midterste er 1 120 og 1 200. Medianen er (1 120 + 1 200) : 2 = 1 160 kr.",
+     "table": {
+      "headers": [
+       "Hotell",
+       "Pris per natt"
+      ],
+      "rows": [
+       [
+        "Sjøbua",
+        "980 kr"
+       ],
+       [
+        "Fjellstua",
+        "1 450 kr"
+       ],
+       [
+        "Byhotellet",
+        "1 120 kr"
+       ],
+       [
+        "Strandhotellet",
+        "2 300 kr"
+       ],
+       [
+        "Brygga",
+        "1 200 kr"
+       ],
+       [
+        "Tunet",
+        "1 050 kr"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "1 160 kr",
+      "B": "1 120 kr",
+      "C": "1 200 kr",
+      "D": "1 320 kr",
+      "E": "1 350 kr"
+     }
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "choice",
+     "text": "Vektgrensen for kofferter på en flyreise er 20 kg. Kofferten til Amir veier 23 kg. Hvor mange prosent tyngre enn vektgrensen er kofferten?",
+     "answer": "D",
+     "explanation": "Kofferten er 3 kg for tung. 3 : 20 = 0,15 = 15 %.",
+     "choices": {
+      "A": "3 %",
+      "B": "13 %",
+      "C": "23 %",
+      "D": "15 %",
+      "E": "115 %"
+     }
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "choice",
+     "text": "Familien skal kjøre 342 km til hytta. De regner med en gjennomsnittsfart på 76 km/t. Hvor lang tid tar kjøreturen?",
+     "answer": "C",
+     "explanation": "Tid = 342 km : 76 km/t = 4,5 t. 0,5 t er 30 minutter, så turen tar 4 t 30 min.",
+     "choices": {
+      "A": "4 t 5 min",
+      "B": "4 t 15 min",
+      "C": "4 t 30 min",
+      "D": "4 t 50 min",
+      "E": "5 t 30 min"
+     }
+    },
+    {
+     "n": 31,
+     "points": 5,
+     "kind": "choice",
+     "text": "Avstanden mellom to tettsteder er 24 km i luftlinje. På et kart er avstanden mellom dem 8 cm. Hvilken målestokk har kartet?",
+     "answer": "E",
+     "explanation": "24 km = 2 400 000 cm. 2 400 000 cm : 8 = 300 000. 1 cm på kartet er 300 000 cm i virkeligheten.",
+     "choices": {
+      "A": "1 : 3",
+      "B": "1 : 300",
+      "C": "1 : 3 000",
+      "D": "1 : 30 000",
+      "E": "1 : 300 000"
+     }
+    },
+    {
+     "n": 32,
+     "points": 5,
+     "kind": "number",
+     "text": "Et lotteri på ferja har 120 lodd, og 12 av loddene gir gevinst. Det er allerede solgt 40 lodd, og 2 av dem ga gevinst. Mia kjøper ett av de loddene som er igjen. Hvor stor er sannsynligheten for at hun vinner? Oppgi svaret i prosent.",
+     "answer": "12,5",
+     "explanation": "Det er 120 − 40 = 80 lodd igjen, og 12 − 2 = 10 av dem gir gevinst. 10 : 80 = 0,125 = 12,5 %.",
+     "unit": "%"
+    },
+    {
+     "n": 33,
+     "points": 5,
+     "kind": "choice",
+     "text": "Et fly går fra Oslo kl. 22.30 norsk tid. Flyturen til New York tar 8 t 45 min. I New York er klokka 6 timer mindre enn i Norge. Hva er klokka i New York når flyet lander?",
+     "answer": "A",
+     "explanation": "Flyet lander kl. 07.15 norsk tid (22.30 + 8 t 45 min). I New York er klokka 6 timer mindre, altså 01.15.",
+     "choices": {
+      "A": "kl. 01.15",
+      "B": "kl. 02.15",
+      "C": "kl. 07.15",
+      "D": "kl. 13.15",
+      "E": "kl. 16.30"
+     }
+    },
+    {
+     "n": 34,
+     "points": 5,
+     "kind": "choice",
+     "text": "En pakkereise kostet 12 000 kr. Først ble prisen satt opp med 10 %. Senere ble den nye prisen satt ned med 10 %. Hva koster reisen nå?",
+     "answer": "B",
+     "explanation": "12 000 kr · 1,10 = 13 200 kr. 13 200 kr · 0,90 = 11 880 kr. Nedgangen regnes av en større pris, så reisen blir billigere enn før.",
+     "choices": {
+      "A": "10 800 kr",
+      "B": "11 880 kr",
+      "C": "12 000 kr",
+      "D": "12 120 kr",
+      "E": "13 200 kr"
+     }
+    },
+    {
+     "n": 35,
+     "points": 5,
+     "kind": "number",
+     "text": "Jonas ser en jakke som koster 85 euro i en butikk i Tyskland. Den samme jakken koster 1 049 kr i Norge. Kursen er 1 euro = 11,40 kr. Hvor mange kroner sparer han på å kjøpe jakken i Tyskland?",
+     "answer": "80",
+     "explanation": "85 · 11,40 kr = 969 kr. 1 049 kr − 969 kr = 80 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 36,
+     "points": 5,
+     "kind": "number",
+     "text": "Hytta ligger 320 km hjemmefra. Familien kjører dit og hjem igjen. Bilen bruker 0,55 liter bensin per 10 km, og bensinen koster 21,80 kr per liter. Hvor mange kroner koster bensinen for hele turen? Rund av til nærmeste hele krone.",
+     "answer": "767",
+     "explanation": "Turen er 2 · 320 km = 640 km. Bilen bruker 64 · 0,55 L = 35,2 L. 35,2 · 21,80 kr = 767,36 kr ≈ 767 kr.",
+     "unit": "kr"
+    }
+   ]
+  },
+  {
+   "id": "8-9-trinn-2",
+   "level": "8-9-trinn",
+   "levelName": "8.–9. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 2",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "number",
+     "text": "Ida har en deltidsjobb i en klesbutikk. Hun tjener 140 kr per time. En lørdag jobber hun 6 timer. Hvor mange kroner tjener hun denne lørdagen?",
+     "answer": "840",
+     "explanation": "140 kr · 6 = 840 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "choice",
+     "text": "Ungdomsbedriften «Bærekraft UB» syr handlenett av gamle gardiner. De selger nettene for 35 kr stykket. På julemarkedet selger de 40 nett. Hvor mye får de inn?",
+     "answer": "B",
+     "explanation": "35 kr · 40 = 1 400 kr.",
+     "choices": {
+      "A": "1 200 kr",
+      "B": "1 400 kr",
+      "C": "1 500 kr",
+      "D": "1 600 kr",
+      "E": "14 000 kr"
+     }
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "choice",
+     "text": "Etter salgsdagen teller ungdomsbedriften kassa. Der ligger 3 tohundrelapper, 5 hundrelapper, 7 tjuekroninger og 4 femkroninger. Hvor mye penger er det i kassa?",
+     "answer": "D",
+     "explanation": "600 kr + 500 kr + 140 kr + 20 kr = 1 260 kr.",
+     "choices": {
+      "A": "1 160 kr",
+      "B": "1 200 kr",
+      "C": "1 240 kr",
+      "D": "1 260 kr",
+      "E": "1 360 kr"
+     }
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "choice",
+     "text": "En hettegenser koster 600 kr. I januarsalget er prisen satt ned med 25 %. Hva koster genseren i salget?",
+     "answer": "A",
+     "explanation": "25 % av 600 kr er 150 kr. 600 kr − 150 kr = 450 kr.",
+     "choices": {
+      "A": "450 kr",
+      "B": "475 kr",
+      "C": "500 kr",
+      "D": "575 kr",
+      "E": "750 kr"
+     }
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "number",
+     "text": "Jonas jobber i en kiosk. I dag begynner han kl. 16.30 og slutter kl. 20.15. Hvor mange minutter jobber han i dag?",
+     "answer": "225",
+     "explanation": "Fra 16.30 til 20.30 er 4 timer = 240 minutter. Han slutter 15 minutter før, altså 240 − 15 = 225 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "number",
+     "text": "Ungdomsbedriften selger kanelboller i storefriminuttet. Tabellen viser hvor mange boller de solgte hver dag én uke. Hvor mange flere boller solgte de den dagen de solgte mest, enn den dagen de solgte minst?",
+     "answer": "12",
+     "explanation": "Mest: torsdag med 21. Minst: onsdag med 9. 21 − 9 = 12 boller.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Solgte boller"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "12"
+       ],
+       [
+        "Tirsdag",
+        "18"
+       ],
+       [
+        "Onsdag",
+        "9"
+       ],
+       [
+        "Torsdag",
+        "21"
+       ],
+       [
+        "Fredag",
+        "15"
+       ]
+      ]
+     },
+     "unit": "boller"
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "choice",
+     "text": "Mia kjøper tre varer i en nettbutikk. De koster 48,90 kr, 31,50 kr og 19,90 kr. Omtrent hvor mye koster varene til sammen?",
+     "answer": "C",
+     "explanation": "Runder av: 50 kr + 30 kr + 20 kr = 100 kr. (Nøyaktig sum er 100,30 kr.)",
+     "choices": {
+      "A": "80 kr",
+      "B": "90 kr",
+      "C": "100 kr",
+      "D": "110 kr",
+      "E": "120 kr"
+     }
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "number",
+     "text": "Ungdomsbedriften har 25 medlemmer. 40 % av medlemmene går i 9. trinn. Hvor mange av medlemmene går i 9. trinn?",
+     "answer": "10",
+     "explanation": "10 % av 25 er 2,5. 40 % er 4 · 2,5 = 10 medlemmer.",
+     "unit": "medlemmer"
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "number",
+     "text": "Ungdomsbedriften kjøper inn 120 nøkkelringer med skolens logo. Til sammen koster de 1 800 kr. Hva er innkjøpsprisen for én nøkkelring?",
+     "answer": "15",
+     "explanation": "1 800 kr : 120 = 15 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "choice",
+     "text": "Ungdomsbedriften lager 6 L saft til en skoleavslutning. Saften skal serveres i glass med 2 dL i hvert. Hvor mange glass kan de fylle?",
+     "answer": "E",
+     "explanation": "6 L = 60 dL. 60 dL : 2 dL = 30 glass.",
+     "choices": {
+      "A": "3 glass",
+      "B": "12 glass",
+      "C": "20 glass",
+      "D": "25 glass",
+      "E": "30 glass"
+     }
+    },
+    {
+     "n": 11,
+     "points": 3,
+     "kind": "choice",
+     "text": "I oppskriften på ungdomsbedriftens kakemiks er det 3 dL sukker for hver 5 dL hvetemel. De skal lage en stor porsjon med 15 dL hvetemel. Hvor mye sukker trenger de?",
+     "answer": "B",
+     "explanation": "15 dL mel er 3 ganger så mye som 5 dL. Da trengs 3 · 3 dL = 9 dL sukker.",
+     "choices": {
+      "A": "6 dL",
+      "B": "9 dL",
+      "C": "13 dL",
+      "D": "15 dL",
+      "E": "25 dL"
+     }
+    },
+    {
+     "n": 12,
+     "points": 3,
+     "kind": "choice",
+     "text": "Emma har et mobilabonnement som koster 299 kr per måned. Fra 1. januar øker prisen med 10 %. Hva blir den nye prisen, rundet av til nærmeste hele krone?",
+     "answer": "A",
+     "explanation": "10 % av 299 kr er 29,90 kr. 299 kr + 29,90 kr = 328,90 kr ≈ 329 kr.",
+     "choices": {
+      "A": "329 kr",
+      "B": "309 kr",
+      "C": "269 kr",
+      "D": "399 kr",
+      "E": "339 kr"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "choice",
+     "text": "Ungdomsbedriften lager armbånd. Til hvert armbånd bruker de perler for 12 kr, tråd for 3 kr og en lås for 5 kr. De selger armbåndet for 45 kr. Hvor stor er fortjenesten på ett armbånd?",
+     "answer": "D",
+     "explanation": "Selvkost: 12 kr + 3 kr + 5 kr = 20 kr. Fortjeneste: 45 kr − 20 kr = 25 kr.",
+     "choices": {
+      "A": "5 kr",
+      "B": "15 kr",
+      "C": "20 kr",
+      "D": "25 kr",
+      "E": "65 kr"
+     }
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "choice",
+     "text": "Emil har helgejobb på en gård. Tabellen viser hvor mye han tjente de fire siste ukene. Hvor mye tjente han i gjennomsnitt per uke?",
+     "answer": "C",
+     "explanation": "Summen er 420 + 600 + 350 + 630 = 2 000 kr. 2 000 kr : 4 = 500 kr.",
+     "table": {
+      "headers": [
+       "Uke",
+       "Lønn"
+      ],
+      "rows": [
+       [
+        "Uke 1",
+        "420 kr"
+       ],
+       [
+        "Uke 2",
+        "600 kr"
+       ],
+       [
+        "Uke 3",
+        "350 kr"
+       ],
+       [
+        "Uke 4",
+        "630 kr"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "485 kr",
+      "B": "490 kr",
+      "C": "500 kr",
+      "D": "510 kr",
+      "E": "2 000 kr"
+     }
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "choice",
+     "text": "En ost på 750 g koster 90 kr. Hva er kiloprisen for osten?",
+     "answer": "E",
+     "explanation": "750 g er ¾ kg. 90 kr : 3 = 30 kr per 250 g, og 30 kr · 4 = 120 kr per kg.",
+     "choices": {
+      "A": "67,50 kr",
+      "B": "90 kr",
+      "C": "105 kr",
+      "D": "112,50 kr",
+      "E": "120 kr"
+     }
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "number",
+     "text": "Sara setter 4 000 kr av sommerjobb-lønna inn på en sparekonto. Renten er 3 % per år. Hvor mange kroner får hun i rente etter ett år?",
+     "answer": "120",
+     "explanation": "1 % av 4 000 kr er 40 kr. 3 % er 3 · 40 kr = 120 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "choice",
+     "text": "Ungdomsbedriften fører regnskap. I januar hadde de et underskudd på 450 kr. I februar hadde de et overskudd på 1 200 kr. I mars hadde de et underskudd på 300 kr. Hva ble resultatet for de tre månedene til sammen?",
+     "answer": "A",
+     "explanation": "−450 kr + 1 200 kr − 300 kr = 450 kr. Resultatet er positivt, altså et overskudd på 450 kr.",
+     "choices": {
+      "A": "450 kr i overskudd",
+      "B": "450 kr i underskudd",
+      "C": "750 kr i overskudd",
+      "D": "1 050 kr i overskudd",
+      "E": "1 950 kr i overskudd"
+     }
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "number",
+     "text": "Ungdomsbedriften skal leie en stand på en messe. Standen er 2,5 m lang og 1,8 m bred. Leien er 120 kr per kvadratmeter. Hvor mange kroner koster det å leie standen?",
+     "answer": "540",
+     "explanation": "Arealet er 2,5 m · 1,8 m = 4,5 m². 4,5 · 120 kr = 540 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "choice",
+     "text": "Et par sokker koster vanligvis 60 kr. Butikken har tilbudet «Kjøp 3 par, betal for 2». Hvor mange prosent billigere blir hvert par med tilbudet?",
+     "answer": "D",
+     "explanation": "Du betaler 120 kr for 3 par, altså 40 kr per par. Du sparer 20 kr av 60 kr, som er ⅓ ≈ 33 %.",
+     "choices": {
+      "A": "20 %",
+      "B": "25 %",
+      "C": "30 %",
+      "D": "omtrent 33 %",
+      "E": "50 %"
+     }
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "number",
+     "text": "Amir får fast timelønn. For 7 timer arbeid fikk han 1 470 kr. Hvor mange kroner får han for 12 timer arbeid?",
+     "answer": "2520",
+     "explanation": "Timelønna er 1 470 kr : 7 = 210 kr. 210 kr · 12 = 2 520 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 21,
+     "points": 4,
+     "kind": "choice",
+     "text": "Lea skal velge mobilabonnement. Hun bruker 4 GB data hver måned. Ekstra data koster 30 kr per GB utover det som er inkludert. Hvilket abonnement blir billigst for Lea, og hva koster det per måned?",
+     "answer": "B",
+     "explanation": "Basis: 99 kr + 3 · 30 kr = 189 kr. Medium: 179 kr (4 GB er inkludert). Fri: 299 kr. Medium er billigst.",
+     "table": {
+      "headers": [
+       "Abonnement",
+       "Pris per måned",
+       "Inkludert data"
+      ],
+      "rows": [
+       [
+        "Basis",
+        "99 kr",
+        "1 GB"
+       ],
+       [
+        "Medium",
+        "179 kr",
+        "5 GB"
+       ],
+       [
+        "Fri",
+        "299 kr",
+        "Ubegrenset"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Basis, 189 kr",
+      "B": "Medium, 179 kr",
+      "C": "Basis, 99 kr",
+      "D": "Basis, 219 kr",
+      "E": "Fri, 299 kr"
+     }
+    },
+    {
+     "n": 22,
+     "points": 4,
+     "kind": "number",
+     "text": "Tabellen viser hvor mange timer fem elever jobbet i ungdomsbedriften i oktober. Hva er medianen for antall timer?",
+     "answer": "12",
+     "explanation": "Sorter tallene: 8, 8, 12, 15, 22. Tallet i midten er 12.",
+     "table": {
+      "headers": [
+       "Elev",
+       "Timer"
+      ],
+      "rows": [
+       [
+        "Aksel",
+        "12"
+       ],
+       [
+        "Berit",
+        "8"
+       ],
+       [
+        "Chen",
+        "15"
+       ],
+       [
+        "Dina",
+        "8"
+       ],
+       [
+        "Erik",
+        "22"
+       ]
+      ]
+     },
+     "unit": "timer"
+    },
+    {
+     "n": 23,
+     "points": 4,
+     "kind": "choice",
+     "text": "Mathias sykler til helgejobben sin. Han sykler 6 km og bruker 20 minutter. Hva er gjennomsnittsfarten hans?",
+     "answer": "E",
+     "explanation": "20 minutter er ⅓ time. På en hel time sykler han 3 · 6 km = 18 km, altså 18 km/t.",
+     "choices": {
+      "A": "0,3 km/t",
+      "B": "3 km/t",
+      "C": "12 km/t",
+      "D": "15 km/t",
+      "E": "18 km/t"
+     }
+    },
+    {
+     "n": 24,
+     "points": 4,
+     "kind": "number",
+     "text": "Ungdomsbedriften kjøper inn kopper for 80 kr stykket og selger dem for 100 kr stykket. Hvor mange prosent av innkjøpsprisen utgjør fortjenesten?",
+     "answer": "25",
+     "explanation": "Fortjenesten er 100 kr − 80 kr = 20 kr. 20 av 80 er ¼ = 25 %.",
+     "unit": "%"
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "choice",
+     "text": "Ungdomsbedriften fikk 6 000 kr i overskudd. ¼ av overskuddet gir de til en hjelpeorganisasjon. Resten deler de likt mellom de 6 medlemmene. Hvor mye får hvert medlem?",
+     "answer": "C",
+     "explanation": "¼ av 6 000 kr er 1 500 kr. Resten er 4 500 kr. 4 500 kr : 6 = 750 kr.",
+     "choices": {
+      "A": "250 kr",
+      "B": "500 kr",
+      "C": "750 kr",
+      "D": "1 000 kr",
+      "E": "1 125 kr"
+     }
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "choice",
+     "text": "Ungdomsbedriften har loddsalg. De selger 200 lodd, og 8 av loddene gir gevinst. Tor kjøper ett lodd. Hva er sannsynligheten for at loddet hans gir gevinst?",
+     "answer": "C",
+     "explanation": "Sannsynligheten er 8/200. Deler vi teller og nevner med 8, får vi 1/25.",
+     "choices": {
+      "A": "1/200",
+      "B": "1/40",
+      "C": "1/25",
+      "D": "1/8",
+      "E": "1/2"
+     }
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "choice",
+     "text": "Tre elever startet en ungdomsbedrift. Andrea skjøt inn 2 000 kr, Bilal 3 000 kr og Cecilie 5 000 kr. Overskuddet på 4 000 kr skal deles i samme forhold som de skjøt inn penger. Hvor mye får Bilal?",
+     "answer": "A",
+     "explanation": "Til sammen skjøt de inn 10 000 kr. Bilal skjøt inn 3 000 av 10 000, altså 30 %. 30 % av 4 000 kr = 1 200 kr.",
+     "choices": {
+      "A": "1 200 kr",
+      "B": "1 333 kr",
+      "C": "1 500 kr",
+      "D": "2 000 kr",
+      "E": "3 000 kr"
+     }
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "number",
+     "text": "En pose med 2 kg ris koster 49 kr. En pose med 800 g ris koster 22,40 kr. Hvor mange kroner billigere per kilogram er risen i den store posen?",
+     "answer": "3,5",
+     "explanation": "Stor pose: 49 kr : 2 = 24,50 kr per kg. Liten pose: 22,40 kr : 0,8 = 28 kr per kg. 28 kr − 24,50 kr = 3,50 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "choice",
+     "text": "Etter 20 % rabatt koster en sykkelhjelm 640 kr. Hva kostet hjelmen før rabatten?",
+     "answer": "E",
+     "explanation": "640 kr er 80 % av den gamle prisen. 10 % er 640 kr : 8 = 80 kr, så 100 % er 800 kr.",
+     "choices": {
+      "A": "660 kr",
+      "B": "768 kr",
+      "C": "780 kr",
+      "D": "790 kr",
+      "E": "800 kr"
+     }
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "choice",
+     "text": "Søylediagrammet viser inntektene og utgiftene til ungdomsbedriften fire måneder. Verdiene står i tabellen. I hvilken måned var overskuddet størst?",
+     "answer": "B",
+     "explanation": "Overskudd = inntekter − utgifter: september 500 kr, oktober 700 kr, november 400 kr, desember 550 kr. Oktober er størst.",
+     "table": {
+      "headers": [
+       "Måned",
+       "Inntekter",
+       "Utgifter"
+      ],
+      "rows": [
+       [
+        "September",
+        "2 400 kr",
+        "1 900 kr"
+       ],
+       [
+        "Oktober",
+        "3 600 kr",
+        "2 900 kr"
+       ],
+       [
+        "November",
+        "4 200 kr",
+        "3 800 kr"
+       ],
+       [
+        "Desember",
+        "5 600 kr",
+        "5 050 kr"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": true
+     },
+     "choices": {
+      "A": "September",
+      "B": "Oktober",
+      "C": "November",
+      "D": "Desember",
+      "E": "Like stort alle månedene"
+     }
+    },
+    {
+     "n": 31,
+     "points": 5,
+     "kind": "number",
+     "text": "Ingrid jobber på en kafé. Hun har 145 kr i timen på hverdager og 175 kr i timen på lørdager. En uke jobber hun 4 timer på hver av tre hverdager og 6 timer på lørdag. Hvor mange kroner tjener hun denne uka?",
+     "answer": "2790",
+     "explanation": "Hverdager: 3 · 4 = 12 timer, 12 · 145 kr = 1 740 kr. Lørdag: 6 · 175 kr = 1 050 kr. Til sammen 2 790 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 32,
+     "points": 5,
+     "kind": "number",
+     "text": "Noah setter inn 5 000 kr på en konto med 2,5 % rente per år. Renten blir hvert år overført til en annen konto, så Noah får rente av 5 000 kr hvert år. Hvor mange kroner får han i rente til sammen etter 3 år?",
+     "answer": "375",
+     "explanation": "2,5 % av 5 000 kr er 125 kr per år. 3 · 125 kr = 375 kr.",
+     "unit": "kr"
+    },
+    {
+     "n": 33,
+     "points": 5,
+     "kind": "number",
+     "text": "Ungdomsbedriften skal gå fra skolen til julemarkedet. På et kart med målestokk 1 : 50 000 er avstanden 7 cm. Hvor mange kilometer er avstanden i virkeligheten?",
+     "answer": "3,5",
+     "explanation": "7 cm · 50 000 = 350 000 cm = 3 500 m = 3,5 km.",
+     "unit": "km"
+    },
+    {
+     "n": 34,
+     "points": 5,
+     "kind": "choice",
+     "text": "Ungdomsbedriften har en full saftdunk formet som et rett prisme. Den er 40 cm lang, 25 cm bred og 30 cm høy på innsiden. De skal fylle saften på flasker som tar 0,75 L. Hvor mange flasker kan de fylle?",
+     "answer": "D",
+     "explanation": "Volumet er 40 · 25 · 30 = 30 000 cm³ = 30 L. 30 L : 0,75 L = 40 flasker.",
+     "choices": {
+      "A": "22 flasker",
+      "B": "30 flasker",
+      "C": "36 flasker",
+      "D": "40 flasker",
+      "E": "400 flasker"
+     }
+    },
+    {
+     "n": 35,
+     "points": 5,
+     "kind": "choice",
+     "text": "Ungdomsbedriften økte prisen på koppene sine med 20 % i november. I januarsalget satte de ned den nye prisen med 20 %. Hvordan er prisen i januarsalget sammenlignet med prisen før november?",
+     "answer": "E",
+     "explanation": "Hvis prisen var 100 kr, ble den 120 kr. 20 % av 120 kr er 24 kr, så salgsprisen ble 96 kr. Det er 4 % lavere enn før.",
+     "choices": {
+      "A": "Den er den samme",
+      "B": "Den er 2 % lavere",
+      "C": "Den er 4 % høyere",
+      "D": "Den er 20 % lavere",
+      "E": "Den er 4 % lavere"
+     }
+    },
+    {
+     "n": 36,
+     "points": 5,
+     "kind": "number",
+     "text": "Ungdomsbedriften har faste kostnader på 1 200 kr til trykking og standleie. Hver kopp koster 18 kr å lage, og de selger koppene for 42 kr stykket. Hvor mange kopper må de selge for at inntektene akkurat skal dekke alle kostnadene?",
+     "answer": "50",
+     "explanation": "Hver kopp gir 42 kr − 18 kr = 24 kr til å dekke de faste kostnadene. 1 200 kr : 24 kr = 50 kopper.",
+     "unit": "kopper"
+    }
+   ]
+  },
+  {
+   "id": "8-9-trinn-3",
+   "level": "8-9-trinn",
+   "levelName": "8.–9. trinn",
+   "grades": "Øvingsprøver i regning",
+   "title": "Øvingsprøve 3",
+   "tasks": [
+    {
+     "n": 1,
+     "points": 3,
+     "kind": "choice",
+     "text": "En vintermorgen viste termometeret −3 °C. Ved lunsjtid viste det 5 °C. Hvor mange grader steg temperaturen?",
+     "answer": "B",
+     "explanation": "Fra −3 °C til 0 °C er 3 grader, og fra 0 °C til 5 °C er 5 grader. 3 + 5 = 8 grader.",
+     "choices": {
+      "A": "2 grader",
+      "B": "8 grader",
+      "C": "−2 grader",
+      "D": "−8 grader",
+      "E": "3 grader"
+     }
+    },
+    {
+     "n": 2,
+     "points": 3,
+     "kind": "choice",
+     "text": "Søylediagrammet viser hvor mange millimeter nedbør som kom hver dag i en uke. Hvilken dag kom det mest nedbør?",
+     "answer": "D",
+     "explanation": "Den høyeste verdien i tabellen er 15 mm, og den hører til fredag.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Nedbør (mm)"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "4"
+       ],
+       [
+        "Tirsdag",
+        "0"
+       ],
+       [
+        "Onsdag",
+        "12"
+       ],
+       [
+        "Torsdag",
+        "7"
+       ],
+       [
+        "Fredag",
+        "15"
+       ],
+       [
+        "Lørdag",
+        "9"
+       ],
+       [
+        "Søndag",
+        "3"
+       ]
+      ],
+      "chart": "bar",
+      "showTable": false
+     },
+     "choices": {
+      "A": "Mandag",
+      "B": "Onsdag",
+      "C": "Torsdag",
+      "D": "Fredag",
+      "E": "Lørdag"
+     }
+    },
+    {
+     "n": 3,
+     "points": 3,
+     "kind": "number",
+     "text": "Klokka 15 viste termometeret −4 °C. Fram til midnatt falt temperaturen med 6 grader. Hvilken temperatur viste termometeret ved midnatt?",
+     "answer": "−10",
+     "explanation": "Når temperaturen faller, trekker vi fra: −4 − 6 = −10. Termometeret viste −10 °C.",
+     "unit": "°C"
+    },
+    {
+     "n": 4,
+     "points": 3,
+     "kind": "number",
+     "text": "Jonas startet i et skirenn klokka 10.45 og kom i mål klokka 12.10. Hvor mange minutter brukte han?",
+     "answer": "85",
+     "explanation": "Fra 10.45 til 11.00 er 15 minutter, og fra 11.00 til 12.10 er 70 minutter. 15 + 70 = 85 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 5,
+     "points": 3,
+     "kind": "choice",
+     "text": "Et skirenn for ungdom er 7,5 km langt. Hvor mange meter er det?",
+     "answer": "C",
+     "explanation": "1 km = 1 000 m, så 7,5 km = 7,5 · 1 000 m = 7 500 m.",
+     "choices": {
+      "A": "75 m",
+      "B": "750 m",
+      "C": "7 500 m",
+      "D": "75 000 m",
+      "E": "7 005 m"
+     }
+    },
+    {
+     "n": 6,
+     "points": 3,
+     "kind": "choice",
+     "text": "En morgen ble temperaturen målt fem steder: Fjellet −7 °C, Dalen −2 °C, Byen 1 °C, Kysten 3 °C og Innsjøen −4 °C. Hvilken liste viser temperaturene fra lavest til høyest?",
+     "answer": "E",
+     "explanation": "Jo lenger under null, jo kaldere. −7 er lavest, så kommer −4 og −2, og deretter 1 og 3.",
+     "choices": {
+      "A": "−2, −4, −7, 1, 3",
+      "B": "1, −2, 3, −4, −7",
+      "C": "3, 1, −2, −4, −7",
+      "D": "−7, −2, −4, 1, 3",
+      "E": "−7, −4, −2, 1, 3"
+     }
+    },
+    {
+     "n": 7,
+     "points": 3,
+     "kind": "choice",
+     "text": "En fotballbane er 105 m lang og 68 m bred. Hvor lang er omkretsen av banen?",
+     "answer": "A",
+     "explanation": "Omkretsen er summen av alle sidene: 105 + 68 + 105 + 68 = 346 m.",
+     "choices": {
+      "A": "346 m",
+      "B": "173 m",
+      "C": "692 m",
+      "D": "3 460 m",
+      "E": "7 140 m"
+     }
+    },
+    {
+     "n": 8,
+     "points": 3,
+     "kind": "choice",
+     "text": "Du kaster en vanlig terning med tallene 1 til 6. Hva er sannsynligheten for å få et partall?",
+     "answer": "C",
+     "explanation": "Partallene er 2, 4 og 6, altså 3 av 6 mulige utfall. 3/6 = 1/2.",
+     "choices": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "1/2",
+      "D": "2/3",
+      "E": "5/6"
+     }
+    },
+    {
+     "n": 9,
+     "points": 3,
+     "kind": "number",
+     "text": "Skiklubben kjøper 15 par skistaver. Hvert par koster 349 kr. Hvor mange kroner koster stavene til sammen?",
+     "answer": "5235",
+     "explanation": "15 · 349 kr = 5 235 kr. (For eksempel: 10 · 349 = 3 490 og 5 · 349 = 1 745, til sammen 5 235.)",
+     "unit": "kr"
+    },
+    {
+     "n": 10,
+     "points": 3,
+     "kind": "number",
+     "text": "I et 100-meterløp fikk Sara tiden 12,47 sekunder, og Emma fikk 12,5 sekunder. Hvor mange hundredels sekunder kom Sara foran Emma?",
+     "answer": "3",
+     "explanation": "12,5 er det samme som 12,50. 12,50 − 12,47 = 0,03 sekunder, altså 3 hundredeler.",
+     "unit": "hundredeler"
+    },
+    {
+     "n": 11,
+     "points": 3,
+     "kind": "choice",
+     "text": "En rektangelformet kjøkkenhage er 12 m lang og 8,5 m bred. Hvor stort er arealet av hagen?",
+     "answer": "D",
+     "explanation": "Arealet av et rektangel er lengde · bredde: 12 m · 8,5 m = 102 m².",
+     "choices": {
+      "A": "20,5 m²",
+      "B": "41 m²",
+      "C": "96 m²",
+      "D": "102 m²",
+      "E": "1 020 m²"
+     }
+    },
+    {
+     "n": 12,
+     "points": 3,
+     "kind": "choice",
+     "text": "Elevene i 9B svarte på hvor mange timer de trener i uka. Tabellen viser svarene. Hva er typetallet?",
+     "answer": "B",
+     "explanation": "Typetallet er svaret som forekommer oftest. Flest elever (7) svarte 2 timer.",
+     "table": {
+      "headers": [
+       "Timer trening per uke",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "0",
+        "2"
+       ],
+       [
+        "1",
+        "4"
+       ],
+       [
+        "2",
+        "7"
+       ],
+       [
+        "3",
+        "5"
+       ],
+       [
+        "4",
+        "3"
+       ],
+       [
+        "5",
+        "1"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "1 time",
+      "B": "2 timer",
+      "C": "3 timer",
+      "D": "7 timer",
+      "E": "2,5 timer"
+     }
+    },
+    {
+     "n": 13,
+     "points": 4,
+     "kind": "choice",
+     "text": "Et par langrennski koster 3 200 kr. I januar får du 25 % rabatt. Hva koster skiene med rabatt?",
+     "answer": "E",
+     "explanation": "25 % av 3 200 kr er 800 kr. 3 200 kr − 800 kr = 2 400 kr.",
+     "choices": {
+      "A": "800 kr",
+      "B": "3 175 kr",
+      "C": "2 800 kr",
+      "D": "2 500 kr",
+      "E": "2 400 kr"
+     }
+    },
+    {
+     "n": 14,
+     "points": 4,
+     "kind": "choice",
+     "text": "48 deltakere i et turløp betaler 195 kr hver i startkontingent. Omtrent hvor mye betaler de til sammen?",
+     "answer": "A",
+     "explanation": "Rund av: 48 ≈ 50 og 195 ≈ 200. 50 · 200 = 10 000 kr. (Nøyaktig svar er 9 360 kr.)",
+     "choices": {
+      "A": "10 000 kr",
+      "B": "1 000 kr",
+      "C": "5 000 kr",
+      "D": "50 000 kr",
+      "E": "100 000 kr"
+     }
+    },
+    {
+     "n": 15,
+     "points": 4,
+     "kind": "number",
+     "text": "Til en skitur blander Ole saft og vann i forholdet 1 : 4. Det betyr 1 del saft til 4 deler vann. Han bruker 3 dL saft. Hvor mange desiliter vann trenger han?",
+     "answer": "12",
+     "explanation": "For hver del saft trengs 4 deler vann. 3 dL · 4 = 12 dL vann.",
+     "unit": "dL"
+    },
+    {
+     "n": 16,
+     "points": 4,
+     "kind": "number",
+     "text": "Tabellen viser temperaturen klokka 12 fem dager på rad. Hva var gjennomsnittstemperaturen for disse fem dagene?",
+     "answer": "1",
+     "explanation": "Summen er −2 + 3 + 5 + (−1) + 0 = 5. Gjennomsnittet er 5 : 5 = 1 °C.",
+     "table": {
+      "headers": [
+       "Dag",
+       "Temperatur"
+      ],
+      "rows": [
+       [
+        "Mandag",
+        "−2 °C"
+       ],
+       [
+        "Tirsdag",
+        "3 °C"
+       ],
+       [
+        "Onsdag",
+        "5 °C"
+       ],
+       [
+        "Torsdag",
+        "−1 °C"
+       ],
+       [
+        "Fredag",
+        "0 °C"
+       ]
+      ]
+     },
+     "unit": "°C"
+    },
+    {
+     "n": 17,
+     "points": 4,
+     "kind": "choice",
+     "text": "En vanlig kortstokk har 52 kort, og 13 av dem er hjerter. Du trekker ett tilfeldig kort. Hva er sannsynligheten for at kortet er hjerter?",
+     "answer": "D",
+     "explanation": "13 av 52 kort er hjerter. 13/52 = 1/4.",
+     "choices": {
+      "A": "1/52",
+      "B": "1/13",
+      "C": "1/2",
+      "D": "1/4",
+      "E": "4/13"
+     }
+    },
+    {
+     "n": 18,
+     "points": 4,
+     "kind": "choice",
+     "text": "En vinterdag var det −18,5 °C på Finnmarksvidda og 2,5 °C i Bergen. Hvor mange grader var forskjellen?",
+     "answer": "B",
+     "explanation": "Fra −18,5 °C opp til 0 °C er 18,5 grader, og videre til 2,5 °C er 2,5 grader. 18,5 + 2,5 = 21 grader.",
+     "choices": {
+      "A": "16 grader",
+      "B": "21 grader",
+      "C": "20,5 grader",
+      "D": "−16 grader",
+      "E": "21,5 grader"
+     }
+    },
+    {
+     "n": 19,
+     "points": 4,
+     "kind": "choice",
+     "text": "Seks venner løp en terrengløype. Tidene deres var 31, 24, 29, 35, 26 og 27 minutter. Hva er medianen?",
+     "answer": "E",
+     "explanation": "Sorter tidene: 24, 26, 27, 29, 31, 35. De to midterste er 27 og 29, og medianen er (27 + 29) : 2 = 28 min.",
+     "choices": {
+      "A": "27 min",
+      "B": "29 min",
+      "C": "32 min",
+      "D": "ca. 28,7 min",
+      "E": "28 min"
+     }
+    },
+    {
+     "n": 20,
+     "points": 4,
+     "kind": "number",
+     "text": "I en klasse med 25 elever spiller 8 elever fotball på fritiden. Hvor mange prosent av elevene spiller fotball?",
+     "answer": "32",
+     "explanation": "8/25 = 32/100 = 32 %. (Gang med 4 over og under brøkstreken.)",
+     "unit": "%"
+    },
+    {
+     "n": 21,
+     "points": 4,
+     "kind": "choice",
+     "text": "Ingrid løper 5 km på 27 minutter og 30 sekunder. Hvor lang tid bruker hun i gjennomsnitt per kilometer?",
+     "answer": "C",
+     "explanation": "27 min 30 s = 1 650 s. 1 650 s : 5 = 330 s, som er 5 min 30 s.",
+     "choices": {
+      "A": "5 min 15 s",
+      "B": "5 min 24 s",
+      "C": "5 min 30 s",
+      "D": "5 min 46 s",
+      "E": "5 min 50 s"
+     }
+    },
+    {
+     "n": 22,
+     "points": 4,
+     "kind": "choice",
+     "text": "Et turkart har målestokk 1 : 50 000. På kartet er skiløypa 9 cm lang. Hvor lang er skiløypa i virkeligheten?",
+     "answer": "B",
+     "explanation": "9 cm · 50 000 = 450 000 cm = 4 500 m = 4,5 km.",
+     "choices": {
+      "A": "0,45 km",
+      "B": "4,5 km",
+      "C": "45 km",
+      "D": "450 km",
+      "E": "0,9 km"
+     }
+    },
+    {
+     "n": 23,
+     "points": 4,
+     "kind": "number",
+     "text": "Snødybden på en målestasjon var 84 cm. I løpet av en mildværsuke smeltet ¾ av snøen. Hvor mange centimeter snø var igjen?",
+     "answer": "21",
+     "explanation": "¼ av snøen er igjen. 84 cm : 4 = 21 cm.",
+     "unit": "cm"
+    },
+    {
+     "n": 24,
+     "points": 4,
+     "kind": "number",
+     "text": "En skiløper går 18 km på 1 time og 30 minutter. Hva er gjennomsnittsfarten i kilometer per time?",
+     "answer": "12",
+     "explanation": "1 time og 30 minutter = 1,5 timer. 18 km : 1,5 t = 12 km/t.",
+     "unit": "km/t"
+    },
+    {
+     "n": 25,
+     "points": 5,
+     "kind": "choice",
+     "text": "I et brettspill kaster du to vanlige terninger og legger sammen øynene. Hva er sannsynligheten for at summen blir 7?",
+     "answer": "D",
+     "explanation": "Det er 6 · 6 = 36 mulige utfall. Summen 7 får du på 6 måter (1+6, 2+5, 3+4, 4+3, 5+2, 6+1). 6/36 = 1/6.",
+     "choices": {
+      "A": "1/36",
+      "B": "1/12",
+      "C": "7/36",
+      "D": "1/6",
+      "E": "1/11"
+     }
+    },
+    {
+     "n": 26,
+     "points": 5,
+     "kind": "number",
+     "text": "En hage er formet som et rektangel som er 20 m langt og 15 m bredt. I det ene hjørnet er det en terrasse på 5 m · 4 m. Resten av hagen er plen. Hvor mange kvadratmeter plen er det?",
+     "answer": "280",
+     "explanation": "Hele hagen: 20 · 15 = 300 m². Terrassen: 5 · 4 = 20 m². Plen: 300 − 20 = 280 m².",
+     "unit": "m²"
+    },
+    {
+     "n": 27,
+     "points": 5,
+     "kind": "choice",
+     "text": "Klokka 18 var temperaturen 3 °C. Deretter falt den med 2,5 grader hver time. Hva var temperaturen klokka 22?",
+     "answer": "A",
+     "explanation": "Fra klokka 18 til 22 går det 4 timer. 4 · 2,5 = 10 grader. 3 − 10 = −7 °C.",
+     "choices": {
+      "A": "−7 °C",
+      "B": "−10 °C",
+      "C": "−4,5 °C",
+      "D": "7 °C",
+      "E": "−9,5 °C"
+     }
+    },
+    {
+     "n": 28,
+     "points": 5,
+     "kind": "choice",
+     "text": "En skijakke kostet 1 500 kr. Butikken satte først opp prisen med 20 %. Senere satte de ned den nye prisen med 20 %. Hva koster jakka nå?",
+     "answer": "E",
+     "explanation": "Etter prisøkningen: 1 500 · 1,2 = 1 800 kr. Etter rabatten: 1 800 · 0,8 = 1 440 kr.",
+     "choices": {
+      "A": "1 500 kr",
+      "B": "1 200 kr",
+      "C": "1 560 kr",
+      "D": "1 800 kr",
+      "E": "1 440 kr"
+     }
+    },
+    {
+     "n": 29,
+     "points": 5,
+     "kind": "number",
+     "text": "En skiløper bruker 18 minutter på 4 km. Hvor mange minutter bruker hun på 10 km hvis hun holder samme fart hele veien?",
+     "answer": "45",
+     "explanation": "18 : 4 = 4,5 minutter per km. 4,5 · 10 = 45 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 30,
+     "points": 5,
+     "kind": "choice",
+     "text": "Det kommer 8 mm regn på et flatt tak med areal 50 m². Hvor mange liter regnvann faller på taket? (1 m³ = 1 000 L)",
+     "answer": "C",
+     "explanation": "8 mm = 0,008 m. Volumet er 50 m² · 0,008 m = 0,4 m³ = 400 L.",
+     "choices": {
+      "A": "4 L",
+      "B": "40 L",
+      "C": "400 L",
+      "D": "4 000 L",
+      "E": "40 000 L"
+     }
+    },
+    {
+     "n": 31,
+     "points": 5,
+     "kind": "number",
+     "text": "De fem første dagene i en måned var gjennomsnittlig nedbør 6 mm per dag. Hvor mange millimeter nedbør må det komme dag 6 for at gjennomsnittet for de seks dagene skal bli 7 mm?",
+     "answer": "12",
+     "explanation": "Fem dager: 5 · 6 = 30 mm. Seks dager med snitt 7 mm: 6 · 7 = 42 mm. Dag 6 må ha 42 − 30 = 12 mm.",
+     "unit": "mm"
+    },
+    {
+     "n": 32,
+     "points": 5,
+     "kind": "number",
+     "text": "En tom vanntank er formet som et rett prisme som er 1,2 m langt, 0,8 m bredt og 1 m høyt. Tanken fylles med 40 liter per minutt. Hvor mange minutter tar det å fylle tanken? (1 m³ = 1 000 L)",
+     "answer": "24",
+     "explanation": "Volum: 1,2 · 0,8 · 1 = 0,96 m³ = 960 L. 960 L : 40 L per minutt = 24 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 33,
+     "points": 5,
+     "kind": "choice",
+     "text": "25 elever svarte på hvor mange turer i skog og mark de gikk forrige måned. Tabellen viser svarene. Hvilken påstand er riktig?",
+     "answer": "A",
+     "explanation": "Sum turer: 0 + 5 + 16 + 12 + 8 + 15 = 56, og gjennomsnittet er 56 : 25 = 2,24. Den 13. eleven i sortert rekkefølge svarte 2, så medianen er 2. 2,24 > 2.",
+     "table": {
+      "headers": [
+       "Antall turer",
+       "Antall elever"
+      ],
+      "rows": [
+       [
+        "0",
+        "3"
+       ],
+       [
+        "1",
+        "5"
+       ],
+       [
+        "2",
+        "8"
+       ],
+       [
+        "3",
+        "4"
+       ],
+       [
+        "4",
+        "2"
+       ],
+       [
+        "5",
+        "3"
+       ]
+      ]
+     },
+     "choices": {
+      "A": "Gjennomsnittet er større enn medianen",
+      "B": "Typetallet er 8",
+      "C": "Medianen er 2,5",
+      "D": "25 elever gikk minst én tur",
+      "E": "Gjennomsnittet er 3 turer"
+     }
+    },
+    {
+     "n": 34,
+     "points": 5,
+     "kind": "choice",
+     "text": "I en eske med spillkort er det 4 røde kort, 6 blå kort og noen grønne kort. Sannsynligheten for å trekke et grønt kort er 1/3. Hvor mange grønne kort er det i esken?",
+     "answer": "D",
+     "explanation": "Med 5 grønne kort er det 15 kort i alt, og 5/15 = 1/3. Ingen av de andre tallene gir 1/3.",
+     "choices": {
+      "A": "2",
+      "B": "3",
+      "C": "4",
+      "D": "5",
+      "E": "15"
+     }
+    },
+    {
+     "n": 35,
+     "points": 5,
+     "kind": "number",
+     "text": "Mari løper 10 km. De første 6 km holder hun et tempo på 5 min 30 s per km. De siste 4 km holder hun 4 min 45 s per km. Hvor mange minutter bruker hun totalt?",
+     "answer": "52",
+     "explanation": "6 · 5,5 min = 33 min og 4 · 4,75 min = 19 min. 33 + 19 = 52 minutter.",
+     "unit": "minutter"
+    },
+    {
+     "n": 36,
+     "points": 5,
+     "kind": "choice",
+     "text": "I en hoppkonkurranse var gjennomsnittet av 8 hopp 45 m. Ett hopp på 31 m ble strøket fordi hopperen hadde feil utstyr. Hva ble gjennomsnittet av de 7 hoppene som var igjen?",
+     "answer": "B",
+     "explanation": "Sum av 8 hopp: 8 · 45 = 360 m. Uten hoppet på 31 m: 360 − 31 = 329 m. 329 : 7 = 47 m.",
+     "choices": {
+      "A": "45 m",
+      "B": "47 m",
+      "C": "ca. 41 m",
+      "D": "38 m",
+      "E": "50 m"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,578 @@
+{
+  "id": "8-9-trinn-1",
+  "title": "Øvingsprøve 1",
+  "level": "8-9-trinn",
+  "tasks": [
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Familien kjører fra Oslo til Trondheim. Hele strekningen er 495 km. Etter den første pausen har de kjørt 238 km. Hvor mange kilometer har de igjen?",
+      "answer": "257",
+      "unit": "km",
+      "explanation": "495 km − 238 km = 257 km."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Toget går fra Oslo S kl. 08.25 og kommer fram til Lillehammer kl. 10.37. Hvor lang tid tar togturen?",
+      "choices": {
+        "A": "1 t 12 min",
+        "B": "1 t 52 min",
+        "C": "2 t 12 min",
+        "D": "2 t 52 min",
+        "E": "3 t 12 min"
+      },
+      "answer": "C",
+      "explanation": "Fra 08.25 til 10.25 er det 2 timer, og fra 10.25 til 10.37 er det 12 minutter. Til sammen 2 t 12 min."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Familien skal bo 4 netter på et hotell. Familierommet koster 1 250 kr per natt. Hvor mye koster rommet til sammen?",
+      "choices": {
+        "A": "3 750 kr",
+        "B": "5 000 kr",
+        "C": "5 200 kr",
+        "D": "6 250 kr",
+        "E": "7 500 kr"
+      },
+      "answer": "B",
+      "explanation": "4 · 1 250 kr = 5 000 kr."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Flyselskapet tillater at kofferten veier høyst 23 kg. Sara har pakket kofferten sin, og den veier 18,6 kg. Hvor mange kilogram mer kan hun pakke?",
+      "answer": "4,4",
+      "unit": "kg",
+      "explanation": "23 kg − 18,6 kg = 4,4 kg."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "En båttur langs kysten koster 800 kr for voksne. Barn får 25 % rabatt. Hvor mye koster en barnebillett?",
+      "choices": {
+        "A": "200 kr",
+        "B": "400 kr",
+        "C": "560 kr",
+        "D": "600 kr",
+        "E": "775 kr"
+      },
+      "answer": "D",
+      "explanation": "25 % av 800 kr er 200 kr. Barnebilletten koster 800 kr − 200 kr = 600 kr."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Tabellen viser billettprisene på en ferje. Mor kjører bilen. Med i bilen er også far og tre barn som er 12, 9 og 2 år gamle. Hvor mange kroner må familien betale til sammen?",
+      "table": {
+        "headers": [
+          "Billett",
+          "Pris"
+        ],
+        "rows": [
+          [
+            "Bil med fører",
+            "245 kr"
+          ],
+          [
+            "Voksen passasjer",
+            "62 kr"
+          ],
+          [
+            "Barn 4–17 år",
+            "31 kr"
+          ],
+          [
+            "Barn under 4 år",
+            "Gratis"
+          ]
+        ]
+      },
+      "answer": "369",
+      "unit": "kr",
+      "explanation": "Bil med fører 245 kr + voksen 62 kr + to barn 2 · 31 kr = 369 kr. Barnet på 2 år reiser gratis."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "Et turkart har målestokk 1 : 100 000. Hvor langt er 1 cm på kartet i virkeligheten?",
+      "choices": {
+        "A": "1 km",
+        "B": "10 km",
+        "C": "100 km",
+        "D": "100 m",
+        "E": "10 m"
+      },
+      "answer": "A",
+      "explanation": "1 cm på kartet er 100 000 cm i virkeligheten. 100 000 cm = 1 000 m = 1 km."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Flyet fra Bodø går kl. 13.40 og lander på Gardermoen kl. 15.05. Hvor mange minutter varer flyturen?",
+      "answer": "85",
+      "unit": "minutter",
+      "explanation": "Fra 13.40 til 14.40 er det 60 minutter, og fra 14.40 til 15.05 er det 25 minutter. 60 + 25 = 85 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Søylediagrammet viser hvor elevene i 9B var i høstferien. Hver elev er bare med i én søyle. Hvor mange av elevene var ikke hjemme i høstferien?",
+      "table": {
+        "headers": [
+          "Hvor var eleven?",
+          "Antall elever"
+        ],
+        "rows": [
+          [
+            "Hjemme",
+            "9"
+          ],
+          [
+            "På hytta",
+            "7"
+          ],
+          [
+            "I utlandet",
+            "5"
+          ],
+          [
+            "Hos besteforeldre",
+            "4"
+          ],
+          [
+            "Et annet sted",
+            "3"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "5",
+        "B": "9",
+        "C": "12",
+        "D": "16",
+        "E": "19"
+      },
+      "answer": "E",
+      "explanation": "Alle unntatt de som var hjemme: 7 + 5 + 4 + 3 = 19 elever."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "En morgen i februar var temperaturen i Tromsø −7 °C. Om ettermiddagen var den 4 °C. Hvor mange grader steg temperaturen?",
+      "choices": {
+        "A": "3 grader",
+        "B": "10 grader",
+        "C": "11 grader",
+        "D": "−3 grader",
+        "E": "−11 grader"
+      },
+      "answer": "C",
+      "explanation": "Fra −7 °C til 0 °C er 7 grader, og fra 0 °C til 4 °C er 4 grader. 7 + 4 = 11 grader."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Familien skal kjøre 60 km til hytta. Nå har de kjørt 45 km. Hvor mange prosent av veien har de kjørt?",
+      "answer": "75",
+      "unit": "%",
+      "explanation": "45 : 60 = 0,75 = 75 %."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Et tog kjører 240 km på 3 timer. Hva er gjennomsnittsfarten til toget?",
+      "choices": {
+        "A": "60 km/t",
+        "B": "80 km/t",
+        "C": "120 km/t",
+        "D": "237 km/t",
+        "E": "720 km/t"
+      },
+      "answer": "B",
+      "explanation": "Fart = strekning : tid = 240 km : 3 t = 80 km/t."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "På ferie i Spania leier Nora en strandparasoll for 6 euro. 1 euro koster 11,50 kr. Hvor mye koster parasollen i norske kroner?",
+      "choices": {
+        "A": "17,50 kr",
+        "B": "52 kr",
+        "C": "66 kr",
+        "D": "69 kr",
+        "E": "690 kr"
+      },
+      "answer": "D",
+      "explanation": "6 · 11,50 kr = 69 kr."
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "En bil bruker 0,6 liter bensin per 10 km. Hvor mange liter bensin bruker bilen på 250 km?",
+      "answer": "15",
+      "unit": "liter",
+      "explanation": "250 km er 25 ganger 10 km. 25 · 0,6 L = 15 L."
+    },
+    {
+      "kind": "number",
+      "area": "maaling",
+      "text": "Et fly går fra Oslo kl. 10.15 norsk tid og lander i London kl. 11.20 lokal tid. I London er klokka 1 time mindre enn i Norge. Hvor mange minutter varer flyturen?",
+      "answer": "125",
+      "unit": "minutter",
+      "explanation": "Når flyet lander, er klokka 12.20 i Norge. Fra 10.15 til 12.20 er det 2 timer og 5 minutter = 125 minutter."
+    },
+    {
+      "kind": "choice",
+      "area": "sannsynlighet",
+      "text": "På bilturen har Emil en pose med 4 røde, 5 blå og 3 gule drops. Han tar ett drops uten å se. Hva er sannsynligheten for at dropset er blått?",
+      "choices": {
+        "A": "5/12",
+        "B": "1/3",
+        "C": "5/7",
+        "D": "1/5",
+        "E": "7/12"
+      },
+      "answer": "A",
+      "explanation": "Det er 4 + 5 + 3 = 12 drops, og 5 av dem er blå. Sannsynligheten er 5/12."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "En ferjebillett kostet 500 kr i fjor. I år koster den samme billetten 560 kr. Hvor mange prosent har prisen økt?",
+      "choices": {
+        "A": "60 %",
+        "B": "6 %",
+        "C": "112 %",
+        "D": "10,7 %",
+        "E": "12 %"
+      },
+      "answer": "E",
+      "explanation": "Prisen har økt med 60 kr. 60 : 500 = 0,12 = 12 %."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Familien Hansen skal bo 6 netter på et hotell som koster 1 890 kr per natt. Omtrent hvor mye koster oppholdet?",
+      "choices": {
+        "A": "ca. 1 100 kr",
+        "B": "ca. 11 000 kr",
+        "C": "ca. 14 000 kr",
+        "D": "ca. 20 000 kr",
+        "E": "ca. 110 000 kr"
+      },
+      "answer": "B",
+      "explanation": "1 890 kr er nesten 1 900 kr. 6 · 1 900 kr = 11 400 kr, altså ca. 11 000 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Gulvet i et telt er et rektangel som er 2,4 m langt og 1,5 m bredt. Hvor stort er arealet av teltgulvet?",
+      "choices": {
+        "A": "0,36 m²",
+        "B": "1,8 m²",
+        "C": "3,6 m²",
+        "D": "3,9 m²",
+        "E": "7,8 m²"
+      },
+      "answer": "C",
+      "explanation": "Areal = lengde · bredde = 2,4 m · 1,5 m = 3,6 m²."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "Mia ser på et kart med målestokk 1 : 50 000. På kartet er avstanden fra campingplassen til stranda 7 cm. Hvor langt er det i virkeligheten?",
+      "choices": {
+        "A": "3,5 km",
+        "B": "35 km",
+        "C": "350 km",
+        "D": "350 m",
+        "E": "0,7 km"
+      },
+      "answer": "A",
+      "explanation": "7 cm · 50 000 = 350 000 cm = 3 500 m = 3,5 km."
+    },
+    {
+      "kind": "number",
+      "area": "statistikk",
+      "text": "Tabellen viser hvor mange kilometer familien syklet hver dag på sykkelferien. Hvor mange kilometer syklet de i gjennomsnitt per dag?",
+      "table": {
+        "headers": [
+          "Dag",
+          "Kilometer"
+        ],
+        "rows": [
+          [
+            "1",
+            "34"
+          ],
+          [
+            "2",
+            "42"
+          ],
+          [
+            "3",
+            "28"
+          ],
+          [
+            "4",
+            "51"
+          ],
+          [
+            "5",
+            "45"
+          ]
+        ]
+      },
+      "answer": "40",
+      "unit": "km",
+      "explanation": "Til sammen 34 + 42 + 28 + 51 + 45 = 200 km. 200 km : 5 dager = 40 km per dag."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Før ferien veksler Lisa 2 900 kr til euro. Kursen er 1 euro = 11,60 kr. Hvor mange euro får hun? Se bort fra gebyrer.",
+      "answer": "250",
+      "unit": "euro",
+      "explanation": "2 900 kr : 11,60 kr = 250 euro."
+    },
+    {
+      "kind": "number",
+      "area": "prosent",
+      "text": "Et hotell gir 20 % rabatt på hele oppholdet til gjester som bor 5 netter eller mer. Vanlig pris er 1 150 kr per natt. Familien Berg bor 5 netter. Hvor mange kroner betaler de til sammen?",
+      "answer": "4600",
+      "unit": "kr",
+      "explanation": "5 · 1 150 kr = 5 750 kr. 20 % rabatt er 1 150 kr, så de betaler 5 750 kr − 1 150 kr = 4 600 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Ferja kjører 18 km over fjorden med en gjennomsnittsfart på 24 km/t. Hvor lang tid tar overfarten?",
+      "choices": {
+        "A": "6 minutter",
+        "B": "24 minutter",
+        "C": "42 minutter",
+        "D": "45 minutter",
+        "E": "75 minutter"
+      },
+      "answer": "D",
+      "explanation": "Tid = 18 km : 24 km/t = 0,75 t. 0,75 · 60 minutter = 45 minutter."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Klasse 9C har 27 elever. De skal på tur sammen med 3 lærere. De leier minibusser med plass til 8 passasjerer i hver. Sjåføren kommer i tillegg. Hvor mange minibusser må de minst leie?",
+      "answer": "4",
+      "unit": "minibusser",
+      "explanation": "Det er 27 + 3 = 30 passasjerer. 30 : 8 = 3,75. Tre busser er for lite, så de må leie 4 minibusser."
+    },
+    {
+      "kind": "choice",
+      "area": "tall",
+      "text": "Klasse 9A har 32 elever. ¾ av elevene reiser med tog til leirskolen. Av de andre elevene blir halvparten kjørt av foreldrene sine, og resten tar buss. Hvor mange elever tar buss?",
+      "choices": {
+        "A": "24",
+        "B": "8",
+        "C": "16",
+        "D": "12",
+        "E": "4"
+      },
+      "answer": "E",
+      "explanation": "¾ av 32 er 24 elever på toget. Da er det 8 elever igjen, og halvparten av dem, 4 elever, tar buss."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Tabellen viser en del av en togtabell. Kari bor på Dale. Hun skal møte en venn i Bergen kl. 14.15. Det tar 15 minutter å gå fra stasjonen i Bergen til møtestedet. Hvilket tog er det seneste hun kan ta fra Dale for å rekke møtet?",
+      "table": {
+        "headers": [
+          "Stasjon",
+          "Tog 1",
+          "Tog 2",
+          "Tog 3",
+          "Tog 4"
+        ],
+        "rows": [
+          [
+            "Voss",
+            "09.12",
+            "11.05",
+            "12.48",
+            "14.20"
+          ],
+          [
+            "Dale",
+            "09.41",
+            "11.34",
+            "13.17",
+            "14.49"
+          ],
+          [
+            "Arna",
+            "10.18",
+            "12.11",
+            "13.54",
+            "15.26"
+          ],
+          [
+            "Bergen",
+            "10.29",
+            "12.22",
+            "14.05",
+            "15.37"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "Tog 1",
+        "B": "Tog 2",
+        "C": "Tog 3",
+        "D": "Tog 4",
+        "E": "Ingen av togene"
+      },
+      "answer": "B",
+      "explanation": "Tog 3 er i Bergen kl. 14.05, og 15 minutter senere er klokka 14.20. Det er for sent. Tog 2 er i Bergen kl. 12.22, så hun må ta det."
+    },
+    {
+      "kind": "choice",
+      "area": "statistikk",
+      "text": "Tabellen viser prisen for én natt på seks hoteller i en by. Hva er medianprisen?",
+      "table": {
+        "headers": [
+          "Hotell",
+          "Pris per natt"
+        ],
+        "rows": [
+          [
+            "Sjøbua",
+            "980 kr"
+          ],
+          [
+            "Fjellstua",
+            "1 450 kr"
+          ],
+          [
+            "Byhotellet",
+            "1 120 kr"
+          ],
+          [
+            "Strandhotellet",
+            "2 300 kr"
+          ],
+          [
+            "Brygga",
+            "1 200 kr"
+          ],
+          [
+            "Tunet",
+            "1 050 kr"
+          ]
+        ]
+      },
+      "choices": {
+        "A": "1 160 kr",
+        "B": "1 120 kr",
+        "C": "1 200 kr",
+        "D": "1 320 kr",
+        "E": "1 350 kr"
+      },
+      "answer": "A",
+      "explanation": "Sorter prisene: 980, 1 050, 1 120, 1 200, 1 450, 2 300. De to midterste er 1 120 og 1 200. Medianen er (1 120 + 1 200) : 2 = 1 160 kr."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "Vektgrensen for kofferter på en flyreise er 20 kg. Kofferten til Amir veier 23 kg. Hvor mange prosent tyngre enn vektgrensen er kofferten?",
+      "choices": {
+        "A": "3 %",
+        "B": "13 %",
+        "C": "23 %",
+        "D": "15 %",
+        "E": "115 %"
+      },
+      "answer": "D",
+      "explanation": "Kofferten er 3 kg for tung. 3 : 20 = 0,15 = 15 %."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Familien skal kjøre 342 km til hytta. De regner med en gjennomsnittsfart på 76 km/t. Hvor lang tid tar kjøreturen?",
+      "choices": {
+        "A": "4 t 5 min",
+        "B": "4 t 15 min",
+        "C": "4 t 30 min",
+        "D": "4 t 50 min",
+        "E": "5 t 30 min"
+      },
+      "answer": "C",
+      "explanation": "Tid = 342 km : 76 km/t = 4,5 t. 0,5 t er 30 minutter, så turen tar 4 t 30 min."
+    },
+    {
+      "kind": "choice",
+      "area": "forhold",
+      "text": "Avstanden mellom to tettsteder er 24 km i luftlinje. På et kart er avstanden mellom dem 8 cm. Hvilken målestokk har kartet?",
+      "choices": {
+        "A": "1 : 3",
+        "B": "1 : 300",
+        "C": "1 : 3 000",
+        "D": "1 : 30 000",
+        "E": "1 : 300 000"
+      },
+      "answer": "E",
+      "explanation": "24 km = 2 400 000 cm. 2 400 000 cm : 8 = 300 000. 1 cm på kartet er 300 000 cm i virkeligheten."
+    },
+    {
+      "kind": "number",
+      "area": "sannsynlighet",
+      "text": "Et lotteri på ferja har 120 lodd, og 12 av loddene gir gevinst. Det er allerede solgt 40 lodd, og 2 av dem ga gevinst. Mia kjøper ett av de loddene som er igjen. Hvor stor er sannsynligheten for at hun vinner? Oppgi svaret i prosent.",
+      "answer": "12,5",
+      "unit": "%",
+      "explanation": "Det er 120 − 40 = 80 lodd igjen, og 12 − 2 = 10 av dem gir gevinst. 10 : 80 = 0,125 = 12,5 %."
+    },
+    {
+      "kind": "choice",
+      "area": "maaling",
+      "text": "Et fly går fra Oslo kl. 22.30 norsk tid. Flyturen til New York tar 8 t 45 min. I New York er klokka 6 timer mindre enn i Norge. Hva er klokka i New York når flyet lander?",
+      "choices": {
+        "A": "kl. 01.15",
+        "B": "kl. 02.15",
+        "C": "kl. 07.15",
+        "D": "kl. 13.15",
+        "E": "kl. 16.30"
+      },
+      "answer": "A",
+      "explanation": "Flyet lander kl. 07.15 norsk tid (22.30 + 8 t 45 min). I New York er klokka 6 timer mindre, altså 01.15."
+    },
+    {
+      "kind": "choice",
+      "area": "prosent",
+      "text": "En pakkereise kostet 12 000 kr. Først ble prisen satt opp med 10 %. Senere ble den nye prisen satt ned med 10 %. Hva koster reisen nå?",
+      "choices": {
+        "A": "10 800 kr",
+        "B": "11 880 kr",
+        "C": "12 000 kr",
+        "D": "12 120 kr",
+        "E": "13 200 kr"
+      },
+      "answer": "B",
+      "explanation": "12 000 kr · 1,10 = 13 200 kr. 13 200 kr · 0,90 = 11 880 kr. Nedgangen regnes av en større pris, så reisen blir billigere enn før."
+    },
+    {
+      "kind": "number",
+      "area": "tall",
+      "text": "Jonas ser en jakke som koster 85 euro i en butikk i Tyskland. Den samme jakken koster 1 049 kr i Norge. Kursen er 1 euro = 11,40 kr. Hvor mange kroner sparer han på å kjøpe jakken i Tyskland?",
+      "answer": "80",
+      "unit": "kr",
+      "explanation": "85 · 11,40 kr = 969 kr. 1 049 kr − 969 kr = 80 kr."
+    },
+    {
+      "kind": "number",
+      "area": "forhold",
+      "text": "Hytta ligger 320 km hjemmefra. Familien kjører dit og hjem igjen. Bilen bruker 0,55 liter bensin per 10 km, og bensinen koster 21,80 kr per liter. Hvor mange kroner koster bensinen for hele turen? Rund av til nærmeste hele krone.",
+      "answer": "767",
+      "unit": "kr",
+      "explanation": "Turen er 2 · 320 km = 640 km. Bilen bruker 64 · 0,55 L = 35,2 L. 35,2 · 21,80 kr = 767,36 kr ≈ 767 kr."
+    }
+  ]
+}

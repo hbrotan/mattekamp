@@ -62,3 +62,12 @@ body { margin: 0; background: #ece7df; color: var(--ink); line-height: 1.45; }
   .sheet-head { flex-direction: column; }
   .choices { grid-template-columns: 1fr; }
 }
+
+.data-table { border-collapse: collapse; margin: 4px 0 8px; font-size: 10pt; }
+.data-table th, .data-table td { border: 1px solid #999; padding: 3px 9px; text-align: left; }
+.data-table th { background: #f1ede6; }
+.answer-blank { width: 35mm; margin: 0 4px; }
+.task .answer-line .blank { display: inline-block; border-bottom: 1px solid var(--ink); height: 1.1em; }
+
+.chart { max-width: 125mm; margin: 4px 0 8px; }
+.chart svg { width: 100%; height: auto; display: block; }

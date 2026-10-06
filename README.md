@@ -1,6 +1,6 @@
 # Mattekamp
 
-Nettside for å løse matteoppgaver – fra Kengurukonkurransen og til GetSmart-videoer – med felles toppliste per gruppe
+Nettside for å løse matteoppgaver – Kengurukonkurransen, GetSmart-videoer og øvingsprøver i stil med nasjonale prøver – med felles toppliste per gruppe
 (klasse, familie ...). Man lager eller blir med i en gruppe med en kode, skriver navnet sitt,
 og får 3, 4 eller 5 poeng per riktig svar. Rettingen skjer på serveren, så fasiten sendes
 ikke til nettleseren før oppgaven er besvart (øving) eller levert (konkurranse).
@@ -87,6 +87,17 @@ python tools/getsmart_build.py   # lager content/getsmart/sets.json fra kataloge
 
 Oppgavene ligger i `content/getsmart/questions/<emne>.json` (én fil per emne). Katalogen med
 videobeskrivelsene er bare arbeidsgrunnlag og ligger ikke i git.
+
+### Nasjonale prøver (øvingsprøver)
+
+Samlingen «Nasjonale prøver» er **egne** øvingsprøver i stil med nasjonale prøver i regning:
+tre for 5. trinn og tre for 8.–9. trinn. Udirs egne prøver er opphavsrettslig beskyttet og ligger i
+Udirs prøvesystem; appen lenker dit i stedet for å kopiere dem. Oppgavene har enten svaralternativer
+eller tallsvar (`kind: "number"`, med valgfri `unit`), og kan ha en tabell (`table`).
+
+```bash
+python tools/np_build.py   # lager content/nasjonale-prover/sets.json fra content/nasjonale-prover/drafts/
+```
 
 ## Deploy (Azure)
 

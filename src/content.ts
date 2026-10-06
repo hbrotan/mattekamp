@@ -3,28 +3,40 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { z } from "zod";
 import type { Db } from "./db.js";
+import { parseNumber } from "./grading.js";
 
 /**
  * Innholdsfiler: content/<kilde>/sets.json. Hver kilde (kenguru, getsmart ...) leverer
  * oppgavesett i dette formatet; bildestier er relative til content/.
  *
  * En oppgave er enten et bilde (Kenguru: spørsmål og alternativer står i bildet) eller tekst
- * med svaralternativer i `choices`. Den kan ha en YouTube-video som forklarer emnet.
+ * med svaralternativer i `choices`. Den kan ha en YouTube-video som forklarer emnet og en tabell.
+ * Oppgavetyper: «choice» (velg A–E) og «number» (skriv inn ett tall; `unit` vises bak svarfeltet).
  */
+const Table = z.object({
+  headers: z.array(z.string()).min(1).max(8),
+  rows: z.array(z.array(z.string())).min(1).max(20),
+  chart: z.enum(["bar"]).optional(),
+  showTable: z.boolean().optional(),
+});
+
 const TaskFile = z.object({
   n: z.number().int().positive(),
   points: z.number().int().positive(),
-  kind: z.enum(["choice"]).default("choice"),
+  kind: z.enum(["choice", "number"]).default("choice"),
   answer: z.string().min(1),
   options: z.array(z.string()).optional(),
   img: z.array(z.string()).default([]),
   text: z.string().optional(),
   choices: z.record(z.string(), z.string()).optional(),
   video: z.object({ youtubeId: z.string().regex(/^[A-Za-z0-9_-]{6,20}$/), title: z.string() }).optional(),
+  table: Table.optional(),
+  unit: z.string().max(20).optional(),
   sol: z.array(z.string()).default([]),
   explanation: z.string().optional(),
 }).refine((t) => t.img.length > 0 || t.text, "Oppgaven må ha bilde eller tekst")
-  .refine((t) => !t.choices || t.answer in t.choices, "Fasiten må være et av svaralternativene");
+  .refine((t) => t.kind !== "choice" || !t.choices || t.answer in t.choices, "Fasiten må være et av svaralternativene")
+  .refine((t) => t.kind !== "number" || (!!t.text && parseNumber(t.answer) !== null), "Tallsvar må ha tekst og et tall som fasit");
 
 const SetFile = z.object({
   id: z.string().min(1),
@@ -76,8 +88,8 @@ export async function seedContent(db: Db, contentDir: string): Promise<{ sets: n
       n: t.n,
       kind: t.kind,
       points: t.points,
-      prompt: JSON.stringify({ images: t.img, text: t.text, choices: t.choices, video: t.video }),
-      options: JSON.stringify(t.options ?? (t.choices ? Object.keys(t.choices) : DEFAULT_OPTIONS)),
+      prompt: JSON.stringify({ images: t.img, text: t.text, choices: t.choices, video: t.video, table: t.table, unit: t.unit }),
+      options: t.kind === "number" ? null : JSON.stringify(t.options ?? (t.choices ? Object.keys(t.choices) : DEFAULT_OPTIONS)),
       answer: t.answer,
       solution: JSON.stringify({ images: t.sol, text: t.explanation }),
     })));
